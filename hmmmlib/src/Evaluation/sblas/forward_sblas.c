@@ -208,10 +208,5 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     for(int i = 0; i < 3; i++){
         printf("%f \n", X[i]);
     }
-    
-    
-    free(ia);
-    free(ja);
-    free(a);
 
 }
