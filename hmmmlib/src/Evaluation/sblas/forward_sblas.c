@@ -11,6 +11,8 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a
     
     int nnz = 0;
     
+    //double ** new_values = calloc(hmm->observations, sizeof(double *));
+    
     for (j = 0; j < hmm->hiddenStates; j++) {
         for (i = 0; i < hmm->hiddenStates; i++) {
             if (sparseMatrixs[0][j*hmm->hiddenStates+i] != 0.0) {
@@ -21,6 +23,8 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a
             }
         }
     }
+    
+    
     
     for(i = 1; i < hmm->observations; i++){
         for(j = 0; j < nnz; j++){
@@ -97,9 +101,8 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     {
         printf("Error initializing the library!\n");
     }
-    
+    struct rsb_mtx_t ** mtx = malloc(hmm->observations, sizeof(rsb_mtx_t *));
     mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
-    //struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
 
     for(i = 1; i<T; i++){
         //rsb_spmv(RSB_TRANSPOSITION_N, &one, mtxAp, B, 1, &one, X, 1);
