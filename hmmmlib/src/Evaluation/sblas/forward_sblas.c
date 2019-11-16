@@ -4,7 +4,7 @@
 //#include <Accelerate/Accelerate.h> // for mac os
 #include <cblas.h> // for GNUlinux
 
-int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t errval){
+int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t * errval){
     
     unsigned int i;
     unsigned int j;
@@ -15,12 +15,10 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
     
     int nnz = 0;
     
-    //double ** new_values = calloc(hmm->observations, sizeof(double *));
-    
     for (j = 0; j < hmm->hiddenStates; j++) {
         for (i = 0; i < hmm->hiddenStates; i++) {
             if (sparseMatrixs[0][j*hmm->hiddenStates+i] != 0.0) {
-                a[nnz] = sparseMatrixs[0][j*hmm->hiddenStates+i];
+                //a[nnz] = sparseMatrixs[0][j*hmm->hiddenStates+i];
                 ja[nnz] = i;
                 ia[nnz] = j;
                 nnz++;
@@ -28,9 +26,19 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
         }
     }
     
+    int * final_ja = malloc(nnz*sizeof(int));
+    int * final_ia = malloc(nnz*sizeof(int));
+    double * final_a = malloc(nnz*sizeof(double));
     
+    for(i = 0; i < nnz; i++){
+        final_ja[i] = ja[i];
+        final_ia[i] = ia[i];
+    }
     
-    for(i = 1; i < hmm->observations; i++){
+    free(ia);
+    free(ja);
+    
+    for(i = 0; i < hmm->observations; i++){
         for(j = 0; j < nnz; j++){
             a[nnz*i+j] = sparseMatrixs[i][ia[j]*hmm->hiddenStates+ja[j]];
         }
@@ -45,8 +53,7 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
     }
     printf("\n------------------------\n\n");
     
-    free(ia);
-    free(ja);
+
     free(a);
     
     return nnz;
