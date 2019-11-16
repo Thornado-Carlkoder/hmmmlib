@@ -65,12 +65,12 @@ HMM * HMMCsr(const unsigned int hiddenStates, const unsigned int observations) {
 bool valdidateHMM(const HMM *hmm){
 
     double sum;
-
     double epsilon = 0.00001;
+    int i, j;
 
     // Init probs.
     sum = 0.0;
-    for (unsigned i = 0; i < hmm->hiddenStates; i++) {
+    for (i = 0; i < hmm->hiddenStates; i++) {
         sum += hmm->initProbs[i];
     }
     if(fabs(sum - 1.0) > epsilon) {
@@ -80,9 +80,9 @@ bool valdidateHMM(const HMM *hmm){
 
 
     // Transition matrix
-    for (unsigned i = 0; i < hmm->hiddenStates; i++) {
+    for (i = 0; i < hmm->hiddenStates; i++) {
         sum = 0.0;
-        for (unsigned j = 0; j < hmm->hiddenStates; j++) sum += hmm->transitionProbs[i*hmm->hiddenStates+j];
+        for (j = 0; j < hmm->hiddenStates; j++) sum += hmm->transitionProbs[i*hmm->hiddenStates+j];
         if (fabs(sum-1.0) > epsilon) {
             printf("Error: the sum of row %d in transitionProbs is %f", i, sum);
             return false;
@@ -90,9 +90,9 @@ bool valdidateHMM(const HMM *hmm){
     }
 
     // Emission matrix
-    for (unsigned i = 0; i < hmm->hiddenStates; i++) {
+    for (i = 0; i < hmm->hiddenStates; i++) {
         sum = 0.0;
-        for (unsigned j = 0; j < hmm->observations; j++) sum += hmm->emissionProbs[i*hmm->observations+j];
+        for (j = 0; j < hmm->observations; j++) sum += hmm->emissionProbs[i*hmm->observations+j];
         if (fabs(sum-1.0) > epsilon) {
             printf("Error: the sum of row %d in emissionProbs is %f", i, sum);
             return false;
