@@ -212,7 +212,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("Error performing a multiplication!\n");
     }
     for(int i = 0; i < 3; i++){
-        printf("%f \n", X[i]);
+        printf("-- %f \n", X[i]);
     }
 
 }
