@@ -116,10 +116,10 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
 //    rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
 //    rsb_err_t errval = RSB_ERR_NO_ERROR;
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
-    rsb_coo_idx_t IA[] = {0,1,1,2,2};
-    /* nonzero column indices coordinates: */
-    rsb_coo_idx_t JA[] = {0,1,2,2,2};
-    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
+//    rsb_coo_idx_t IA[] = {0,1,1,2,2};
+//    /* nonzero column indices coordinates: */
+//    rsb_coo_idx_t JA[] = {0,1,2,2,2};
+//    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
     //mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
 
     for(i = 1; i<T; i++){
