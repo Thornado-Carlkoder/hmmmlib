@@ -4,21 +4,19 @@
 //#include <Accelerate/Accelerate.h> // for mac os
 #include <cblas.h> // for GNUlinux
 
-int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t * errval){
+int hulla_csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a){
     
     unsigned int i;
     unsigned int j;
     
-    int * ia = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
-    int * ja = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
-    double * a = calloc(hmm->observations*hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
-    
     int nnz = 0;
+    
+    //double ** new_values = calloc(hmm->observations, sizeof(double *));
     
     for (j = 0; j < hmm->hiddenStates; j++) {
         for (i = 0; i < hmm->hiddenStates; i++) {
             if (sparseMatrixs[0][j*hmm->hiddenStates+i] != 0.0) {
-                //a[nnz] = sparseMatrixs[0][j*hmm->hiddenStates+i];
+                a[nnz] = sparseMatrixs[0][j*hmm->hiddenStates+i];
                 ja[nnz] = i;
                 ia[nnz] = j;
                 nnz++;
@@ -26,35 +24,13 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
         }
     }
     
-    int * final_ja = malloc(nnz*sizeof(int));
-    int * final_ia = malloc(nnz*sizeof(int));
-    double * final_a = malloc(nnz*sizeof(double));
     
-    for(i = 0; i < nnz; i++){
-        final_ja[i] = ja[i];
-        final_ia[i] = ia[i];
-    }
     
-    free(ia);
-    free(ja);
-    
-    for(i = 0; i < hmm->observations; i++){
+    for(i = 1; i < hmm->observations; i++){
         for(j = 0; j < nnz; j++){
             a[nnz*i+j] = sparseMatrixs[i][ia[j]*hmm->hiddenStates+ja[j]];
         }
     }
-    
-    printf("\n\n------------------------\n");
-    for(i = 0; i<hmm->observations; i++){
-        for(j=0; j < nnz; j++){
-            printf("%f, ",a[i*nnz+j]);
-        }
-        printf("\n");
-    }
-    printf("\n------------------------\n\n");
-    
-
-    free(a);
     
     return nnz;
 }
@@ -88,39 +64,45 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     scalingFactor[0] = cblas_dasum(hmm->hiddenStates, alpha, 1);
     cblas_dscal(hmm->hiddenStates, (1.0/scalingFactor[0]), alpha, 1);
     
-    const int bs = RSB_DEFAULT_BLOCKING;
-    const int brA = bs, bcA = bs;
-    const RSB_DEFAULT_TYPE one = 1;
-    rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
-    rsb_err_t errval = RSB_ERR_NO_ERROR;
+    int * ia = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
+    int * ja = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
+    double * a = calloc(hmm->observations*hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
     
-    printf("Hello, RSB!\n");
-    printf("Initializing the library...\n");
-    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
-    {
-        printf("Error initializing the library!\n");
-    }
-
-    struct rsb_mtx_t ** mtx = malloc(hmm->observations*sizeof(struct rsb_mtx_t *));
-    printf("\n ---- GOT THIS FAR");
-    int znn = hulla_csr(hmm, new_emission_probs, mtx, &errval);
+    int znn = hulla_csr(hmm, new_emission_probs, ia, ja, a);
     
     for(i = 0; i < hmm->observations; i++){
         free(new_emission_probs[i]);
     }
     free(new_emission_probs);
     
-//    const int bs = RSB_DEFAULT_BLOCKING;
-//    const int brA = bs, bcA = bs;
-//    const RSB_DEFAULT_TYPE one = 1;
-//    rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
-//    rsb_err_t errval = RSB_ERR_NO_ERROR;
+    
+    printf("\n\n------------------------\n");
+    for(i = 0; i<hmm->observations; i++){
+        for(j=0; j < znn; j++){
+            printf("%f, ",a[i*znn+j]);
+        }
+        printf("\n");
+    }
+    printf("\n------------------------\n\n");
+    const int bs = RSB_DEFAULT_BLOCKING;
+    const int brA = bs, bcA = bs;
+    const RSB_DEFAULT_TYPE one = 1;
+    rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
+    rsb_err_t errval = RSB_ERR_NO_ERROR;
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
-//    rsb_coo_idx_t IA[] = {0,1,1,2,2};
-//    /* nonzero column indices coordinates: */
-//    rsb_coo_idx_t JA[] = {0,1,2,2,2};
-//    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
-    //mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
+    rsb_coo_idx_t IA[] = {0,1,1,2,2};
+    /* nonzero column indices coordinates: */
+    rsb_coo_idx_t JA[] = {0,1,2,2,2};
+    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
+
+    printf("Hello, RSB!\n");
+    printf("Initializing the library...\n");
+    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
+    {
+        printf("Error initializing the library!\n");
+    }
+    struct rsb_mtx_t ** mtx = malloc(hmm->observations*sizeof(struct rsb_mtx_t *));
+    mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
 
     for(i = 1; i<T; i++){
         //rsb_spmv(RSB_TRANSPOSITION_N, &one, mtxAp, B, 1, &one, X, 1);
@@ -138,10 +120,10 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     const rsb_coo_idx_t nrA = 3;        /* matrix rows count */
     const rsb_coo_idx_t ncA = 3;        /* matrix columns count */
     ///* nonzero row indices coordinates: */
-    rsb_coo_idx_t IA[] = {0,1,1,2,2};
+    //rsb_coo_idx_t IA[] = {0,1,1,2,2};
     ///* nonzero column indices coordinates: */
-    rsb_coo_idx_t JA[] = {0,1,2,2,2};
-    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
+    //rsb_coo_idx_t JA[] = {0,1,2,2,2};
+//    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
     RSB_DEFAULT_TYPE X[] = { 0, 0, 0 }; /* X vector's array */
     const RSB_DEFAULT_TYPE B[] = { -1, -2, -5 }; /* B vector's array */
     char ib[200];
@@ -201,7 +183,8 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     printf("Correctly allocated a matrix.\n");
     printf("Summary information of the matrix:\n");
     /* print out the matrix summary information  */
-    rsb_mtx_get_info_str(mtxAp,"RSB_MIF_MATRIX_INFO__TO__CHAR_P",ib,sizeof(ib));
+    rsb_mtx_get_info_str(mtxAp,"RSB_MIF_MATRIX_INFO__TO__CHAR_P",
+            ib,sizeof(ib));
     printf("%s",ib);
     printf("\n");
 
@@ -212,7 +195,12 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("Error performing a multiplication!\n");
     }
     for(int i = 0; i < 3; i++){
-        printf("-- %f \n", X[i]);
+        printf("%f \n", X[i]);
     }
+    
+    
+    free(ia);
+    free(ja);
+    free(a);
 
 }
