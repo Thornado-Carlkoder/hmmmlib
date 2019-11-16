@@ -140,9 +140,9 @@ if __name__ == "__main__" :
         stspace = 7
         alphabet = 4
         start = 10
-        stop = 4010
+        stop = 4010 # levels out at 3000
         increment = 500
-        replicates = 3
+        replicates = 5
         file = '../../test_framework/data/pantro3_X.fasta'
 
 
@@ -177,9 +177,9 @@ if __name__ == "__main__" :
         print('## Testing varying state space ##', file = sys.stderr)
         inputsize = 2000 # the input size is constant
         start = 2 # the state space
-        stop = 30
+        stop = 40 # baumwelch cache-jumps at 20
         increment = 4
-        replicates = 2
+        replicates = 5
         file = '../../test_framework/data/pantro3_X.fasta'
 
 
