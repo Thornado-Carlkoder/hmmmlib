@@ -80,6 +80,11 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("\n");
     }
     printf("\n------------------------\n\n");
+    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
+    {
+        printf("Error initializing the library!\n");
+    }
+    printf("Correctly initialized the library.\n");
     const int bs = RSB_DEFAULT_BLOCKING;
     const int brA = bs, bcA = bs;
     const RSB_DEFAULT_TYPE one = 1;
@@ -120,8 +125,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
 
     printf("Hello, RSB!\n");
     printf("Initializing the library...\n");
-    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != 
-            RSB_ERR_NO_ERROR)
+    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
     {
         printf("Error initializing the library!\n");
     }
