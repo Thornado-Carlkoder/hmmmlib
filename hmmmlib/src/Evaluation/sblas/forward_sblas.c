@@ -44,7 +44,7 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
         for(j = 0; j < nnz; j++){
             final_a[j] = sparseMatrixs[i][final_ia[j]*hmm->hiddenStates+final_ja[j]];
         }
-        rsb_mtx[i] = rsb_mtx_alloc_from_coo_const(final_a, final_ia, final_ja, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, errval);
+        rsb_mtx[i] = rsb_mtx_alloc_from_coo_const(final_a, final_ia, final_ja, nnz, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, errval);
     }
     
     printf("\n\n------------------------\n");
