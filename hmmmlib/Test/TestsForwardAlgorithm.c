@@ -158,9 +158,8 @@ bool testForwardAlgorithm() {
     for (j = 0; j < obsLenght2; j++){
         for(i = 0; i < hmm2->hiddenStates; i++) {
             assert(fabs(alpha2[j*hmm2->hiddenStates+i]-test2alpha[j*hmm2->hiddenStates+i]) < 0.00001);
-            printf("%f, ", alphaS[j*hmm2->hiddenStates+i]);
+            assert(fabs(alphaS[j*hmm2->hiddenStates+i]-test2alpha[j*hmm2->hiddenStates+i]) < 0.00001);
         }
-        printf("\n");
     }
     
     printf("\n***********************\n");
