@@ -166,6 +166,7 @@ extern bool testBackwardAlgorithm() {
     for(i = 0; i < obsLenght2; i++){
         for(j = 0; j < hmm2->hiddenStates; j++){
             assert(fabs(beta2[i*hmm2->hiddenStates+j]-test2beta[(obsLenght2-i-1)*hmm2->hiddenStates+j]) < 0.00001);
+            assert(fabs(betaS[i*hmm2->hiddenStates+j]-test2beta[(obsLenght2-i-1)*hmm2->hiddenStates+j]) < 0.00001);
             printf("%f, ", betaS[i*hmm2->hiddenStates+j]);
         }
         printf("\n");
