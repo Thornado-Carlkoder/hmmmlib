@@ -84,7 +84,8 @@ extern bool testBackwardAlgorithm() {
     HMMDeallocate(hmmBlas);
     
     HMM * hmm2 = HMMBLAS(7, 4);
-           
+    HMM * hmmsblas = HMMSBLAS(7, 4);
+    
     double transitionProbs2[7][7] = {
        {0.0 , 0.0 , 0.9 , 0.1 , 0.0 , 0.0 , 0.0},
        {1.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0},
@@ -108,15 +109,18 @@ extern bool testBackwardAlgorithm() {
     double initProbs2[7] = {0.0 , 0.0 , 0.0 , 1.0 , 0.0 , 0.0 , 0.0};
 
     for(i = 0; i < hmm2->hiddenStates; i++){
+        hmmsblas->initProbs[i] = initProbs2[i];
         hmm2->initProbs[i] = initProbs2[i];
     }
     for(i = 0; i < hmm2->hiddenStates; i++){
        for(j = 0; j < hmm2->hiddenStates; j++){
+           hmmsblas->transitionProbs[i*hmm2->hiddenStates+j] = transitionProbs2[i][j];
            hmm2->transitionProbs[i*hmm2->hiddenStates+j] = transitionProbs2[i][j];
        }
     }
     for(i = 0; i < hmm2->hiddenStates; i++){
        for(j = 0; j < hmm2->observations; j++){
+           hmmsblas->emissionProbs[i*hmm2->observations+j] = emissionProbs2[i][j];
            hmm2->emissionProbs[i*hmm2->observations+j] = emissionProbs2[i][j];
        }
     }
@@ -125,6 +129,12 @@ extern bool testBackwardAlgorithm() {
     const unsigned int obsLenght2 = 10;
     
     double * scaleFactor2 = calloc(obsLenght2, sizeof(double));
+
+    double * alphaS = calloc(obsLenght2*hmm2->hiddenStates, sizeof(double));
+    F(hmmsblas, observation2, obsLenght2, scaleFactor2, alphaS);
+    double * betaS = calloc(obsLenght2*hmm2->hiddenStates, sizeof(double));
+    B(hmmsblas, observation2, obsLenght2, scaleFactor2, betaS);
+    
     double * alpha2 = calloc(obsLenght2*hmm2->hiddenStates, sizeof(double));
     F(hmm2, observation2, obsLenght2, scaleFactor2, alpha2);
     double * beta2 = calloc(obsLenght2*hmm2->hiddenStates, sizeof(double));
@@ -152,7 +162,6 @@ extern bool testBackwardAlgorithm() {
         0.733717, 0.404995, 1.081898, 1.008185, 1.609595, 0.668894, 0.502656,
         0.876315, 0.730823, 0.242038, 1.043087, 0.799506, 0.400538, 1.831926,
         0.232683, 0.867638, 1.013022, 1.000000, 0.317258, 2.176545, 1.243165};
-    
 
     for(i = 0; i < obsLenght2; i++){
         for(j = 0; j < hmm2->hiddenStates; j++){
@@ -163,6 +172,7 @@ extern bool testBackwardAlgorithm() {
     for (j = 0; j < obsLenght2; j++){
         for(i = 0; i < hmm2->hiddenStates; i++) {
             assert(fabs(alpha2[j*hmm2->hiddenStates+i]-test2alpha[j*hmm2->hiddenStates+i]) < 0.00001);
+            assert(fabs(alphaS[j*hmm2->hiddenStates+i]-test2alpha[j*hmm2->hiddenStates+i]) < 0.00001);
         }
     }
     free(alpha2);
