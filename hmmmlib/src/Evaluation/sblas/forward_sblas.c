@@ -102,7 +102,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     }
 
     struct rsb_mtx_t ** mtx = malloc(hmm->observations*sizeof(struct rsb_mtx_t *));
-
+    printf("\n ---- GOT THIS FAR");
     int znn = hulla_csr(hmm, new_emission_probs, mtx, &errval);
     
     for(i = 0; i < hmm->observations; i++){
