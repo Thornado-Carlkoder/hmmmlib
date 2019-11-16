@@ -15,7 +15,9 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
     
     int * ia = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
     int * ja = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
-    double * a = calloc(hmm->observations*hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
+    
+    //double * a = calloc(hmm->observations*hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
+    //free(a)
     
     int nnz = 0;
     
@@ -57,9 +59,6 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
         printf("\n");
     }
     printf("\n------------------------\n\n");
-    
-
-    free(a);
     
     return nnz;
 }
