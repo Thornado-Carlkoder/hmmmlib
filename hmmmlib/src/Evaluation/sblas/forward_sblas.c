@@ -120,7 +120,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
 
     for(i = 1; i<T; i++){
-        rsb_spmv(RSB_TRANSPOSITION_N, &one, mtx[Y[i]], alpha+hmm->hiddenStates*(i-1), 1, &one, alpha+hmm->hiddenStates*i, 1);
+        rsb_spmv(RSB_TRANSPOSITION_Y, &one, mtx[Y[i]], alpha+hmm->hiddenStates*(i-1), 1, &one, alpha+hmm->hiddenStates*i, 1);
         scalingFactor[i] = 1.0/cblas_dasum(hmm->hiddenStates, alpha+hmm->hiddenStates*i, 1);
         cblas_dscal(hmm->hiddenStates, scalingFactor[i], alpha+hmm->hiddenStates*i, 1);
     }
