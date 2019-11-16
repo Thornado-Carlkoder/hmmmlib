@@ -151,40 +151,40 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
 //    }
     printf("Correctly initialized the library.\n");
 
-    printf("Attempting to set the"
-           " RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE library option.\n");
-    {
-        rsb_int_t evi=1; 
-        /* Setting a single optional library parameter. */
-        errval = rsb_lib_set_opt(
-            RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE, &evi);
-        if(errval != RSB_ERR_NO_ERROR)
-        {
-            char errbuf[256];
-            rsb_strerror_r(errval,&errbuf[0],sizeof(errbuf));
-            printf("Failed setting the"
-            " RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE"
-            " library option (reason string:\n%s).\n",errbuf);
-            if(errval&RSB_ERRS_UNSUPPORTED_FEATURES)
-            {
-              printf("This error may be safely ignored.\n");
-            }
-            else
-            {
-              printf("Some unexpected error occurred!\n");
-            }
-        }
-        else
-        {
-            printf("Setting back the "
-                "RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE"
-                " library option.\n");
-            evi = 0;
-            errval = rsb_lib_set_opt(RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE,
-                    &evi);
-            errval = RSB_ERR_NO_ERROR;
-        }
-    }
+//    printf("Attempting to set the"
+//           " RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE library option.\n");
+//    {
+//        rsb_int_t evi=1; 
+//        /* Setting a single optional library parameter. */
+//        errval = rsb_lib_set_opt(
+//            RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE, &evi);
+//        if(errval != RSB_ERR_NO_ERROR)
+//        {
+//            char errbuf[256];
+//            rsb_strerror_r(errval,&errbuf[0],sizeof(errbuf));
+//            printf("Failed setting the"
+//            " RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE"
+//            " library option (reason string:\n%s).\n",errbuf);
+//            if(errval&RSB_ERRS_UNSUPPORTED_FEATURES)
+//            {
+//              printf("This error may be safely ignored.\n");
+//            }
+//            else
+//            {
+//              printf("Some unexpected error occurred!\n");
+//            }
+//        }
+//        else
+//        {
+//            printf("Setting back the "
+//                "RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE"
+//                " library option.\n");
+//            evi = 0;
+//            errval = rsb_lib_set_opt(RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE,
+//                    &evi);
+//            errval = RSB_ERR_NO_ERROR;
+//        }
+//    }
 
     mtxAp = rsb_mtx_alloc_from_coo_const(
         VA,IA,JA,nnzA,typecode,nrA,ncA,brA,bcA,
