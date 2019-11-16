@@ -66,13 +66,13 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     
     int znn = hulla_csr(hmm, new_emission_probs, ia, ja, a);
     
-    //printf("%d", znn);
-    
     for(i = 0; i < hmm->observations; i++){
         free(new_emission_probs[i]);
     }
     free(new_emission_probs);
-    print("\n\n------------------------");
+    
+    
+    printf("\n\n------------------------");
     for(i = 0; i<hmm->observations; i++){
         for(j=0; j < znn; j++){
             printf("%f, ",a[i*znn+j]);
@@ -80,7 +80,15 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("\n");
     }
     
-    print("\n\n------------------------");
+    printf("\n\n------------------------");
+    
+    //mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS    /* default format will be chosen */|RSB_FLAG_DUPLICATES_SUM/* duplicates will be summed */,&errval);
+    
+    for(i = 1; i<T; i++){
+        //rsb_spmv(RSB_TRANSPOSITION_N, &one, mtxAp, B, 1, &one, X, 1);
+        scalingFactor[i] = 1.0/cblas_dasum(hmm->hiddenStates, alpha+hmm->hiddenStates*i, 1);
+        cblas_dscal(hmm->hiddenStates, scalingFactor[i], alpha+hmm->hiddenStates*i, 1);
+    }
 
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
     const int bs = RSB_DEFAULT_BLOCKING;
@@ -148,7 +156,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         VA,IA,JA,nnzA,typecode,nrA,ncA,brA,bcA,
         RSB_FLAG_NOFLAGS    /* default format will be chosen */
         |RSB_FLAG_DUPLICATES_SUM/* duplicates will be summed */
-            ,&errval);
+    ,&errval);
     if((!mtxAp) || (errval != RSB_ERR_NO_ERROR))
     {
         printf("Error while allocating the matrix!\n");
@@ -171,12 +179,6 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("%f \n", X[i]);
     }
     
-    for(i = 1; i<T; i++){
-        
-        
-        scalingFactor[i] = 1.0/cblas_dasum(hmm->hiddenStates, alpha+hmm->hiddenStates*i, 1);
-        cblas_dscal(hmm->hiddenStates, scalingFactor[i], alpha+hmm->hiddenStates*i, 1);
-    }
     
     free(ia);
     free(ja);
