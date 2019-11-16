@@ -4,19 +4,21 @@
 //#include <Accelerate/Accelerate.h> // for mac os
 #include <cblas.h> // for GNUlinux
 
-int hulla_csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a){
+int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t * errval){
     
     unsigned int i;
     unsigned int j;
     
-    int nnz = 0;
+    int * ia = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
+    int * ja = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
+    double * a = calloc(hmm->observations*hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
     
-    //double ** new_values = calloc(hmm->observations, sizeof(double *));
+    int nnz = 0;
     
     for (j = 0; j < hmm->hiddenStates; j++) {
         for (i = 0; i < hmm->hiddenStates; i++) {
             if (sparseMatrixs[0][j*hmm->hiddenStates+i] != 0.0) {
-                a[nnz] = sparseMatrixs[0][j*hmm->hiddenStates+i];
+                //a[nnz] = sparseMatrixs[0][j*hmm->hiddenStates+i];
                 ja[nnz] = i;
                 ia[nnz] = j;
                 nnz++;
@@ -24,13 +26,35 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a
         }
     }
     
+    int * final_ja = malloc(nnz*sizeof(int));
+    int * final_ia = malloc(nnz*sizeof(int));
+    double * final_a = malloc(nnz*sizeof(double));
     
+    for(i = 0; i < nnz; i++){
+        final_ja[i] = ja[i];
+        final_ia[i] = ia[i];
+    }
     
-    for(i = 1; i < hmm->observations; i++){
+    free(ia);
+    free(ja);
+    
+    for(i = 0; i < hmm->observations; i++){
         for(j = 0; j < nnz; j++){
             a[nnz*i+j] = sparseMatrixs[i][ia[j]*hmm->hiddenStates+ja[j]];
         }
     }
+    
+    printf("\n\n------------------------\n");
+    for(i = 0; i<hmm->observations; i++){
+        for(j=0; j < nnz; j++){
+            printf("%f, ",a[i*nnz+j]);
+        }
+        printf("\n");
+    }
+    printf("\n------------------------\n\n");
+    
+
+    free(a);
     
     return nnz;
 }
@@ -64,26 +88,6 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     scalingFactor[0] = cblas_dasum(hmm->hiddenStates, alpha, 1);
     cblas_dscal(hmm->hiddenStates, (1.0/scalingFactor[0]), alpha, 1);
     
-    int * ia = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
-    int * ja = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
-    double * a = calloc(hmm->observations*hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
-    
-    int znn = hulla_csr(hmm, new_emission_probs, ia, ja, a);
-    
-    for(i = 0; i < hmm->observations; i++){
-        free(new_emission_probs[i]);
-    }
-    free(new_emission_probs);
-    
-    
-    printf("\n\n------------------------\n");
-    for(i = 0; i<hmm->observations; i++){
-        for(j=0; j < znn; j++){
-            printf("%f, ",a[i*znn+j]);
-        }
-        printf("\n");
-    }
-    printf("\n------------------------\n\n");
     const int bs = RSB_DEFAULT_BLOCKING;
     const int brA = bs, bcA = bs;
     const RSB_DEFAULT_TYPE one = 1;
@@ -102,6 +106,13 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("Error initializing the library!\n");
     }
     struct rsb_mtx_t ** mtx = malloc(hmm->observations*sizeof(struct rsb_mtx_t *));
+    int znn = hulla_csr(hmm, new_emission_probs, mtx, &errval);
+    
+    for(i = 0; i < hmm->observations; i++){
+        free(new_emission_probs[i]);
+    }
+    free(new_emission_probs);
+    
     mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
 
     for(i = 1; i<T; i++){
