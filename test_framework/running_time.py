@@ -63,7 +63,7 @@ def set_sparse_1(object):
 def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, increment, file= '', algorithm_version = '', linewidth = 60, **kwargs):
     algorithm_name = algorithm#.__name__
 
-    ## Test loop ##
+
     for i in range(start, stop, increment):
         test_standard_data = [i for i in read_fasta(i, file)]
         print(f'{algorithm_name}\t{i*linewidth}', file = sys.stderr, end = '\t', flush = True)
@@ -82,20 +82,12 @@ def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, 
             print(f'inputsize, {i*linewidth}, {t1-t0}, {algorithm_name}, {o.hmmType}, {algorithm_version}')
         print('', file = sys.stderr, flush = True) # newline
 
-    o.deallocate()
+        o.deallocate() 
 
 
 def standard_test_statespace(algorithm, hmmType, inputsize, start, stop, increment, file= '', algorithm_version = '', **kwargs): 
     """ This standard test tests a varying size statespace with a constant alphabet and inputsize."""
-    
 
-    # This is just to make it clear which sizes are tested with.
-    for i in range(start, stop, increment):
-        print(i, end = ' ', file = sys.stderr)
-    print('', file = sys.stderr)
-
-
-    # Run the test
     test_standard_data = [i for i in read_fasta(inputsize, file)]
     for i in range(start, stop, increment):
         print(f'{algorithm}\t{i}', file = sys.stderr, end = '\t', flush = True)
@@ -107,7 +99,7 @@ def standard_test_statespace(algorithm, hmmType, inputsize, start, stop, increme
             set_random_dense(o)
 
             t0 = time.time()
-            test_standard_output = getattr(o, 'viterbi')(test_standard_data)
+            test_standard_output = getattr(o, algorithm)(test_standard_data, **kwargs)
             t1 = time.time()
             o.deallocate()
 
@@ -144,6 +136,7 @@ if __name__ == "__main__" :
 
     # Test definition for varying input size.
     if run_input:
+        print('## Testing varying input size ##', file = sys.stderr)
         stspace = 7
         alphabet = 4
         start = 10
@@ -181,10 +174,11 @@ if __name__ == "__main__" :
 
     # Test definition for varying state space size.
     if run_statespace:
+        print('## Testing varying state space ##', file = sys.stderr)
         inputsize = 1000 # the input size is constant
         start = 2 # the state space
-        stop = 8
-        increment = 2
+        stop = 20
+        increment = 4
         replicates = 2
         file = '../../test_framework/data/pantro3_X.fasta'
 
