@@ -4,7 +4,7 @@
 //#include <Accelerate/Accelerate.h> // for mac os
 #include <cblas.h> // for GNUlinux
 
-void hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t * errval){
+void emission_rsb_mtx(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t * errval){
     
     rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
     const int brA = RSB_DEFAULT_BLOCKING;
@@ -87,7 +87,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("Error initializing the library!\n");
     }
     struct rsb_mtx_t ** mtx = malloc(hmm->observations*sizeof(struct rsb_mtx_t *));
-    hulla_csr(hmm, new_emission_probs, mtx, &errval);
+    emission_rsb_mtx(hmm, new_emission_probs, mtx, &errval);
 
     for(i = 0; i < hmm->observations; i++){
         free(new_emission_probs[i]);
