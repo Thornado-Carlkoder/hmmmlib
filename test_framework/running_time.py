@@ -63,13 +63,6 @@ def set_sparse_1(object):
 def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, increment, file= '', algorithm_version = '', linewidth = 60, **kwargs):
     algorithm_name = algorithm#.__name__
 
-    print(f'Testing the following range:', file = sys.stderr)
-    for i in range(start, stop, increment):
-        print(i*linewidth, end = ' ', file = sys.stderr)
-    print('', file = sys.stderr)
-
-
-
     ## Test loop ##
     for i in range(start, stop, increment):
         test_standard_data = [i for i in read_fasta(i, file)]
@@ -84,7 +77,6 @@ def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, 
 
             t0 = time.time()
             test_standard_output = getattr(o, algorithm)(test_standard_data, **kwargs)
-            #test_standard_output = algorithm(test_standard_data, **kwargs)
             t1 = time.time()
             
             print(f'inputsize, {i*linewidth}, {t1-t0}, {algorithm_name}, {o.hmmType}, {algorithm_version}')
@@ -98,7 +90,6 @@ def standard_test_statespace(algorithm, hmmType, inputsize, start, stop, increme
     
 
     # This is just to make it clear which sizes are tested with.
-    print(f'Testing the following range:', file = sys.stderr)
     for i in range(start, stop, increment):
         print(i, end = ' ', file = sys.stderr)
     print('', file = sys.stderr)
@@ -156,7 +147,7 @@ if __name__ == "__main__" :
         stspace = 7
         alphabet = 4
         start = 10
-        stop = 510
+        stop = 2010
         increment = 500
         replicates = 4
         file = '../../test_framework/data/pantro3_X.fasta'
@@ -168,27 +159,22 @@ if __name__ == "__main__" :
         standard_test_inputsize("posteriorDecoding", "Conventional", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("forward", "Conventional", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("backward", "Conventional", stspace, alphabet, start, stop, increment, file) 
-        
         for i in range(1, 7):
             standard_test_inputsize("baumWelch", "Conventional", stspace, alphabet, start, stop, increment, file, str(i), n_iterations = 1)
-
 
         ## BLAS ##
         standard_test_inputsize("viterbi", "BLAS", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("posteriorDecoding", "BLAS", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("forward", "BLAS", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("backward", "BLAS", stspace, alphabet, start, stop, increment, file) 
-        
         for i in range(1, 7):
             standard_test_inputsize("baumWelch", "BLAS", stspace, alphabet, start, stop, increment, file, str(i), n_iterations = 1)
-
 
         ## CSR ##
         standard_test_inputsize("viterbi", "CSR", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("posteriorDecoding", "CSR", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("forward", "CSR", stspace, alphabet, start, stop, increment, file)
         standard_test_inputsize("backward", "CSR", stspace, alphabet, start, stop, increment, file) 
-        
         for i in range(1, 7):
             standard_test_inputsize("baumWelch", "CSR", stspace, alphabet, start, stop, increment, file, str(i), n_iterations = 1)
 
@@ -202,8 +188,6 @@ if __name__ == "__main__" :
         replicates = 2
         file = '../../test_framework/data/pantro3_X.fasta'
 
-
-        
 
         
         ## Conventional ##        
@@ -220,7 +204,6 @@ if __name__ == "__main__" :
         standard_test_statespace("backward", "BLAS", inputsize, start, stop, increment, file) 
         standard_test_statespace("baumWelch", "BLAS", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
-        
         ## CSR ##        
         standard_test_statespace("viterbi", "CSR", inputsize, start, stop, increment, file)        
         standard_test_statespace("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
