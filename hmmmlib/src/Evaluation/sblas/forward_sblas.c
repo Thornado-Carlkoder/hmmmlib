@@ -46,6 +46,10 @@ void emission_rsb_mtx(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rs
         }
         rsb_mtx[i] = rsb_mtx_alloc_from_coo_const(final_a, final_ia, final_ja, nnz, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, errval);
     }
+    
+    free(final_ja);
+    free(final_ia);
+    free(final_a);
 }
 
 void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double * scalingFactor, double * alpha){
