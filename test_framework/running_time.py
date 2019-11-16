@@ -140,9 +140,9 @@ if __name__ == "__main__" :
         stspace = 7
         alphabet = 4
         start = 10
-        stop = 2010
+        stop = 4010
         increment = 500
-        replicates = 4
+        replicates = 3
         file = '../../test_framework/data/pantro3_X.fasta'
 
 
@@ -175,9 +175,9 @@ if __name__ == "__main__" :
     # Test definition for varying state space size.
     if run_statespace:
         print('## Testing varying state space ##', file = sys.stderr)
-        inputsize = 1000 # the input size is constant
+        inputsize = 2000 # the input size is constant
         start = 2 # the state space
-        stop = 20
+        stop = 30
         increment = 4
         replicates = 2
         file = '../../test_framework/data/pantro3_X.fasta'
