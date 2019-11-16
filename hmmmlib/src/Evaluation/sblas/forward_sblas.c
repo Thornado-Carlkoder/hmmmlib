@@ -51,14 +51,14 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
         rsb_mtx[i] = rsb_mtx_alloc_from_coo_const(final_a, final_ia, final_ja, nnz, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, errval);
     }
     
-    printf("\n\n------------------------\n");
-    for(i = 0; i<hmm->observations; i++){
-        for(j=0; j < nnz; j++){
-            printf("%f, ",a[i*nnz+j]);
-        }
-        printf("\n");
-    }
-    printf("\n------------------------\n\n");
+//    printf("\n\n------------------------\n");
+//    for(i = 0; i<hmm->observations; i++){
+//        for(j=0; j < nnz; j++){
+//            printf("%f, ",a[i*nnz+j]);
+//        }
+//        printf("\n");
+//    }
+//    printf("\n------------------------\n\n");
     
     return nnz;
 }
