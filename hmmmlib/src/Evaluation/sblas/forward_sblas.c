@@ -80,9 +80,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("\n");
     }
     printf("\n------------------------\n\n");
-    
-    struct rsb_mtx_t ** emission_mtx = malloc(hmm->observations*sizeof(rsb_mtx_t));
-    
+
     //mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS    /* default format will be chosen */|RSB_FLAG_DUPLICATES_SUM/* duplicates will be summed */,&errval);
     
     //struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
@@ -94,6 +92,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     }
 
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
+    printf("%d", sizeof(rsb_mtx_t));
     const int bs = RSB_DEFAULT_BLOCKING;
     const int brA = bs, bcA = bs;
     const RSB_DEFAULT_TYPE one = 1;
