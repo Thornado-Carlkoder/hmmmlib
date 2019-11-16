@@ -85,19 +85,19 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     const RSB_DEFAULT_TYPE one = 1;
     rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
     rsb_err_t errval = RSB_ERR_NO_ERROR;
-    
-    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
-       {
-           printf("Error initializing the library!\n");
-       }
-       printf("Correctly initialized the library.\n");
-    
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
     rsb_coo_idx_t IA[] = {0,1,1,2,2};
     /* nonzero column indices coordinates: */
     rsb_coo_idx_t JA[] = {0,1,2,2,2};
     RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
 
+    printf("Hello, RSB!\n");
+    printf("Initializing the library...\n");
+    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
+    {
+        printf("Error initializing the library!\n");
+    }
+    
     mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
     //struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
 
@@ -125,12 +125,12 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     const RSB_DEFAULT_TYPE B[] = { -1, -2, -5 }; /* B vector's array */
     char ib[200];
 
-    printf("Hello, RSB!\n");
-    printf("Initializing the library...\n");
-    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
-    {
-        printf("Error initializing the library!\n");
-    }
+//    printf("Hello, RSB!\n");
+//    printf("Initializing the library...\n");
+//    if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
+//    {
+//        printf("Error initializing the library!\n");
+//    }
     printf("Correctly initialized the library.\n");
 
     printf("Attempting to set the"
