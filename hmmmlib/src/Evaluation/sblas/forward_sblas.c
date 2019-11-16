@@ -72,7 +72,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         free(new_emission_probs[i]);
     }
     free(new_emission_probs);
-    print("\n\n------------------------")
+    print("\n\n------------------------");
     for(i = 0; i<hmm->observations; i++){
         for(j=0; j < znn; j++){
             printf("%f, ",a[i*znn+j]);
@@ -80,7 +80,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("\n");
     }
     
-    print("\n\n------------------------")
+    print("\n\n------------------------");
 
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
     const int bs = RSB_DEFAULT_BLOCKING;
