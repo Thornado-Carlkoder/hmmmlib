@@ -39,6 +39,8 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
         final_ia[i] = ia[i];
     }
     
+    free(ia);
+    free(ja);
 
     for(i = 0; i < hmm->observations; i++){
         for(j = 0; j < nnz; j++){
@@ -56,8 +58,7 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
     }
     printf("\n------------------------\n\n");
     
-    free(ia);
-    free(ja);
+
     free(a);
     
     return nnz;
@@ -98,10 +99,10 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
     rsb_err_t errval = RSB_ERR_NO_ERROR;
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
-    rsb_coo_idx_t IA[] = {0,1,1,2,2};
+    rsb_coo_idx_t IA[] = {0,1,1,2};
     /* nonzero column indices coordinates: */
-    rsb_coo_idx_t JA[] = {0,1,2,2,2};
-    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
+    rsb_coo_idx_t JA[] = {0,1,2,2};
+    RSB_DEFAULT_TYPE VA[] = {11,10,22,32};/* values of nonzeroes */
 
     printf("Hello, RSB!\n");
     printf("Initializing the library...\n");
