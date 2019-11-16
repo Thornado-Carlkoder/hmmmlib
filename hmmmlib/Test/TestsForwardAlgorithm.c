@@ -157,7 +157,5 @@ bool testForwardAlgorithm() {
     assert(valdidateHMM(hmm2) == true);
     HMMDeallocate(hmm2);
     
-    
-    
     return true;
 }

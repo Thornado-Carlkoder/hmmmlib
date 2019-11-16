@@ -1,9 +1,9 @@
 #include "forward_csr.h"
 #include <stdlib.h>
-//#include <Accelerate/Accelerate.h> // for mac os
-#include <cblas.h> // for GNUlinux
+#include <Accelerate/Accelerate.h> // for mac os
+//#include <cblas.h> // for GNUlinux
 
-int csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a){
+int f_csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a){
     
     unsigned int i;
     unsigned int j;
@@ -55,15 +55,6 @@ void forward_csr(HMM *hmm, const unsigned int *Y, const unsigned int T, double *
         cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, hmm->hiddenStates, hmm->hiddenStates, hmm->hiddenStates, 1.0, hmm->transitionProbs, hmm->hiddenStates, matrix, hmm->hiddenStates, 0.0, emission_probs, hmm->hiddenStates);
         new_emission_probs[i] = emission_probs;
         
-//        printf("------- Y[i] == %d -------\n", i);
-//        for(int k = 0; k < hmm->hiddenStates; k++){
-//            for(j = 0; j < hmm->hiddenStates; j++){
-//                printf("%f, ", emission_probs[k*hmm->hiddenStates+j]);
-//            }
-//            printf("\n");
-//        }
-//        printf("\n\n\n");
-        
     }
     free(matrix);
     
@@ -75,26 +66,12 @@ void forward_csr(HMM *hmm, const unsigned int *Y, const unsigned int T, double *
     int * ja = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(int));
     double * a = calloc(hmm->observations*hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
     
-    int znn = csr(hmm, new_emission_probs, ia, ja, a);
-    
-    //printf("%d", znn);
+    int znn = f_csr(hmm, new_emission_probs, ia, ja, a);
     
     for(i = 0; i < hmm->observations; i++){
         free(new_emission_probs[i]);
     }
     free(new_emission_probs);
-    
-//    printf("\nAI: \n");
-//    for(i = 0; i < hmm->hiddenStates+1; i++){
-//        printf("%d, ", ia[i]);
-//    }
-//    printf("\nJA: \n");
-//    for(i = 0; i < hmm->hiddenStates*hmm->hiddenStates; i++){
-//        if(a[i] == 0.0) break;
-//        printf("%d, ", ja[i]);
-//    }
-//
-//    printf("\n\n");
     
     for(i = 1; i<T; i++){
         

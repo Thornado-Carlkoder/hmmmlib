@@ -1,7 +1,7 @@
 #include "backward_csr.h"
 #include <stdlib.h>
-//#include <Accelerate/Accelerate.h> // for mac os
-#include <cblas.h> // for GNUlinux
+#include <Accelerate/Accelerate.h> // for mac os
+//#include <cblas.h> // for GNUlinux
 
 int b_csr(HMM * hmm, double ** sparseMatrixs, int * ia, int * ja, double * a){
     
