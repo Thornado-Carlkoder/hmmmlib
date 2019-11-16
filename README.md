@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/cmkobel/hmmmlib.svg?branch=master)](https://travis-ci.org/cmkobel/hmmmlib)
-# Hidden Markov-Model Library
+# Hidden Markov-Model Matrix Library (HMMMLIB)
 
 * HMM library written in C 
 * Has Python bindings allowing it to be used by Python as well
