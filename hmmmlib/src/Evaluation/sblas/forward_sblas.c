@@ -38,12 +38,16 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
     
     printf("\n\n------------------------\n");
     for(i = 0; i<hmm->observations; i++){
-        for(j=0; j < znn; j++){
-            printf("%f, ",a[i*znn+j]);
+        for(j=0; j < nnz; j++){
+            printf("%f, ",a[i*nnz+j]);
         }
         printf("\n");
     }
     printf("\n------------------------\n\n");
+    
+    free(ia);
+    free(ja);
+    free(a);
     
     return nnz;
 }
@@ -204,10 +208,5 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     for(int i = 0; i < 3; i++){
         printf("%f \n", X[i]);
     }
-    
-    
-    free(ia);
-    free(ja);
-    free(a);
 
 }
