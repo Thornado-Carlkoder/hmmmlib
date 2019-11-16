@@ -53,15 +53,6 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         double * emission_probs = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
         cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, hmm->hiddenStates, hmm->hiddenStates, hmm->hiddenStates, 1.0, hmm->transitionProbs, hmm->hiddenStates, matrix, hmm->hiddenStates, 0.0, emission_probs, hmm->hiddenStates);
         new_emission_probs[i] = emission_probs;
-//        printf("------- Y[i] == %d -------\n", i);
-//        for(int k = 0; k < hmm->hiddenStates; k++){
-//            for(j = 0; j < hmm->hiddenStates; j++){
-//                printf("%f, ", emission_probs[k*hmm->hiddenStates+j]);
-//            }
-//            printf("\n");
-//        }
-//        printf("\n\n\n");
-
     }
     free(matrix);
     
@@ -81,24 +72,15 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         free(new_emission_probs[i]);
     }
     free(new_emission_probs);
-    
-//    printf("\nAI: \n");
-//    for(i = 0; i < znn; i++){
-//        printf("%d, ", ia[i]);
-//    }
-//    printf("\nJA: \n");
-//    for(i = 0; i < znn; i++){
-//        printf("%d, ", ja[i]);
-//    }
-//
-//    printf("\n\n");
-    
+    print("\n\n------------------------")
     for(i = 0; i<hmm->observations; i++){
         for(j=0; j < znn; j++){
             printf("%f, ",a[i*znn+j]);
         }
         printf("\n");
     }
+    
+    print("\n\n------------------------")
 
     struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
     const int bs = RSB_DEFAULT_BLOCKING;
