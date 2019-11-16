@@ -160,6 +160,7 @@ bool testForwardAlgorithm() {
             assert(fabs(alpha2[j*hmm2->hiddenStates+i]-test2alpha[j*hmm2->hiddenStates+i]) < 0.00001);
             printf("%f, ", alphaS[j*hmm2->hiddenStates+i]);
         }
+        printf("\n");
     }
     
     printf("\n***********************\n");
