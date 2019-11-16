@@ -7,8 +7,8 @@
 void hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t * errval){
     
     rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
-    const int bs = RSB_DEFAULT_BLOCKING;
-    const int brA = bs, bcA = bs;
+    const int brA = RSB_DEFAULT_BLOCKING;
+    const int bcA = RSB_DEFAULT_BLOCKING;
     
     unsigned int i;
     unsigned int j;
@@ -82,9 +82,6 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     const RSB_DEFAULT_TYPE one = 1;
     rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
     rsb_err_t errval = RSB_ERR_NO_ERROR;
-
-    printf("Hello, RSB!\n");
-    printf("Initializing the library...\n");
     if((errval = rsb_lib_init(RSB_NULL_INIT_OPTIONS)) != RSB_ERR_NO_ERROR)
     {
         printf("Error initializing the library!\n");
