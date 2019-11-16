@@ -101,7 +101,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     rsb_coo_idx_t IA[] = {0,1,1,2};
     /* nonzero column indices coordinates: */
     rsb_coo_idx_t JA[] = {0,1,2,2};
-    RSB_DEFAULT_TYPE VA[] = {11,10,22,32};/* values of nonzeroes */
+    RSB_DEFAULT_TYPE VA[] = {11.5,10.5,22.5,32.5};/* values of nonzeroes */
 
     printf("Hello, RSB!\n");
     printf("Initializing the library...\n");
@@ -154,7 +154,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
 //    printf("Attempting to set the"
 //           " RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE library option.\n");
 //    {
-//        rsb_int_t evi=1; 
+//        rsb_int_t evi=1;
 //        /* Setting a single optional library parameter. */
 //        errval = rsb_lib_set_opt(
 //            RSB_IO_WANT_EXTRA_VERBOSE_INTERFACE, &evi);
@@ -198,8 +198,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     printf("Correctly allocated a matrix.\n");
     printf("Summary information of the matrix:\n");
     /* print out the matrix summary information  */
-    rsb_mtx_get_info_str(mtxAp,"RSB_MIF_MATRIX_INFO__TO__CHAR_P",
-            ib,sizeof(ib));
+    rsb_mtx_get_info_str(mtxAp,"RSB_MIF_MATRIX_INFO__TO__CHAR_P",ib,sizeof(ib));
     printf("%s",ib);
     printf("\n");
 
