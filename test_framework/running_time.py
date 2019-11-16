@@ -23,20 +23,24 @@ def random_row(n):
 
 
 def random_matrix(m, n, custom_seed = None):
+    """ Generates a random matrix with size m*n. """
     if custom_seed != None:
         random.seed(custom_seed)
 
-    print("test")
-    
     
     return [random_row(n) for _ in range(m)]
 
-def set_random(object):
-
+def set_random_dense(object):
+    """ Sets all the matrices in a given hmm to random values. (Dense) 
+        It automatically reads all sizes. """
     object.setInitProbs(random_row(object.n_hiddenstates))
     object.setTransitionProbs(random_matrix(object.n_hiddenstates, object.n_hiddenstates))
     object.setEmissionProbs(random_matrix(object.n_hiddenstates, object.n_observations))
     return
+
+def set_random_sparse(object, percent):
+    pass
+
 
 def set_sparse_1(object):
     object.setInitProbs([0.00, 0.00, 0.00, 1.00, 0.00, 0.00, 0.00])
@@ -56,32 +60,13 @@ def set_sparse_1(object):
                         [0.15, 0.30, 0.20, 0.35]])
 
 
-def standard_test(o, test_setup, start, stop, increment, file= '', algorithm_version = '', linewidth = 60, **kwargs):
-    algorithm_name = test_setup.__name__
+def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, increment, file= '', algorithm_version = '', linewidth = 60, **kwargs):
+    algorithm_name = algorithm#.__name__
 
     print(f'Testing the following range:', file = sys.stderr)
     for i in range(start, stop, increment):
         print(i*linewidth, end = ' ', file = sys.stderr)
     print('', file = sys.stderr)
-
-    ## Test setup ##
-    """
-    o.setInitProbs([0.00, 0.00, 0.00, 1.00, 0.00, 0.00, 0.00])
-    o.setTransitionProbs([[0.00, 0.00, 0.90, 0.10, 0.00, 0.00, 0.00],
-                        [1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
-                        [0.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00],
-                        [0.00, 0.00, 0.05, 0.90, 0.05, 0.00, 0.00],
-                        [0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00],
-                        [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00],
-                        [0.00, 0.00, 0.00, 0.10, 0.90, 0.00, 0.00]])
-    o.setEmissionProbs([[0.30, 0.25, 0.25, 0.20],
-                        [0.20, 0.35, 0.15, 0.30],
-                        [0.40, 0.15, 0.20, 0.25],
-                        [0.25, 0.25, 0.25, 0.25],
-                        [0.20, 0.40, 0.30, 0.10],
-                        [0.30, 0.20, 0.30, 0.20],
-                        [0.15, 0.30, 0.20, 0.35]])
-    """
 
 
 
@@ -90,16 +75,55 @@ def standard_test(o, test_setup, start, stop, increment, file= '', algorithm_ver
         test_standard_data = [i for i in read_fasta(i, file)]
         print(f'{algorithm_name}\t{i*linewidth}', file = sys.stderr, end = '\t', flush = True)
 
+
+        o = hmm_binding.binded_HMM(stspace, alphabet, hmmType = hmmType)
         for replicate in range(replicates):
             print('r', end = '', file = sys.stderr, flush = True)    
             
+            set_random_dense(o)
+
             t0 = time.time()
-            test_standard_output = test_setup(test_standard_data, **kwargs)
+            test_standard_output = getattr(o, algorithm)(test_standard_data, **kwargs)
+            #test_standard_output = algorithm(test_standard_data, **kwargs)
             t1 = time.time()
-            print(f'{i*linewidth}, {t1-t0}, {algorithm_name}, {o.hmmType}, {algorithm_version}')
+            
+            print(f'inputsize, {i*linewidth}, {t1-t0}, {algorithm_name}, {o.hmmType}, {algorithm_version}')
         print('', file = sys.stderr, flush = True) # newline
 
     o.deallocate()
+
+
+def standard_test_statespace(algorithm, hmmType, inputsize, start, stop, increment, file= '', algorithm_version = '', **kwargs): 
+    """ This standard test tests a varying size statespace with a constant alphabet and inputsize."""
+    
+
+    # This is just to make it clear which sizes are tested with.
+    print(f'Testing the following range:', file = sys.stderr)
+    for i in range(start, stop, increment):
+        print(i, end = ' ', file = sys.stderr)
+    print('', file = sys.stderr)
+
+
+    # Run the test
+    test_standard_data = [i for i in read_fasta(inputsize, file)]
+    for i in range(start, stop, increment):
+        print(f'{algorithm}\t{i}', file = sys.stderr, end = '\t', flush = True)
+
+        for replicate in range(replicates):
+            print('r', end = '', file = sys.stderr, flush = True)    
+            
+            o = hmm_binding.binded_HMM(i, 4, hmmType = hmmType)
+            set_random_dense(o)
+
+            t0 = time.time()
+            test_standard_output = getattr(o, 'viterbi')(test_standard_data)
+            t1 = time.time()
+            o.deallocate()
+
+            print(f'statespace, {i}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
+        print('', file = sys.stderr, flush = True) # newline
+
+
 
 
 
@@ -107,136 +131,104 @@ def standard_test(o, test_setup, start, stop, increment, file= '', algorithm_ver
 
 if __name__ == "__main__" :
         
-
-
-    start = 10
-    stop = 510
-    increment = 500
-    replicates = 4
-    file = '../../test_framework/data/pantro3_X.fasta'
-
-
-    print('observations, time, algorithm, variant, iterations')
+    # Make sure that the users specified a test to run.
+    arguments = [i for i in sys.argv]
 
     
-    ## Conventional ##
-    # Viterbi
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    set_random(o)
-    o.presentHMM()
-    """
-    standard_test(o, o.viterbi, start, stop, increment, file)
+    #value_when_true if condition else value_when_false
 
-    # Posterior Decoding
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.posteriorDecoding, start, stop, increment, file)
+    #value_when_true if condition else value_when_false
 
-    # Forward
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.forward, start, stop, increment, file)
+    run_input = True if 'input' in arguments else False
+    run_statespace = True if 'statespace' in arguments else False
+    run_alphabet = True if 'alphabet' in arguments else False
 
-    # Backward
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.backward, start, stop, increment, file) 
-
-    # Baum-Welch
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '1', n_iterations = 1)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '2', n_iterations = 2)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '3', n_iterations = 3)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '4', n_iterations = 4)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '5', n_iterations = 5)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "Conventional")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '6', n_iterations = 6)
+    if len(arguments) <= 1:
+        print("Error: Please give an argument <input|statespace|alphabet>")
+        print("example:")
+        print("$ python running_time.py input")
+    else:
+        print('test, observations, time, algorithm, variant, iterations')
 
 
+    # Test definition for varying input size.
+    if run_input:
+        stspace = 7
+        alphabet = 4
+        start = 10
+        stop = 510
+        increment = 500
+        replicates = 4
+        file = '../../test_framework/data/pantro3_X.fasta'
 
 
-    ## BLAS ##
+        
+        ## Conventional #
+        standard_test_inputsize("viterbi", "Conventional", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("posteriorDecoding", "Conventional", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("forward", "Conventional", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("backward", "Conventional", stspace, alphabet, start, stop, increment, file) 
+        
+        for i in range(1, 7):
+            standard_test_inputsize("baumWelch", "Conventional", stspace, alphabet, start, stop, increment, file, str(i), n_iterations = 1)
 
 
-    # Viterbi
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.viterbi, start, stop, increment, file)
-
-    # Posterior Decoding
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.posteriorDecoding, start, stop, increment, file)
-
-    # Forward
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.forward, start, stop, increment, file)
-
-    # Backward
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.backward, start, stop, increment, file) 
-
-    # Baum-Welch
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '1', n_iterations = 1)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '2', n_iterations = 2)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '3', n_iterations = 3)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '4', n_iterations = 4)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '5', n_iterations = 5)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "BLAS")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '6', n_iterations = 6)
+        ## BLAS ##
+        standard_test_inputsize("viterbi", "BLAS", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("posteriorDecoding", "BLAS", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("forward", "BLAS", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("backward", "BLAS", stspace, alphabet, start, stop, increment, file) 
+        
+        for i in range(1, 7):
+            standard_test_inputsize("baumWelch", "BLAS", stspace, alphabet, start, stop, increment, file, str(i), n_iterations = 1)
 
 
-    ## CSR ##
+        ## CSR ##
+        standard_test_inputsize("viterbi", "CSR", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("posteriorDecoding", "CSR", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("forward", "CSR", stspace, alphabet, start, stop, increment, file)
+        standard_test_inputsize("backward", "CSR", stspace, alphabet, start, stop, increment, file) 
+        
+        for i in range(1, 7):
+            standard_test_inputsize("baumWelch", "CSR", stspace, alphabet, start, stop, increment, file, str(i), n_iterations = 1)
 
-    # Viterbi
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    o.presentHMM()
-    standard_test(o, o.viterbi, start, stop, increment, file)
 
-    # Posterior Decoding
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.posteriorDecoding, start, stop, increment, file)
+    # Test definition for varying state space size.
+    if run_statespace:
+        inputsize = 1000 # the input size is constant
+        start = 2 # the state space
+        stop = 8
+        increment = 2
+        replicates = 2
+        file = '../../test_framework/data/pantro3_X.fasta'
 
-    # Forward
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.forward, start, stop, increment, file)
 
-    # Backward
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.backward, start, stop, increment, file) 
+        
 
-    # Baum-Welch
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '1', n_iterations = 1)
+        
+        ## Conventional ##        
+        standard_test_statespace("viterbi", "Conventional", inputsize, start, stop, increment, file)        
+        standard_test_statespace("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
+        standard_test_statespace("forward", "Conventional", inputsize, start, stop, increment, file)
+        standard_test_statespace("backward", "Conventional", inputsize, start, stop, increment, file) 
+        standard_test_statespace("baumWelch", "Conventional", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '2', n_iterations = 2)
+        ## BLAS ##        
+        standard_test_statespace("viterbi", "BLAS", inputsize, start, stop, increment, file)        
+        standard_test_statespace("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
+        standard_test_statespace("forward", "BLAS", inputsize, start, stop, increment, file)
+        standard_test_statespace("backward", "BLAS", inputsize, start, stop, increment, file) 
+        standard_test_statespace("baumWelch", "BLAS", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '3', n_iterations = 3)
+        
+        ## CSR ##        
+        standard_test_statespace("viterbi", "CSR", inputsize, start, stop, increment, file)        
+        standard_test_statespace("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
+        standard_test_statespace("forward", "CSR", inputsize, start, stop, increment, file)
+        standard_test_statespace("backward", "CSR", inputsize, start, stop, increment, file) 
+        standard_test_statespace("baumWelch", "CSR", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '4', n_iterations = 4)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '5', n_iterations = 5)
-
-    o = hmm_binding.binded_HMM(7, 4, hmmType = "CSR")
-    standard_test(o, o.baumWelch, start, stop, increment, file, '6', n_iterations = 6)
+        
 
 
 
@@ -244,8 +236,3 @@ if __name__ == "__main__" :
 
 
 
-
-
-
-
-"""
