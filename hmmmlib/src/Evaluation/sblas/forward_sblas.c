@@ -6,6 +6,7 @@
 
 int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, rsb_err_t * errval){
     
+    rsb_type_t typecode = RSB_NUMERICAL_TYPE_DEFAULT;
     const int bs = RSB_DEFAULT_BLOCKING;
     const int brA = bs, bcA = bs;
     
