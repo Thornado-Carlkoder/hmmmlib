@@ -35,9 +35,7 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
         final_ia[i] = ia[i];
     }
     
-    free(ia);
-    free(ja);
-    
+
     for(i = 0; i < hmm->observations; i++){
         for(j = 0; j < nnz; j++){
             a[nnz*i+j] = sparseMatrixs[i][ia[j]*hmm->hiddenStates+ja[j]];
@@ -53,7 +51,8 @@ int hulla_csr(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** rsb_mtx, r
     }
     printf("\n------------------------\n\n");
     
-
+    free(ia);
+    free(ja);
     free(a);
     
     return nnz;
@@ -106,8 +105,8 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         printf("Error initializing the library!\n");
     }
     struct rsb_mtx_t ** mtx = malloc(hmm->observations*sizeof(struct rsb_mtx_t *));
-    //int znn = hulla_csr(hmm, new_emission_probs, mtx, &errval);
-    int znn = 11;
+    int znn = hulla_csr(hmm, new_emission_probs, mtx, &errval);
+    //int znn = 11;
     for(i = 0; i < hmm->observations; i++){
         free(new_emission_probs[i]);
     }
