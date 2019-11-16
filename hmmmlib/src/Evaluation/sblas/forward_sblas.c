@@ -89,8 +89,9 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     rsb_coo_idx_t IA[] = {0,1,1,2,2};
     /* nonzero column indices coordinates: */
     rsb_coo_idx_t JA[] = {0,1,2,2,2};
-    
-    mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS|RSB_FLAG_DUPLICATES_SUM, &errval);
+    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
+
+    mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, &errval);
     //struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
 
     for(i = 1; i<T; i++){
@@ -112,7 +113,7 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     //rsb_coo_idx_t IA[] = {0,1,1,2,2};
     ///* nonzero column indices coordinates: */
     //rsb_coo_idx_t JA[] = {0,1,2,2,2};
-    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
+//    RSB_DEFAULT_TYPE VA[] = {11,10,22,32,1};/* values of nonzeroes */
     RSB_DEFAULT_TYPE X[] = { 0, 0, 0 }; /* X vector's array */
     const RSB_DEFAULT_TYPE B[] = { -1, -2, -5 }; /* B vector's array */
     char ib[200];
