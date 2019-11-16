@@ -72,18 +72,21 @@ void forward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     free(new_emission_probs);
     
     
-    printf("\n\n------------------------");
+    printf("\n\n------------------------\n");
     for(i = 0; i<hmm->observations; i++){
         for(j=0; j < znn; j++){
             printf("%f, ",a[i*znn+j]);
         }
         printf("\n");
     }
+    printf("\n------------------------\n\n");
     
-    printf("\n\n------------------------");
+    struct rsb_mtx_t ** emission_mtx = malloc(hmm->observations*sizeof(rsb_mtx_t));
     
     //mtxAp = rsb_mtx_alloc_from_coo_const(VA, IA, JA, znn, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS    /* default format will be chosen */|RSB_FLAG_DUPLICATES_SUM/* duplicates will be summed */,&errval);
     
+    //struct rsb_mtx_t *mtxAp = NULL; /* matrix structure pointer */
+
     for(i = 1; i<T; i++){
         //rsb_spmv(RSB_TRANSPOSITION_N, &one, mtxAp, B, 1, &one, X, 1);
         scalingFactor[i] = 1.0/cblas_dasum(hmm->hiddenStates, alpha+hmm->hiddenStates*i, 1);
