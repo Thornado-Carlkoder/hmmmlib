@@ -75,6 +75,8 @@ data_statespace_grouped %>% ggplot(aes(observations, mean/(observations^2), colo
 ggsave("state_space_normalized.pdf", height = 5, width = 9)
 
 
+
+
 # Sparseness
 data_sparseness = data %>% filter(test == "sparseness") %>% filter(is.na(iterations) | iterations == 1)
 
@@ -87,16 +89,16 @@ data_sparseness_grouped %>% ggplot(aes(1-observations, mean, color = variant)) +
     geom_line() +
     geom_errorbar(aes(ymin=(mean-sd), ymax=(mean+sd) ), size = 0.3, alpha = .65) +
     facet_wrap(.~algorithm, scales = "free") + 
-    labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Running time of increasing denseness")
+    labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 10 replicates", title = "Running time of increasing denseness")
 ggsave("denseness_raw.pdf", height = 5, width = 9)
 
-data_sparseness_grouped %>% ggplot(aes(observations, mean/(observations^2), color = variant)) + 
-    geom_point() +
-    geom_line() +
-    geom_errorbar(aes(ymin=(mean-sd)/observations^2, ymax=(mean+sd)/observations^2 ), size = 0.3, alpha = .65) +
-    facet_wrap(.~algorithm, scales = "free") + 
-    labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Running time of increasing denseness")
-ggsave("denseness_normalized.pdf", height = 5, width = 9)
+# data_sparseness_grouped %>% ggplot(aes(observations, mean/observations, color = variant)) +
+#     geom_point() +
+#     geom_line() +
+#     #geom_errorbar(aes(ymin=(mean-sd)/(1-observations), ymax=(mean+sd)/(1-observations) ), size = 0.3, alpha = .65) +
+#     facet_wrap(.~algorithm, scales = "free") +
+#     labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Running time of increasing denseness")
+# ggsave("denseness_normalized.pdf", height = 5, width = 9)
 
 
 

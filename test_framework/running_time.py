@@ -258,8 +258,8 @@ if __name__ == "__main__" :
         start = 0
         stop = 1.001
         increment = 0.1
-        replicates = 5
-        inputsize = 2000
+        replicates = 10
+        inputsize = 1500
         file = '../../test_framework/data/pantro3_X.fasta'
 
         
