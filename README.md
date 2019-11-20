@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/Thornado-Carlkoder/hmmmlib.svg?branch=master)](https://travis-ci.com/Thornado-Carlkoder/hmmmlib)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/379148760d544cab8b4a14322400a1ea)](https://www.codacy.com/gh/Thornado-Carlkoder/hmmmlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Thornado-Carlkoder/hmmmlib&amp;utm_campaign=Badge_Grade)
 # Hidden Markov-Model Matrix Library (HMMMLIB)
 
 * HMM library written in C 
