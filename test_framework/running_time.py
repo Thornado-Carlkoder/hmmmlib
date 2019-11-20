@@ -21,7 +21,7 @@ def read_fasta(n_lines, file):
 
 
 def random_row(n, sparseness = 0, seed = None):
-        row = [random.uniform(-1, 1) for _ in range(n)] # random numbers uniformly between [-1, 1)
+        row = [random.uniform(0, 1) for _ in range(n)] # random numbers uniformly between [-1, 1)
 
         # sparseness?
         # A sparseness of 1 (sparse) means that only a single value per row is non-zero.
@@ -254,14 +254,12 @@ if __name__ == "__main__" :
 
 
 
-
-
         print('## Testing varying sparseness of transition and emission matrices. ##', file = sys.stderr)
         start = 0
-        stop = 1.1
-        increment = 0.2
-        replicates = 2
-        inputsize = 1000
+        stop = 1.001
+        increment = 0.1
+        replicates = 5
+        inputsize = 2000
         file = '../../test_framework/data/pantro3_X.fasta'
 
         
@@ -270,6 +268,22 @@ if __name__ == "__main__" :
         standard_test_sparseness("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
         standard_test_sparseness("forward", "Conventional", inputsize, start, stop, increment, file)
         standard_test_sparseness("backward", "Conventional", inputsize, start, stop, increment, file) 
-        for i in range(1, 7):
-            standard_test_sparseness("baumWelch", "Conventional", inputsize, start, stop, increment, file, str(i), n_iterations = 1)
+        #for i in range(1, 7):
+        standard_test_sparseness("baumWelch", "Conventional", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
         
+        ## BLAS #
+        standard_test_sparseness("viterbi", "BLAS", inputsize, start, stop, increment, file)
+        standard_test_sparseness("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
+        standard_test_sparseness("forward", "BLAS", inputsize, start, stop, increment, file)
+        standard_test_sparseness("backward", "BLAS", inputsize, start, stop, increment, file) 
+        #for i in range(1, 7):
+        standard_test_sparseness("baumWelch", "BLAS", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+        
+
+        ## CSR #
+        standard_test_sparseness("viterbi", "CSR", inputsize, start, stop, increment, file)
+        standard_test_sparseness("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
+        standard_test_sparseness("forward", "CSR", inputsize, start, stop, increment, file)
+        standard_test_sparseness("backward", "CSR", inputsize, start, stop, increment, file) 
+        #for i in range(1, 7):
+        standard_test_sparseness("baumWelch", "CSR", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
