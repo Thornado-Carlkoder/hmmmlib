@@ -48,7 +48,7 @@ data_input_grouped %>% filter(iterations == "1" |
     facet_wrap(. ~ algorithm, scales = "free") +
     labs(y = "mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Running time of increasing input size") +
     geom_hline(yintercept = 0, alpha = 0)
-ggsave("inputsize_raw.pdf", height = 5, width = 9)
+ggsave("inputsize_raw.pdf", height = 5, width = 10)
 
 
 data_input_grouped %>% filter(iterations == "1" |
@@ -72,7 +72,7 @@ ggsave("inputsize_normalized.pdf",
 
 
 
-## Running time of varying state space
+## Varying state space
 data_statespace = data %>% filter(test == "statespace")
 
 
@@ -134,12 +134,12 @@ data_sparseness_grouped %>% ggplot(aes(1 - observations, mean, color = variant))
     geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), size = 0.3, alpha = .65) +
     facet_wrap(. ~ algorithm, scales = "free") +
     labs(
-        x = "hidden states",
+        x = "denseness",
         y = "mean time [s]",
         caption = "error bars: standard deviation of 5 replicates",
-        title = "Running time of increasing denseness"
+        title = "Running time of increasing denseness (inputsize 90K)"
     )
-ggsave("denseness_1500_raw.pdf", height = 5, width = 9)
+ggsave("denseness_90_raw.pdf", height = 5, width = 9)
 
 
 
@@ -156,12 +156,12 @@ data_sparseness_grouped %>% ggplot(aes(1 - observations, mean, color = variant))
     geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), size = 0.3, alpha = .65) +
     facet_wrap(. ~ algorithm, scales = "free") +
     labs(
-        x = "hidden states",
+        x = "denseness",
         y = "mean time [s]",
         caption = "error bars: standard deviation of 5 replicates",
-        title = "Running time of increasing denseness"
+        title = "Running time of increasing denseness (inputsize 240K)"
     )
-ggsave("denseness_4000_raw.pdf", height = 5, width = 9)
+ggsave("denseness_240_raw.pdf", height = 5, width = 9)
 
 
 
