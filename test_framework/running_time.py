@@ -1,6 +1,13 @@
 import binding as hmm_binding
 import time, sys, random, decimal
 
+"""
+Description:
+
+This file imports the defined python binding (hmm_binding) and calls the algorithms with
+varying parameters and records the time it takes for each function/algorithm call
+
+"""
 
 def float_range(start, stop, step):
     while start < stop:
