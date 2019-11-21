@@ -76,12 +76,8 @@ target_link_libraries(exeHMMLIB m cblas)
 #
 #
 if(CMAKE_BUILD_TYPE MATCHES Debug)
-    include(CodeCoverage)
-    APPEND_COVERAGE_COMPILER_FLAGS()
-    SETUP_TARGET_FOR_COVERAGE_LCOV(
-        NAME coverage
-        EXECUTABLE exeHMMLIB
-    )
+       SET(GCC_COVERAGE_COMPILE_FLAGS "-fprofile-arcs -ftest-coverage")
+       SET(GCC_COVERAGE_LINK_FLAGS    "-lgcov")
 endif(CMAKE_BUILD_TYPE MATCHES Debug)
 
 
