@@ -1,6 +1,11 @@
 [![Build Status](https://travis-ci.com/Thornado-Carlkoder/hmmmlib.svg?branch=master)](https://travis-ci.com/Thornado-Carlkoder/hmmmlib)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/379148760d544cab8b4a14322400a1ea)](https://www.codacy.com/gh/Thornado-Carlkoder/hmmmlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Thornado-Carlkoder/hmmmlib&amp;utm_campaign=Badge_Grade)
-# Hidden Markov-Model Matrix Library (HMMMLIB)
+
+
+
+# HMMMLIB <a href='https:/tidyverse.tidyverse.org'><img src='ressourcer/hmmm.png' align="right" height="138.5" /></a>
+
+#### *Hidden Markov-Model Matrix Library*
 
 * HMM library written in C 
 * Has Python bindings allowing it to be used by Python as well
