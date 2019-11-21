@@ -5,7 +5,9 @@ os:
 compiler:
   - gcc
   - clang
-
+env:
+  global:
+  -CODECOV_TOKEN="4813d1d2-70b1-4e6f-b359-5b19330e81ae"
 addons:
   apt:
     sources:
@@ -17,7 +19,6 @@ addons:
       - python3
       - lcov
       - tree
-
 
 script:
   - #CXXFLAGS="-g -O0 -Wall -W -Wshadow -Wunused-variable -Wunused-parameter -Wunused-function -Wunused -Wno-system-headers -Wno-deprecated -Woverloaded-virtual -Wwrite-strings -fprofile-arcs -ftest-coverage"
@@ -46,7 +47,6 @@ after_success:
   # Uploading to CodeCov
   # '-f' specifies file(s) to use and disables manual coverage gathering and file search which has already been done above
   - bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
-
 
 branches:
   only:
