@@ -18,9 +18,6 @@ addons:
       - lcov
       - tree
 
-before_install:
-  - pip install --user cpp-coveralls
-
 script:
   - #CXXFLAGS="-g -O0 -Wall -W -Wshadow -Wunused-variable -Wunused-parameter -Wunused-function -Wunused -Wno-system-headers -Wno-deprecated -Woverloaded-virtual -Wwrite-strings -fprofile-arcs -ftest-coverage"
   - #CFLAGS="-g -O0 -Wall -W -fprofile-arcs -ftest-coverage"
@@ -33,7 +30,6 @@ script:
   - ../build/exeHMMLIB
   - python3 --version
   - python3 ../../test_framework/test.py
-  - ./configure --enable-gcov && make && make check
 
 
 after_success:
@@ -48,8 +44,7 @@ after_success:
   - tree
   # Uploading to CodeCov
   # '-f' specifies file(s) to use and disables manual coverage gathering and file search which has already been done above
-  #- bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
-  - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
+  - bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
 
 branches:
   only:
