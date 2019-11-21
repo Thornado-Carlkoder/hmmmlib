@@ -1,4 +1,4 @@
-#include "testBackwardAlgorithm.h"
+#include "TestBackward.h"
 #include "hmm.h"
 
 #include <assert.h>
