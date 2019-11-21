@@ -49,7 +49,7 @@ bool testBaumWelch() {
     // Checking the emission probs
     assert(fabs(hmm->emissionProbs[0]-0.46160107308583781) < epsilon);
     assert(fabs(hmm->emissionProbs[1*hmm->observations+1]-0.084984433203479412) < epsilon);
-    assert(valdidateHMM(hmm) == true);
+    assert(validateHMM(hmm) == true);
     HMMDeallocate(hmm);
     
     return true;

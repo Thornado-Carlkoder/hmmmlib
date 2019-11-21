@@ -77,7 +77,7 @@ extern bool testViterbi() {
     } 
     free(table);
     
-    assert(valdidateHMM(hmm) == true);
+    assert(validateHMM(hmm) == true);
     HMMDeallocate(hmm);
     
     return true;

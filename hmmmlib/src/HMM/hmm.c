@@ -62,7 +62,7 @@ HMM * HMMCsr(const unsigned int hiddenStates, const unsigned int observations) {
 }
 
 //should be static
-bool valdidateHMM(const HMM *hmm){
+bool validateHMM(const HMM *hmm){
 
     double sum;
     double epsilon = 0.00001;

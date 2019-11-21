@@ -64,7 +64,7 @@ extern bool testPosteriorDecoding() {
     }
     
     free(states);
-    assert(valdidateHMM(hmm) == true);
+    assert(validateHMM(hmm) == true);
     HMMDeallocate(hmm);
 
     return true;

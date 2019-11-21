@@ -37,7 +37,7 @@ class binded_HMM:
         self.libhmm.HMMCsr.restype = c.POINTER(HMM)
         
         
-        self.libhmm.valdidateHMM.restype = c.c_bool
+        self.libhmm.validateHMM.restype = c.c_bool
         self.libhmm.printHMM.restype = c.c_void_p
         self.libhmm.HMMDeallocate.restype = c.c_void_p
 
@@ -109,10 +109,10 @@ class binded_HMM:
                 row_sum += value
             print(end = '\t(' + str(row_sum) + ')\n  ')
         print()
-        print(' The internal validation state is:', self.libhmm.valdidateHMM(self.hmm))
+        print(' The internal validation state is:', self.libhmm.validateHMM(self.hmm))
 
     def validate(self):
-        return self.libhmm.valdidateHMM(self.hmm)
+        return self.libhmm.validateHMM(self.hmm)
 
     ## Setters ##
     def setInitProbs(self, pi):
