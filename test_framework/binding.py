@@ -4,9 +4,13 @@ import os
 # authors: Thornado & Carl Koder
 
 """
-TODO
-* make getters for the datastructures
-* set up tests for each algorithm
+Description:
+
+This file creates a mirrored version of the HMM struct from hmm.c in the c-library
+In then mirrors all its methods and algorithms in python such that all functionality in the c-library is accessible from python.
+
+This file is used in test.py, which validates output of all the algorithms
+It is also used by running_time.py, which calls each function on increasing parameters and records the timing.
 
 """
 
@@ -275,7 +279,7 @@ class binded_HMM:
     def deallocate(self):
         
         c_struct = c.POINTER(HMM)(self.hmm)
-        self.libhmm.HMMDeallocate(c_struct) # Jeg ved ikke hvorfor denne ikke virker???
+        self.libhmm.HMMDeallocate(c_struct) 
 
 
 

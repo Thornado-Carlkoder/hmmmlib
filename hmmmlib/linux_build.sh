@@ -3,20 +3,32 @@
 
 
 # Run fresh cmake
-rm -r build
-mkdir build
-cd build
-cmake .. && echo -e "cmake successfull\n"
+fresh_build () {
+    rm -r build
+    mkdir build
+    cd build
+    cmake .. && echo -e "cmake successfull\n"
+}
 
 
 
 # Run make
-make && echo -e "Built into build/\nmake successfull"
+make () {
+    make && echo -e "Built into build/\nmake successful"
+}
+
 
 # Test exe
-echo -e "\nExecuting executable:"
-../build/exeHMMLIB
+test_exe () {
+    echo -e "\nExecuting executable:"
+    ../build/exeHMMLIB
+}
 
 # Test pinding
-echo -e "\nRunning python binding test(s):"
-python ../../test_framework/test.py; 
+test_pinding () {
+    echo -e "\nRunning python binding test(s):"
+    python ../../test_framework/test.py; 
+}
+
+
+fresh_build && make && test_exe && test_pinding
