@@ -90,10 +90,10 @@ data_sparseness_grouped = data_sparseness %>%
     group_by(observations, algorithm, variant, iterations) %>% 
     summarise(mean = mean(time), sd = sd(time)) 
 
-data_sparseness_grouped %>% ggplot(aes(observations, mean, color = variant)) + 
+data_sparseness_grouped %>% ggplot(aes(1-observations, mean, color = variant)) + 
     geom_point() +
     geom_line() +
-    #geom_errorbar(aes(ymin=(mean-sd), ymax=(mean+sd) ), size = 0.3, alpha = .65) +
+    geom_errorbar(aes(ymin=(mean-sd), ymax=(mean+sd) ), size = 0.3, alpha = .65) +
     facet_wrap(.~algorithm, scales = "free") + 
     labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 10 replicates", title = "Running time of increasing denseness")
 ggsave("denseness_raw.pdf", height = 5, width = 9)
@@ -114,12 +114,12 @@ data_alphabet_grouped = data_alphabet %>%
     group_by(observations, algorithm, variant, iterations) %>% 
     summarise(mean = mean(time), sd = sd(time)) 
 
-data_alphabet_grouped %>% ggplot(aes(1-observations, mean, color = variant)) + 
+data_alphabet_grouped %>% ggplot(aes(observations, mean, color = variant)) + 
     geom_point() +
     geom_line() +
     geom_errorbar(aes(ymin=(mean-sd), ymax=(mean+sd) ), size = 0.3, alpha = .65) +
     facet_wrap(.~algorithm, scales = "free") + 
-    labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 10 replicates", title = "Running time of increasing denseness")
+    labs(x = "alphabet size", y = "mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Running time of increasing alphabet size")
 ggsave("alphabet_raw.pdf", height = 5, width = 9)
 
 
