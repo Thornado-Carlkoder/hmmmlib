@@ -4,12 +4,12 @@
 #include "viterbi.h"
 
 
-unsigned int* viterbi(HMM *hmm, const unsigned int *Y, const unsigned int T) {
+void viterbi(HMM *hmm, const unsigned int *Y, const unsigned int T, int * ds) {
     // Y is the data, T is the length of the data
     
     
     // allocate matrix[data][states]
-    double* table = calloc(T*hmm->hiddenStates, sizeof(double*)); // freed before return in viterbi()
+    double* table = calloc(T*hmm->hiddenStates, sizeof(double)); // freed before return in viterbi()
 
     
     // Compute initial probabilities
@@ -45,7 +45,6 @@ unsigned int* viterbi(HMM *hmm, const unsigned int *Y, const unsigned int T) {
      */
    
     // Backtrack
-    unsigned int* decodedStates = calloc(T, sizeof(int)); // freed by caller?
     unsigned int* decodedStateProbs = calloc(T, sizeof(int)); // freed by caller?
     
 
@@ -59,15 +58,15 @@ unsigned int* viterbi(HMM *hmm, const unsigned int *Y, const unsigned int T) {
             //printf("max is %f\n", backtrackMaximum);
         }
     }
-    decodedStates[T-1] = backtrackMaxIndex;
-    decodedStateProbs[T-1] = backtrackMaximum; // Hvis jeg gerne vil returnere denne, skal jeg så bare lægge den i enden på decodedStates ved returneringen?
+    ds[T-1] = backtrackMaxIndex;
+    decodedStateProbs[T-1] = backtrackMaximum; // Hvis jeg gerne vil returnere denne, skal jeg så bare lægge den i enden på ds ved returneringen?
     
     
     // finish backtracking
     for (unsigned int i = T-1; i > 0; i--) {
         for (unsigned int j = 0; j < hmm->hiddenStates; j++) {
-            if (table[(i-1)*hmm->hiddenStates + j] + log(hmm->transitionProbs[j*hmm->hiddenStates + decodedStates[i]]) + log(hmm->emissionProbs[decodedStates[i]*hmm->observations + Y[i]]) == table[i*hmm->hiddenStates + decodedStates[i]]) {
-                decodedStates[i-1] = j;
+            if (table[(i-1)*hmm->hiddenStates + j] + log(hmm->transitionProbs[j*hmm->hiddenStates + ds[i]]) + log(hmm->emissionProbs[ds[i]*hmm->observations + Y[i]]) == table[i*hmm->hiddenStates + ds[i]]) {
+                ds[i-1] = j;
                 break;
             }
         }
@@ -76,7 +75,5 @@ unsigned int* viterbi(HMM *hmm, const unsigned int *Y, const unsigned int T) {
 
     free(table);
     free(decodedStateProbs);
-    return decodedStates;
-
     
 }
