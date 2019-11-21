@@ -6,10 +6,6 @@ compiler:
   - gcc
   - clang
   
-install:
-  - sudo apt-get install -y lcov
-  - gem install coveralls-lcov
-  
 addons:
   apt:
     packages:
@@ -28,11 +24,6 @@ script:
   - ../build/exeHMMLIB
   - python3 --version
   - python3 ../../test_framework/test.py
-
-
-after_success:
-  - make coverage
-  - bash <(curl -s https://codecov.io/bash)
   
 branches:
   only:
