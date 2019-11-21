@@ -83,7 +83,7 @@ HMM * HMMSBLAS(const unsigned int hiddenStates, const unsigned int observations)
 }
 
 
-bool validateHMM(const HMM *hmm){
+
 
 //should be static
 bool validateHMM(const HMM *hmm){

@@ -3,7 +3,7 @@ project(HMMLIB)
 
 
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp")
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp")
 
 
  
