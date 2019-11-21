@@ -31,4 +31,4 @@ test_pinding () {
 }
 
 
-fresh_cmake && run_make && test_exe && test_pinding && echo -e "\n$(tput setaf 2)Complete build pipeline: success " || echo -e "\n$(tput setaf 1)Complete build pipeline: error "
+fresh_cmake && run_make && test_exe && test_pinding && echo -e "\n$(tput setaf 2)Complete build pipeline: success " && exit 0 || echo -e "\n$(tput setaf 1)Complete build pipeline: error " && exit 1
