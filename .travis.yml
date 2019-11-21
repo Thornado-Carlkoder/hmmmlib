@@ -6,6 +6,10 @@ compiler:
   - gcc
   - clang
   
+install:
+  - sudo apt-get install -y lcov
+  - gem install coveralls-lcov
+  
 addons:
   apt:
     packages:
@@ -24,6 +28,10 @@ script:
   - ../build/exeHMMLIB
   - python3 --version
   - python3 ../../test_framework/test.py
+  
+after_success:
+  - lcov --compat-libtool --directory . --capture --output-file coverage.info
+  - coveralls-lcov coverage.info
   
 branches:
   only:
