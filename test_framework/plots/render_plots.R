@@ -9,8 +9,14 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 #data <- read_csv("../oct-31.csv")
 #data <- read_csv("../oct-31-2.csv")
 #data = read_csv("../../hmmmlib/build/withblas.csv")
-#data = read_csv("../nov_16.csv")
+
+
+#first two:
+data = read_csv("../nov_16.csv")
+
 data = read_csv("../sparse_data.csv")
+data = read_csv("../alphabet_data.csv")
+
 
 
 
@@ -84,10 +90,10 @@ data_sparseness_grouped = data_sparseness %>%
     group_by(observations, algorithm, variant, iterations) %>% 
     summarise(mean = mean(time), sd = sd(time)) 
 
-data_sparseness_grouped %>% ggplot(aes(1-observations, mean, color = variant)) + 
+data_sparseness_grouped %>% ggplot(aes(observations, mean, color = variant)) + 
     geom_point() +
     geom_line() +
-    geom_errorbar(aes(ymin=(mean-sd), ymax=(mean+sd) ), size = 0.3, alpha = .65) +
+    #geom_errorbar(aes(ymin=(mean-sd), ymax=(mean+sd) ), size = 0.3, alpha = .65) +
     facet_wrap(.~algorithm, scales = "free") + 
     labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 10 replicates", title = "Running time of increasing denseness")
 ggsave("denseness_raw.pdf", height = 5, width = 9)
@@ -101,7 +107,20 @@ ggsave("denseness_raw.pdf", height = 5, width = 9)
 # ggsave("denseness_normalized.pdf", height = 5, width = 9)
 
 
+# Sparseness
+data_alphabet = data %>% filter(test == "alphabetsize") %>% filter(is.na(iterations) | iterations == 1)
 
+data_alphabet_grouped = data_alphabet %>%
+    group_by(observations, algorithm, variant, iterations) %>% 
+    summarise(mean = mean(time), sd = sd(time)) 
+
+data_alphabet_grouped %>% ggplot(aes(1-observations, mean, color = variant)) + 
+    geom_point() +
+    geom_line() +
+    geom_errorbar(aes(ymin=(mean-sd), ymax=(mean+sd) ), size = 0.3, alpha = .65) +
+    facet_wrap(.~algorithm, scales = "free") + 
+    labs(x = "hidden states", y = "mean time [s]", caption = "error bars: standard deviation of 10 replicates", title = "Running time of increasing denseness")
+ggsave("alphabet_raw.pdf", height = 5, width = 9)
 
 
 
