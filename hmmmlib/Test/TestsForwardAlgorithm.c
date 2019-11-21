@@ -82,8 +82,8 @@ bool testForwardAlgorithm() {
         }
     }
     
-    assert(valdidateHMM(hmmCon) == true);
-    assert(valdidateHMM(hmmBLAS) == true);
+    assert(validateHMM(hmmCon) == true);
+    assert(validateHMM(hmmBLAS) == true);
 
     HMMDeallocate(hmmCon);
     HMMDeallocate(hmmBLAS);
@@ -161,7 +161,9 @@ bool testForwardAlgorithm() {
     }
     free(alpha2);
     free(scaleFactorS);
-    assert(valdidateHMM(hmm2) == true);
+    printf("Going to print the hmm with printHMM()");
+    printHMM(hmm2);
+    assert(validateHMM(hmm2) == true);
     HMMDeallocate(hmm2);
     HMMDeallocate(hmmSBLAS);
     

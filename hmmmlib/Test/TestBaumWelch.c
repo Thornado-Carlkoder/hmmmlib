@@ -57,7 +57,7 @@ bool testBaumWelch() {
     
     //printHMM(hmm);
     
-    assert(valdidateHMM(hmm) == true);
+    assert(validateHMM(hmm) == true);
     HMMDeallocate(hmm);
     
     return true;
