@@ -4,6 +4,20 @@ from copy import copy
 ## These tests are equivalent to the ones in main_test.c
 ## Made in order to check that the python-binding is successfull.
 
+"""
+Description
+
+This test file compares expected output with computed output for all algorithms. That means, that running 
+this file successfully is proof that "everything works" and that the binding is sane.
+
+This test file should be run from the hmmmlib/build/ directory:
+    example:
+    $ python ../../test_framework/test.py
+
+"""
+
+
+
 def test_viterbi(hmmType = "Conventional"):
     # create HMM for testing viterbi
     o = binded_HMM(7, 4, hmmType = hmmType)
