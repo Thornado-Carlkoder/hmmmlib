@@ -3,7 +3,7 @@
 //  hmmmmlib
 //
 
-#include "TestsForwardAlgorithm.h"
+#include "TestForward.h"
 #include "hmm.h"
 #include <assert.h>
 #include <stdlib.h>
