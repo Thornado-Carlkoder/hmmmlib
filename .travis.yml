@@ -5,9 +5,11 @@ os:
 compiler:
   - gcc
   - clang
-env:
-  global:
-  -CODECOV_TOKEN="4813d1d2-70b1-4e6f-b359-5b19330e81ae"
+  
+install:
+  - sudo apt-get install -y lcov
+  - gem install coveralls-lcov
+  
 addons:
   apt:
     sources:
@@ -35,19 +37,9 @@ script:
 
 
 after_success:
-  # Create lcov report
-  # capture coverage info
-  - lcov --directory . --capture --output-file coverage.info
-  # filter out system and extra files.
-  # To also not include test code in coverage add them with full path to the patterns: '*/tests/*'
-  - lcov --remove coverage.info '/usr/*' "${HOME}"'/.cache/*' --output-file coverage.info
-  # output coverage data for debugging (optional)
-  - lcov --list coverage.info
-  - tree
-  # Uploading to CodeCov
-  # '-f' specifies file(s) to use and disables manual coverage gathering and file search which has already been done above
-  - bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
-
+  - make coverage
+  - bash <(curl -s https://codecov.io/bash)
+  
 branches:
   only:
     - master
