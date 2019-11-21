@@ -43,6 +43,7 @@ void b_emission_rsb_mtx(HMM * hmm, double ** sparseMatrixs, struct rsb_mtx_t ** 
     for(i = 0; i < hmm->observations; i++){
         for(j = 0; j < nnz; j++){
             final_a[j] = sparseMatrixs[i][final_ia[j]*hmm->hiddenStates+final_ja[j]];
+            //printf("%f, ", final_a[j]);
         }
         rsb_mtx[i] = rsb_mtx_alloc_from_coo_const(final_a, final_ia, final_ja, nnz, typecode, hmm->hiddenStates, hmm->hiddenStates, brA, bcA, RSB_FLAG_NOFLAGS | RSB_FLAG_DUPLICATES_SUM, errval);
     }
@@ -71,7 +72,7 @@ void backward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, doubl
         new_emission_probs[i] = emission_probs;
     }
     free(matrix);
-    
+
     const int bs = RSB_DEFAULT_BLOCKING;
     const int brA = bs, bcA = bs;
     const RSB_DEFAULT_TYPE one = 1;
@@ -94,23 +95,10 @@ void backward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, doubl
     }
     
     for(i = 1; i < T; i++){
-        rsb_spmv(RSB_TRANSPOSITION_C, &one, mtx[Y[T-i]], beta+hmm->hiddenStates*T-i*hmm->hiddenStates, 1, &one, beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
-        for(j = 0; j < hmm->hiddenStates; j++){
-           printf("%f, ", beta[(T-i)*hmm->hiddenStates+j]);
-       }
-       printf("\n");
+        rsb_spmv(RSB_TRANSPOSITION_N, &one, mtx[Y[T-i]], beta+hmm->hiddenStates*T-i*hmm->hiddenStates, 1, &one, beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
         cblas_dscal(hmm->hiddenStates, scalingFactor[T-i], beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
     }
 
-    printf("Backward\n");
-    for(i = 0; i < T; i++){
-       for(j = 0; j < hmm->hiddenStates; j++){
-           printf("%f, ", beta[i*hmm->hiddenStates+j]);
-       }
-       printf("\n");
-    }
-    printf("\n");
-    
     for(i = 0; i < hmm->observations; i++){
         free(mtx[i]);
     }
