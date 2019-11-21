@@ -48,7 +48,7 @@ after_success:
   - tree
   # Uploading to CodeCov
   # '-f' specifies file(s) to use and disables manual coverage gathering and file search which has already been done above
-  - bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
+  #- bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
   - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
 
 branches:
