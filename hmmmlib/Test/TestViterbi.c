@@ -2,8 +2,6 @@
 
 
 #include "viterbi.h"
-//#include "viterbi.c"
-
 #include "hmm.h"
 
 
@@ -79,7 +77,6 @@ extern bool testViterbi() {
     } 
     free(table);
     
-
     assert(valdidateHMM(hmm) == true);
     HMMDeallocate(hmm);
     
