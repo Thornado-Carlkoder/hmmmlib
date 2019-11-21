@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-void posteriorDecoding(HMM * hmm, const unsigned int *Y, const int T, int * states){
+void posteriorDecoding(HMM * hmm, const unsigned int *Y, const unsigned int T, unsigned int * states){
     
     double * alpha = calloc(hmm->hiddenStates*T, sizeof(double));
     double * beta = calloc(hmm->hiddenStates*T, sizeof(double));

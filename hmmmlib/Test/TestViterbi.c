@@ -66,7 +66,7 @@ extern bool testViterbi() {
     int nData = 99;
     
     // allocate matrix[data][states]
-    int * table = calloc(nData*hmm->hiddenStates, sizeof(int)); // freed before return in viterbi()
+    unsigned int * table = calloc(nData*hmm->hiddenStates, sizeof(int)); // freed before return in viterbi()
 
     viterbi(hmm, obs, nData, table);
     
