@@ -157,18 +157,12 @@ bool testForwardAlgorithm() {
         }
     }
     free(alpha2);
-<<<<<<< HEAD:hmmmlib/Test/TestsForwardAlgorithm.c
     free(scaleFactorS);
     printf("Going to print the hmm with printHMM()");
     printHMM(hmm2);
     assert(validateHMM(hmm2) == true);
     HMMDeallocate(hmm2);
     HMMDeallocate(hmmSBLAS);
-=======
-    free(scaleFactor2);
-    assert(validateHMM(hmm2) == true);
-    HMMDeallocate(hmm2);
->>>>>>> master:hmmmlib/Test/TestForward.c
     
     return true;
 }

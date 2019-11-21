@@ -65,7 +65,6 @@ HMM * HMMCsr(const unsigned int hiddenStates, const unsigned int observations) {
     return newHMM;
 }
 
-<<<<<<< HEAD
 HMM * HMMSBLAS(const unsigned int hiddenStates, const unsigned int observations) {
 
     HMM * newHMM = calloc(1, sizeof(HMM));
@@ -86,11 +85,9 @@ HMM * HMMSBLAS(const unsigned int hiddenStates, const unsigned int observations)
 
 bool validateHMM(const HMM *hmm){
 
-=======
 //should be static
 bool validateHMM(const HMM *hmm){
 
->>>>>>> master
     double sum;
     double epsilon = 0.00001;
     int i, j;

@@ -1,15 +1,12 @@
 cmake_minimum_required(VERSION 3.7.2)
 project(HMMLIB)
 
-<<<<<<< HEAD
 
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp")
 
 
  
-=======
->>>>>>> master
 include_directories(
        ${CMAKE_SOURCE_DIR}/src/
        ${CMAKE_SOURCE_DIR}/src/Decoding
@@ -39,10 +36,7 @@ file(GLOB SOURCES
        ${PROJECT_SOURCE_DIR}/src/Training/*.c
        ${PROJECT_SOURCE_DIR}/src/Training/*.h)
 
-<<<<<<< HEAD
 # Initialize shared object
-=======
->>>>>>> master
 add_library(HMMLIB SHARED ${PROJECT_SOURCE_DIR}/src/shared.c)
 
 target_link_libraries(HMMLIB m)
