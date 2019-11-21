@@ -5,7 +5,9 @@ os:
 compiler:
   - gcc
   - clang
-
+env:
+  global:
+  -CODECOV_TOKEN="4813d1d2-70b1-4e6f-b359-5b19330e81ae"
 addons:
   apt:
     sources:
