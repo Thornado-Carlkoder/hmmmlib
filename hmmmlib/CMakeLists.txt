@@ -3,7 +3,7 @@ project(HMMLIB)
 
 
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp")
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp")
 
 
  
@@ -59,11 +59,13 @@ target_link_libraries(HMMLIB /usr/local/lib/librsb.a)
 
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY POSITION_INDEPENDENT_CODE 1) #or #set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+#
+#
+# For codecoverage
+#
+#
+#SET(GCC_COVERAGE_COMPILE_FLAGS "-fprofile-arcs -ftest-coverage")
 
-
-
-
-# Add Tests content for the executable
 include_directories(
        ${CMAKE_SOURCE_DIR}/src/
        ${CMAKE_SOURCE_DIR}/src/Decoding
@@ -97,11 +99,8 @@ file(GLOB exeSOURCES
        ${PROJECT_SOURCE_DIR}/src/Training/*.c
        ${PROJECT_SOURCE_DIR}/src/Training/*.h)
 
-
-#
-# Comment the following to create a library
-#
 add_executable(exeHMMLIB ${exeSOURCES})
+set_source_files_properties(exeHMMLIB PROPERTIES COMPILE_FLAGS "-fprofile-arcs -ftest-coverage" )
 target_link_libraries(exeHMMLIB m cblas)
 target_link_libraries(exeHMMLIB rsb)
 #target_link_libraries(exeHMMLIB hwloc)
@@ -118,6 +117,12 @@ target_link_libraries(exeHMMLIB /usr/local/lib/librsb.a)
 
 
 
+
+#
+#
+# Creates a filestructure to be used by the IDE.
+#
+#
 foreach(FILE ${exeSOURCES}) 
     # Get the directory of the source file
     get_filename_component(PARENT_DIR "${FILE}" DIRECTORY)

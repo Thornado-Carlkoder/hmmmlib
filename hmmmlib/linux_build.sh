@@ -3,20 +3,32 @@
 
 
 # Run fresh cmake
-rm -r build
-mkdir build
-cd build
-cmake .. && echo -e "cmake successfull\n"
-
+fresh_cmake () {
+    echo -e "Initializing fresh cmake build:"
+    rm -r build
+    mkdir build
+    cd build
+    cmake .. && echo -e "cmake: success\n"
+}
 
 
 # Run make
-make && echo -e "Built into build/\nmake successfull"
+run_make () {
+    make && echo -e "Built into build/\nmake: success\n"
+}
+
 
 # Test exe
-echo -e "\nExecuting executable:"
-../build/exeHMMLIB
+test_exe () {
+    echo -e "Executing executable:"
+    ../build/exeHMMLIB && echo -e "executable: success\n"
+}
 
 # Test pinding
-#echo -e "\nRunning python binding test(s):"
-#python ../../test_framework/test.py; 
+test_pinding () {
+    echo -e "Running python binding test(s):"
+    python ../../test_framework/test.py && echo -e "python binding tests: success"; 
+}
+
+
+fresh_cmake && run_make && test_exe && test_pinding && echo -e "\n$(tput setaf 2)Complete build pipeline: success " && exit 0 || echo -e "\n$(tput setaf 1)Complete build pipeline: error " && exit 1

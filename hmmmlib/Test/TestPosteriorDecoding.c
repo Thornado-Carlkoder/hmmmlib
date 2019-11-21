@@ -53,15 +53,18 @@ extern bool testPosteriorDecoding() {
     unsigned int expected[105] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0};    
     unsigned int data_len = 105;
 
-    unsigned int * result = posteriorDecoding(hmm, data, data_len);
+    unsigned int * states = calloc(data_len, sizeof(int));
+    
+    posteriorDecoding(hmm, data, data_len, states);
 
     // debug print output from algorithm
     for (unsigned int i = 0; i < data_len; i++) {
         //printf("%u(%u) ", result[i], expected[i]);
-        assert(result[i] == expected[i]);
+        assert(states[i] == expected[i]);
     }
     
-    assert(valdidateHMM(hmm) == true);
+    free(states);
+    assert(validateHMM(hmm) == true);
     HMMDeallocate(hmm);
 
     return true;

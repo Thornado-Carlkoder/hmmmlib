@@ -9,14 +9,20 @@
 
 #include <stdio.h>
 
-#include "TestsForwardAlgorithm.h"
-#include "testBackwardAlgorithm.h"
+#include "TestForward.h"
+#include "TestBackward.h"
 #include "TestBaumWelch.h"
 #include "TestViterbi.h"
 #include "TestPosteriorDecoding.h"
+#include "RunningTimeTest.h"
 
 int main() {
     
+    /*
+     RunningTimeTest
+     */
+    //runningTimeTest();
+    //printf("\n");
     /*
      Testing the forward algorithm
      */

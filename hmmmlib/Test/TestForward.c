@@ -2,15 +2,13 @@
 //  TestsForwardAlgorithm.c
 //  hmmmmlib
 //
-//  Created by Thor Jakobsen on 30/08/2019.
-//  Copyright © 2019 Thor Jakobsen. All rights reserved.
-//
 
-#include "TestsForwardAlgorithm.h"
+#include "TestForward.h"
 #include "hmm.h"
 #include <assert.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 bool testForwardAlgorithm() {
     HMM * hmmCon = HMMConventional(2, 2);
@@ -49,8 +47,10 @@ bool testForwardAlgorithm() {
         }
     }
     
+    
     const unsigned int observation[10] = {0, 0, 0, 0, 0, 1, 1, 0, 0, 0};
     const unsigned int obsLenght = 10;
+    
     
     double * alphaCon = calloc(hmmCon->hiddenStates*obsLenght, sizeof(double));
     double * alphaBLAS = calloc(hmmCon->hiddenStates*obsLenght, sizeof(double));
@@ -77,13 +77,13 @@ bool testForwardAlgorithm() {
     
     for(i = 0; i < obsLenght; i++){
         for(j = 0; j < hmmCon->hiddenStates; j++){
-            assert(abs(alphaBLAS[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j] < 0.00001));
-            assert(abs(alphaCon[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j] < 0.00001));
+            assert(fabs(alphaBLAS[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j]) < 0.00001);
+            assert(fabs(alphaCon[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j]) < 0.00001);
         }
     }
     
-    assert(valdidateHMM(hmmCon) == true);
-    assert(valdidateHMM(hmmBLAS) == true);
+    assert(validateHMM(hmmCon) == true);
+    assert(validateHMM(hmmBLAS) == true);
 
     HMMDeallocate(hmmCon);
     HMMDeallocate(hmmBLAS);
@@ -161,9 +161,15 @@ bool testForwardAlgorithm() {
     }
     free(alpha2);
     free(scaleFactorS);
+<<<<<<< HEAD:hmmmlib/Test/TestsForwardAlgorithm.c
     printHMM(hmm2);
     assert(valdidateHMM(hmmSBLAS));
     assert(valdidateHMM(hmm2));
+=======
+    //printf("Going to print the hmm with printHMM()");
+    //printHMM(hmm2);
+    assert(validateHMM(hmm2) == true);
+>>>>>>> e90da5c27e3c531f6f9a0d99becab5ae3510d8f4:hmmmlib/Test/TestForward.c
     HMMDeallocate(hmm2);
     HMMDeallocate(hmmSBLAS);
     

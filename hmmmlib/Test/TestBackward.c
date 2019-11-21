@@ -1,9 +1,10 @@
-#include "testBackwardAlgorithm.h"
+#include "TestBackward.h"
 #include "hmm.h"
 
 #include <assert.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 extern bool testBackwardAlgorithm() {
     HMM * hmmCon = HMMConventional(2, 2);
@@ -72,15 +73,15 @@ extern bool testBackwardAlgorithm() {
     
     for(i = 0; i < obsLenght; i++){
        for(j = 0; j < hmmCon->hiddenStates; j++){
-           assert(abs(betaBlas[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j] < 0.00001));
-           assert(abs(betaCon[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j] < 0.00001));
+           assert(fabs(betaBlas[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j]) < 0.00001);
+           assert(fabs(betaCon[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j]) < 0.00001);
        }
     }
     
-    assert(valdidateHMM(hmmCon) == true);
+    assert(validateHMM(hmmCon) == true);
     HMMDeallocate(hmmCon);
 
-    assert(valdidateHMM(hmmBlas) == true);
+    assert(validateHMM(hmmBlas) == true);
     HMMDeallocate(hmmBlas);
     
     HMM * hmm2 = HMMBLAS(7, 4);
@@ -127,7 +128,7 @@ extern bool testBackwardAlgorithm() {
 
     const unsigned int observation2[10] = {0,1,2,3,3,2,1,3,2,1};
     const unsigned int obsLenght2 = 10;
-    
+
     double * scaleFactor2 = calloc(obsLenght2, sizeof(double));
 
     double * alphaS = calloc(obsLenght2*hmm2->hiddenStates, sizeof(double));
@@ -153,15 +154,15 @@ extern bool testBackwardAlgorithm() {
     
     
     double test2beta[70] = {1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000,
-        0.631863, 0.987285, 1.382200, 0.997158, 0.789828, 1.184743, 1.520420,
-        1.110377, 0.640795, 0.600745, 1.014258, 1.441788, 1.233530, 0.966198,
-        0.678220, 0.938276, 0.812214, 1.026372, 1.042341, 1.428777, 0.655376,
-        0.536116, 0.671809, 1.301170, 1.021738, 1.132217, 0.779017, 1.588450,
-        1.044681, 0.539040, 0.405283, 1.045212, 0.939918, 1.277689, 1.332193,
-        0.509689, 0.907717, 0.702552, 1.064127, 1.110176, 2.025684, 0.481032,
-        0.733717, 0.404995, 1.081898, 1.008185, 1.609595, 0.668894, 0.502656,
-        0.876315, 0.730823, 0.242038, 1.043087, 0.799506, 0.400538, 1.831926,
-        0.232683, 0.867638, 1.013022, 1.000000, 0.317258, 2.176545, 1.243165};
+                            0.631863, 0.987285, 1.382200, 0.997158, 0.789828, 1.184743, 1.520420,
+                            1.110377, 0.640795, 0.600745, 1.014258, 1.441788, 1.233530, 0.966198,
+                            0.678220, 0.938276, 0.812214, 1.026372, 1.042341, 1.428777, 0.655376,
+                            0.536116, 0.671809, 1.301170, 1.021738, 1.132217, 0.779017, 1.588450,
+                            1.044681, 0.539040, 0.405283, 1.045212, 0.939918, 1.277689, 1.332193,
+                            0.509689, 0.907717, 0.702552, 1.064127, 1.110176, 2.025684, 0.481032,
+                            0.733717, 0.404995, 1.081898, 1.008185, 1.609595, 0.668894, 0.502656,
+                            0.876315, 0.730823, 0.242038, 1.043087, 0.799506, 0.400538, 1.831926,
+                            0.232683, 0.867638, 1.013022, 1.000000, 0.317258, 2.176545, 1.243165};
 
     for(i = 0; i < obsLenght2; i++){
         for(j = 0; j < hmm2->hiddenStates; j++){
@@ -178,7 +179,8 @@ extern bool testBackwardAlgorithm() {
     }
     free(alpha2);
     free(beta2);
-    assert(valdidateHMM(hmm2) == true);
+    free(scaleFactor2);
+    assert(validateHMM(hmm2) == true);
     HMMDeallocate(hmm2);
     
     HMM * hmm3 = HMMCsr(7, 4);
@@ -209,8 +211,11 @@ extern bool testBackwardAlgorithm() {
         }
     }
 
-    assert(valdidateHMM(hmm3) == true);
+    assert(validateHMM(hmm3) == true);
     HMMDeallocate(hmm3);
+    free(alpha3);
+    free(scaleFactor3);
+    free(beta3);
 
     return true;
 }

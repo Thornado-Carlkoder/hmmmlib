@@ -14,6 +14,8 @@
 #include "backward_csr.h"
 
 #include "forward_sblas.h"
+#include "backward_sblas.h"
+
 
 HMM * HMMConventional(const unsigned int hiddenStates, const unsigned int observations) {
     HMM * newHMM = calloc(1, sizeof(HMM));
@@ -70,7 +72,7 @@ HMM * HMMSBLAS(const unsigned int hiddenStates, const unsigned int observations)
     HMM * newHMM = calloc(1, sizeof(HMM));
 
     newHMM->forward = forward_sblas;
-    newHMM->backward = backward_csr;
+    newHMM->backward = backward_sblas;
 
     newHMM->hiddenStates = hiddenStates;
     newHMM->observations = observations;
@@ -82,45 +84,47 @@ HMM * HMMSBLAS(const unsigned int hiddenStates, const unsigned int observations)
     return newHMM;
 }
 
+
+
+
 //should be static
-bool valdidateHMM(const HMM *hmm){
+bool validateHMM(const HMM *hmm){
 
-    unsigned int i = 0;
-    unsigned int j = 0;
-    double sum = 0.0;
-
+    double sum;
     double epsilon = 0.00001;
+    int i, j;
 
-    //Summing initprobs
-
-    for(i = 0; i < hmm->hiddenStates; i++) {
+    // Init probs.
+    sum = 0.0;
+    for (i = 0; i < hmm->hiddenStates; i++) {
         sum += hmm->initProbs[i];
-        printf("sum is %f\n", sum);
     }
     if(fabs(sum - 1.0) > epsilon) {
-        printf("will return false because of the initprobs\n");
+        printf("Error: the sum of initProbs is %f\n", sum);
         return false;
     }
 
 
+    // Transition matrix
     for (i = 0; i < hmm->hiddenStates; i++) {
-
-
         sum = 0.0;
         for (j = 0; j < hmm->hiddenStates; j++) sum += hmm->transitionProbs[i*hmm->hiddenStates+j];
         if (fabs(sum-1.0) > epsilon) {
-            printf("will return false because of the transprobs\n");
+            printf("Error: the sum of row %d in transitionProbs is %f", i, sum);
             return false;
         }
+    }
 
+    // Emission matrix
+    for (i = 0; i < hmm->hiddenStates; i++) {
         sum = 0.0;
-        for (j = 0; j < hmm->observations; j++) sum += hmm->emissionProbs[i*hmm->hiddenStates+j];
+        for (j = 0; j < hmm->observations; j++) sum += hmm->emissionProbs[i*hmm->observations+j];
         if (fabs(sum-1.0) > epsilon) {
-            printf("will return false because of the initprobs\n");
+            printf("Error: the sum of row %d in emissionProbs is %f", i, sum);
             return false;
         } 
     }
-    //printf("will return true now\n");
+
     return true;
 }
 
