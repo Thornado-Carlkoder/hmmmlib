@@ -70,6 +70,20 @@ file(GLOB exeSOURCES
 add_executable(exeHMMLIB ${exeSOURCES})
 target_link_libraries(exeHMMLIB m cblas)
 
+#
+#
+# For codecoverage 
+#
+#
+if(CMAKE_BUILD_TYPE MATCHES Debug)
+    include(CodeCoverage)
+    APPEND_COVERAGE_COMPILER_FLAGS()
+    SETUP_TARGET_FOR_COVERAGE_LCOV(
+        NAME coverage
+        EXECUTABLE exeHMMLIB
+    )
+endif(CMAKE_BUILD_TYPE MATCHES Debug)
+
 
 #
 #
