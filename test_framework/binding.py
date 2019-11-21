@@ -4,9 +4,13 @@ import os
 # authors: Thornado & Carl Koder
 
 """
-TODO
-* make getters for the datastructures
-* set up tests for each algorithm
+Description:
+
+This file creates a mirrored version of the HMM struct from hmm.c in the c-library
+In then mirrors all its methods and algorithms in python such that all functionality in the c-library is accessible from python.
+
+This file is used in test.py, which validates output of all the algorithms
+It is also used by running_time.py, which calls each function on increasing parameters and records the timing.
 
 """
 
@@ -33,7 +37,7 @@ class binded_HMM:
         self.libhmm.HMMCsr.restype = c.POINTER(HMM)
         
         
-        self.libhmm.valdidateHMM.restype = c.c_bool
+        self.libhmm.validateHMM.restype = c.c_bool
         self.libhmm.printHMM.restype = c.c_void_p
         self.libhmm.HMMDeallocate.restype = c.c_void_p
 
@@ -105,10 +109,10 @@ class binded_HMM:
                 row_sum += value
             print(end = '\t(' + str(row_sum) + ')\n  ')
         print()
-        print(' The internal validation state is:', self.libhmm.valdidateHMM(self.hmm))
+        print(' The internal validation state is:', self.libhmm.validateHMM(self.hmm))
 
     def validate(self):
-        return self.libhmm.valdidateHMM(self.hmm)
+        return self.libhmm.validateHMM(self.hmm)
 
     ## Setters ##
     def setInitProbs(self, pi):
@@ -237,16 +241,20 @@ class binded_HMM:
     
 
     def viterbi(self, observation_data):
-        output = self.libhmm.viterbi(self.hmm,
+        output = (c.c_uint * len(observation_data))(*([0]*len(observation_data)))
+        dummy_output = self.libhmm.viterbi(self.hmm,
                                      (c.c_uint * len(observation_data))(*observation_data),
-                                     len(observation_data)) 
+                                     len(observation_data),
+                                     output) 
         return [output[i] for i in range(len(observation_data))] # Evt. generator?
 
 
     def posteriorDecoding(self, observation_data):
-        output = self.libhmm.posteriorDecoding(self.hmm,
+        output = (c.c_uint * len(observation_data))(*([0]*len(observation_data)))
+        dummy_output = self.libhmm.posteriorDecoding(self.hmm,
                                                (c.c_uint * len(observation_data))(*observation_data),
-                                               len(observation_data)) 
+                                               len(observation_data),
+                                               output) 
         return [output[i] for i in range(len(observation_data))] # Evt. generator?
 
 
@@ -275,7 +283,7 @@ class binded_HMM:
     def deallocate(self):
         
         c_struct = c.POINTER(HMM)(self.hmm)
-        self.libhmm.HMMDeallocate(c_struct) # Jeg ved ikke hvorfor denne ikke virker???
+        self.libhmm.HMMDeallocate(c_struct) 
 
 
 
