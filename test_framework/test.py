@@ -163,7 +163,6 @@ print('BLAS viterbi', test_viterbi("BLAS"))
 print('CSR fw', test_forward("CSR"))
 print('CSR bw', test_backward("CSR"))
 print('CSR viterbi', test_viterbi("CSR"))
-"""
+
 print('CSR posterior decoding', test_posterior_decoding("CSR"))
 print('CSR baum-welch', test_baumwelch("CSR")) 
-"""

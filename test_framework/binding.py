@@ -241,16 +241,20 @@ class binded_HMM:
     
 
     def viterbi(self, observation_data):
-        output = self.libhmm.viterbi(self.hmm,
+        output = (c.c_uint * len(observation_data))(*([0]*len(observation_data)))
+        dummy_output = self.libhmm.viterbi(self.hmm,
                                      (c.c_uint * len(observation_data))(*observation_data),
-                                     len(observation_data)) 
+                                     len(observation_data),
+                                     output) 
         return [output[i] for i in range(len(observation_data))] # Evt. generator?
 
 
     def posteriorDecoding(self, observation_data):
-        output = self.libhmm.posteriorDecoding(self.hmm,
+        output = (c.c_uint * len(observation_data))(*([0]*len(observation_data)))
+        dummy_output = self.libhmm.posteriorDecoding(self.hmm,
                                                (c.c_uint * len(observation_data))(*observation_data),
-                                               len(observation_data)) 
+                                               len(observation_data),
+                                               output) 
         return [output[i] for i in range(len(observation_data))] # Evt. generator?
 
 

@@ -3,7 +3,7 @@
 
 
 # Run fresh cmake
-fresh_build () {
+fresh_cmake () {
     rm -r build
     mkdir build
     cd build
@@ -31,4 +31,4 @@ test_pinding () {
 }
 
 
-fresh_build && make && test_exe && test_pinding
+fresh_cmake && make && test_exe && test_pinding
