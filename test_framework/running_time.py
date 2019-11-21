@@ -5,7 +5,21 @@ import time, sys, random, decimal
 Description:
 
 This file imports the defined python binding (hmm_binding) and calls the algorithms with
-varying parameters and records the time it takes for each function/algorithm call
+varying parameters and records the time it takes for each function/algorithm call.
+
+This file should be called in the hmmlib/build/ directory with the following command:
+    $ python ../../test_framework/running_time.py <input|statespace|sparse|alphabet> | cat
+
+    example:
+    $ python ../../test_framework/running_time.py input | cat
+    ... which will run the varying input size tests
+
+Note that this program will output to stderr and stdout at the same time. As a consequence outputs must be piped correctly:
+You can either use the `| cat` or you can pipe it directly to a .csv file for further processing in plotting software.
+
+    example:
+    $ python ../../test_framework/running_time.py input > inputsize_runningtime_data_for_future_plotting.csv
+
 
 """
 
