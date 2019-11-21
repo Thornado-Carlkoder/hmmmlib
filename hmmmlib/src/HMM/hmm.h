@@ -23,8 +23,11 @@ HMM * HMMBLAS(const unsigned int hiddenStates, const unsigned int observations);
 
 HMM * HMMCsr(const unsigned int hiddenStates, const unsigned int observations);
 
+<<<<<<< HEAD
 HMM * HMMSBLAS(const unsigned int hiddenStates, const unsigned int observations);
 
+=======
+>>>>>>> master
 bool validateHMM(const HMM *hmm);
 
 void F(HMM *hmm, const unsigned int *Y, const unsigned int T, double * scalingFactor, double * alpha);

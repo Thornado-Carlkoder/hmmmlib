@@ -1,12 +1,15 @@
 cmake_minimum_required(VERSION 3.7.2)
 project(HMMLIB)
 
+<<<<<<< HEAD
 
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp")
 
 
  
+=======
+>>>>>>> master
 include_directories(
        ${CMAKE_SOURCE_DIR}/src/
        ${CMAKE_SOURCE_DIR}/src/Decoding
@@ -36,7 +39,10 @@ file(GLOB SOURCES
        ${PROJECT_SOURCE_DIR}/src/Training/*.c
        ${PROJECT_SOURCE_DIR}/src/Training/*.h)
 
+<<<<<<< HEAD
 # Initialize shared object
+=======
+>>>>>>> master
 add_library(HMMLIB SHARED ${PROJECT_SOURCE_DIR}/src/shared.c)
 
 target_link_libraries(HMMLIB m)
@@ -60,10 +66,6 @@ target_link_libraries(HMMLIB /usr/local/lib/librsb.a)
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY POSITION_INDEPENDENT_CODE 1) #or #set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-
-
-
-# Add Tests content for the executable
 include_directories(
        ${CMAKE_SOURCE_DIR}/src/
        ${CMAKE_SOURCE_DIR}/src/Decoding
@@ -97,10 +99,6 @@ file(GLOB exeSOURCES
        ${PROJECT_SOURCE_DIR}/src/Training/*.c
        ${PROJECT_SOURCE_DIR}/src/Training/*.h)
 
-
-#
-# Comment the following to create a library
-#
 add_executable(exeHMMLIB ${exeSOURCES})
 target_link_libraries(exeHMMLIB m cblas)
 target_link_libraries(exeHMMLIB rsb)
@@ -118,6 +116,12 @@ target_link_libraries(exeHMMLIB /usr/local/lib/librsb.a)
 
 
 
+
+#
+#
+# Creates a filestructure to be used by the IDE.
+#
+#
 foreach(FILE ${exeSOURCES}) 
     # Get the directory of the source file
     get_filename_component(PARENT_DIR "${FILE}" DIRECTORY)

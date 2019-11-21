@@ -2,8 +2,6 @@
 
 
 #include "viterbi.h"
-//#include "viterbi.c"
-
 #include "hmm.h"
 
 
@@ -67,17 +65,22 @@ extern bool testViterbi() {
     unsigned int * obs = obsTest1;
     int nData = 99;
     
+    // allocate matrix[data][states]
+    unsigned int * table = calloc(nData*hmm->hiddenStates, sizeof(int)); // freed before return in viterbi()
 
-    unsigned int * viterbiResult = viterbi(hmm, obs, nData);
+    viterbi(hmm, obs, nData, table);
     
     
     for (int i = 0; i < nData; i++) {
         //printf("%u/%u ", viterbiResult[i], expectedTest1[i]);
-        assert(viterbiResult[i] == expectedTest1[i]);
+        assert(table[i] == expectedTest1[i]);
     } 
-    free(viterbiResult);
+    free(table);
     
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     assert(validateHMM(hmm) == true);
     HMMDeallocate(hmm);
     

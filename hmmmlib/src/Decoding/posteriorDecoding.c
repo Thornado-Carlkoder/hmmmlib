@@ -2,28 +2,15 @@
 #include <stdlib.h>
 #include <math.h>
 
-unsigned int * posteriorDecoding(HMM * hmm, const unsigned int *Y, const int T){
-    //                     hmm-obj    data          len(data)
+void posteriorDecoding(HMM * hmm, const unsigned int *Y, const unsigned int T, unsigned int * states){
     
     double * alpha = calloc(hmm->hiddenStates*T, sizeof(double));
     double * beta = calloc(hmm->hiddenStates*T, sizeof(double));
     double * scalingFactor = calloc(T, sizeof(double));
     
-    F(hmm, Y, T, scalingFactor, alpha); // scalingFactor bliver sat her.
-    B(hmm, Y, T, scalingFactor, beta); // scalingFactor bliver brugt her.
+    F(hmm, Y, T, scalingFactor, alpha);
+    B(hmm, Y, T, scalingFactor, beta);
 
-    // Debug print alpha
-    /* printf("Forward\n1:\t");
-    for (unsigned int i = 0; i < T; i++){
-        for (unsigned int j = 0; j < hmm->hiddenStates; j++){
-            printf("%f, ", alpha[i*hmm->hiddenStates+j]);
-        }
-        printf("\n%d:\t", i+2);
-    }
-    printf("\n");
- */
-
-    unsigned int * z = calloc(T, sizeof(unsigned int));
     double * z_ = calloc(T, sizeof(double));
     
     //double posterior; // Skal posterior ikke være en liste?
@@ -45,7 +32,7 @@ unsigned int * posteriorDecoding(HMM * hmm, const unsigned int *Y, const int T){
                 //printf("max is %f\n", max);
             }
         }
-        z[i] = maxIndex;
+        states[i] = maxIndex;
         z_[i] = max;
         
     }
@@ -53,15 +40,6 @@ unsigned int * posteriorDecoding(HMM * hmm, const unsigned int *Y, const int T){
     free(scalingFactor);
     free(alpha);
     free(beta);
-    
-    
-//    for (unsigned int i = 0; i < T; i++) {
-//        printf("%d", z[i]);
-//    }
-//    printf("\n");
-//
-//    printf("leaving\n");
-    
-
-    return z;
+    free(posterior);
+    free(z_);
 }

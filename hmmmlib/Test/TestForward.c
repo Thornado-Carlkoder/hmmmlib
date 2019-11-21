@@ -2,11 +2,8 @@
 //  TestsForwardAlgorithm.c
 //  hmmmmlib
 //
-//  Created by Thor Jakobsen on 30/08/2019.
-//  Copyright © 2019 Thor Jakobsen. All rights reserved.
-//
 
-#include "TestsForwardAlgorithm.h"
+#include "TestForward.h"
 #include "hmm.h"
 #include <assert.h>
 #include <stdlib.h>
@@ -77,8 +74,8 @@ bool testForwardAlgorithm() {
     
     for(i = 0; i < obsLenght; i++){
         for(j = 0; j < hmmCon->hiddenStates; j++){
-            assert(abs(alphaBLAS[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j] < 0.00001));
-            assert(abs(alphaCon[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j] < 0.00001));
+            assert(fabs(alphaBLAS[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j]) < 0.00001);
+            assert(fabs(alphaCon[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j]) < 0.00001);
         }
     }
     
@@ -160,12 +157,18 @@ bool testForwardAlgorithm() {
         }
     }
     free(alpha2);
+<<<<<<< HEAD:hmmmlib/Test/TestsForwardAlgorithm.c
     free(scaleFactorS);
     printf("Going to print the hmm with printHMM()");
     printHMM(hmm2);
     assert(validateHMM(hmm2) == true);
     HMMDeallocate(hmm2);
     HMMDeallocate(hmmSBLAS);
+=======
+    free(scaleFactor2);
+    assert(validateHMM(hmm2) == true);
+    HMMDeallocate(hmm2);
+>>>>>>> master:hmmmlib/Test/TestForward.c
     
     return true;
 }

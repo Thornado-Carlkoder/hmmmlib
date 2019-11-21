@@ -42,11 +42,6 @@ bool testBaumWelch() {
     baumWelch(hmm, observation, obsLenght, 1);
     
     // Checking the trans probs
-    /*
-     for(i = 0; i < hmm->hiddenStates*hmm->hiddenStates; i++){
-     printf("%f, ", hmm->transitionProbs[i]);
-     }
-     */
     float epsilon = 0.000001;
     assert(fabs(hmm->transitionProbs[0]-0.43921478415604948) < epsilon);
     assert(fabs(hmm->transitionProbs[1*hmm->hiddenStates+1]-0.78554317773503979) < epsilon);
@@ -54,9 +49,12 @@ bool testBaumWelch() {
     // Checking the emission probs
     assert(fabs(hmm->emissionProbs[0]-0.46160107308583781) < epsilon);
     assert(fabs(hmm->emissionProbs[1*hmm->observations+1]-0.084984433203479412) < epsilon);
+<<<<<<< HEAD
     
     //printHMM(hmm);
     
+=======
+>>>>>>> master
     assert(validateHMM(hmm) == true);
     HMMDeallocate(hmm);
     

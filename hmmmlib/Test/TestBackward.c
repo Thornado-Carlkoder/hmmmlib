@@ -1,4 +1,4 @@
-#include "testBackwardAlgorithm.h"
+#include "TestBackward.h"
 #include "hmm.h"
 
 #include <assert.h>
@@ -72,8 +72,8 @@ extern bool testBackwardAlgorithm() {
     
     for(i = 0; i < obsLenght; i++){
        for(j = 0; j < hmmCon->hiddenStates; j++){
-           assert(abs(betaBlas[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j] < 0.00001));
-           assert(abs(betaCon[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j] < 0.00001));
+           assert(fabs(betaBlas[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j]) < 0.00001);
+           assert(fabs(betaCon[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j]) < 0.00001);
        }
     }
     
