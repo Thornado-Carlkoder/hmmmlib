@@ -14,8 +14,12 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 #first two:
 data = read_csv("../nov_16.csv")
 
-data = read_csv("../sparse_data.csv")
-data = read_csv("../alphabet_data.csv")
+#data = read_csv("../sparse_data.csv")
+#data = read_csv("../alphabet_data.csv")
+
+data = read_csv("../allpizza.csv", col_names = F)
+
+names(data) = c('test', 'observations', 'time', 'algorithm', 'variant', 'iterations')
 
 
 
@@ -107,7 +111,7 @@ ggsave("denseness_raw.pdf", height = 5, width = 9)
 # ggsave("denseness_normalized.pdf", height = 5, width = 9)
 
 
-# Sparseness
+# alphabet
 data_alphabet = data %>% filter(test == "alphabetsize") %>% filter(is.na(iterations) | iterations == 1)
 
 data_alphabet_grouped = data_alphabet %>%
@@ -121,10 +125,6 @@ data_alphabet_grouped %>% ggplot(aes(observations, mean, color = variant)) +
     facet_wrap(.~algorithm, scales = "free") + 
     labs(x = "alphabet size", y = "mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Running time of increasing alphabet size")
 ggsave("alphabet_raw.pdf", height = 5, width = 9)
-
-
-
-
 
 
 

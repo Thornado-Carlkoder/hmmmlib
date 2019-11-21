@@ -173,7 +173,8 @@ if __name__ == "__main__" :
         print("example:")
         print("$ python running_time.py input")
     else:
-        print('test, observations, time, algorithm, variant, iterations')
+        pass
+        #print('test, observations, time, algorithm, variant, iterations')
 
 
     # Test definition for varying input size.
@@ -213,6 +214,15 @@ if __name__ == "__main__" :
         for i in range(1, 7):
             standard_test_inputsize("baumWelch", "CSR", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
 
+        ## RSB ##
+        standard_test_inputsize("viterbi", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("posteriorDecoding", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("forward", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("backward", "RSB", stspace, alphabet, start, stop, increment, file, 0) 
+        for i in range(1, 7):
+            standard_test_inputsize("baumWelch", "RSB", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
+
+        
 
     # Test definition for varying state space size.
     if 'statespace' in given_arguments:
@@ -247,6 +257,15 @@ if __name__ == "__main__" :
         standard_test_statespace("backward", "CSR", inputsize, start, stop, increment, file) 
         standard_test_statespace("baumWelch", "CSR", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
+        ## RSB ##        
+        standard_test_statespace("viterbi", "RSB", inputsize, start, stop, increment, file)        
+        standard_test_statespace("posteriorDecoding", "RSB", inputsize, start, stop, increment, file)
+        standard_test_statespace("forward", "RSB", inputsize, start, stop, increment, file)
+        standard_test_statespace("backward", "RSB", inputsize, start, stop, increment, file) 
+        standard_test_statespace("baumWelch", "RSB", inputsize, start, stop, increment, file, '1', n_iterations = 1)
+
+        
+
 
 
 
@@ -269,7 +288,7 @@ if __name__ == "__main__" :
                     t1 = time.time()
                     o.deallocate()
 
-                    print(f'sparseness, {round(i, 4)}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
+                    print(f'sparseness_{inputsize}, {round(i, 4)}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
                 print('', file = sys.stderr, flush = True) # newline
 
 
@@ -279,36 +298,45 @@ if __name__ == "__main__" :
         start = 0
         stop = 1.001
         increment = 0.1
-        replicates = 10
-        inputsize = 1500
+        replicates = 5
+        #inputsize = 1500
         file = '../../test_framework/data/pantro3_X.fasta'
 
-        
-        ## Conventional #
-        standard_test_sparseness("viterbi", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_sparseness("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_sparseness("forward", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_sparseness("backward", "Conventional", inputsize, start, stop, increment, file) 
-        #for i in range(1, 7):
-        standard_test_sparseness("baumWelch", "Conventional", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
-        
-        ## BLAS #
-        standard_test_sparseness("viterbi", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_sparseness("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_sparseness("forward", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_sparseness("backward", "BLAS", inputsize, start, stop, increment, file) 
-        #for i in range(1, 7):
-        standard_test_sparseness("baumWelch", "BLAS", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
-        
+        for inputsize in [4000]:
+            ## Conventional #
+            standard_test_sparseness("viterbi", "Conventional", inputsize, start, stop, increment, file)
+            standard_test_sparseness("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
+            standard_test_sparseness("forward", "Conventional", inputsize, start, stop, increment, file)
+            standard_test_sparseness("backward", "Conventional", inputsize, start, stop, increment, file) 
+            #for i in range(1, 7):
+            standard_test_sparseness("baumWelch", "Conventional", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+            
+            ## BLAS #
+            standard_test_sparseness("viterbi", "BLAS", inputsize, start, stop, increment, file)
+            standard_test_sparseness("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
+            standard_test_sparseness("forward", "BLAS", inputsize, start, stop, increment, file)
+            standard_test_sparseness("backward", "BLAS", inputsize, start, stop, increment, file) 
+            #for i in range(1, 7):
+            standard_test_sparseness("baumWelch", "BLAS", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+            
 
-        ## CSR #
-        standard_test_sparseness("viterbi", "CSR", inputsize, start, stop, increment, file)
-        standard_test_sparseness("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
-        standard_test_sparseness("forward", "CSR", inputsize, start, stop, increment, file)
-        standard_test_sparseness("backward", "CSR", inputsize, start, stop, increment, file) 
-        #for i in range(1, 7):
-        standard_test_sparseness("baumWelch", "CSR", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+            ## CSR #
+            standard_test_sparseness("viterbi", "CSR", inputsize, start, stop, increment, file)
+            standard_test_sparseness("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
+            standard_test_sparseness("forward", "CSR", inputsize, start, stop, increment, file)
+            standard_test_sparseness("backward", "CSR", inputsize, start, stop, increment, file) 
+            #for i in range(1, 7):
+            standard_test_sparseness("baumWelch", "CSR", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
 
+            ## RSB #
+            standard_test_sparseness("viterbi", "RSB", inputsize, start, stop, increment, file)
+            standard_test_sparseness("posteriorDecoding", "RSB", inputsize, start, stop, increment, file)
+            standard_test_sparseness("forward", "RSB", inputsize, start, stop, increment, file)
+            standard_test_sparseness("backward", "RSB", inputsize, start, stop, increment, file) 
+            #for i in range(1, 7):
+            standard_test_sparseness("baumWelch", "RSB", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+
+            
     
     
     if 'alphabet' in given_arguments:
@@ -340,7 +368,7 @@ if __name__ == "__main__" :
         print('## Testing varying alphabet size ##', file = sys.stderr)
         inputsize = 1500 # the input size is constant. This number will be multiplied with 60 to become relatable with the other tests
         start = 2 # the state space
-        stop = 20 # baumwelch cache-jumps at 20
+        stop = 15 
         increment = 2
         replicates = 5
         file = '../../test_framework/data/pantro3_X.fasta'
@@ -368,4 +396,12 @@ if __name__ == "__main__" :
         standard_test_alphabet("backward", "CSR", inputsize, start, stop, increment, file) 
         standard_test_alphabet("baumWelch", "CSR", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
+        ## RSB ##        
+        standard_test_alphabet("viterbi", "RSB", inputsize, start, stop, increment, file)        
+        standard_test_alphabet("posteriorDecoding", "RSB", inputsize, start, stop, increment, file)
+        standard_test_alphabet("forward", "RSB", inputsize, start, stop, increment, file)
+        standard_test_alphabet("backward", "RSB", inputsize, start, stop, increment, file) 
+        standard_test_alphabet("baumWelch", "RSB", inputsize, start, stop, increment, file, '1', n_iterations = 1)
+
+        
         
