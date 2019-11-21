@@ -3,7 +3,7 @@
 
 
 
-# HMMMLIB <a href='https:/tidyverse.tidyverse.org'><img src='ressourcer/hmmm.png' align="right" height="138.5" /></a>
+# HMMMLIB <img src='ressourcer/hmmm.png' align="right" height="138.5" />
 
 #### *Hidden Markov-Model Matrix Library*
 
