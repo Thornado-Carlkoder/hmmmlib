@@ -66,7 +66,7 @@ data_input_grouped %>% filter(iterations == "1" |
     geom_hline(yintercept = 0, alpha = 0)
 ggsave("inputsize_normalized.pdf",
        height = 5,
-       width = 9)
+       width = 10)
 
 
 
