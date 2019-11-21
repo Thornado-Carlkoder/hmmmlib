@@ -7,4 +7,4 @@ hmmmlib/build/*
 carl_*
 pythonCode/HMM/__pycache__/*
 *.fasta
-
+__pycache__/
