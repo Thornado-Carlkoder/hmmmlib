@@ -23,14 +23,14 @@ addons:
 script:
   - mkdir -p hmmmlib/build
   - cd hmmmlib/build
-  - cmake .. 
+  - cmake ..  -DCMAKE_BUILD_TYPE=Debug
   - make
   - ../build/exeHMMLIB
   - python3 --version
   - python3 ../../test_framework/test.py
   
 after_success:
-  - lcov --compat-libtool --directory . --capture --output-file coverage.info
+  - lcov --compat-libtool --directory hmmmlib/build --capture --output-file coverage.info
   - coveralls-lcov coverage.info
   
 branches:
