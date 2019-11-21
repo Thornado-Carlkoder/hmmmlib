@@ -7,6 +7,6 @@
 #include "backward.h"
 #include "hmm.h"
 
-void posteriorDecoding(HMM * hmm, const unsigned int *Y, const int T, int * states);
+void posteriorDecoding(HMM * hmm, const unsigned int *Y, const unsigned int T, unsigned int * states);
 
 #endif

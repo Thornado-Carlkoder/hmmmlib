@@ -53,7 +53,7 @@ extern bool testPosteriorDecoding() {
     unsigned int expected[105] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0};    
     unsigned int data_len = 105;
 
-    int * states = calloc(data_len, sizeof(int));
+    unsigned int * states = calloc(data_len, sizeof(int));
     
     posteriorDecoding(hmm, data, data_len, states);
 
