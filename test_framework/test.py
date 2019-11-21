@@ -162,21 +162,26 @@ def test_baumwelch(hmmType = None):
     return returnvalue
 
 
-print('Conventional fw', test_forward("Conventional"))
-print('Conventional bw', test_backward("Conventional"))
+print('Conventional forward', test_forward("Conventional"))
+print('Conventional backward', test_backward("Conventional"))
 print('Conventional baum-welch', test_baumwelch("Conventional")) 
 print('Conventional posterior decoding', test_posterior_decoding("Conventional"))
 print('Conventional viterbi', test_viterbi("Conventional"))
 
-print('BLAS fw', test_forward("BLAS"))
-print('BLAS bw', test_backward("BLAS"))
+print('BLAS forward', test_forward("BLAS"))
+print('BLAS backward', test_backward("BLAS"))
 print('BLAS baum-welch', test_baumwelch("BLAS")) 
 print('BLAS posterior decoding', test_posterior_decoding("BLAS"))
 print('BLAS viterbi', test_viterbi("BLAS"))
 
-print('CSR fw', test_forward("CSR"))
-print('CSR bw', test_backward("CSR"))
+print('CSR forward', test_forward("CSR"))
+print('CSR backward', test_backward("CSR"))
+print('CSR baum-welch', test_baumwelch("CSR")) 
+print('CSR posterior decoding', test_posterior_decoding("CSR"))
 print('CSR viterbi', test_viterbi("CSR"))
 
-print('CSR posterior decoding', test_posterior_decoding("CSR"))
-print('CSR baum-welch', test_baumwelch("CSR")) 
+print('RSB forward', test_forward("RSB"))
+print('RSB backward', test_backward("RSB"))
+print('RSB baum-welch', test_baumwelch("RSB")) 
+print('RSB posterior decoding', test_posterior_decoding("RSB"))
+print('RSB viterbi', test_viterbi("RSB"))

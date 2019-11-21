@@ -35,6 +35,8 @@ class binded_HMM:
         self.libhmm.HMMConventional.restype = c.POINTER(HMM)
         self.libhmm.HMMBLAS.restype = c.POINTER(HMM)
         self.libhmm.HMMCsr.restype = c.POINTER(HMM)
+        self.libhmm.HMMSBLAS.restype = c.POINTER(HMM)
+        
         
         
         self.libhmm.validateHMM.restype = c.c_bool
@@ -55,7 +57,7 @@ class binded_HMM:
         self.hmmType = hmmType
 
         # Create HMM object
-        if hmmType == None:
+        if hmmType is None:
             print("Warning, the hmmType defaults to Conventional when none is given.")
 
         if hmmType == "Conventional" or hmmType == None:
@@ -64,8 +66,13 @@ class binded_HMM:
         elif hmmType == "BLAS":
             self.hmm = self.libhmm.HMMBLAS(n_hiddenstates, n_observations)
             #print(" (A BLAS hmm was created)")
-        elif hmmType == "CSR":
+        elif hmmType == "CSR": # Compressed Sparse Row
             self.hmm = self.libhmm.HMMCsr(n_hiddenstates, n_observations)
+        elif hmmType == "RSB": # Recursive Sparse Blocks, also named SBLAS in the c-library
+            self.hmm = self.libhmm.HMMSBLAS(n_hiddenstates, n_observations)
+        else:
+            raise ValueError("The hmmType argument given ({hmmType}) to binded_HMM() is invaled. Please give any of None, 'Conventional', 'BLAS', 'CSR' or 'RSB'. ")
+        
 
         """ 
         print('The following variables are accessible from the HMM struct')
