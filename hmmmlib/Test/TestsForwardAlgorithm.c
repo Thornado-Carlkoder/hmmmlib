@@ -161,7 +161,9 @@ bool testForwardAlgorithm() {
     }
     free(alpha2);
     free(scaleFactorS);
-    assert(valdidateHMM(hmm2) == true);
+    printHMM(hmm2);
+    assert(valdidateHMM(hmmSBLAS));
+    assert(valdidateHMM(hmm2));
     HMMDeallocate(hmm2);
     HMMDeallocate(hmmSBLAS);
     
