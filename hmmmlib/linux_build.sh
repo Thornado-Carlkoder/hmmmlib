@@ -11,9 +11,8 @@ fresh_cmake () {
 }
 
 
-
 # Run make
-make () {
+run_make () {
     make && echo -e "Built into build/\nmake successful"
 }
 
@@ -31,4 +30,4 @@ test_pinding () {
 }
 
 
-fresh_cmake && make && test_exe && test_pinding
+fresh_cmake && run_make && test_exe && test_pinding
