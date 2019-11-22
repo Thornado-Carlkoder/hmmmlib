@@ -11,10 +11,9 @@ In then mirrors all its methods and algorithms in python such that all functiona
 
 This file is used in test.py, which validates output of all the algorithms
 It is also used by running_time.py, which calls each function on increasing parameters and records the timing.
-
 """
 
-class HMM(c.Structure): 
+class HMM(c.Structure):
     """ creates a struct to match HMM """
     _fields_ = [("hiddenStates", c.c_uint),
                 ("observations", c.c_uint),
@@ -55,10 +54,10 @@ class binded_HMM:
         self.hmmType = hmmType
 
         # Create HMM object
-        if hmmType == None:
+        if hmmType is None:
             print("Warning, the hmmType defaults to Conventional when none is given.")
 
-        if hmmType == "Conventional" or hmmType == None:
+        if hmmType == "Conventional" or hmmType is None:
             self.hmm = self.libhmm.HMMConventional(n_hiddenstates, n_observations)
             #print(" (A conventional hmm was created)")
         elif hmmType == "BLAS":
@@ -194,7 +193,7 @@ class binded_HMM:
     def backward(self, observation_data, scalefactor_c = None, as_pointers = True):
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor_c """
     
-        if scalefactor_c == None: # Compute scalefactor yourself
+        if scalefactor_c is None: # Compute scalefactor yourself
             scalefactor_c = self.forward(observation_data)[1]
         
         self.n_hiddenstates = self.n_hiddenstates
@@ -216,13 +215,13 @@ class binded_HMM:
     def obackward(self, observation_data, alpha_from_forward, scalefactor_from_forward = None):
         """ Inputs: 1: observation data: a list of integers, 2: scalefactors
                 for each columnn in observation data provided from forward. If
-                not supplied, the scalefactors will be retrieved automatically, 
+                not supplied, the scalefactors will be retrieved automatically,
                 though this may be a waste of resources if already computed.
-            Outputs: Returns the table denoting the probability of each 
-                state for each observation. 2: The scalefactors used for each 
+            Outputs: Returns the table denoting the probability of each
+                state for each observation. 2: The scalefactors used for each
                 column in said table. """
         
-        if scalefactor_from_forward == None: # retrieve scalefactors automatically
+        if scalefactor_from_forward is None:# retrieve scalefactors automatically
             scalefactor = len(observation_data) * [0]
             scalefactor_from_forward = (c.c_double * len(observation_data))(*scalefactor)
             output = self.libhmm.forward(self.hmm,
@@ -245,7 +244,7 @@ class binded_HMM:
         dummy_output = self.libhmm.viterbi(self.hmm,
                                      (c.c_uint * len(observation_data))(*observation_data),
                                      len(observation_data),
-                                     output) 
+                                     output)
         return [output[i] for i in range(len(observation_data))] # Evt. generator?
 
 
@@ -269,21 +268,17 @@ class binded_HMM:
 
 
     """ 
-    def posteriorDecoding(self, observation_data):
-        output = self.libhmm.posteriorDecoding(self.hmm,
-                                               (c.c_int * len(observation_data))(*observation_data),
-                                               len(observation_data))
-        return [output[i] for i in range(len(observation_data))]
-     """
-
-
-
-
+        def posteriorDecoding(self, observation_data):
+            output = self.libhmm.posteriorDecoding(self.hmm,
+                                                   (c.c_int * len(observation_data))(*observation_data),
+                                                   len(observation_data))
+            return [output[i] for i in range(len(observation_data))]
+    """
 
     def deallocate(self):
-        
+    
         c_struct = c.POINTER(HMM)(self.hmm)
-        self.libhmm.HMMDeallocate(c_struct) 
+        self.libhmm.HMMDeallocate(c_struct)
 
 
 
