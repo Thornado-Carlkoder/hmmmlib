@@ -64,15 +64,15 @@ def random_matrix(m, n, sparseness = 0, seed = None):
 
 
 def set_random(hmm_obj, sparseness = 0):
-    """ Sets all the matrices in a given hmm to random values. (Dense) 
+    """ Sets all the matrices in a given hmm to random values. (Dense)
         It automatically reads all sizes. """
     hmm_obj.setInitProbs(random_row(object.n_hiddenstates, sparseness))
     hmm_obj.setTransitionProbs(random_matrix(object.n_hiddenstates, object.n_hiddenstates, sparseness))
     hmm_obj.setEmissionProbs(random_matrix(object.n_hiddenstates, object.n_observations, sparseness))
     return
 '''
-def set_random_sparse(hmm_obj, percent):
-    pass
+    def set_random_sparse(hmm_obj, percent):
+        pass
 '''
 
 def set_sparse_1(hmm_obj):
@@ -124,14 +124,14 @@ def standard_test_statespace(algorithm, hmmType, inputsize, start, stop, increme
     for i in range(start, stop, increment):
         print(f'{algorithm}\t{i}', file = sys.stderr, end = '\t', flush = True)
 
-        for replicate in range(replicates):
+        for _ in range(replicates):
             print('r', end = '', file = sys.stderr, flush = True)    
             
             o = hmm_binding.binded_HMM(i, 4, hmmType = hmmType)
             set_random(o)
 
             t0 = time.time()
-            test_standard_output = getattr(o, algorithm)(test_standard_data, **kwargs)
+            getattr(o, algorithm)(test_standard_data, **kwargs)
             t1 = time.time()
             o.deallocate()
 
@@ -225,7 +225,7 @@ if __name__ == "__main__" :
 
 
     if 'sparse' in given_arguments:
-        def standard_test_sparseness(algorithm, hmmType, inputsize, start, stop, increment, file, algorithm_version = '', **kwargs): 
+        def standard_test_sparseness(algorithm, hmmType, inputsize, start, stop, increment, file, algorithm_version = '', **kwargs):
             """ This standard test tests a varying size statespace with a constant alphabet and inputsize."""
 
             test_standard_data = [i for i in read_fasta(inputsize, file)]
@@ -233,7 +233,7 @@ if __name__ == "__main__" :
                 print(f'{algorithm}\t{i}', file = sys.stderr, end = '\t', flush = True)
 
                 for _ in range(replicates):
-                    print('r', end = '', file = sys.stderr, flush = True)    
+                    print('r', end = '', file = sys.stderr, flush = True)
                     
                     o = hmm_binding.binded_HMM(7, 4, hmmType = hmmType)
                     set_random(o, i)
@@ -302,8 +302,8 @@ if __name__ == "__main__" :
                     o.deallocate()
 
                     print(f'alphabetsize, {i}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
-                print('', file = sys.stderr, flush = True) # newline
-        
+                print('', file = sys.stderr, flush = True)
+                
         print('## Testing varying alphabet size ##', file = sys.stderr)
         inputsize = 1500 # the input size is constant. This number will be multiplied with 60 to become relatable with the other tests
         start = 2 # the state space
@@ -312,21 +312,21 @@ if __name__ == "__main__" :
         replicates = 5
         file = '../../test_framework/data/pantro3_X.fasta'
 
-        ## Conventional ##        
+        ## Conventional ##
         standard_test_alphabet("viterbi", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("backward", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "Conventional", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
-        ## BLAS ##        
+        ## BLAS ##
         standard_test_alphabet("viterbi", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("backward", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "BLAS", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
-        ## CSR ##        
+        ## CSR ##
         standard_test_alphabet("viterbi", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "CSR", inputsize, start, stop, increment, file)
