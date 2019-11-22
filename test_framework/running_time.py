@@ -2,23 +2,23 @@ import binding as hmm_binding
 import time, sys, random, decimal
 
 """
-Description:
+    Description:
 
-This file imports the defined python binding (hmm_binding) and calls the algorithms with
-varying parameters and records the time it takes for each function/algorithm call.
+    This file imports the defined python binding (hmm_binding) and calls the algorithms with
+    varying parameters and records the time it takes for each function/algorithm call.
 
-This file should be called in the hmmlib/build/ directory with the following command:
-    $ python ../../test_framework/running_time.py <input|statespace|sparse|alphabet> | cat
+    This file should be called in the hmmlib/build/ directory with the following command:
+        $ python ../../test_framework/running_time.py <input|statespace|sparse|alphabet> | cat
 
-    example:
-    $ python ../../test_framework/running_time.py input | cat
-    ... which will run the varying input size tests
+        example:
+        $ python ../../test_framework/running_time.py input | cat
+        ... which will run the varying input size tests
 
-Note that this program will output to stderr and stdout at the same time. As a consequence outputs must be piped correctly:
-You can either use the `| cat` or you can pipe it directly to a .csv file for further processing in plotting software.
+    Note that this program will output to stderr and stdout at the same time. As a consequence outputs must be piped correctly:
+    You can either use the `| cat` or you can pipe it directly to a .csv file for further processing in plotting software.
 
-    example:
-    $ python ../../test_framework/running_time.py input > inputsize_runningtime_data_for_future_plotting.csv
+        example:
+        $ python ../../test_framework/running_time.py input > inputsize_runningtime_data_for_future_plotting.csv
 """
 
 def float_range(start, stop, step):
@@ -45,7 +45,7 @@ def random_row(n, sparseness = 0, seed = None):
         # A sparseness of 1 (sparse) means that only a single value per row is non-zero.
         # A sparseness of 0 (dense) means that all values are non-zero.
         if sparseness > 0:
-            chosen = random.sample([p for p in range(n)], int(round((n-1)*sparseness)))    
+            chosen = random.sample([p for p in range(n)], int(round((n-1)*sparseness)))
             for c in chosen:
                 row[c] = 0
         #if normalize: # Set the rowsums equal to 1
@@ -114,10 +114,10 @@ def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, 
             
             print(f'inputsize, {i*linewidth}, {t1-t0}, {algorithm_name}, {o.hmmType}, {algorithm_version}')
         print('', file = sys.stderr, flush = True) # newline
-        o.deallocate() 
+        o.deallocate()
 
 
-def standard_test_statespace(algorithm, hmmType, inputsize, start, stop, increment, file= '', algorithm_version = '', **kwargs): 
+def standard_test_statespace(algorithm, hmmType, inputsize, start, stop, increment, file= '', algorithm_version = '', **kwargs):
     """ This standard test tests a varying size statespace with a constant alphabet and inputsize."""
 
     test_standard_data = [i for i in read_fasta(inputsize, file)]
@@ -232,14 +232,14 @@ if __name__ == "__main__" :
             for i in float_range(start, stop, increment):
                 print(f'{algorithm}\t{i}', file = sys.stderr, end = '\t', flush = True)
 
-                for replicate in range(replicates):
+                for _ in range(replicates):
                     print('r', end = '', file = sys.stderr, flush = True)    
                     
                     o = hmm_binding.binded_HMM(7, 4, hmmType = hmmType)
                     set_random(o, i)
 
                     t0 = time.time()
-                    test_standard_output = getattr(o, algorithm)(test_standard_data, **kwargs)
+                    getattr(o, algorithm)(test_standard_data, **kwargs)
                     t1 = time.time()
                     o.deallocate()
 
@@ -282,7 +282,7 @@ if __name__ == "__main__" :
 
     if 'alphabet' in given_arguments:
 
-        def standard_test_alphabet(algorithm, hmmType, input_size, start, stop, increment, file= '', algorithm_version = '', **kwargs): 
+        def standard_test_alphabet(algorithm, hmmType, input_size, start, stop, increment, file= '', algorithm_version = '', **kwargs):
             """ This standard test tests a varying size alphabet with a constant statespace and inputsize."""
 
             for i in range(start, stop, increment):
@@ -290,7 +290,7 @@ if __name__ == "__main__" :
                 test_standard_data = random.choices([j for j in range(i)], k = input_size*60) # Generates a data set with an arbitrary alphabet size (uniform).
 
                 for _ in range(replicates):
-                    print('r', end = '', file = sys.stderr, flush = True)    
+                    print('r', end = '', file = sys.stderr, flush = True)
                     
                     o = hmm_binding.binded_HMM(7, i, hmmType = hmmType)
                     set_random(o)
@@ -304,7 +304,6 @@ if __name__ == "__main__" :
                     print(f'alphabetsize, {i}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
                 print('', file = sys.stderr, flush = True) # newline
         
-        
         print('## Testing varying alphabet size ##', file = sys.stderr)
         inputsize = 1500 # the input size is constant. This number will be multiplied with 60 to become relatable with the other tests
         start = 2 # the state space
@@ -314,22 +313,22 @@ if __name__ == "__main__" :
         file = '../../test_framework/data/pantro3_X.fasta'
 
         ## Conventional ##        
-        standard_test_alphabet("viterbi", "Conventional", inputsize, start, stop, increment, file)        
+        standard_test_alphabet("viterbi", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_alphabet("backward", "Conventional", inputsize, start, stop, increment, file) 
+        standard_test_alphabet("backward", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "Conventional", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## BLAS ##        
-        standard_test_alphabet("viterbi", "BLAS", inputsize, start, stop, increment, file)        
+        standard_test_alphabet("viterbi", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_alphabet("backward", "BLAS", inputsize, start, stop, increment, file) 
+        standard_test_alphabet("backward", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "BLAS", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## CSR ##        
-        standard_test_alphabet("viterbi", "CSR", inputsize, start, stop, increment, file)        
+        standard_test_alphabet("viterbi", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "CSR", inputsize, start, stop, increment, file)
-        standard_test_alphabet("backward", "CSR", inputsize, start, stop, increment, file) 
+        standard_test_alphabet("backward", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "CSR", inputsize, start, stop, increment, file, '1', n_iterations = 1)
