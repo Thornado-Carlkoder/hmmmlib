@@ -83,7 +83,7 @@ class binded_HMM:
         
         print()
         formattedInitProbs = ["{:7.3f}".format(self.hmm[0].initProbs[i]) for i in range(self.n_hiddenstates)]
-        print(' initProbs: [self.n_hiddenstates]\n ', ''.join(formattedInitProbs), end = '')
+        print(' initProbs: [self.n_hiddenstates]\n ', ''.join(formattedInitProbs))
         print('\t(' + str(sum([self.hmm[0].initProbs[i] for i in range(self.n_hiddenstates)])) + ')')
 
 
@@ -116,7 +116,8 @@ class binded_HMM:
     ## Setters ##
     def setInitProbs(self, pi):
         if len(pi) != self.n_hiddenstates:
-            raise Exception('Failed to set initProbs[]. initProbs[] should contain {a} values but {b} were given.'.format(a = self.n_hiddenstates, b = len(pi)))
+            raise Exception('Failed to set initProbs[]. initProbs[] should contain {a}'\
+            'values but {b} were given.'.format(a = self.n_hiddenstates, b = len(pi)))
             #raise Exception('error1')
             
         self.hmm[0].initProbs = (c.c_double * self.n_hiddenstates)(*pi)
@@ -124,12 +125,14 @@ class binded_HMM:
 
     def setTransitionProbs(self, new_trans_p):
         if len(new_trans_p) != self.n_hiddenstates:
-            raise Exception('Failed to set transitionProbs[]. transitionProbs[] should contain {a} rows but {b} were given.'.format(a = self.n_hiddenstates, b = len(new_trans_p)))
+            raise Exception('Failed to set transitionProbs[]. transitionProbs[] should contain {a}'\
+            ' rows but {b} were given.'.format(a = self.n_hiddenstates, b = len(new_trans_p)))
             #raise Exception('error2')
             
         for row in new_trans_p:
             if len(row) != self.n_hiddenstates:
-                raise Exception('Failed to set transitionProbs[]. transitionProbs[] should contain {a} columns but {b} were given.'.format(a = self.n_hiddenstates, b = len(row)))
+                raise Exception('Failed to set transitionProbs[]. transitionProbs[] should contain {a}'\
+                ' columns but {b} were given.'.format(a = self.n_hiddenstates, b = len(row)))
                 #raise Exception('error3')
                 
 
@@ -140,12 +143,14 @@ class binded_HMM:
 
     def setEmissionProbs(self, new_emiss_p):
         if len(new_emiss_p) != self.n_hiddenstates:
-            raise Exception('Failed to set emissionProbs[]. emissionProbs[] should contain {a} rows but {b} were given.'.format(a = self.n_hiddenstates, b = len(new_emiss_p)))
+            raise Exception('Failed to set emissionProbs[]. emissionProbs[] should contain {a}'\
+            ' rows but {b} were given.'.format(a = self.n_hiddenstates, b = len(new_emiss_p)))
             #raise Exception('error4')
             
         for row in new_emiss_p:
             if len(row) != self.n_observations:
-                raise Exception('Failed to set emissionProbs[]. emissionProbs[] should contain {a} columns but {b} were given.'.format(a = self.n_observations, b = len(row)))
+                raise Exception('Failed to set emissionProbs[]. emissionProbs[] should contain {a}'\
+                ' columns but {b} were given.'.format(a = self.n_observations, b = len(row)))
                 #raise Exception('error5')
                 
 
@@ -253,21 +258,21 @@ class binded_HMM:
         dummy_output = self.libhmm.posteriorDecoding(self.hmm,
                                                (c.c_uint * len(observation_data))(*observation_data),
                                                len(observation_data),
-                                               output) 
+                                               output)
         return [output[i] for i in range(len(observation_data))] # Evt. generator?
 
 
     
     
     def baumWelch(self, observation_data, n_iterations):
-        output = self.libhmm.baumWelch(self.hmm,
+        _ = self.libhmm.baumWelch(self.hmm,
                                        (c.c_int * len(observation_data))(*observation_data),
                                        len(observation_data),
                                        n_iterations)
         return True
 
 
-    """ 
+    """
         def posteriorDecoding(self, observation_data):
             output = self.libhmm.posteriorDecoding(self.hmm,
                                                    (c.c_int * len(observation_data))(*observation_data),
