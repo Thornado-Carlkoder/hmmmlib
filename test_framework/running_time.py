@@ -19,8 +19,6 @@ You can either use the `| cat` or you can pipe it directly to a .csv file for fu
 
     example:
     $ python ../../test_framework/running_time.py input > inputsize_runningtime_data_for_future_plotting.csv
-
-
 """
 
 def float_range(start, stop, step):
@@ -43,7 +41,6 @@ def read_fasta(n_lines, file):
 
 def random_row(n, sparseness = 0, seed = None):
         row = [random.uniform(0, 1) for _ in range(n)] # random numbers uniformly between [-1, 1)
-
         # sparseness?
         # A sparseness of 1 (sparse) means that only a single value per row is non-zero.
         # A sparseness of 0 (dense) means that all values are non-zero.
@@ -51,9 +48,6 @@ def random_row(n, sparseness = 0, seed = None):
             chosen = random.sample([p for p in range(n)], int(round((n-1)*sparseness)))    
             for c in chosen:
                 row[c] = 0
-            
-
-
         #if normalize: # Set the rowsums equal to 1
         row_sum = sum(row)
         row = [i/row_sum for i in row]
@@ -63,38 +57,34 @@ def random_row(n, sparseness = 0, seed = None):
 
 def random_matrix(m, n, sparseness = 0, seed = None):
     """ Generates a random matrix with size m*n. """
-    if seed != None:
+    if seed is not None:
         random.seed(seed)
     
     return [random_row(n, sparseness, seed) for _ in range(m)]
 
 
-
-
-
-
-def set_random(object, sparseness = 0):
+def set_random(hmm_obj, sparseness = 0):
     """ Sets all the matrices in a given hmm to random values. (Dense) 
         It automatically reads all sizes. """
-    object.setInitProbs(random_row(object.n_hiddenstates, sparseness))
-    object.setTransitionProbs(random_matrix(object.n_hiddenstates, object.n_hiddenstates, sparseness))
-    object.setEmissionProbs(random_matrix(object.n_hiddenstates, object.n_observations, sparseness))
+    hmm_obj.setInitProbs(random_row(object.n_hiddenstates, sparseness))
+    hmm_obj.setTransitionProbs(random_matrix(object.n_hiddenstates, object.n_hiddenstates, sparseness))
+    hmm_obj.setEmissionProbs(random_matrix(object.n_hiddenstates, object.n_observations, sparseness))
     return
 
-def set_random_sparse(object, percent):
+def set_random_sparse(hmm_obj, percent):
     pass
 
 
-def set_sparse_1(object):
-    object.setInitProbs([0.00, 0.00, 0.00, 1.00, 0.00, 0.00, 0.00])
-    object.setTransitionProbs([[0.00, 0.00, 0.90, 0.10, 0.00, 0.00, 0.00],
+def set_sparse_1(hmm_obj):
+    hmm_obj.setInitProbs([0.00, 0.00, 0.00, 1.00, 0.00, 0.00, 0.00])
+    hmm_obj.setTransitionProbs([[0.00, 0.00, 0.90, 0.10, 0.00, 0.00, 0.00],
                         [1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00],
                         [0.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00],
                         [0.00, 0.00, 0.05, 0.90, 0.05, 0.00, 0.00],
                         [0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00],
                         [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00],
                         [0.00, 0.00, 0.00, 0.10, 0.90, 0.00, 0.00]])
-    object.setEmissionProbs([[0.30, 0.25, 0.25, 0.20],
+    hmm_obj.setEmissionProbs([[0.30, 0.25, 0.25, 0.20],
                         [0.20, 0.35, 0.15, 0.30],
                         [0.40, 0.15, 0.20, 0.25],
                         [0.25, 0.25, 0.25, 0.25],
@@ -124,7 +114,6 @@ def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, 
             
             print(f'inputsize, {i*linewidth}, {t1-t0}, {algorithm_name}, {o.hmmType}, {algorithm_version}')
         print('', file = sys.stderr, flush = True) # newline
-
         o.deallocate() 
 
 
