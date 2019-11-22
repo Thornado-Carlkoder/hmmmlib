@@ -70,10 +70,10 @@ def set_random(hmm_obj, sparseness = 0):
     hmm_obj.setTransitionProbs(random_matrix(object.n_hiddenstates, object.n_hiddenstates, sparseness))
     hmm_obj.setEmissionProbs(random_matrix(object.n_hiddenstates, object.n_observations, sparseness))
     return
-
+'''
 def set_random_sparse(hmm_obj, percent):
     pass
-
+'''
 
 def set_sparse_1(hmm_obj):
     hmm_obj.setInitProbs([0.00, 0.00, 0.00, 1.00, 0.00, 0.00, 0.00])
