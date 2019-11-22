@@ -25,7 +25,8 @@ script:
   - cd hmmmlib/build
   - cmake ..  -DCMAKE_BUILD_TYPE=Debug
   - make
-  - ../build/exeHMMLIB
+  - ./exeHMMLIB
+  - gcov ../src/main.c
   - python3 --version
   - python3 ../../test_framework/test.py
   
