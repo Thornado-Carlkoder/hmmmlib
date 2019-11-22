@@ -25,12 +25,14 @@ script:
   - cd hmmmlib/build
   - cmake ..  -DCMAKE_BUILD_TYPE=Debug
   - make
+  - pwd
   - ./exeHMMLIB
   - gcov ../src/main.c
   - python3 --version
   - python3 ../../test_framework/test.py
   
 after_success:
+  - pwd
   - lcov --compat-libtool --directory hmmmlib/build --capture --output-file coverage.info
   - coveralls-lcov coverage.info
   
