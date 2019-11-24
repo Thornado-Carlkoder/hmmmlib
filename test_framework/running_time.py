@@ -312,7 +312,7 @@ if __name__ == "__main__" :
         standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file)
         standard_test_sparseness("baumWelch", "CSR", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)"""
 
-        for hidden_states in [16, 8, 4]:
+        for hidden_states in [32, 16, 8, 4]:
         
             print('# hs:', hidden_states, file = sys.stderr)
             ## Conventional #
@@ -327,6 +327,12 @@ if __name__ == "__main__" :
             ## CSR #
             standard_test_sparseness("forward", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
             standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+            ## RSB #
+            standard_test_sparseness("forward", "RSB", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "RSB", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+            
             
 
 
