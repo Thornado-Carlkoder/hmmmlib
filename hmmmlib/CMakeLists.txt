@@ -110,6 +110,16 @@ target_link_libraries(exeHMMLIB /usr/local/lib/librsb.a)
 
 
 
+#
+#
+# For codecoverage 
+#
+#
+if(CMAKE_BUILD_TYPE MATCHES Debug)
+       SET(GCC_COVERAGE_COMPILE_FLAGS "-fprofile-arcs -ftest-coverage")
+       SET(GCC_COVERAGE_LINK_FLAGS    "-lgcov")
+endif(CMAKE_BUILD_TYPE MATCHES Debug)
+
 
 #
 #
