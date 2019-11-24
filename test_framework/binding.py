@@ -179,6 +179,7 @@ class binded_HMM:
         
         self.n_hiddenstates = self.n_hiddenstates
         
+        # Allocate scalefactor
         scalefactor = len(observation_data) * [0]
         scalefactor_c = (c.c_double * len(observation_data))(*scalefactor)
 
@@ -213,19 +214,19 @@ class binded_HMM:
                       len(observation_data),
                       scalefactor,
                       beta_matrix_c)
-        return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary.
+        return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary, but makes it easier to handle and check output.
 
     
-    def backward_time(self, observation_data, scalefactor = None, as_pointers = True):
+    def backward_time(self, observation_data):
         # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
         e_vector = len(observation_data) * [1]
-        scalefactor = (c.c_double * len(observation_data))(*e_vector)
+        scalefactor = (c.c_double * len(e_vector))(*e_vector)
         
         self.backward(observation_data, scalefactor)
 
 
 
-    def obackward(self, observation_data, alpha_from_forward, scalefactor_from_forward = None):
+    ''' def obackward(self, observation_data, alpha_from_forward, scalefactor_from_forward = None):
         """ Inputs: 1: observation data: a list of integers, 2: scalefactors
                 for each columnn in observation data provided from forward. If
                 not supplied, the scalefactors will be retrieved automatically,
@@ -249,7 +250,7 @@ class binded_HMM:
                                      (c.c_int * len(observation_data))(*observation_data),
                                      len(observation_data),
                                      (c.c_double * len(observation_data))(*scalefactor_from_forward))
-        return [output[i] for i in range(len(observation_data)*self.n_hiddenstates)] # Evt. generator?
+        return [output[i] for i in range(len(observation_data)*self.n_hiddenstates)] # Evt. generator? '''
     
 
     def viterbi(self, observation_data):
