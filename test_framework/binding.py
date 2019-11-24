@@ -88,7 +88,7 @@ class binded_HMM:
 
 
         print()
-        print(' transitionProbs: [self.n_hiddenstates][self.n_hiddenstates]', end = '\n  ')
+        print(" transitionProbs: [self.n_hiddenstates][self.n_hiddenstates]", end = '\n  ')
         for row in range(self.n_hiddenstates):
             row_sum = 0
             for col in range(self.n_hiddenstates):
@@ -272,16 +272,7 @@ class binded_HMM:
         return True
 
 
-    """
-        def posteriorDecoding(self, observation_data):
-            output = self.libhmm.posteriorDecoding(self.hmm,
-                                                   (c.c_int * len(observation_data))(*observation_data),
-                                                   len(observation_data))
-            return [output[i] for i in range(len(observation_data))]
-    """
-
     def deallocate(self):
-    
         c_struct = c.POINTER(HMM)(self.hmm)
         self.libhmm.HMMDeallocate(c_struct)
 
