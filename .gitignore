@@ -8,3 +8,4 @@ carl_*
 pythonCode/HMM/__pycache__/*
 *.fasta
 __pycache__/
+.Rhistory

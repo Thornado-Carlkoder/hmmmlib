@@ -25,7 +25,7 @@ data_grouped = data %>%
     group_by(observations, algorithm, variant, statespace) %>%
     summarise(mean = mean(time), sd = sd(time))
 
-data_grouped %>% ggplot(aes(1-observations, mean^(1/100), color = variant)) +
+data_grouped %>% ggplot(aes(1-observations, mean, color = variant)) +
     geom_point() +
     geom_line() +
     #geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), size = 0.3, alpha = .65) +
