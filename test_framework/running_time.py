@@ -81,9 +81,9 @@ def random_matrix(m, n, sparseness = 0, seed = None):
 def set_random(hmm_obj, sparseness = 0):
     """ Sets all the matrices in a given hmm to random values. (Dense)
         It automatically reads all sizes. """
-    hmm_obj.setInitProbs(random_row(object.n_hiddenstates, sparseness))
-    hmm_obj.setTransitionProbs(random_matrix(object.n_hiddenstates, object.n_hiddenstates, sparseness))
-    hmm_obj.setEmissionProbs(random_matrix(object.n_hiddenstates, object.n_observations, sparseness))
+    hmm_obj.setInitProbs(random_row(hmm_obj.n_hiddenstates, sparseness))
+    hmm_obj.setTransitionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_hiddenstates, sparseness))
+    hmm_obj.setEmissionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_observations, sparseness))
     return
 
 
@@ -112,7 +112,6 @@ if __name__ == "__main__" :
         
     # Make sure that the users specified a test to run.
     given_arguments = [i for i in sys.argv]
-
     if 'input' not in given_arguments \
         and 'statespace' not in given_arguments \
         and 'sparse' not in given_arguments \
@@ -241,7 +240,7 @@ if __name__ == "__main__" :
 
     ## Varying sparseness ##
     if 'sparse' in given_arguments:
-        def standard_test_sparseness(algorithm, hmmType, inputsize, start, stop, increment, file, algorithm_version = '', **kwargs):
+        def standard_test_sparseness(algorithm, hmmType, inputsize, hidden_states, start, stop, increment, file, algorithm_version = '', **kwargs):
             """ This standard test tests a varying size statespace with a constant alphabet and inputsize."""
 
             test_standard_data = [i for i in read_fasta(inputsize, file)]
@@ -251,8 +250,9 @@ if __name__ == "__main__" :
                 for _ in range(replicates):
                     print('r', end = '', file = sys.stderr, flush = True)
                     
-                    o = hmm_binding.binded_HMM(7, 4, hmmType = hmmType)
-                    set_random(o, i)
+                    o = hmm_binding.binded_HMM(hidden_states, 4, hmmType = hmmType)
+                    
+                    set_random(o, i)    
 
                     t0 = time.time()
                     getattr(o, algorithm)(test_standard_data, **kwargs)
@@ -266,33 +266,49 @@ if __name__ == "__main__" :
         start = 0
         stop = 1.001
         increment = 0.1
-        replicates = 10
+        replicates = 5
         inputsize = 1500
         file = '../../test_framework/data/pantro3_X.fasta'
 
-        
-        ## Conventional #
-        standard_test_sparseness("viterbi", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_sparseness("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_sparseness("forward", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_sparseness("backward", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_sparseness("baumWelch", "Conventional", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+        """
+        standard_test_sparseness("viterbi", "Conventional", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("posteriorDecoding", "Conventional", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("baumWelch", "Conventional", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)
         
 
         ## BLAS #
-        standard_test_sparseness("viterbi", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_sparseness("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_sparseness("forward", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_sparseness("backward", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_sparseness("baumWelch", "BLAS", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+        standard_test_sparseness("viterbi", "BLAS", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("posteriorDecoding", "BLAS", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("forward", "BLAS", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("backward_time", "BLAS", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("baumWelch", "BLAS", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)
         
 
         ## CSR #
-        standard_test_sparseness("viterbi", "CSR", inputsize, start, stop, increment, file)
-        standard_test_sparseness("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
-        standard_test_sparseness("forward", "CSR", inputsize, start, stop, increment, file)
-        standard_test_sparseness("backward", "CSR", inputsize, start, stop, increment, file)
-        standard_test_sparseness("baumWelch", "CSR", inputsize, start, stop, increment, file, str(1), n_iterations = 1)
+        standard_test_sparseness("viterbi", "CSR", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("posteriorDecoding", "CSR", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("forward", "CSR", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file)
+        standard_test_sparseness("baumWelch", "CSR", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)"""
+
+        for hidden_states in [16, 8, 4]:
+        
+            print('# hs:', hidden_states, file = sys.stderr)
+            ## Conventional #
+
+            standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+            ## BLAS #
+            standard_test_sparseness("forward", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+            ## CSR #
+            standard_test_sparseness("forward", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            
 
 
     ## Varying alphabet size ##

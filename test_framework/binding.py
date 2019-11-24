@@ -195,18 +195,12 @@ class binded_HMM:
         
         return alpha_matrix_c, scalefactor_c
     
-    def backward(self, observation_data, scalefactor = None, as_pointers = True, only_time_test = False):
+    def backward(self, observation_data, scalefactor = None, as_pointers = True):
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor """
     
         # Automatically calculate scalefactor with forward, if it is missing.
         if scalefactor is None: # Compute scalefactor yourself
             scalefactor = self.forward(observation_data)[1]
-
-        # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
-        if only_time_test:
-            e_vector = len(observation_data) * [1]
-            scalefactor = (c.c_double * len(observation_data))(*e_vector)
-
 
         
         # empty beta matrix
@@ -220,6 +214,16 @@ class binded_HMM:
                       scalefactor,
                       beta_matrix_c)
         return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary.
+
+    
+    def backward_time(self, observation_data, scalefactor = None, as_pointers = True):
+        # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
+        e_vector = len(observation_data) * [1]
+        scalefactor = (c.c_double * len(observation_data))(*e_vector)
+        
+        self.backward(observation_data, scalefactor)
+
+
 
     def obackward(self, observation_data, alpha_from_forward, scalefactor_from_forward = None):
         """ Inputs: 1: observation data: a list of integers, 2: scalefactors
