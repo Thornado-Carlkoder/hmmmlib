@@ -1,5 +1,5 @@
 import ctypes as c
-import os
+import os, sys
 
 # authors: Thornado & Carl Koder
 
@@ -190,7 +190,7 @@ class binded_HMM:
         scalefactor = len(observation_data) * [0]
         scalefactor_c = (c.c_double * len(observation_data))(*scalefactor)
 
-        # empty alpha matrix
+        # Allocate alpha matrix
         alpha_matrix = len(observation_data) * self.n_hiddenstates * [0]
         alpha_matrix_c = (len(observation_data) * self.n_hiddenstates * c.c_double)(*alpha_matrix)
         
@@ -208,10 +208,14 @@ class binded_HMM:
     
         # Automatically calculate scalefactor with forward, if it is missing.
         if scalefactor is None: # Compute scalefactor yourself
+            #print('no scalefactor was given to backward', file = sys.stderr)
             scalefactor = self.forward(observation_data)[1]
+        else:
+            #print('A scalefactor was given to backward', file = sys.stderr)
+            pass
 
         
-        # empty beta matrix
+        # Allocate beta matrix
         beta_matrix = len(observation_data) * self.n_hiddenstates * [0]
         beta_matrix_c = (len(observation_data) * self.n_hiddenstates * c.c_double)(*beta_matrix)
         
@@ -226,6 +230,8 @@ class binded_HMM:
     
     def backward_time(self, observation_data):
         # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
+
+        # Allocate scalefactor
         e_vector = len(observation_data) * [1]
         scalefactor = (c.c_double * len(e_vector))(*e_vector)
         
