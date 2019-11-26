@@ -120,7 +120,8 @@ if __name__ == "__main__" :
         print("example:")
         print("$ python running_time.py input")
     else:
-        print('test, observations, time, algorithm, variant, iterations')
+        #print('test, observations, time, algorithm, variant, iterations')
+        pass
 
 
     ## Varying input size ##
@@ -265,9 +266,9 @@ if __name__ == "__main__" :
         print('## Testing varying sparseness of transition and emission matrices. ##', file = sys.stderr)
         start = 0
         stop = 1.001
-        increment = 0.1
-        replicates = 5
-        inputsize = 1500
+        increment = 0.2
+        replicates = 3
+        inputsize = 1000
         file = '../../test_framework/data/pantro3_X.fasta'
 
         """
@@ -293,21 +294,21 @@ if __name__ == "__main__" :
         standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file)
         standard_test_sparseness("baumWelch", "CSR", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)"""
 
-        for hidden_states in [16, 8, 4]:
+        for hidden_states in [8]:
         
             print('# hs:', hidden_states, file = sys.stderr)
             ## Conventional #
 
             standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states, time_test_only = True)
 
             ## BLAS #
             standard_test_sparseness("forward", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states, time_test_only = True)
 
             ## CSR #
             standard_test_sparseness("forward", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states, time_test_only = True)
             
 
 

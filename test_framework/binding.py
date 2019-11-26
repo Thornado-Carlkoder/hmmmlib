@@ -1,5 +1,5 @@
 import ctypes as c
-import os
+import os, sys
 
 # authors: Thornado & Carl Koder
 
@@ -196,12 +196,19 @@ class binded_HMM:
         
         return alpha_matrix_c, scalefactor_c
     
-    def backward(self, observation_data, scalefactor = None, as_pointers = True):
-        """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor """
+    def backward(self, observation_data, scalefactor = None, as_pointers = True, time_test_only = True):
+        """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor
+            time_test_only overrides scalefactor"""
     
+        if time_test_only:
+            unit_vector = len(observation_data) * [1]
+            scalefactor = (c.c_double * len(unit_vector))(*unit_vector)
+            print('time test only', file = sys.stderr)
+
         # Automatically calculate scalefactor with forward, if it is missing.
         if scalefactor is None: # Compute scalefactor yourself
-            scalefactor = self.forward(observation_data)[1]
+            #scalefactor = self.forward(observation_data)[1]
+            pass
 
         
         # empty beta matrix
