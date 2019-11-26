@@ -21,7 +21,6 @@ void backward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         new_emission_probs[i] = emission_probs;
 
     }
-    
     free(matrix);
     
     for(i = 0; i < hmm->hiddenStates; i++){

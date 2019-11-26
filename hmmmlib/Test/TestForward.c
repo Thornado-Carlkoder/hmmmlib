@@ -8,6 +8,7 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 bool testForwardAlgorithm() {
     HMM * hmmCon = HMMConventional(2, 2);
@@ -46,8 +47,10 @@ bool testForwardAlgorithm() {
         }
     }
     
+    
     const unsigned int observation[10] = {0, 0, 0, 0, 0, 1, 1, 0, 0, 0};
     const unsigned int obsLenght = 10;
+    
     
     double * alphaCon = calloc(hmmCon->hiddenStates*obsLenght, sizeof(double));
     double * alphaBLAS = calloc(hmmCon->hiddenStates*obsLenght, sizeof(double));

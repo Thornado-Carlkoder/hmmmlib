@@ -4,6 +4,7 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 extern bool testBackwardAlgorithm() {
     HMM * hmmCon = HMMConventional(2, 2);
@@ -127,7 +128,7 @@ extern bool testBackwardAlgorithm() {
 
     const unsigned int observation2[10] = {0,1,2,3,3,2,1,3,2,1};
     const unsigned int obsLenght2 = 10;
-    
+
     double * scaleFactor2 = calloc(obsLenght2, sizeof(double));
 
     double * alphaS = calloc(obsLenght2*hmm2->hiddenStates, sizeof(double));
@@ -178,6 +179,7 @@ extern bool testBackwardAlgorithm() {
     }
     free(alpha2);
     free(beta2);
+    free(scaleFactor2);
     assert(validateHMM(hmm2) == true);
     HMMDeallocate(hmm2);
     
@@ -211,6 +213,9 @@ extern bool testBackwardAlgorithm() {
 
     assert(validateHMM(hmm3) == true);
     HMMDeallocate(hmm3);
+    free(alpha3);
+    free(scaleFactor3);
+    free(beta3);
 
     return true;
 }

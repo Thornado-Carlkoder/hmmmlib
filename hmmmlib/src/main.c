@@ -14,9 +14,15 @@
 #include "TestBaumWelch.h"
 #include "TestViterbi.h"
 #include "TestPosteriorDecoding.h"
+#include "RunningTimeTest.h"
 
 int main() {
     
+    /*
+     RunningTimeTest
+     */
+    blasRunningTime();
+    printf("\n");
     /*
      Testing the forward algorithm
      */

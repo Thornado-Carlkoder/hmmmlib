@@ -2,7 +2,11 @@ library(tidyverse)
 
 setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 
+<<<<<<< HEAD
 data = read_csv("../statevssparse.csv", col_names = F)
+=======
+data = read_csv("../fw_bw_statesparse.csv", col_names = F)
+>>>>>>> master
 names(data) = c('test',
                 'observations',
                 'time',
@@ -22,7 +26,11 @@ data_grouped %>% ggplot(aes(1-observations, mean, color = variant)) +
     geom_point() +
     geom_line() +
     geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), size = 0.3, alpha = .65) +
+<<<<<<< HEAD
     facet_grid(statespace ~ algorithm, scales = "free") +
+=======
+    facet_grid(statespace ~ algorithm, scales = "free_y") +
+>>>>>>> master
     labs(
         x = "denseness",
         y = "mean time [s]",
