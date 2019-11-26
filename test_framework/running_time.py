@@ -83,7 +83,7 @@ def set_random(hmm_obj, sparseness = 0):
         It automatically reads all sizes. """
     hmm_obj.setInitProbs(random_row(hmm_obj.n_hiddenstates, sparseness))
     hmm_obj.setTransitionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_hiddenstates, sparseness))
-    hmm_obj.setEmissionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_observations, sparseness))
+    hmm_obj.setEmissionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_observations, sparseness = 0))
     return
 
 
@@ -284,7 +284,7 @@ if __name__ == "__main__" :
         print('## Testing varying sparseness of transition and emission matrices. ##', file = sys.stderr)
         start = 0
         stop = 1.001
-        increment = 0.2
+        increment = 0.1
         replicates = 5
         inputsize = 1500
         file = '../../test_framework/data/pantro3_X.fasta'
@@ -312,7 +312,7 @@ if __name__ == "__main__" :
         standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file)
         standard_test_sparseness("baumWelch", "CSR", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)"""
 
-        for hidden_states in [32, 16, 8, 4]:
+        for hidden_states in [64, 16, 4]:
         
             print('# hs:', hidden_states, file = sys.stderr)
             
