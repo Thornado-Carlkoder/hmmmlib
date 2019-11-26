@@ -181,10 +181,8 @@ class binded_HMM:
         
 
     ## Algorithms ##
-    def forward(self, observation_data, as_pointers = True):
+    def forward(self, observation_data):
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor """
-        
-        self.n_hiddenstates = self.n_hiddenstates
         
         # Allocate scalefactor
         scalefactor = len(observation_data) * [0]
@@ -203,20 +201,13 @@ class binded_HMM:
         
         return alpha_matrix_c, scalefactor_c
     
-    def backward(self, observation_data, scalefactor = None, as_pointers = True, time_test_only = True):
+    def backward(self, observation_data, scalefactor = None):
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor
             time_test_only overrides scalefactor"""
-    
-        if time_test_only:
-            unit_vector = len(observation_data) * [1]
-            scalefactor = (c.c_double * len(unit_vector))(*unit_vector)
-            print('time test only', file = sys.stderr)
 
         # Automatically calculate scalefactor with forward, if it is missing.
         if scalefactor is None: # Compute scalefactor yourself
-            #scalefactor = self.forward(observation_data)[1]
-            pass
-
+            scalefactor = self.forward(observation_data)[1]
         
         # Allocate beta matrix
         beta_matrix = len(observation_data) * self.n_hiddenstates * [0]
@@ -232,41 +223,29 @@ class binded_HMM:
 
     
     def backward_time(self, observation_data):
-        # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
-
-        # Allocate scalefactor
-        e_vector = len(observation_data) * [1]
-        scalefactor = (c.c_double * len(e_vector))(*e_vector)
+        # This is more or less a copy of backward() with the slight modification that it doesn't care at all about the scale factor matrix.
+        """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor
+            time_test_only overrides scalefactor"""
+    
+        # Allocate unit scale factor (dummy for time tests)
+        unit_vector = len(observation_data) * [1]
+        scalefactor = (c.c_double * len(unit_vector))(*unit_vector)
         
-        self.backward(observation_data, scalefactor)
-
-
-
-    ''' def obackward(self, observation_data, alpha_from_forward, scalefactor_from_forward = None):
-        """ Inputs: 1: observation data: a list of integers, 2: scalefactors
-                for each columnn in observation data provided from forward. If
-                not supplied, the scalefactors will be retrieved automatically,
-                though this may be a waste of resources if already computed.
-            Outputs: Returns the table denoting the probability of each
-                state for each observation. 2: The scalefactors used for each
-                column in said table. """
+        # Allocate beta matrix
+        beta_matrix = len(observation_data) * self.n_hiddenstates * [0]
+        beta_matrix_c = (len(observation_data) * self.n_hiddenstates * c.c_double)(*beta_matrix)
         
-        if scalefactor_from_forward is None:# retrieve scalefactors automatically
-            scalefactor = len(observation_data) * [0]
-            scalefactor_from_forward = (c.c_double * len(observation_data))(*scalefactor)
-            output = self.libhmm.forward(self.hmm,
-                                         (c.c_int * len(observation_data))(*observation_data),
-                                         len(observation_data),
-                                         scalefactor_from_forward,
-                                         (c.c_double * len(observation_data))( *(len(observation_data) * [0] )))
-        
+    
+        self.libhmm.B(self.hmm,
+                      (c.c_int * len(observation_data))(*observation_data),
+                      len(observation_data),
+                      scalefactor,
+                      beta_matrix_c)
+        return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary, but makes it easier to handle and check output.
 
 
-        output = self.libhmm.backward(self.hmm,
-                                     (c.c_int * len(observation_data))(*observation_data),
-                                     len(observation_data),
-                                     (c.c_double * len(observation_data))(*scalefactor_from_forward))
-        return [output[i] for i in range(len(observation_data)*self.n_hiddenstates)] # Evt. generator? '''
+
+    
     
 
     def viterbi(self, observation_data):
