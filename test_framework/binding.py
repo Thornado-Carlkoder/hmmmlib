@@ -38,8 +38,6 @@ class binded_HMM:
         
         
         
-        
-        
         self.libhmm.validateHMM.restype = c.c_bool
         self.libhmm.printHMM.restype = c.c_void_p
         self.libhmm.HMMDeallocate.restype = c.c_void_p
@@ -69,11 +67,8 @@ class binded_HMM:
             #print(" (A BLAS hmm was created)")
         elif hmmType == "CSR": # Compressed Sparse Row
             self.hmm = self.libhmm.HMMCsr(n_hiddenstates, n_observations)
-<<<<<<< HEAD
         elif hmmType == "RSB": # Recursive Sparse Blocks, also named SBLAS in the c-library
             self.hmm = self.libhmm.HMMSBLAS(n_hiddenstates, n_observations)
-=======
->>>>>>> master
         else:
             raise ValueError("The hmmType argument given ({hmmType}) to binded_HMM() is invaled. Please give any of None, 'Conventional', 'BLAS', 'CSR' or 'RSB'. ")
         
@@ -228,10 +223,6 @@ class binded_HMM:
 
     
     def backward_time(self, observation_data):
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
         # This is more or less a copy of backward() with the slight modification that it doesn't care at all about the scale factor matrix.
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor
             time_test_only overrides scalefactor"""
@@ -239,7 +230,6 @@ class binded_HMM:
         # Allocate unit scale factor (dummy for time tests)
         unit_vector = len(observation_data) * [1]
         scalefactor = (c.c_double * len(unit_vector))(*unit_vector)
-<<<<<<< HEAD
         
         # Allocate beta matrix
         beta_matrix = len(observation_data) * self.n_hiddenstates * [0]
@@ -252,27 +242,6 @@ class binded_HMM:
                       scalefactor,
                       beta_matrix_c)
         return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary, but makes it easier to handle and check output.
-=======
-        # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
-        e_vector = len(observation_data) * [1]
-        scalefactor = (c.c_double * len(e_vector))(*e_vector)
-        
-        self.backward(observation_data, scalefactor)
->>>>>>> master
-=======
-        
-        # Allocate beta matrix
-        beta_matrix = len(observation_data) * self.n_hiddenstates * [0]
-        beta_matrix_c = (len(observation_data) * self.n_hiddenstates * c.c_double)(*beta_matrix)
-        
-    
-        self.libhmm.B(self.hmm,
-                      (c.c_int * len(observation_data))(*observation_data),
-                      len(observation_data),
-                      scalefactor,
-                      beta_matrix_c)
-        return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary, but makes it easier to handle and check output.
->>>>>>> master
 
 
 
@@ -301,16 +270,15 @@ class binded_HMM:
     
     def baumWelch(self, observation_data, n_iterations):
         _ = self.libhmm.baumWelch(self.hmm,
-                                  (c.c_int * len(observation_data))(*observation_data),
-                                  len(observation_data),
-                                  n_iterations)
+                                       (c.c_int * len(observation_data))(*observation_data),
+                                       len(observation_data),
+                                       n_iterations)
         return True
 
 
     def deallocate(self):
         c_struct = c.POINTER(HMM)(self.hmm)
         self.libhmm.HMMDeallocate(c_struct)
-
 
 
 

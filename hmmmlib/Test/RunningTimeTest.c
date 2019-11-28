@@ -3,45 +3,61 @@
 #include <time.h>
 
 void runningTimeTest(){
-    HMM * hmm2 = HMMCsr(7, 4);
+    HMM * hmm2 = HMMCsr(7, 4); // SBLAS is RSB
     
     int i;
     int j;
     
+    // sparse
+    /*double transitionProbs2[7][7] = {
+        {0.0 , 0.0 , 0.9 , 0.1 , 0.0 , 0.0 , 0.0},
+        {1.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0},
+        {0.0 , 1.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0},
+        {0.0 , 0.0 , 0.05 , 0.9 , 0.05 , 0.0 , 0.0},
+        {0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 1.0 , 0.0},
+        {0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 1.0},
+        {0.0 , 0.0 , 0.0 , 0.1 , 0.9 , 0.0 , 0.0}
+    };*/
+
+    //dense
     double transitionProbs2[7][7] = {
-     {0.0 , 0.0 , 0.9 , 0.1 , 0.0 , 0.0 , 0.0},
-     {1.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0},
-     {0.0 , 1.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0},
-     {0.0 , 0.0 , 0.05 , 0.9 , 0.05 , 0.0 , 0.0},
-     {0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 1.0 , 0.0},
-     {0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 1.0},
-     {0.0 , 0.0 , 0.0 , 0.1 , 0.9 , 0.0 , 0.0}
+        {0.1 , 0.1 , 0.4 , 0.1 , 0.1, 0.1 , 0.1},
+        {0.1 , 0.1 , 0.1 , 0.1 , 0.1, 0.1 , 0.1},
+        {0.1 , 0.4 , 0.1 , 0.1 , 0.1, 0.1 , 0.1},
+        {0.4 , 0.1 , 0.1 , 0.1 , 0.1, 0.1 , 0.1},
+        {0.1 , 0.1 , 0.1 , 0.4 , 0.1, 0.1 , 0.1},
+        {0.1 , 0.1 , 0.1 , 0.1 , 0.4, 0.1 , 0.1},
+        {0.1 , 0.1 , 0.1 , 0.1 , 0.1, 0.4 , 0.1}
+        
     };
 
+    
+    
+
     double emissionProbs2[7][4] = {
-     {0.3 , 0.25 , 0.25 , 0.2},
-     {0.2 , 0.35 , 0.15 , 0.3},
-     {0.4 , 0.15 , 0.2 , 0.25},
-     {0.25 , 0.25 , 0.25 , 0.25},
-     {0.2 , 0.4 , 0.3 , 0.1},
-     {0.3 , 0.2 , 0.3 , 0.2},
-     {0.15 , 0.3 , 0.2 , 0.35}
+        {0.3 , 0.25 , 0.25 , 0.2},
+        {0.2 , 0.35 , 0.15 , 0.3},
+        {0.4 , 0.15 , 0.2 , 0.25},
+        {0.25 , 0.25 , 0.25 , 0.25},
+        {0.2 , 0.4 , 0.3 , 0.1},
+        {0.3 , 0.2 , 0.3 , 0.2},
+        {0.15 , 0.3 , 0.2 , 0.35}
     };
 
     double initProbs2[7] = {0.0 , 0.0 , 0.0 , 1.0 , 0.0 , 0.0 , 0.0};
 
     for(i = 0; i < hmm2->hiddenStates; i++){
-      hmm2->initProbs[i] = initProbs2[i];
+        hmm2->initProbs[i] = initProbs2[i];
     }
     for(i = 0; i < hmm2->hiddenStates; i++){
-     for(j = 0; j < hmm2->hiddenStates; j++){
-         hmm2->transitionProbs[i*hmm2->hiddenStates+j] = transitionProbs2[i][j];
-     }
+        for(j = 0; j < hmm2->hiddenStates; j++){
+            hmm2->transitionProbs[i*hmm2->hiddenStates+j] = transitionProbs2[i][j];
+        }
     }
     for(i = 0; i < hmm2->hiddenStates; i++){
-     for(j = 0; j < hmm2->observations; j++){
-         hmm2->emissionProbs[i*hmm2->observations+j] = emissionProbs2[i][j];
-     }
+        for(j = 0; j < hmm2->observations; j++){
+            hmm2->emissionProbs[i*hmm2->observations+j] = emissionProbs2[i][j];
+        }
     }
     
     const unsigned int obsLenght2 = 1000000;
@@ -73,6 +89,6 @@ void runningTimeTest(){
     free(alpha2);
     free(beta2);
     HMMDeallocate(hmm2);
-    printf("Running time blas!!!");
+    printf("Running time test done.");
   
 }

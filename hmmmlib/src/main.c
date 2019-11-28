@@ -21,8 +21,8 @@ int main() {
     /*
      RunningTimeTest
      */
-    runningTimeTest();
-    printf("\n");
+    //runningTimeTest();
+    //printf("\n");
     /*
      Testing the forward algorithm
      */

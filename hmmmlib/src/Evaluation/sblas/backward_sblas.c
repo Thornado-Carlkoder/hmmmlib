@@ -95,8 +95,21 @@ void backward_sblas(HMM *hmm, const unsigned int *Y, const unsigned int T, doubl
     
     for(i = 1; i < T; i++){
         rsb_spmv(RSB_TRANSPOSITION_C, &one, mtx[Y[T-i]], beta+hmm->hiddenStates*T-i*hmm->hiddenStates, 1, &one, beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
+        for(j = 0; j < hmm->hiddenStates; j++){
+           printf("%f, ", beta[(T-i)*hmm->hiddenStates+j]);
+       }
+       printf("\n");
         cblas_dscal(hmm->hiddenStates, scalingFactor[T-i], beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
     }
+
+    printf("Backward\n");
+    for(i = 0; i < T; i++){
+       for(j = 0; j < hmm->hiddenStates; j++){
+           printf("%f, ", beta[i*hmm->hiddenStates+j]);
+       }
+       printf("\n");
+    }
+    printf("\n");
     
     for(i = 0; i < hmm->observations; i++){
         free(mtx[i]);
