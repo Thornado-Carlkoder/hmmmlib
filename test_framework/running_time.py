@@ -334,7 +334,7 @@ if __name__ == "__main__" :
                     t1 = time.time()
                     o.deallocate()
 
-                    print(f'sparseness_{inputsize}, {round(i, 4)}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
+                    print(f'sparseness, {round(i, 4)}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
                 print('', file = sys.stderr, flush = True) # newline
 
         print('## Testing varying sparseness of transition and emission matrices. ##', file = sys.stderr)
@@ -343,6 +343,7 @@ if __name__ == "__main__" :
         increment = 0.1
         replicates = 5
         inputsize = 1500
+        hidden_states = 16
         file = '../../test_framework/data/pantro3_X.fasta'
 
         
@@ -384,7 +385,7 @@ if __name__ == "__main__" :
                 for _ in range(replicates):
                     print('r', end = '', file = sys.stderr, flush = True)
                     
-                    o = hmm_binding.binded_HMM(7, i, hmmType = hmmType)
+                    o = hmm_binding.binded_HMM(8, i, hmmType = hmmType)
                     set_random(o)
 
                     t0 = time.time()
