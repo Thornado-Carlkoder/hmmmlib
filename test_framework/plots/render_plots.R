@@ -3,34 +3,18 @@ library(ggpubr)
 library(svglite)
 
 setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
-#data <- read_csv("../time2.csv",)
-#data <- read_csv("../short.csv")
-#data <- read_csv("../medium.csv")
-#data <- read_csv("../oct-31.csv")
-#data <- read_csv("../oct-31-2.csv")
-#data = read_csv("../../hmmmlib/build/withblas.csv")
 
 
-#first two:
-data = read_csv("../nov_16.csv")
 
-#data = read_csv("../sparse_data.csv")
-#data = read_csv("../alphabet_data.csv")
+## Inputsize ##
 
-data = read_csv("../allpizza_clean.csv", col_names = F)
+data = read_csv("../newdata/input.csv", col_names = F)
 names(data) = c('test',
                 'observations',
                 'time',
                 'algorithm',
                 'variant',
                 'iterations')
-
-
-
-
-
-
-## Running time tests on varying input size ##
 data_input = data %>% filter(test == "inputsize")
 
 data_input_grouped = data_input %>%
@@ -48,7 +32,7 @@ data_input_grouped %>% filter(iterations == "1" |
     facet_wrap(. ~ algorithm, scales = "free") +
     labs(y = "mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Running time of increasing input size") +
     geom_hline(yintercept = 0, alpha = 0)
-ggsave("inputsize_raw.pdf", height = 5, width = 10)
+ggsave("inputsize_raw.pdf", height = 6, width = 10)
 
 
 data_input_grouped %>% filter(iterations == "1" |
@@ -65,16 +49,23 @@ data_input_grouped %>% filter(iterations == "1" |
     labs(y = "normalized mean time [s]", caption = "error bars: standard deviation of 5 replicates", title = "Normalized running time of increasing input size") +
     geom_hline(yintercept = 0, alpha = 0)
 ggsave("inputsize_normalized.pdf",
-       height = 5,
+       height = 6,
        width = 10)
 
 
 
 
 
-## Varying state space
-data_statespace = data %>% filter(test == "statespace")
+## State space ##
 
+data = read_csv("../newdata/statespace.csv", col_names = F)
+names(data) = c('test',
+                'observations',
+                'time',
+                'algorithm',
+                'variant',
+                'iterations')
+data_statespace = data %>% filter(test == "statespace")
 
 
 data_statespace_grouped = data_statespace %>%
@@ -89,7 +80,7 @@ data_statespace_grouped %>% ggplot(aes(observations, mean, color = variant)) +
     labs(
         x = "hidden states",
         y = "mean time [s]",
-        caption = "error bars: standard deviation of 5 replicates",
+        caption = "error bars: standard deviation of 5 replicates\ninput size: 120000, alphabet size: 4",
         title = "Running time of increasing hidden state space"
     )
 ggsave("state_space_raw.pdf", height = 5, width = 9)
@@ -110,7 +101,7 @@ data_statespace_grouped %>% ggplot(aes(observations, mean / (observations ^
     labs(
         x = "hidden states",
         y = "mean time [s]",
-        caption = "error bars: standard deviation of 5 replicates",
+        caption = "error bars: standard deviation of 5 replicates\ninput size: 120000, alphabet size: 4",
         title = "Running time of increasing hidden state space"
     )
 ggsave("state_space_normalized.pdf",
@@ -119,9 +110,17 @@ ggsave("state_space_normalized.pdf",
 
 
 
+## Inputsize ##
 
-# Sparseness
-data_sparseness = data %>% filter(test == "sparseness") %>% filter(is.na(iterations) |
+data = read_csv("../newdata/sparse.csv", col_names = F)
+names(data) = c('test',
+                'observations',
+                'time',
+                'algorithm',
+                'variant',
+                'iterations')
+
+data_sparseness = data %>% filter(test == "sparseness_1500") %>% filter(is.na(iterations) |
                                                                        iterations == 1)
 
 data_sparseness_grouped = data_sparseness %>%
@@ -136,36 +135,25 @@ data_sparseness_grouped %>% ggplot(aes(1 - observations, mean, color = variant))
     labs(
         x = "denseness",
         y = "mean time [s]",
-        caption = "error bars: standard deviation of 5 replicates",
-        title = "Running time of increasing denseness (inputsize 90K)"
+        caption = "error bars: standard deviation of 5 replicates\ninput size: 90000, alphabet size: 4, hidden states: 16",
+        title = "Running time of increasing denseness"
     )
-ggsave("denseness_90_raw.pdf", height = 5, width = 9)
+ggsave("denseness_raw.pdf", height = 5, width = 9)
 
 
 
-# Sparseness different size
-data_sparseness = data %>% filter(test == "sparseness_4000")
-
-data_sparseness_grouped = data_sparseness %>%
-    group_by(observations, algorithm, variant, iterations) %>%
-    summarise(mean = mean(time), sd = sd(time))
-
-data_sparseness_grouped %>% ggplot(aes(1 - observations, mean, color = variant)) +
-    geom_point() +
-    geom_line() +
-    geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), size = 0.3, alpha = .65) +
-    facet_wrap(. ~ algorithm, scales = "free") +
-    labs(
-        x = "denseness",
-        y = "mean time [s]",
-        caption = "error bars: standard deviation of 5 replicates",
-        title = "Running time of increasing denseness (inputsize 240K)"
-    )
-ggsave("denseness_240_raw.pdf", height = 5, width = 9)
 
 
 
-# alphabet
+
+## Alphabet ##
+data = read_csv("../newdata/alphabet.csv", col_names = F)
+names(data) = c('test',
+                'observations',
+                'time',
+                'algorithm',
+                'variant',
+                'iterations')
 data_alphabet = data %>% filter(test == "alphabetsize") %>% filter(is.na(iterations) |
                                                                        iterations == 1)
 
@@ -181,7 +169,45 @@ data_alphabet_grouped %>% ggplot(aes(observations, mean, color = variant)) +
     labs(
         x = "alphabet size",
         y = "mean time [s]",
-        caption = "error bars: standard deviation of 5 replicates",
+        caption = "error bars: standard deviation of 5 replicates\ninput size = 90000, hidden states: 8",
         title = "Running time of increasing alphabet size"
     )
 ggsave("alphabet_raw.pdf", height = 5, width = 9)
+
+
+
+
+
+
+## Statesparse
+
+data = read_csv("../newdata/statesparse.csv", col_names = F)
+names(data) = c('test',
+                'observations',
+                'time',
+                'algorithm',
+                'variant',
+                'statespace')
+data$algorithm = data %>% pull(algorithm) %>% recode(forward = "Algorithm: Forward",
+                                                     backward_time = "Algorithm: Backward")
+
+
+data_grouped = data %>%
+    group_by(observations, algorithm, variant, statespace) %>%
+    summarise(mean = mean(time), sd = sd(time))
+
+data_grouped %>% ggplot(aes(1-observations, mean, color = variant)) +
+    geom_point() +
+    geom_line() +
+    geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), width = 0.05, alpha = .65) +
+    facet_grid(statespace ~ algorithm, scales = "free") +
+    
+    labs(
+        x = "denseness",
+        y = "mean time [s]",
+        caption = "error bars: standard deviation of 5 replicates \ninputsize: 90000 characters, alphabet size: 4",
+        title = "Denseness for different state spaces"
+    )
+#geom_hline(yintercept = 0, alpha = 0)
+ggsave("denseness_vs_statespace.pdf", height = 7, width = 10)
+
