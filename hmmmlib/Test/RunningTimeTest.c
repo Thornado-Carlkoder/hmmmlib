@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-void blasRunningTime(){
-    HMM * hmm2 = HMMConventional(7, 4);
+void runningTimeTest(){
+    HMM * hmm2 = HMMCsr(7, 4);
     
     int i;
     int j;
