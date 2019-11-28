@@ -3,7 +3,7 @@
 #include <time.h>
 
 void blasRunningTime(){
-    HMM * hmm2 = HMMConventional(7, 4);
+    HMM * hmm2 = HMMConventionalsparse(7, 4);
     
     int i;
     int j;
@@ -48,7 +48,7 @@ void blasRunningTime(){
     unsigned int observation2[obsLenght2];
     srand(time(NULL));
     for(i = 0; i < obsLenght2; i++){
-        observation2[i] = rand()%4;
+        observation2[i] = rand() % 4;
     }
     clock_t t;
     double time_taken;

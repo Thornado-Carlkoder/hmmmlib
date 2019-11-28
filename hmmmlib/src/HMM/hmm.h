@@ -17,6 +17,8 @@ struct HMM {
 
 typedef struct HMM HMM;
 
+HMM * HMMConventionalsparse(const unsigned int hiddenStates, const unsigned int observations);
+
 HMM * HMMConventional(const unsigned int hiddenStates, const unsigned int observations);
 
 HMM * HMMBLAS(const unsigned int hiddenStates, const unsigned int observations);
