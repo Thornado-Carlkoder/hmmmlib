@@ -294,18 +294,18 @@ if __name__ == "__main__" :
         start = 0
         stop = 1.001
         increment = 0.1
-        replicates = 5
+        replicates = 1
         inputsize = 1500
         file = '../../test_framework/data/pantro3_X.fasta'
 
 
-        for hidden_states in [32, 16, 4]:
+        for hidden_states in [300, 100, 30, 10]:
         
             print('# hs:', hidden_states, file = sys.stderr)
             
             # Conventional #
-            standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            #standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            #standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
 
             # BLAS #
             standard_test_sparseness("forward", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
