@@ -1,700 +1,700 @@
-alphabetsize, 2, 0.24032115936279297, viterbi, Conventional, 
-alphabetsize, 2, 0.22832083702087402, viterbi, Conventional, 
-alphabetsize, 2, 0.23193621635437012, viterbi, Conventional, 
-alphabetsize, 2, 0.23221969604492188, viterbi, Conventional, 
-alphabetsize, 2, 0.24279451370239258, viterbi, Conventional, 
-alphabetsize, 4, 0.23713183403015137, viterbi, Conventional, 
-alphabetsize, 4, 0.24447131156921387, viterbi, Conventional, 
-alphabetsize, 4, 0.2390124797821045, viterbi, Conventional, 
-alphabetsize, 4, 0.22737812995910645, viterbi, Conventional, 
-alphabetsize, 4, 0.24342060089111328, viterbi, Conventional, 
-alphabetsize, 6, 0.2352921962738037, viterbi, Conventional, 
-alphabetsize, 6, 0.24760651588439941, viterbi, Conventional, 
-alphabetsize, 6, 0.2432715892791748, viterbi, Conventional, 
-alphabetsize, 6, 0.23755383491516113, viterbi, Conventional, 
-alphabetsize, 6, 0.24260473251342773, viterbi, Conventional, 
-alphabetsize, 8, 0.2502567768096924, viterbi, Conventional, 
-alphabetsize, 8, 0.2398374080657959, viterbi, Conventional, 
-alphabetsize, 8, 0.23417329788208008, viterbi, Conventional, 
-alphabetsize, 8, 0.24585843086242676, viterbi, Conventional, 
-alphabetsize, 8, 0.23528218269348145, viterbi, Conventional, 
-alphabetsize, 10, 0.24308109283447266, viterbi, Conventional, 
-alphabetsize, 10, 0.24348688125610352, viterbi, Conventional, 
-alphabetsize, 10, 0.23897862434387207, viterbi, Conventional, 
-alphabetsize, 10, 0.24789190292358398, viterbi, Conventional, 
-alphabetsize, 10, 0.25542235374450684, viterbi, Conventional, 
-alphabetsize, 12, 0.24070072174072266, viterbi, Conventional, 
-alphabetsize, 12, 0.25075626373291016, viterbi, Conventional, 
-alphabetsize, 12, 0.23821353912353516, viterbi, Conventional, 
-alphabetsize, 12, 0.247847318649292, viterbi, Conventional, 
-alphabetsize, 12, 0.2549865245819092, viterbi, Conventional, 
-alphabetsize, 14, 0.2536900043487549, viterbi, Conventional, 
-alphabetsize, 14, 0.24650049209594727, viterbi, Conventional, 
-alphabetsize, 14, 0.23818683624267578, viterbi, Conventional, 
-alphabetsize, 14, 0.23543429374694824, viterbi, Conventional, 
-alphabetsize, 14, 0.24472761154174805, viterbi, Conventional, 
-alphabetsize, 2, 0.12065529823303223, posteriorDecoding, Conventional, 
-alphabetsize, 2, 0.12114310264587402, posteriorDecoding, Conventional, 
-alphabetsize, 2, 0.1210029125213623, posteriorDecoding, Conventional, 
-alphabetsize, 2, 0.12205958366394043, posteriorDecoding, Conventional, 
-alphabetsize, 2, 0.12049174308776855, posteriorDecoding, Conventional, 
-alphabetsize, 4, 0.12179422378540039, posteriorDecoding, Conventional, 
-alphabetsize, 4, 0.12105917930603027, posteriorDecoding, Conventional, 
-alphabetsize, 4, 0.12268352508544922, posteriorDecoding, Conventional, 
-alphabetsize, 4, 0.12186121940612793, posteriorDecoding, Conventional, 
-alphabetsize, 4, 0.12167644500732422, posteriorDecoding, Conventional, 
-alphabetsize, 6, 0.12294769287109375, posteriorDecoding, Conventional, 
-alphabetsize, 6, 0.12175583839416504, posteriorDecoding, Conventional, 
-alphabetsize, 6, 0.12194395065307617, posteriorDecoding, Conventional, 
-alphabetsize, 6, 0.12125134468078613, posteriorDecoding, Conventional, 
-alphabetsize, 6, 0.12058281898498535, posteriorDecoding, Conventional, 
-alphabetsize, 8, 0.12262105941772461, posteriorDecoding, Conventional, 
-alphabetsize, 8, 0.12089729309082031, posteriorDecoding, Conventional, 
-alphabetsize, 8, 0.12238502502441406, posteriorDecoding, Conventional, 
-alphabetsize, 8, 0.12230229377746582, posteriorDecoding, Conventional, 
-alphabetsize, 8, 0.12297582626342773, posteriorDecoding, Conventional, 
-alphabetsize, 10, 0.1223151683807373, posteriorDecoding, Conventional, 
-alphabetsize, 10, 0.12187981605529785, posteriorDecoding, Conventional, 
-alphabetsize, 10, 0.12140798568725586, posteriorDecoding, Conventional, 
-alphabetsize, 10, 0.12209177017211914, posteriorDecoding, Conventional, 
-alphabetsize, 10, 0.12168550491333008, posteriorDecoding, Conventional, 
-alphabetsize, 12, 0.12148618698120117, posteriorDecoding, Conventional, 
-alphabetsize, 12, 0.12175703048706055, posteriorDecoding, Conventional, 
-alphabetsize, 12, 0.1224372386932373, posteriorDecoding, Conventional, 
-alphabetsize, 12, 0.12068867683410645, posteriorDecoding, Conventional, 
-alphabetsize, 12, 0.12081503868103027, posteriorDecoding, Conventional, 
-alphabetsize, 14, 0.12195229530334473, posteriorDecoding, Conventional, 
-alphabetsize, 14, 0.12127947807312012, posteriorDecoding, Conventional, 
-alphabetsize, 14, 0.1217348575592041, posteriorDecoding, Conventional, 
-alphabetsize, 14, 0.12094640731811523, posteriorDecoding, Conventional, 
-alphabetsize, 14, 0.12431454658508301, posteriorDecoding, Conventional, 
-alphabetsize, 2, 0.1684434413909912, forward, Conventional, 
-alphabetsize, 2, 0.16517281532287598, forward, Conventional, 
-alphabetsize, 2, 0.16642498970031738, forward, Conventional, 
-alphabetsize, 2, 0.1675102710723877, forward, Conventional, 
-alphabetsize, 2, 0.16638827323913574, forward, Conventional, 
-alphabetsize, 4, 0.16661310195922852, forward, Conventional, 
-alphabetsize, 4, 0.16378021240234375, forward, Conventional, 
-alphabetsize, 4, 0.16356301307678223, forward, Conventional, 
-alphabetsize, 4, 0.1636981964111328, forward, Conventional, 
-alphabetsize, 4, 0.16336274147033691, forward, Conventional, 
-alphabetsize, 6, 0.16507863998413086, forward, Conventional, 
-alphabetsize, 6, 0.16426467895507812, forward, Conventional, 
-alphabetsize, 6, 0.16590189933776855, forward, Conventional, 
-alphabetsize, 6, 0.16357922554016113, forward, Conventional, 
-alphabetsize, 6, 0.1636810302734375, forward, Conventional, 
-alphabetsize, 8, 0.16651391983032227, forward, Conventional, 
-alphabetsize, 8, 0.1636958122253418, forward, Conventional, 
-alphabetsize, 8, 0.16479206085205078, forward, Conventional, 
-alphabetsize, 8, 0.16331839561462402, forward, Conventional, 
-alphabetsize, 8, 0.16378378868103027, forward, Conventional, 
-alphabetsize, 10, 0.1649785041809082, forward, Conventional, 
-alphabetsize, 10, 0.16359257698059082, forward, Conventional, 
-alphabetsize, 10, 0.1638636589050293, forward, Conventional, 
-alphabetsize, 10, 0.16385817527770996, forward, Conventional, 
-alphabetsize, 10, 0.16468214988708496, forward, Conventional, 
-alphabetsize, 12, 0.16437315940856934, forward, Conventional, 
-alphabetsize, 12, 0.16424822807312012, forward, Conventional, 
-alphabetsize, 12, 0.1638956069946289, forward, Conventional, 
-alphabetsize, 12, 0.16349339485168457, forward, Conventional, 
-alphabetsize, 12, 0.1633472442626953, forward, Conventional, 
-alphabetsize, 14, 0.1655433177947998, forward, Conventional, 
-alphabetsize, 14, 0.16342496871948242, forward, Conventional, 
-alphabetsize, 14, 0.16376471519470215, forward, Conventional, 
-alphabetsize, 14, 0.16393733024597168, forward, Conventional, 
-alphabetsize, 14, 0.16369414329528809, forward, Conventional, 
-alphabetsize, 2, 0.3442976474761963, backward, Conventional, 
-alphabetsize, 2, 0.34133052825927734, backward, Conventional, 
-alphabetsize, 2, 0.34627366065979004, backward, Conventional, 
-alphabetsize, 2, 0.3403627872467041, backward, Conventional, 
-alphabetsize, 2, 0.34572553634643555, backward, Conventional, 
-alphabetsize, 4, 0.34153151512145996, backward, Conventional, 
-alphabetsize, 4, 0.3427414894104004, backward, Conventional, 
-alphabetsize, 4, 0.3399934768676758, backward, Conventional, 
-alphabetsize, 4, 0.34027838706970215, backward, Conventional, 
-alphabetsize, 4, 0.33971714973449707, backward, Conventional, 
-alphabetsize, 6, 0.34131836891174316, backward, Conventional, 
-alphabetsize, 6, 0.34374308586120605, backward, Conventional, 
-alphabetsize, 6, 0.34093737602233887, backward, Conventional, 
-alphabetsize, 6, 0.33983564376831055, backward, Conventional, 
-alphabetsize, 6, 0.3402388095855713, backward, Conventional, 
-alphabetsize, 8, 0.340740442276001, backward, Conventional, 
-alphabetsize, 8, 0.33955836296081543, backward, Conventional, 
-alphabetsize, 8, 0.34198427200317383, backward, Conventional, 
-alphabetsize, 8, 0.3393280506134033, backward, Conventional, 
-alphabetsize, 8, 0.3457760810852051, backward, Conventional, 
-alphabetsize, 10, 0.3428618907928467, backward, Conventional, 
-alphabetsize, 10, 0.34009289741516113, backward, Conventional, 
-alphabetsize, 10, 0.3406243324279785, backward, Conventional, 
-alphabetsize, 10, 0.3491551876068115, backward, Conventional, 
-alphabetsize, 10, 0.3406996726989746, backward, Conventional, 
-alphabetsize, 12, 0.34139442443847656, backward, Conventional, 
-alphabetsize, 12, 0.34102821350097656, backward, Conventional, 
-alphabetsize, 12, 0.33901309967041016, backward, Conventional, 
-alphabetsize, 12, 0.3402261734008789, backward, Conventional, 
-alphabetsize, 12, 0.3420131206512451, backward, Conventional, 
-alphabetsize, 14, 0.340745210647583, backward, Conventional, 
-alphabetsize, 14, 0.34054064750671387, backward, Conventional, 
-alphabetsize, 14, 0.34018993377685547, backward, Conventional, 
-alphabetsize, 14, 0.33977699279785156, backward, Conventional, 
-alphabetsize, 14, 0.3404099941253662, backward, Conventional, 
-alphabetsize, 2, 0.27371668815612793, baumWelch, Conventional, 1
-alphabetsize, 2, 0.2692067623138428, baumWelch, Conventional, 1
-alphabetsize, 2, 0.27027297019958496, baumWelch, Conventional, 1
-alphabetsize, 2, 0.27460432052612305, baumWelch, Conventional, 1
-alphabetsize, 2, 0.2697720527648926, baumWelch, Conventional, 1
-alphabetsize, 4, 0.27430152893066406, baumWelch, Conventional, 1
-alphabetsize, 4, 0.2771949768066406, baumWelch, Conventional, 1
-alphabetsize, 4, 0.2814598083496094, baumWelch, Conventional, 1
-alphabetsize, 4, 0.2723207473754883, baumWelch, Conventional, 1
-alphabetsize, 4, 0.2739133834838867, baumWelch, Conventional, 1
-alphabetsize, 6, 0.2806859016418457, baumWelch, Conventional, 1
-alphabetsize, 6, 0.27886366844177246, baumWelch, Conventional, 1
-alphabetsize, 6, 0.27847909927368164, baumWelch, Conventional, 1
-alphabetsize, 6, 0.2787151336669922, baumWelch, Conventional, 1
-alphabetsize, 6, 0.28356313705444336, baumWelch, Conventional, 1
-alphabetsize, 8, 0.28618502616882324, baumWelch, Conventional, 1
-alphabetsize, 8, 0.2832906246185303, baumWelch, Conventional, 1
-alphabetsize, 8, 0.286818265914917, baumWelch, Conventional, 1
-alphabetsize, 8, 0.28265953063964844, baumWelch, Conventional, 1
-alphabetsize, 8, 0.2831714153289795, baumWelch, Conventional, 1
-alphabetsize, 10, 0.28806185722351074, baumWelch, Conventional, 1
-alphabetsize, 10, 0.299041748046875, baumWelch, Conventional, 1
-alphabetsize, 10, 0.29230475425720215, baumWelch, Conventional, 1
-alphabetsize, 10, 0.29175829887390137, baumWelch, Conventional, 1
-alphabetsize, 10, 0.28789424896240234, baumWelch, Conventional, 1
-alphabetsize, 12, 0.2980031967163086, baumWelch, Conventional, 1
-alphabetsize, 12, 0.2923166751861572, baumWelch, Conventional, 1
-alphabetsize, 12, 0.2950756549835205, baumWelch, Conventional, 1
-alphabetsize, 12, 0.293590784072876, baumWelch, Conventional, 1
-alphabetsize, 12, 0.2976648807525635, baumWelch, Conventional, 1
-alphabetsize, 14, 0.2988152503967285, baumWelch, Conventional, 1
-alphabetsize, 14, 0.3024411201477051, baumWelch, Conventional, 1
-alphabetsize, 14, 0.2971820831298828, baumWelch, Conventional, 1
-alphabetsize, 14, 0.29909276962280273, baumWelch, Conventional, 1
-alphabetsize, 14, 0.30138564109802246, baumWelch, Conventional, 1
-alphabetsize, 2, 0.23595619201660156, viterbi, BLAS, 
-alphabetsize, 2, 0.2456521987915039, viterbi, BLAS, 
-alphabetsize, 2, 0.23020386695861816, viterbi, BLAS, 
-alphabetsize, 2, 0.23096156120300293, viterbi, BLAS, 
-alphabetsize, 2, 0.22385907173156738, viterbi, BLAS, 
-alphabetsize, 4, 0.2485795021057129, viterbi, BLAS, 
-alphabetsize, 4, 0.24050045013427734, viterbi, BLAS, 
-alphabetsize, 4, 0.23899292945861816, viterbi, BLAS, 
-alphabetsize, 4, 0.2387676239013672, viterbi, BLAS, 
-alphabetsize, 4, 0.23810958862304688, viterbi, BLAS, 
-alphabetsize, 6, 0.24437761306762695, viterbi, BLAS, 
-alphabetsize, 6, 0.23709368705749512, viterbi, BLAS, 
-alphabetsize, 6, 0.2506692409515381, viterbi, BLAS, 
-alphabetsize, 6, 0.23726105690002441, viterbi, BLAS, 
-alphabetsize, 6, 0.24326682090759277, viterbi, BLAS, 
-alphabetsize, 8, 0.243438720703125, viterbi, BLAS, 
-alphabetsize, 8, 0.24382281303405762, viterbi, BLAS, 
-alphabetsize, 8, 0.23969817161560059, viterbi, BLAS, 
-alphabetsize, 8, 0.24128127098083496, viterbi, BLAS, 
-alphabetsize, 8, 0.24253392219543457, viterbi, BLAS, 
-alphabetsize, 10, 0.23766469955444336, viterbi, BLAS, 
-alphabetsize, 10, 0.23712706565856934, viterbi, BLAS, 
-alphabetsize, 10, 0.23191618919372559, viterbi, BLAS, 
-alphabetsize, 10, 0.2362675666809082, viterbi, BLAS, 
-alphabetsize, 10, 0.25026988983154297, viterbi, BLAS, 
-alphabetsize, 12, 0.24473333358764648, viterbi, BLAS, 
-alphabetsize, 12, 0.2584969997406006, viterbi, BLAS, 
-alphabetsize, 12, 0.2465071678161621, viterbi, BLAS, 
-alphabetsize, 12, 0.240950345993042, viterbi, BLAS, 
-alphabetsize, 12, 0.2397148609161377, viterbi, BLAS, 
-alphabetsize, 14, 0.24996519088745117, viterbi, BLAS, 
-alphabetsize, 14, 0.24687480926513672, viterbi, BLAS, 
-alphabetsize, 14, 0.2551095485687256, viterbi, BLAS, 
-alphabetsize, 14, 0.23909783363342285, viterbi, BLAS, 
-alphabetsize, 14, 0.2440333366394043, viterbi, BLAS, 
-alphabetsize, 2, 0.047718048095703125, posteriorDecoding, BLAS, 
-alphabetsize, 2, 0.04758310317993164, posteriorDecoding, BLAS, 
-alphabetsize, 2, 0.04819798469543457, posteriorDecoding, BLAS, 
-alphabetsize, 2, 0.047338247299194336, posteriorDecoding, BLAS, 
-alphabetsize, 2, 0.04778099060058594, posteriorDecoding, BLAS, 
-alphabetsize, 4, 0.047931671142578125, posteriorDecoding, BLAS, 
-alphabetsize, 4, 0.04772472381591797, posteriorDecoding, BLAS, 
-alphabetsize, 4, 0.04800534248352051, posteriorDecoding, BLAS, 
-alphabetsize, 4, 0.04792022705078125, posteriorDecoding, BLAS, 
-alphabetsize, 4, 0.048094749450683594, posteriorDecoding, BLAS, 
-alphabetsize, 6, 0.049419403076171875, posteriorDecoding, BLAS, 
-alphabetsize, 6, 0.0478670597076416, posteriorDecoding, BLAS, 
-alphabetsize, 6, 0.04911351203918457, posteriorDecoding, BLAS, 
-alphabetsize, 6, 0.04790687561035156, posteriorDecoding, BLAS, 
-alphabetsize, 6, 0.04804539680480957, posteriorDecoding, BLAS, 
-alphabetsize, 8, 0.04807281494140625, posteriorDecoding, BLAS, 
-alphabetsize, 8, 0.0484766960144043, posteriorDecoding, BLAS, 
-alphabetsize, 8, 0.04830002784729004, posteriorDecoding, BLAS, 
-alphabetsize, 8, 0.04759550094604492, posteriorDecoding, BLAS, 
-alphabetsize, 8, 0.04774928092956543, posteriorDecoding, BLAS, 
-alphabetsize, 10, 0.04959225654602051, posteriorDecoding, BLAS, 
-alphabetsize, 10, 0.047998905181884766, posteriorDecoding, BLAS, 
-alphabetsize, 10, 0.0482630729675293, posteriorDecoding, BLAS, 
-alphabetsize, 10, 0.04795694351196289, posteriorDecoding, BLAS, 
-alphabetsize, 10, 0.04867362976074219, posteriorDecoding, BLAS, 
-alphabetsize, 12, 0.04895138740539551, posteriorDecoding, BLAS, 
-alphabetsize, 12, 0.04775714874267578, posteriorDecoding, BLAS, 
-alphabetsize, 12, 0.04864954948425293, posteriorDecoding, BLAS, 
-alphabetsize, 12, 0.048245906829833984, posteriorDecoding, BLAS, 
-alphabetsize, 12, 0.04787898063659668, posteriorDecoding, BLAS, 
-alphabetsize, 14, 0.04883933067321777, posteriorDecoding, BLAS, 
-alphabetsize, 14, 0.04819989204406738, posteriorDecoding, BLAS, 
-alphabetsize, 14, 0.04862785339355469, posteriorDecoding, BLAS, 
-alphabetsize, 14, 0.0474848747253418, posteriorDecoding, BLAS, 
-alphabetsize, 14, 0.048139333724975586, posteriorDecoding, BLAS, 
-alphabetsize, 2, 0.1510930061340332, forward, BLAS, 
-alphabetsize, 2, 0.13999295234680176, forward, BLAS, 
-alphabetsize, 2, 0.14057111740112305, forward, BLAS, 
-alphabetsize, 2, 0.13928604125976562, forward, BLAS, 
-alphabetsize, 2, 0.14015579223632812, forward, BLAS, 
-alphabetsize, 4, 0.14244389533996582, forward, BLAS, 
-alphabetsize, 4, 0.1393296718597412, forward, BLAS, 
-alphabetsize, 4, 0.13953781127929688, forward, BLAS, 
-alphabetsize, 4, 0.14007139205932617, forward, BLAS, 
-alphabetsize, 4, 0.14079070091247559, forward, BLAS, 
-alphabetsize, 6, 0.14168477058410645, forward, BLAS, 
-alphabetsize, 6, 0.13993430137634277, forward, BLAS, 
-alphabetsize, 6, 0.13921594619750977, forward, BLAS, 
-alphabetsize, 6, 0.13982629776000977, forward, BLAS, 
-alphabetsize, 6, 0.13933134078979492, forward, BLAS, 
-alphabetsize, 8, 0.14042925834655762, forward, BLAS, 
-alphabetsize, 8, 0.14209270477294922, forward, BLAS, 
-alphabetsize, 8, 0.14214658737182617, forward, BLAS, 
-alphabetsize, 8, 0.13962483406066895, forward, BLAS, 
-alphabetsize, 8, 0.13901329040527344, forward, BLAS, 
-alphabetsize, 10, 0.14242792129516602, forward, BLAS, 
-alphabetsize, 10, 0.13988041877746582, forward, BLAS, 
-alphabetsize, 10, 0.13969850540161133, forward, BLAS, 
-alphabetsize, 10, 0.1392827033996582, forward, BLAS, 
-alphabetsize, 10, 0.14147567749023438, forward, BLAS, 
-alphabetsize, 12, 0.1418626308441162, forward, BLAS, 
-alphabetsize, 12, 0.1401841640472412, forward, BLAS, 
-alphabetsize, 12, 0.13915634155273438, forward, BLAS, 
-alphabetsize, 12, 0.1394507884979248, forward, BLAS, 
-alphabetsize, 12, 0.1394205093383789, forward, BLAS, 
-alphabetsize, 14, 0.14302682876586914, forward, BLAS, 
-alphabetsize, 14, 0.14206361770629883, forward, BLAS, 
-alphabetsize, 14, 0.13956832885742188, forward, BLAS, 
-alphabetsize, 14, 0.14190435409545898, forward, BLAS, 
-alphabetsize, 14, 0.13982415199279785, forward, BLAS, 
-alphabetsize, 2, 0.26641058921813965, backward, BLAS, 
-alphabetsize, 2, 0.26550722122192383, backward, BLAS, 
-alphabetsize, 2, 0.265148401260376, backward, BLAS, 
-alphabetsize, 2, 0.2639005184173584, backward, BLAS, 
-alphabetsize, 2, 0.264721155166626, backward, BLAS, 
-alphabetsize, 4, 0.26510000228881836, backward, BLAS, 
-alphabetsize, 4, 0.2663137912750244, backward, BLAS, 
-alphabetsize, 4, 0.26332616806030273, backward, BLAS, 
-alphabetsize, 4, 0.2646474838256836, backward, BLAS, 
-alphabetsize, 4, 0.2670884132385254, backward, BLAS, 
-alphabetsize, 6, 0.2666943073272705, backward, BLAS, 
-alphabetsize, 6, 0.2644617557525635, backward, BLAS, 
-alphabetsize, 6, 0.26355504989624023, backward, BLAS, 
-alphabetsize, 6, 0.2691984176635742, backward, BLAS, 
-alphabetsize, 6, 0.26301050186157227, backward, BLAS, 
-alphabetsize, 8, 0.2700936794281006, backward, BLAS, 
-alphabetsize, 8, 0.26746177673339844, backward, BLAS, 
-alphabetsize, 8, 0.26897263526916504, backward, BLAS, 
-alphabetsize, 8, 0.26343297958374023, backward, BLAS, 
-alphabetsize, 8, 0.263836145401001, backward, BLAS, 
-alphabetsize, 10, 0.2649226188659668, backward, BLAS, 
-alphabetsize, 10, 0.2629356384277344, backward, BLAS, 
-alphabetsize, 10, 0.2628769874572754, backward, BLAS, 
-alphabetsize, 10, 0.26707983016967773, backward, BLAS, 
-alphabetsize, 10, 0.2657890319824219, backward, BLAS, 
-alphabetsize, 12, 0.26526689529418945, backward, BLAS, 
-alphabetsize, 12, 0.2696812152862549, backward, BLAS, 
-alphabetsize, 12, 0.26305484771728516, backward, BLAS, 
-alphabetsize, 12, 0.26842761039733887, backward, BLAS, 
-alphabetsize, 12, 0.26232361793518066, backward, BLAS, 
-alphabetsize, 14, 0.2664320468902588, backward, BLAS, 
-alphabetsize, 14, 0.2650115489959717, backward, BLAS, 
-alphabetsize, 14, 0.2630734443664551, backward, BLAS, 
-alphabetsize, 14, 0.2638394832611084, backward, BLAS, 
-alphabetsize, 14, 0.26470232009887695, backward, BLAS, 
-alphabetsize, 2, 0.1987447738647461, baumWelch, BLAS, 1
-alphabetsize, 2, 0.2014756202697754, baumWelch, BLAS, 1
-alphabetsize, 2, 0.19714641571044922, baumWelch, BLAS, 1
-alphabetsize, 2, 0.1978294849395752, baumWelch, BLAS, 1
-alphabetsize, 2, 0.19825172424316406, baumWelch, BLAS, 1
-alphabetsize, 4, 0.20823192596435547, baumWelch, BLAS, 1
-alphabetsize, 4, 0.2025306224822998, baumWelch, BLAS, 1
-alphabetsize, 4, 0.2062985897064209, baumWelch, BLAS, 1
-alphabetsize, 4, 0.2027263641357422, baumWelch, BLAS, 1
-alphabetsize, 4, 0.20287132263183594, baumWelch, BLAS, 1
-alphabetsize, 6, 0.2087407112121582, baumWelch, BLAS, 1
-alphabetsize, 6, 0.2062218189239502, baumWelch, BLAS, 1
-alphabetsize, 6, 0.20623207092285156, baumWelch, BLAS, 1
-alphabetsize, 6, 0.20748114585876465, baumWelch, BLAS, 1
-alphabetsize, 6, 0.20699691772460938, baumWelch, BLAS, 1
-alphabetsize, 8, 0.21370458602905273, baumWelch, BLAS, 1
-alphabetsize, 8, 0.21143889427185059, baumWelch, BLAS, 1
-alphabetsize, 8, 0.21164631843566895, baumWelch, BLAS, 1
-alphabetsize, 8, 0.21452784538269043, baumWelch, BLAS, 1
-alphabetsize, 8, 0.21147847175598145, baumWelch, BLAS, 1
-alphabetsize, 10, 0.21672511100769043, baumWelch, BLAS, 1
-alphabetsize, 10, 0.2244420051574707, baumWelch, BLAS, 1
-alphabetsize, 10, 0.2172846794128418, baumWelch, BLAS, 1
-alphabetsize, 10, 0.22254514694213867, baumWelch, BLAS, 1
-alphabetsize, 10, 0.2184741497039795, baumWelch, BLAS, 1
-alphabetsize, 12, 0.22257709503173828, baumWelch, BLAS, 1
-alphabetsize, 12, 0.22681617736816406, baumWelch, BLAS, 1
-alphabetsize, 12, 0.22196650505065918, baumWelch, BLAS, 1
-alphabetsize, 12, 0.22189950942993164, baumWelch, BLAS, 1
-alphabetsize, 12, 0.22308135032653809, baumWelch, BLAS, 1
-alphabetsize, 14, 0.22724437713623047, baumWelch, BLAS, 1
-alphabetsize, 14, 0.22651028633117676, baumWelch, BLAS, 1
-alphabetsize, 14, 0.23114991188049316, baumWelch, BLAS, 1
-alphabetsize, 14, 0.22964191436767578, baumWelch, BLAS, 1
-alphabetsize, 14, 0.23108506202697754, baumWelch, BLAS, 1
-alphabetsize, 2, 0.2360680103302002, viterbi, CSR, 
-alphabetsize, 2, 0.23756766319274902, viterbi, CSR, 
-alphabetsize, 2, 0.23782801628112793, viterbi, CSR, 
-alphabetsize, 2, 0.23803138732910156, viterbi, CSR, 
-alphabetsize, 2, 0.21768832206726074, viterbi, CSR, 
-alphabetsize, 4, 0.2451934814453125, viterbi, CSR, 
-alphabetsize, 4, 0.23094749450683594, viterbi, CSR, 
-alphabetsize, 4, 0.23297619819641113, viterbi, CSR, 
-alphabetsize, 4, 0.23887872695922852, viterbi, CSR, 
-alphabetsize, 4, 0.24600577354431152, viterbi, CSR, 
-alphabetsize, 6, 0.23879265785217285, viterbi, CSR, 
-alphabetsize, 6, 0.250110387802124, viterbi, CSR, 
-alphabetsize, 6, 0.23660039901733398, viterbi, CSR, 
-alphabetsize, 6, 0.24564456939697266, viterbi, CSR, 
-alphabetsize, 6, 0.24238228797912598, viterbi, CSR, 
-alphabetsize, 8, 0.24432611465454102, viterbi, CSR, 
-alphabetsize, 8, 0.24054813385009766, viterbi, CSR, 
-alphabetsize, 8, 0.23784303665161133, viterbi, CSR, 
-alphabetsize, 8, 0.2373182773590088, viterbi, CSR, 
-alphabetsize, 8, 0.24616265296936035, viterbi, CSR, 
-alphabetsize, 10, 0.2399120330810547, viterbi, CSR, 
-alphabetsize, 10, 0.23800349235534668, viterbi, CSR, 
-alphabetsize, 10, 0.24492979049682617, viterbi, CSR, 
-alphabetsize, 10, 0.24562764167785645, viterbi, CSR, 
-alphabetsize, 10, 0.24652671813964844, viterbi, CSR, 
-alphabetsize, 12, 0.2363595962524414, viterbi, CSR, 
-alphabetsize, 12, 0.25264692306518555, viterbi, CSR, 
-alphabetsize, 12, 0.2461097240447998, viterbi, CSR, 
-alphabetsize, 12, 0.2464463710784912, viterbi, CSR, 
-alphabetsize, 12, 0.24190688133239746, viterbi, CSR, 
-alphabetsize, 14, 0.2524278163909912, viterbi, CSR, 
-alphabetsize, 14, 0.24335145950317383, viterbi, CSR, 
-alphabetsize, 14, 0.2400188446044922, viterbi, CSR, 
-alphabetsize, 14, 0.2450122833251953, viterbi, CSR, 
-alphabetsize, 14, 0.24202871322631836, viterbi, CSR, 
-alphabetsize, 2, 0.09693121910095215, posteriorDecoding, CSR, 
-alphabetsize, 2, 0.09527397155761719, posteriorDecoding, CSR, 
-alphabetsize, 2, 0.0950765609741211, posteriorDecoding, CSR, 
-alphabetsize, 2, 0.0956428050994873, posteriorDecoding, CSR, 
-alphabetsize, 2, 0.09488296508789062, posteriorDecoding, CSR, 
-alphabetsize, 4, 0.09723734855651855, posteriorDecoding, CSR, 
-alphabetsize, 4, 0.09575271606445312, posteriorDecoding, CSR, 
-alphabetsize, 4, 0.09831953048706055, posteriorDecoding, CSR, 
-alphabetsize, 4, 0.09589576721191406, posteriorDecoding, CSR, 
-alphabetsize, 4, 0.09766578674316406, posteriorDecoding, CSR, 
-alphabetsize, 6, 0.09708023071289062, posteriorDecoding, CSR, 
-alphabetsize, 6, 0.09614682197570801, posteriorDecoding, CSR, 
-alphabetsize, 6, 0.09671950340270996, posteriorDecoding, CSR, 
-alphabetsize, 6, 0.09518766403198242, posteriorDecoding, CSR, 
-alphabetsize, 6, 0.0950782299041748, posteriorDecoding, CSR, 
-alphabetsize, 8, 0.09659576416015625, posteriorDecoding, CSR, 
-alphabetsize, 8, 0.09546399116516113, posteriorDecoding, CSR, 
-alphabetsize, 8, 0.09656810760498047, posteriorDecoding, CSR, 
-alphabetsize, 8, 0.09546375274658203, posteriorDecoding, CSR, 
-alphabetsize, 8, 0.0952003002166748, posteriorDecoding, CSR, 
-alphabetsize, 10, 0.10152649879455566, posteriorDecoding, CSR, 
-alphabetsize, 10, 0.09588861465454102, posteriorDecoding, CSR, 
-alphabetsize, 10, 0.09617447853088379, posteriorDecoding, CSR, 
-alphabetsize, 10, 0.09662389755249023, posteriorDecoding, CSR, 
-alphabetsize, 10, 0.09600377082824707, posteriorDecoding, CSR, 
-alphabetsize, 12, 0.09696841239929199, posteriorDecoding, CSR, 
-alphabetsize, 12, 0.09606480598449707, posteriorDecoding, CSR, 
-alphabetsize, 12, 0.0959770679473877, posteriorDecoding, CSR, 
-alphabetsize, 12, 0.09545230865478516, posteriorDecoding, CSR, 
-alphabetsize, 12, 0.09686088562011719, posteriorDecoding, CSR, 
-alphabetsize, 14, 0.09741735458374023, posteriorDecoding, CSR, 
-alphabetsize, 14, 0.09581184387207031, posteriorDecoding, CSR, 
-alphabetsize, 14, 0.0955808162689209, posteriorDecoding, CSR, 
-alphabetsize, 14, 0.0972282886505127, posteriorDecoding, CSR, 
-alphabetsize, 14, 0.09559202194213867, posteriorDecoding, CSR, 
-alphabetsize, 2, 0.16686248779296875, forward, CSR, 
-alphabetsize, 2, 0.16487789154052734, forward, CSR, 
-alphabetsize, 2, 0.16585397720336914, forward, CSR, 
-alphabetsize, 2, 0.16265082359313965, forward, CSR, 
-alphabetsize, 2, 0.16567444801330566, forward, CSR, 
-alphabetsize, 4, 0.16530799865722656, forward, CSR, 
-alphabetsize, 4, 0.16311860084533691, forward, CSR, 
-alphabetsize, 4, 0.164581298828125, forward, CSR, 
-alphabetsize, 4, 0.16988086700439453, forward, CSR, 
-alphabetsize, 4, 0.16322040557861328, forward, CSR, 
-alphabetsize, 6, 0.16571402549743652, forward, CSR, 
-alphabetsize, 6, 0.16313600540161133, forward, CSR, 
-alphabetsize, 6, 0.16283440589904785, forward, CSR, 
-alphabetsize, 6, 0.16351079940795898, forward, CSR, 
-alphabetsize, 6, 0.16254162788391113, forward, CSR, 
-alphabetsize, 8, 0.16658234596252441, forward, CSR, 
-alphabetsize, 8, 0.1625821590423584, forward, CSR, 
-alphabetsize, 8, 0.1629009246826172, forward, CSR, 
-alphabetsize, 8, 0.16286039352416992, forward, CSR, 
-alphabetsize, 8, 0.16321778297424316, forward, CSR, 
-alphabetsize, 10, 0.16659307479858398, forward, CSR, 
-alphabetsize, 10, 0.1628868579864502, forward, CSR, 
-alphabetsize, 10, 0.16346096992492676, forward, CSR, 
-alphabetsize, 10, 0.16274356842041016, forward, CSR, 
-alphabetsize, 10, 0.16248607635498047, forward, CSR, 
-alphabetsize, 12, 0.16458773612976074, forward, CSR, 
-alphabetsize, 12, 0.16334080696105957, forward, CSR, 
-alphabetsize, 12, 0.16283583641052246, forward, CSR, 
-alphabetsize, 12, 0.1626443862915039, forward, CSR, 
-alphabetsize, 12, 0.16216659545898438, forward, CSR, 
-alphabetsize, 14, 0.1642773151397705, forward, CSR, 
-alphabetsize, 14, 0.1642904281616211, forward, CSR, 
-alphabetsize, 14, 0.16423749923706055, forward, CSR, 
-alphabetsize, 14, 0.16353869438171387, forward, CSR, 
-alphabetsize, 14, 0.16277337074279785, forward, CSR, 
-alphabetsize, 2, 0.31296205520629883, backward, CSR, 
-alphabetsize, 2, 0.31256771087646484, backward, CSR, 
-alphabetsize, 2, 0.3165886402130127, backward, CSR, 
-alphabetsize, 2, 0.3124845027923584, backward, CSR, 
-alphabetsize, 2, 0.3188188076019287, backward, CSR, 
-alphabetsize, 4, 0.3137686252593994, backward, CSR, 
-alphabetsize, 4, 0.3123490810394287, backward, CSR, 
-alphabetsize, 4, 0.31180620193481445, backward, CSR, 
-alphabetsize, 4, 0.31172990798950195, backward, CSR, 
-alphabetsize, 4, 0.31058669090270996, backward, CSR, 
-alphabetsize, 6, 0.3157198429107666, backward, CSR, 
-alphabetsize, 6, 0.313901424407959, backward, CSR, 
-alphabetsize, 6, 0.31276702880859375, backward, CSR, 
-alphabetsize, 6, 0.3154110908508301, backward, CSR, 
-alphabetsize, 6, 0.31171274185180664, backward, CSR, 
-alphabetsize, 8, 0.31247520446777344, backward, CSR, 
-alphabetsize, 8, 0.31267786026000977, backward, CSR, 
-alphabetsize, 8, 0.31342530250549316, backward, CSR, 
-alphabetsize, 8, 0.3148493766784668, backward, CSR, 
-alphabetsize, 8, 0.316631555557251, backward, CSR, 
-alphabetsize, 10, 0.3155059814453125, backward, CSR, 
-alphabetsize, 10, 0.3125038146972656, backward, CSR, 
-alphabetsize, 10, 0.3108088970184326, backward, CSR, 
-alphabetsize, 10, 0.3133549690246582, backward, CSR, 
-alphabetsize, 10, 0.31185317039489746, backward, CSR, 
-alphabetsize, 12, 0.31583070755004883, backward, CSR, 
-alphabetsize, 12, 0.3124065399169922, backward, CSR, 
-alphabetsize, 12, 0.3119971752166748, backward, CSR, 
-alphabetsize, 12, 0.31029510498046875, backward, CSR, 
-alphabetsize, 12, 0.31681394577026367, backward, CSR, 
-alphabetsize, 14, 0.3192451000213623, backward, CSR, 
-alphabetsize, 14, 0.31462550163269043, backward, CSR, 
-alphabetsize, 14, 0.3120598793029785, backward, CSR, 
-alphabetsize, 14, 0.31163811683654785, backward, CSR, 
-alphabetsize, 14, 0.3106112480163574, backward, CSR, 
-alphabetsize, 2, 0.24776864051818848, baumWelch, CSR, 1
-alphabetsize, 2, 0.2612130641937256, baumWelch, CSR, 1
-alphabetsize, 2, 0.25310373306274414, baumWelch, CSR, 1
-alphabetsize, 2, 0.24471473693847656, baumWelch, CSR, 1
-alphabetsize, 2, 0.24541831016540527, baumWelch, CSR, 1
-alphabetsize, 4, 0.2509901523590088, baumWelch, CSR, 1
-alphabetsize, 4, 0.24925470352172852, baumWelch, CSR, 1
-alphabetsize, 4, 0.24922990798950195, baumWelch, CSR, 1
-alphabetsize, 4, 0.24967169761657715, baumWelch, CSR, 1
-alphabetsize, 4, 0.2550373077392578, baumWelch, CSR, 1
-alphabetsize, 6, 0.2557845115661621, baumWelch, CSR, 1
-alphabetsize, 6, 0.2537829875946045, baumWelch, CSR, 1
-alphabetsize, 6, 0.2615196704864502, baumWelch, CSR, 1
-alphabetsize, 6, 0.25525975227355957, baumWelch, CSR, 1
-alphabetsize, 6, 0.2588646411895752, baumWelch, CSR, 1
-alphabetsize, 8, 0.2603030204772949, baumWelch, CSR, 1
-alphabetsize, 8, 0.26325201988220215, baumWelch, CSR, 1
-alphabetsize, 8, 0.263155460357666, baumWelch, CSR, 1
-alphabetsize, 8, 0.2609078884124756, baumWelch, CSR, 1
-alphabetsize, 8, 0.25931596755981445, baumWelch, CSR, 1
-alphabetsize, 10, 0.26465582847595215, baumWelch, CSR, 1
-alphabetsize, 10, 0.2640261650085449, baumWelch, CSR, 1
-alphabetsize, 10, 0.26459717750549316, baumWelch, CSR, 1
-alphabetsize, 10, 0.2633023262023926, baumWelch, CSR, 1
-alphabetsize, 10, 0.2636597156524658, baumWelch, CSR, 1
-alphabetsize, 12, 0.2754552364349365, baumWelch, CSR, 1
-alphabetsize, 12, 0.2689347267150879, baumWelch, CSR, 1
-alphabetsize, 12, 0.26961302757263184, baumWelch, CSR, 1
-alphabetsize, 12, 0.2693045139312744, baumWelch, CSR, 1
-alphabetsize, 12, 0.26807284355163574, baumWelch, CSR, 1
-alphabetsize, 14, 0.2752971649169922, baumWelch, CSR, 1
-alphabetsize, 14, 0.2749049663543701, baumWelch, CSR, 1
-alphabetsize, 14, 0.2787811756134033, baumWelch, CSR, 1
-alphabetsize, 14, 0.2732279300689697, baumWelch, CSR, 1
-alphabetsize, 14, 0.2744741439819336, baumWelch, CSR, 1
-alphabetsize, 2, 0.2379608154296875, viterbi, RSB, 
-alphabetsize, 2, 0.24079680442810059, viterbi, RSB, 
-alphabetsize, 2, 0.23934721946716309, viterbi, RSB, 
-alphabetsize, 2, 0.2306840419769287, viterbi, RSB, 
-alphabetsize, 2, 0.2374105453491211, viterbi, RSB, 
-alphabetsize, 4, 0.23655152320861816, viterbi, RSB, 
-alphabetsize, 4, 0.24158859252929688, viterbi, RSB, 
-alphabetsize, 4, 0.23782062530517578, viterbi, RSB, 
-alphabetsize, 4, 0.23413324356079102, viterbi, RSB, 
-alphabetsize, 4, 0.23669099807739258, viterbi, RSB, 
-alphabetsize, 6, 0.23947834968566895, viterbi, RSB, 
-alphabetsize, 6, 0.23586750030517578, viterbi, RSB, 
-alphabetsize, 6, 0.2512989044189453, viterbi, RSB, 
-alphabetsize, 6, 0.23840951919555664, viterbi, RSB, 
-alphabetsize, 6, 0.24033021926879883, viterbi, RSB, 
-alphabetsize, 8, 0.2450580596923828, viterbi, RSB, 
-alphabetsize, 8, 0.24330496788024902, viterbi, RSB, 
-alphabetsize, 8, 0.24714326858520508, viterbi, RSB, 
-alphabetsize, 8, 0.24329233169555664, viterbi, RSB, 
-alphabetsize, 8, 0.24779081344604492, viterbi, RSB, 
-alphabetsize, 10, 0.24808669090270996, viterbi, RSB, 
-alphabetsize, 10, 0.25638580322265625, viterbi, RSB, 
-alphabetsize, 10, 0.23652935028076172, viterbi, RSB, 
-alphabetsize, 10, 0.24974608421325684, viterbi, RSB, 
-alphabetsize, 10, 0.2341752052307129, viterbi, RSB, 
-alphabetsize, 12, 0.2498493194580078, viterbi, RSB, 
-alphabetsize, 12, 0.25530195236206055, viterbi, RSB, 
-alphabetsize, 12, 0.2440176010131836, viterbi, RSB, 
-alphabetsize, 12, 0.2519068717956543, viterbi, RSB, 
-alphabetsize, 12, 0.24308991432189941, viterbi, RSB, 
-alphabetsize, 14, 0.24161767959594727, viterbi, RSB, 
-alphabetsize, 14, 0.24836421012878418, viterbi, RSB, 
-alphabetsize, 14, 0.2471296787261963, viterbi, RSB, 
-alphabetsize, 14, 0.24775266647338867, viterbi, RSB, 
-alphabetsize, 14, 0.24628686904907227, viterbi, RSB, 
-alphabetsize, 2, 0.08005571365356445, posteriorDecoding, RSB, 
-alphabetsize, 2, 0.07835578918457031, posteriorDecoding, RSB, 
-alphabetsize, 2, 0.07908511161804199, posteriorDecoding, RSB, 
-alphabetsize, 2, 0.07874131202697754, posteriorDecoding, RSB, 
-alphabetsize, 2, 0.08046603202819824, posteriorDecoding, RSB, 
-alphabetsize, 4, 0.07938432693481445, posteriorDecoding, RSB, 
-alphabetsize, 4, 0.07890105247497559, posteriorDecoding, RSB, 
-alphabetsize, 4, 0.07981133460998535, posteriorDecoding, RSB, 
-alphabetsize, 4, 0.07884359359741211, posteriorDecoding, RSB, 
-alphabetsize, 4, 0.07878661155700684, posteriorDecoding, RSB, 
-alphabetsize, 6, 0.0796513557434082, posteriorDecoding, RSB, 
-alphabetsize, 6, 0.080047607421875, posteriorDecoding, RSB, 
-alphabetsize, 6, 0.07898235321044922, posteriorDecoding, RSB, 
-alphabetsize, 6, 0.07928323745727539, posteriorDecoding, RSB, 
-alphabetsize, 6, 0.07859468460083008, posteriorDecoding, RSB, 
-alphabetsize, 8, 0.07964754104614258, posteriorDecoding, RSB, 
-alphabetsize, 8, 0.07959818840026855, posteriorDecoding, RSB, 
-alphabetsize, 8, 0.07949352264404297, posteriorDecoding, RSB, 
-alphabetsize, 8, 0.07957911491394043, posteriorDecoding, RSB, 
-alphabetsize, 8, 0.07932901382446289, posteriorDecoding, RSB, 
-alphabetsize, 10, 0.08022904396057129, posteriorDecoding, RSB, 
-alphabetsize, 10, 0.07964062690734863, posteriorDecoding, RSB, 
-alphabetsize, 10, 0.07938098907470703, posteriorDecoding, RSB, 
-alphabetsize, 10, 0.0793764591217041, posteriorDecoding, RSB, 
-alphabetsize, 10, 0.07933855056762695, posteriorDecoding, RSB, 
-alphabetsize, 12, 0.07935023307800293, posteriorDecoding, RSB, 
-alphabetsize, 12, 0.08028459548950195, posteriorDecoding, RSB, 
-alphabetsize, 12, 0.07936644554138184, posteriorDecoding, RSB, 
-alphabetsize, 12, 0.12164950370788574, posteriorDecoding, RSB, 
-alphabetsize, 12, 0.07932257652282715, posteriorDecoding, RSB, 
-alphabetsize, 14, 0.0825660228729248, posteriorDecoding, RSB, 
-alphabetsize, 14, 0.07954025268554688, posteriorDecoding, RSB, 
-alphabetsize, 14, 0.07970523834228516, posteriorDecoding, RSB, 
-alphabetsize, 14, 0.07903480529785156, posteriorDecoding, RSB, 
-alphabetsize, 14, 0.07976865768432617, posteriorDecoding, RSB, 
-alphabetsize, 2, 0.14799261093139648, forward, RSB, 
-alphabetsize, 2, 0.14705681800842285, forward, RSB, 
-alphabetsize, 2, 0.14751744270324707, forward, RSB, 
-alphabetsize, 2, 0.14651131629943848, forward, RSB, 
-alphabetsize, 2, 0.14652180671691895, forward, RSB, 
-alphabetsize, 4, 0.1484055519104004, forward, RSB, 
-alphabetsize, 4, 0.1472458839416504, forward, RSB, 
-alphabetsize, 4, 0.14705705642700195, forward, RSB, 
-alphabetsize, 4, 0.14670300483703613, forward, RSB, 
-alphabetsize, 4, 0.14683961868286133, forward, RSB, 
-alphabetsize, 6, 0.15133357048034668, forward, RSB, 
-alphabetsize, 6, 0.14691901206970215, forward, RSB, 
-alphabetsize, 6, 0.1463451385498047, forward, RSB, 
-alphabetsize, 6, 0.21419405937194824, forward, RSB, 
-alphabetsize, 6, 0.15008282661437988, forward, RSB, 
-alphabetsize, 8, 0.15679359436035156, forward, RSB, 
-alphabetsize, 8, 0.15200257301330566, forward, RSB, 
-alphabetsize, 8, 0.15052151679992676, forward, RSB, 
-alphabetsize, 8, 0.1475529670715332, forward, RSB, 
-alphabetsize, 8, 0.14702916145324707, forward, RSB, 
-alphabetsize, 10, 0.15059781074523926, forward, RSB, 
-alphabetsize, 10, 0.15112662315368652, forward, RSB, 
-alphabetsize, 10, 0.14748406410217285, forward, RSB, 
-alphabetsize, 10, 0.1507117748260498, forward, RSB, 
-alphabetsize, 10, 0.14729833602905273, forward, RSB, 
-alphabetsize, 12, 0.14978694915771484, forward, RSB, 
-alphabetsize, 12, 0.14670681953430176, forward, RSB, 
-alphabetsize, 12, 0.1469736099243164, forward, RSB, 
-alphabetsize, 12, 0.1496584415435791, forward, RSB, 
-alphabetsize, 12, 0.1495988368988037, forward, RSB, 
-alphabetsize, 14, 0.1490185260772705, forward, RSB, 
-alphabetsize, 14, 0.14946889877319336, forward, RSB, 
-alphabetsize, 14, 0.14730572700500488, forward, RSB, 
-alphabetsize, 14, 0.1501467227935791, forward, RSB, 
-alphabetsize, 14, 0.14685797691345215, forward, RSB, 
-alphabetsize, 2, 0.2982168197631836, backward, RSB, 
-alphabetsize, 2, 0.2982447147369385, backward, RSB, 
-alphabetsize, 2, 0.2969551086425781, backward, RSB, 
-alphabetsize, 2, 0.29860544204711914, backward, RSB, 
-alphabetsize, 2, 0.2972984313964844, backward, RSB, 
-alphabetsize, 4, 0.30216407775878906, backward, RSB, 
-alphabetsize, 4, 0.3029816150665283, backward, RSB, 
-alphabetsize, 4, 0.3080310821533203, backward, RSB, 
-alphabetsize, 4, 0.30106544494628906, backward, RSB, 
-alphabetsize, 4, 0.30237507820129395, backward, RSB, 
-alphabetsize, 6, 0.2982330322265625, backward, RSB, 
-alphabetsize, 6, 0.30315685272216797, backward, RSB, 
-alphabetsize, 6, 0.29662513732910156, backward, RSB, 
-alphabetsize, 6, 0.30229902267456055, backward, RSB, 
-alphabetsize, 6, 0.29769229888916016, backward, RSB, 
-alphabetsize, 8, 0.30319666862487793, backward, RSB, 
-alphabetsize, 8, 0.32515907287597656, backward, RSB, 
-alphabetsize, 8, 0.30132389068603516, backward, RSB, 
-alphabetsize, 8, 0.2947530746459961, backward, RSB, 
-alphabetsize, 8, 0.30204224586486816, backward, RSB, 
-alphabetsize, 10, 0.3056449890136719, backward, RSB, 
-alphabetsize, 10, 0.2963578701019287, backward, RSB, 
-alphabetsize, 10, 0.3015568256378174, backward, RSB, 
-alphabetsize, 10, 0.3021848201751709, backward, RSB, 
-alphabetsize, 10, 0.300243616104126, backward, RSB, 
-alphabetsize, 12, 0.29653406143188477, backward, RSB, 
-alphabetsize, 12, 0.2960679531097412, backward, RSB, 
-alphabetsize, 12, 0.2982316017150879, backward, RSB, 
-alphabetsize, 12, 0.29567623138427734, backward, RSB, 
-alphabetsize, 12, 0.2962348461151123, backward, RSB, 
-alphabetsize, 14, 0.2960336208343506, backward, RSB, 
-alphabetsize, 14, 0.29658007621765137, backward, RSB, 
-alphabetsize, 14, 0.2962462902069092, backward, RSB, 
-alphabetsize, 14, 0.2980217933654785, backward, RSB, 
-alphabetsize, 14, 0.2950174808502197, backward, RSB, 
-alphabetsize, 2, 0.23523640632629395, baumWelch, RSB, 1
-alphabetsize, 2, 0.23125100135803223, baumWelch, RSB, 1
-alphabetsize, 2, 0.23012423515319824, baumWelch, RSB, 1
-alphabetsize, 2, 0.2302696704864502, baumWelch, RSB, 1
-alphabetsize, 2, 0.2296888828277588, baumWelch, RSB, 1
-alphabetsize, 4, 0.24160408973693848, baumWelch, RSB, 1
-alphabetsize, 4, 0.242844820022583, baumWelch, RSB, 1
-alphabetsize, 4, 0.23567938804626465, baumWelch, RSB, 1
-alphabetsize, 4, 0.23885655403137207, baumWelch, RSB, 1
-alphabetsize, 4, 0.23619675636291504, baumWelch, RSB, 1
-alphabetsize, 6, 0.24370098114013672, baumWelch, RSB, 1
-alphabetsize, 6, 0.2408607006072998, baumWelch, RSB, 1
-alphabetsize, 6, 0.2398824691772461, baumWelch, RSB, 1
-alphabetsize, 6, 0.2407855987548828, baumWelch, RSB, 1
-alphabetsize, 6, 0.24136662483215332, baumWelch, RSB, 1
-alphabetsize, 8, 0.25101566314697266, baumWelch, RSB, 1
-alphabetsize, 8, 0.2442798614501953, baumWelch, RSB, 1
-alphabetsize, 8, 0.2451019287109375, baumWelch, RSB, 1
-alphabetsize, 8, 0.24525952339172363, baumWelch, RSB, 1
-alphabetsize, 8, 0.24367737770080566, baumWelch, RSB, 1
-alphabetsize, 10, 0.25516438484191895, baumWelch, RSB, 1
-alphabetsize, 10, 0.2506062984466553, baumWelch, RSB, 1
-alphabetsize, 10, 0.25063204765319824, baumWelch, RSB, 1
-alphabetsize, 10, 0.2525613307952881, baumWelch, RSB, 1
-alphabetsize, 10, 0.24915814399719238, baumWelch, RSB, 1
-alphabetsize, 12, 0.2694838047027588, baumWelch, RSB, 1
-alphabetsize, 12, 0.2571117877960205, baumWelch, RSB, 1
-alphabetsize, 12, 0.25455331802368164, baumWelch, RSB, 1
-alphabetsize, 12, 0.25337791442871094, baumWelch, RSB, 1
-alphabetsize, 12, 0.2543938159942627, baumWelch, RSB, 1
-alphabetsize, 14, 0.27504634857177734, baumWelch, RSB, 1
-alphabetsize, 14, 0.2597310543060303, baumWelch, RSB, 1
-alphabetsize, 14, 0.26053929328918457, baumWelch, RSB, 1
-alphabetsize, 14, 0.260089635848999, baumWelch, RSB, 1
-alphabetsize, 14, 0.259350061416626, baumWelch, RSB, 1
+alphabetsize, 2, 0.23345422744750977, viterbi, Conventional, 
+alphabetsize, 2, 0.234846830368042, viterbi, Conventional, 
+alphabetsize, 2, 0.2459549903869629, viterbi, Conventional, 
+alphabetsize, 2, 0.23768973350524902, viterbi, Conventional, 
+alphabetsize, 2, 0.23155999183654785, viterbi, Conventional, 
+alphabetsize, 4, 0.23890399932861328, viterbi, Conventional, 
+alphabetsize, 4, 0.2411365509033203, viterbi, Conventional, 
+alphabetsize, 4, 0.24845004081726074, viterbi, Conventional, 
+alphabetsize, 4, 0.24831509590148926, viterbi, Conventional, 
+alphabetsize, 4, 0.2418837547302246, viterbi, Conventional, 
+alphabetsize, 6, 0.24852538108825684, viterbi, Conventional, 
+alphabetsize, 6, 0.25086426734924316, viterbi, Conventional, 
+alphabetsize, 6, 0.24058079719543457, viterbi, Conventional, 
+alphabetsize, 6, 0.24290752410888672, viterbi, Conventional, 
+alphabetsize, 6, 0.24130964279174805, viterbi, Conventional, 
+alphabetsize, 8, 0.2440624237060547, viterbi, Conventional, 
+alphabetsize, 8, 0.2384932041168213, viterbi, Conventional, 
+alphabetsize, 8, 0.23857784271240234, viterbi, Conventional, 
+alphabetsize, 8, 0.25133347511291504, viterbi, Conventional, 
+alphabetsize, 8, 0.25107336044311523, viterbi, Conventional, 
+alphabetsize, 10, 0.24365711212158203, viterbi, Conventional, 
+alphabetsize, 10, 0.2518489360809326, viterbi, Conventional, 
+alphabetsize, 10, 0.25254154205322266, viterbi, Conventional, 
+alphabetsize, 10, 0.25016093254089355, viterbi, Conventional, 
+alphabetsize, 10, 0.23991727828979492, viterbi, Conventional, 
+alphabetsize, 12, 0.24818205833435059, viterbi, Conventional, 
+alphabetsize, 12, 0.2605156898498535, viterbi, Conventional, 
+alphabetsize, 12, 0.25363659858703613, viterbi, Conventional, 
+alphabetsize, 12, 0.2534658908843994, viterbi, Conventional, 
+alphabetsize, 12, 0.24659371376037598, viterbi, Conventional, 
+alphabetsize, 14, 0.2524740695953369, viterbi, Conventional, 
+alphabetsize, 14, 0.2505502700805664, viterbi, Conventional, 
+alphabetsize, 14, 0.24745392799377441, viterbi, Conventional, 
+alphabetsize, 14, 0.24619007110595703, viterbi, Conventional, 
+alphabetsize, 14, 0.2555363178253174, viterbi, Conventional, 
+alphabetsize, 2, 0.12264204025268555, posteriorDecoding, Conventional, 
+alphabetsize, 2, 0.12327194213867188, posteriorDecoding, Conventional, 
+alphabetsize, 2, 0.12477278709411621, posteriorDecoding, Conventional, 
+alphabetsize, 2, 0.1218254566192627, posteriorDecoding, Conventional, 
+alphabetsize, 2, 0.1215355396270752, posteriorDecoding, Conventional, 
+alphabetsize, 4, 0.12294340133666992, posteriorDecoding, Conventional, 
+alphabetsize, 4, 0.12456631660461426, posteriorDecoding, Conventional, 
+alphabetsize, 4, 0.12350010871887207, posteriorDecoding, Conventional, 
+alphabetsize, 4, 0.12315154075622559, posteriorDecoding, Conventional, 
+alphabetsize, 4, 0.12318205833435059, posteriorDecoding, Conventional, 
+alphabetsize, 6, 0.1247704029083252, posteriorDecoding, Conventional, 
+alphabetsize, 6, 0.12241244316101074, posteriorDecoding, Conventional, 
+alphabetsize, 6, 0.12184405326843262, posteriorDecoding, Conventional, 
+alphabetsize, 6, 0.12210988998413086, posteriorDecoding, Conventional, 
+alphabetsize, 6, 0.1250171661376953, posteriorDecoding, Conventional, 
+alphabetsize, 8, 0.12292361259460449, posteriorDecoding, Conventional, 
+alphabetsize, 8, 0.12113356590270996, posteriorDecoding, Conventional, 
+alphabetsize, 8, 0.12389922142028809, posteriorDecoding, Conventional, 
+alphabetsize, 8, 0.12288117408752441, posteriorDecoding, Conventional, 
+alphabetsize, 8, 0.12225484848022461, posteriorDecoding, Conventional, 
+alphabetsize, 10, 0.12196493148803711, posteriorDecoding, Conventional, 
+alphabetsize, 10, 0.12175893783569336, posteriorDecoding, Conventional, 
+alphabetsize, 10, 0.12331938743591309, posteriorDecoding, Conventional, 
+alphabetsize, 10, 0.12146449089050293, posteriorDecoding, Conventional, 
+alphabetsize, 10, 0.12152981758117676, posteriorDecoding, Conventional, 
+alphabetsize, 12, 0.12362170219421387, posteriorDecoding, Conventional, 
+alphabetsize, 12, 0.12469720840454102, posteriorDecoding, Conventional, 
+alphabetsize, 12, 0.12113189697265625, posteriorDecoding, Conventional, 
+alphabetsize, 12, 0.12180566787719727, posteriorDecoding, Conventional, 
+alphabetsize, 12, 0.12109756469726562, posteriorDecoding, Conventional, 
+alphabetsize, 14, 0.12568163871765137, posteriorDecoding, Conventional, 
+alphabetsize, 14, 0.12235236167907715, posteriorDecoding, Conventional, 
+alphabetsize, 14, 0.12260913848876953, posteriorDecoding, Conventional, 
+alphabetsize, 14, 0.13083982467651367, posteriorDecoding, Conventional, 
+alphabetsize, 14, 0.12262487411499023, posteriorDecoding, Conventional, 
+alphabetsize, 2, 0.1689622402191162, forward, Conventional, 
+alphabetsize, 2, 0.16655802726745605, forward, Conventional, 
+alphabetsize, 2, 0.1681194305419922, forward, Conventional, 
+alphabetsize, 2, 0.16550779342651367, forward, Conventional, 
+alphabetsize, 2, 0.17105436325073242, forward, Conventional, 
+alphabetsize, 4, 0.16956186294555664, forward, Conventional, 
+alphabetsize, 4, 0.1679995059967041, forward, Conventional, 
+alphabetsize, 4, 0.16944336891174316, forward, Conventional, 
+alphabetsize, 4, 0.17272567749023438, forward, Conventional, 
+alphabetsize, 4, 0.1677536964416504, forward, Conventional, 
+alphabetsize, 6, 0.16979336738586426, forward, Conventional, 
+alphabetsize, 6, 0.16694283485412598, forward, Conventional, 
+alphabetsize, 6, 0.16526126861572266, forward, Conventional, 
+alphabetsize, 6, 0.16515541076660156, forward, Conventional, 
+alphabetsize, 6, 0.16897082328796387, forward, Conventional, 
+alphabetsize, 8, 0.1719799041748047, forward, Conventional, 
+alphabetsize, 8, 0.17623305320739746, forward, Conventional, 
+alphabetsize, 8, 0.1651911735534668, forward, Conventional, 
+alphabetsize, 8, 0.16670012474060059, forward, Conventional, 
+alphabetsize, 8, 0.1697998046875, forward, Conventional, 
+alphabetsize, 10, 0.16745638847351074, forward, Conventional, 
+alphabetsize, 10, 0.16741275787353516, forward, Conventional, 
+alphabetsize, 10, 0.16795134544372559, forward, Conventional, 
+alphabetsize, 10, 0.1645946502685547, forward, Conventional, 
+alphabetsize, 10, 0.1647191047668457, forward, Conventional, 
+alphabetsize, 12, 0.17010188102722168, forward, Conventional, 
+alphabetsize, 12, 0.16479992866516113, forward, Conventional, 
+alphabetsize, 12, 0.1656651496887207, forward, Conventional, 
+alphabetsize, 12, 0.16975641250610352, forward, Conventional, 
+alphabetsize, 12, 0.16499042510986328, forward, Conventional, 
+alphabetsize, 14, 0.16660475730895996, forward, Conventional, 
+alphabetsize, 14, 0.16990232467651367, forward, Conventional, 
+alphabetsize, 14, 0.16647577285766602, forward, Conventional, 
+alphabetsize, 14, 0.16563177108764648, forward, Conventional, 
+alphabetsize, 14, 0.1673126220703125, forward, Conventional, 
+alphabetsize, 2, 0.19525623321533203, backward_time, Conventional, 
+alphabetsize, 2, 0.19454526901245117, backward_time, Conventional, 
+alphabetsize, 2, 0.19685673713684082, backward_time, Conventional, 
+alphabetsize, 2, 0.19446182250976562, backward_time, Conventional, 
+alphabetsize, 2, 0.19785118103027344, backward_time, Conventional, 
+alphabetsize, 4, 0.19275236129760742, backward_time, Conventional, 
+alphabetsize, 4, 0.19825363159179688, backward_time, Conventional, 
+alphabetsize, 4, 0.1951463222503662, backward_time, Conventional, 
+alphabetsize, 4, 0.19875717163085938, backward_time, Conventional, 
+alphabetsize, 4, 0.1961057186126709, backward_time, Conventional, 
+alphabetsize, 6, 0.19259905815124512, backward_time, Conventional, 
+alphabetsize, 6, 0.1915726661682129, backward_time, Conventional, 
+alphabetsize, 6, 0.19519257545471191, backward_time, Conventional, 
+alphabetsize, 6, 0.19211173057556152, backward_time, Conventional, 
+alphabetsize, 6, 0.19470858573913574, backward_time, Conventional, 
+alphabetsize, 8, 0.19343090057373047, backward_time, Conventional, 
+alphabetsize, 8, 0.20087051391601562, backward_time, Conventional, 
+alphabetsize, 8, 0.19443058967590332, backward_time, Conventional, 
+alphabetsize, 8, 0.2089688777923584, backward_time, Conventional, 
+alphabetsize, 8, 0.19533705711364746, backward_time, Conventional, 
+alphabetsize, 10, 0.1923081874847412, backward_time, Conventional, 
+alphabetsize, 10, 0.1909942626953125, backward_time, Conventional, 
+alphabetsize, 10, 0.19150137901306152, backward_time, Conventional, 
+alphabetsize, 10, 0.19130802154541016, backward_time, Conventional, 
+alphabetsize, 10, 0.19213294982910156, backward_time, Conventional, 
+alphabetsize, 12, 0.19257283210754395, backward_time, Conventional, 
+alphabetsize, 12, 0.1903400421142578, backward_time, Conventional, 
+alphabetsize, 12, 0.19341278076171875, backward_time, Conventional, 
+alphabetsize, 12, 0.19143986701965332, backward_time, Conventional, 
+alphabetsize, 12, 0.19225096702575684, backward_time, Conventional, 
+alphabetsize, 14, 0.19218754768371582, backward_time, Conventional, 
+alphabetsize, 14, 0.19150710105895996, backward_time, Conventional, 
+alphabetsize, 14, 0.19206619262695312, backward_time, Conventional, 
+alphabetsize, 14, 0.1912691593170166, backward_time, Conventional, 
+alphabetsize, 14, 0.1937863826751709, backward_time, Conventional, 
+alphabetsize, 2, 0.27568674087524414, baumWelch, Conventional, 1
+alphabetsize, 2, 0.29319095611572266, baumWelch, Conventional, 1
+alphabetsize, 2, 0.27367496490478516, baumWelch, Conventional, 1
+alphabetsize, 2, 0.2781224250793457, baumWelch, Conventional, 1
+alphabetsize, 2, 0.27201390266418457, baumWelch, Conventional, 1
+alphabetsize, 4, 0.2824211120605469, baumWelch, Conventional, 1
+alphabetsize, 4, 0.2982306480407715, baumWelch, Conventional, 1
+alphabetsize, 4, 0.2790658473968506, baumWelch, Conventional, 1
+alphabetsize, 4, 0.2923405170440674, baumWelch, Conventional, 1
+alphabetsize, 4, 0.2783071994781494, baumWelch, Conventional, 1
+alphabetsize, 6, 0.28951096534729004, baumWelch, Conventional, 1
+alphabetsize, 6, 0.282489538192749, baumWelch, Conventional, 1
+alphabetsize, 6, 0.2867164611816406, baumWelch, Conventional, 1
+alphabetsize, 6, 0.29383325576782227, baumWelch, Conventional, 1
+alphabetsize, 6, 0.2833445072174072, baumWelch, Conventional, 1
+alphabetsize, 8, 0.30079078674316406, baumWelch, Conventional, 1
+alphabetsize, 8, 0.295318603515625, baumWelch, Conventional, 1
+alphabetsize, 8, 0.2887582778930664, baumWelch, Conventional, 1
+alphabetsize, 8, 0.2890305519104004, baumWelch, Conventional, 1
+alphabetsize, 8, 0.28919100761413574, baumWelch, Conventional, 1
+alphabetsize, 10, 0.29761409759521484, baumWelch, Conventional, 1
+alphabetsize, 10, 0.2915642261505127, baumWelch, Conventional, 1
+alphabetsize, 10, 0.2953171730041504, baumWelch, Conventional, 1
+alphabetsize, 10, 0.3026890754699707, baumWelch, Conventional, 1
+alphabetsize, 10, 0.292696475982666, baumWelch, Conventional, 1
+alphabetsize, 12, 0.308091402053833, baumWelch, Conventional, 1
+alphabetsize, 12, 0.3031635284423828, baumWelch, Conventional, 1
+alphabetsize, 12, 0.29783058166503906, baumWelch, Conventional, 1
+alphabetsize, 12, 0.31393885612487793, baumWelch, Conventional, 1
+alphabetsize, 12, 0.30257272720336914, baumWelch, Conventional, 1
+alphabetsize, 14, 0.3085625171661377, baumWelch, Conventional, 1
+alphabetsize, 14, 0.3022887706756592, baumWelch, Conventional, 1
+alphabetsize, 14, 0.3076202869415283, baumWelch, Conventional, 1
+alphabetsize, 14, 0.305966854095459, baumWelch, Conventional, 1
+alphabetsize, 14, 0.3048093318939209, baumWelch, Conventional, 1
+alphabetsize, 2, 0.2354569435119629, viterbi, BLAS, 
+alphabetsize, 2, 0.22597956657409668, viterbi, BLAS, 
+alphabetsize, 2, 0.2259829044342041, viterbi, BLAS, 
+alphabetsize, 2, 0.2342393398284912, viterbi, BLAS, 
+alphabetsize, 2, 0.24482107162475586, viterbi, BLAS, 
+alphabetsize, 4, 0.23970341682434082, viterbi, BLAS, 
+alphabetsize, 4, 0.23923611640930176, viterbi, BLAS, 
+alphabetsize, 4, 0.24131345748901367, viterbi, BLAS, 
+alphabetsize, 4, 0.2469320297241211, viterbi, BLAS, 
+alphabetsize, 4, 0.23860979080200195, viterbi, BLAS, 
+alphabetsize, 6, 0.2381880283355713, viterbi, BLAS, 
+alphabetsize, 6, 0.24042773246765137, viterbi, BLAS, 
+alphabetsize, 6, 0.25121283531188965, viterbi, BLAS, 
+alphabetsize, 6, 0.23292255401611328, viterbi, BLAS, 
+alphabetsize, 6, 0.255540132522583, viterbi, BLAS, 
+alphabetsize, 8, 0.2352004051208496, viterbi, BLAS, 
+alphabetsize, 8, 0.24663829803466797, viterbi, BLAS, 
+alphabetsize, 8, 0.24217700958251953, viterbi, BLAS, 
+alphabetsize, 8, 0.24341201782226562, viterbi, BLAS, 
+alphabetsize, 8, 0.2461717128753662, viterbi, BLAS, 
+alphabetsize, 10, 0.23969340324401855, viterbi, BLAS, 
+alphabetsize, 10, 0.2442176342010498, viterbi, BLAS, 
+alphabetsize, 10, 0.24219298362731934, viterbi, BLAS, 
+alphabetsize, 10, 0.24080824851989746, viterbi, BLAS, 
+alphabetsize, 10, 0.2444441318511963, viterbi, BLAS, 
+alphabetsize, 12, 0.2472827434539795, viterbi, BLAS, 
+alphabetsize, 12, 0.2555429935455322, viterbi, BLAS, 
+alphabetsize, 12, 0.239241361618042, viterbi, BLAS, 
+alphabetsize, 12, 0.2599518299102783, viterbi, BLAS, 
+alphabetsize, 12, 0.24867510795593262, viterbi, BLAS, 
+alphabetsize, 14, 0.24651384353637695, viterbi, BLAS, 
+alphabetsize, 14, 0.25373291969299316, viterbi, BLAS, 
+alphabetsize, 14, 0.23554396629333496, viterbi, BLAS, 
+alphabetsize, 14, 0.240128755569458, viterbi, BLAS, 
+alphabetsize, 14, 0.24896693229675293, viterbi, BLAS, 
+alphabetsize, 2, 0.04930400848388672, posteriorDecoding, BLAS, 
+alphabetsize, 2, 0.047653913497924805, posteriorDecoding, BLAS, 
+alphabetsize, 2, 0.04844522476196289, posteriorDecoding, BLAS, 
+alphabetsize, 2, 0.0480189323425293, posteriorDecoding, BLAS, 
+alphabetsize, 2, 0.04791975021362305, posteriorDecoding, BLAS, 
+alphabetsize, 4, 0.04906773567199707, posteriorDecoding, BLAS, 
+alphabetsize, 4, 0.04871702194213867, posteriorDecoding, BLAS, 
+alphabetsize, 4, 0.04822134971618652, posteriorDecoding, BLAS, 
+alphabetsize, 4, 0.04735207557678223, posteriorDecoding, BLAS, 
+alphabetsize, 4, 0.05003499984741211, posteriorDecoding, BLAS, 
+alphabetsize, 6, 0.04943442344665527, posteriorDecoding, BLAS, 
+alphabetsize, 6, 0.04829597473144531, posteriorDecoding, BLAS, 
+alphabetsize, 6, 0.048949241638183594, posteriorDecoding, BLAS, 
+alphabetsize, 6, 0.04798769950866699, posteriorDecoding, BLAS, 
+alphabetsize, 6, 0.04788637161254883, posteriorDecoding, BLAS, 
+alphabetsize, 8, 0.051912784576416016, posteriorDecoding, BLAS, 
+alphabetsize, 8, 0.04930377006530762, posteriorDecoding, BLAS, 
+alphabetsize, 8, 0.05013704299926758, posteriorDecoding, BLAS, 
+alphabetsize, 8, 0.04925656318664551, posteriorDecoding, BLAS, 
+alphabetsize, 8, 0.04804635047912598, posteriorDecoding, BLAS, 
+alphabetsize, 10, 0.04961395263671875, posteriorDecoding, BLAS, 
+alphabetsize, 10, 0.04870033264160156, posteriorDecoding, BLAS, 
+alphabetsize, 10, 0.047894954681396484, posteriorDecoding, BLAS, 
+alphabetsize, 10, 0.04800891876220703, posteriorDecoding, BLAS, 
+alphabetsize, 10, 0.04820966720581055, posteriorDecoding, BLAS, 
+alphabetsize, 12, 0.048300981521606445, posteriorDecoding, BLAS, 
+alphabetsize, 12, 0.0485231876373291, posteriorDecoding, BLAS, 
+alphabetsize, 12, 0.04827451705932617, posteriorDecoding, BLAS, 
+alphabetsize, 12, 0.05082535743713379, posteriorDecoding, BLAS, 
+alphabetsize, 12, 0.04924464225769043, posteriorDecoding, BLAS, 
+alphabetsize, 14, 0.04915022850036621, posteriorDecoding, BLAS, 
+alphabetsize, 14, 0.04859447479248047, posteriorDecoding, BLAS, 
+alphabetsize, 14, 0.0481564998626709, posteriorDecoding, BLAS, 
+alphabetsize, 14, 0.048247337341308594, posteriorDecoding, BLAS, 
+alphabetsize, 14, 0.04799199104309082, posteriorDecoding, BLAS, 
+alphabetsize, 2, 0.15384173393249512, forward, BLAS, 
+alphabetsize, 2, 0.1417372226715088, forward, BLAS, 
+alphabetsize, 2, 0.14102792739868164, forward, BLAS, 
+alphabetsize, 2, 0.14040756225585938, forward, BLAS, 
+alphabetsize, 2, 0.14334464073181152, forward, BLAS, 
+alphabetsize, 4, 0.14156389236450195, forward, BLAS, 
+alphabetsize, 4, 0.1428394317626953, forward, BLAS, 
+alphabetsize, 4, 0.14347314834594727, forward, BLAS, 
+alphabetsize, 4, 0.14059972763061523, forward, BLAS, 
+alphabetsize, 4, 0.14027786254882812, forward, BLAS, 
+alphabetsize, 6, 0.14281868934631348, forward, BLAS, 
+alphabetsize, 6, 0.14623761177062988, forward, BLAS, 
+alphabetsize, 6, 0.1399078369140625, forward, BLAS, 
+alphabetsize, 6, 0.14256644248962402, forward, BLAS, 
+alphabetsize, 6, 0.14213895797729492, forward, BLAS, 
+alphabetsize, 8, 0.1425175666809082, forward, BLAS, 
+alphabetsize, 8, 0.14017176628112793, forward, BLAS, 
+alphabetsize, 8, 0.14054560661315918, forward, BLAS, 
+alphabetsize, 8, 0.1434767246246338, forward, BLAS, 
+alphabetsize, 8, 0.14039063453674316, forward, BLAS, 
+alphabetsize, 10, 0.14631891250610352, forward, BLAS, 
+alphabetsize, 10, 0.14072251319885254, forward, BLAS, 
+alphabetsize, 10, 0.14107847213745117, forward, BLAS, 
+alphabetsize, 10, 0.1397075653076172, forward, BLAS, 
+alphabetsize, 10, 0.14212632179260254, forward, BLAS, 
+alphabetsize, 12, 0.14182734489440918, forward, BLAS, 
+alphabetsize, 12, 0.1417224407196045, forward, BLAS, 
+alphabetsize, 12, 0.14354777336120605, forward, BLAS, 
+alphabetsize, 12, 0.14085102081298828, forward, BLAS, 
+alphabetsize, 12, 0.14026141166687012, forward, BLAS, 
+alphabetsize, 14, 0.14310765266418457, forward, BLAS, 
+alphabetsize, 14, 0.1434309482574463, forward, BLAS, 
+alphabetsize, 14, 0.1403954029083252, forward, BLAS, 
+alphabetsize, 14, 0.14084529876708984, forward, BLAS, 
+alphabetsize, 14, 0.14699268341064453, forward, BLAS, 
+alphabetsize, 2, 0.14307618141174316, backward_time, BLAS, 
+alphabetsize, 2, 0.1394951343536377, backward_time, BLAS, 
+alphabetsize, 2, 0.13916444778442383, backward_time, BLAS, 
+alphabetsize, 2, 0.14370942115783691, backward_time, BLAS, 
+alphabetsize, 2, 0.14243817329406738, backward_time, BLAS, 
+alphabetsize, 4, 0.14215373992919922, backward_time, BLAS, 
+alphabetsize, 4, 0.14322829246520996, backward_time, BLAS, 
+alphabetsize, 4, 0.1395246982574463, backward_time, BLAS, 
+alphabetsize, 4, 0.139007568359375, backward_time, BLAS, 
+alphabetsize, 4, 0.13912582397460938, backward_time, BLAS, 
+alphabetsize, 6, 0.14331340789794922, backward_time, BLAS, 
+alphabetsize, 6, 0.13925671577453613, backward_time, BLAS, 
+alphabetsize, 6, 0.14006376266479492, backward_time, BLAS, 
+alphabetsize, 6, 0.14147400856018066, backward_time, BLAS, 
+alphabetsize, 6, 0.14311480522155762, backward_time, BLAS, 
+alphabetsize, 8, 0.1446542739868164, backward_time, BLAS, 
+alphabetsize, 8, 0.14347004890441895, backward_time, BLAS, 
+alphabetsize, 8, 0.14468073844909668, backward_time, BLAS, 
+alphabetsize, 8, 0.13957881927490234, backward_time, BLAS, 
+alphabetsize, 8, 0.14039039611816406, backward_time, BLAS, 
+alphabetsize, 10, 0.14285802841186523, backward_time, BLAS, 
+alphabetsize, 10, 0.13998794555664062, backward_time, BLAS, 
+alphabetsize, 10, 0.13996553421020508, backward_time, BLAS, 
+alphabetsize, 10, 0.1398789882659912, backward_time, BLAS, 
+alphabetsize, 10, 0.14149928092956543, backward_time, BLAS, 
+alphabetsize, 12, 0.14391613006591797, backward_time, BLAS, 
+alphabetsize, 12, 0.14461517333984375, backward_time, BLAS, 
+alphabetsize, 12, 0.14280986785888672, backward_time, BLAS, 
+alphabetsize, 12, 0.14328622817993164, backward_time, BLAS, 
+alphabetsize, 12, 0.14376163482666016, backward_time, BLAS, 
+alphabetsize, 14, 0.14223098754882812, backward_time, BLAS, 
+alphabetsize, 14, 0.14674830436706543, backward_time, BLAS, 
+alphabetsize, 14, 0.14052867889404297, backward_time, BLAS, 
+alphabetsize, 14, 0.1604623794555664, backward_time, BLAS, 
+alphabetsize, 14, 0.1401350498199463, backward_time, BLAS, 
+alphabetsize, 2, 0.20103669166564941, baumWelch, BLAS, 1
+alphabetsize, 2, 0.20250868797302246, baumWelch, BLAS, 1
+alphabetsize, 2, 0.20191168785095215, baumWelch, BLAS, 1
+alphabetsize, 2, 0.19992423057556152, baumWelch, BLAS, 1
+alphabetsize, 2, 0.20576143264770508, baumWelch, BLAS, 1
+alphabetsize, 4, 0.20731735229492188, baumWelch, BLAS, 1
+alphabetsize, 4, 0.21839499473571777, baumWelch, BLAS, 1
+alphabetsize, 4, 0.2114722728729248, baumWelch, BLAS, 1
+alphabetsize, 4, 0.2185649871826172, baumWelch, BLAS, 1
+alphabetsize, 4, 0.20673727989196777, baumWelch, BLAS, 1
+alphabetsize, 6, 0.21233463287353516, baumWelch, BLAS, 1
+alphabetsize, 6, 0.21872973442077637, baumWelch, BLAS, 1
+alphabetsize, 6, 0.21126508712768555, baumWelch, BLAS, 1
+alphabetsize, 6, 0.21225666999816895, baumWelch, BLAS, 1
+alphabetsize, 6, 0.21123433113098145, baumWelch, BLAS, 1
+alphabetsize, 8, 0.22601056098937988, baumWelch, BLAS, 1
+alphabetsize, 8, 0.21716904640197754, baumWelch, BLAS, 1
+alphabetsize, 8, 0.22437572479248047, baumWelch, BLAS, 1
+alphabetsize, 8, 0.22007083892822266, baumWelch, BLAS, 1
+alphabetsize, 8, 0.21495389938354492, baumWelch, BLAS, 1
+alphabetsize, 10, 0.22914648056030273, baumWelch, BLAS, 1
+alphabetsize, 10, 0.22141408920288086, baumWelch, BLAS, 1
+alphabetsize, 10, 0.22178220748901367, baumWelch, BLAS, 1
+alphabetsize, 10, 0.22546887397766113, baumWelch, BLAS, 1
+alphabetsize, 10, 0.2323143482208252, baumWelch, BLAS, 1
+alphabetsize, 12, 0.22940587997436523, baumWelch, BLAS, 1
+alphabetsize, 12, 0.23634099960327148, baumWelch, BLAS, 1
+alphabetsize, 12, 0.22658729553222656, baumWelch, BLAS, 1
+alphabetsize, 12, 0.22878623008728027, baumWelch, BLAS, 1
+alphabetsize, 12, 0.2271592617034912, baumWelch, BLAS, 1
+alphabetsize, 14, 0.23916840553283691, baumWelch, BLAS, 1
+alphabetsize, 14, 0.23809099197387695, baumWelch, BLAS, 1
+alphabetsize, 14, 0.23210978507995605, baumWelch, BLAS, 1
+alphabetsize, 14, 0.23347997665405273, baumWelch, BLAS, 1
+alphabetsize, 14, 0.23300552368164062, baumWelch, BLAS, 1
+alphabetsize, 2, 0.23478317260742188, viterbi, CSR, 
+alphabetsize, 2, 0.23684120178222656, viterbi, CSR, 
+alphabetsize, 2, 0.23685550689697266, viterbi, CSR, 
+alphabetsize, 2, 0.24059772491455078, viterbi, CSR, 
+alphabetsize, 2, 0.23188209533691406, viterbi, CSR, 
+alphabetsize, 4, 0.2450239658355713, viterbi, CSR, 
+alphabetsize, 4, 0.2378368377685547, viterbi, CSR, 
+alphabetsize, 4, 0.24663996696472168, viterbi, CSR, 
+alphabetsize, 4, 0.24330973625183105, viterbi, CSR, 
+alphabetsize, 4, 0.24593830108642578, viterbi, CSR, 
+alphabetsize, 6, 0.25351572036743164, viterbi, CSR, 
+alphabetsize, 6, 0.24733924865722656, viterbi, CSR, 
+alphabetsize, 6, 0.2657201290130615, viterbi, CSR, 
+alphabetsize, 6, 0.24690699577331543, viterbi, CSR, 
+alphabetsize, 6, 0.24570465087890625, viterbi, CSR, 
+alphabetsize, 8, 0.253953218460083, viterbi, CSR, 
+alphabetsize, 8, 0.25470709800720215, viterbi, CSR, 
+alphabetsize, 8, 0.24357914924621582, viterbi, CSR, 
+alphabetsize, 8, 0.24591779708862305, viterbi, CSR, 
+alphabetsize, 8, 0.23752093315124512, viterbi, CSR, 
+alphabetsize, 10, 0.24693632125854492, viterbi, CSR, 
+alphabetsize, 10, 0.23795008659362793, viterbi, CSR, 
+alphabetsize, 10, 0.24510574340820312, viterbi, CSR, 
+alphabetsize, 10, 0.24634647369384766, viterbi, CSR, 
+alphabetsize, 10, 0.24821233749389648, viterbi, CSR, 
+alphabetsize, 12, 0.24919366836547852, viterbi, CSR, 
+alphabetsize, 12, 0.24503254890441895, viterbi, CSR, 
+alphabetsize, 12, 0.2585911750793457, viterbi, CSR, 
+alphabetsize, 12, 0.24332618713378906, viterbi, CSR, 
+alphabetsize, 12, 0.25014734268188477, viterbi, CSR, 
+alphabetsize, 14, 0.24774599075317383, viterbi, CSR, 
+alphabetsize, 14, 0.24084734916687012, viterbi, CSR, 
+alphabetsize, 14, 0.24726390838623047, viterbi, CSR, 
+alphabetsize, 14, 0.259692907333374, viterbi, CSR, 
+alphabetsize, 14, 0.2502307891845703, viterbi, CSR, 
+alphabetsize, 2, 0.09731507301330566, posteriorDecoding, CSR, 
+alphabetsize, 2, 0.09677338600158691, posteriorDecoding, CSR, 
+alphabetsize, 2, 0.09739518165588379, posteriorDecoding, CSR, 
+alphabetsize, 2, 0.09547114372253418, posteriorDecoding, CSR, 
+alphabetsize, 2, 0.09543013572692871, posteriorDecoding, CSR, 
+alphabetsize, 4, 0.09666800498962402, posteriorDecoding, CSR, 
+alphabetsize, 4, 0.09549331665039062, posteriorDecoding, CSR, 
+alphabetsize, 4, 0.09647369384765625, posteriorDecoding, CSR, 
+alphabetsize, 4, 0.09835624694824219, posteriorDecoding, CSR, 
+alphabetsize, 4, 0.09593415260314941, posteriorDecoding, CSR, 
+alphabetsize, 6, 0.09714293479919434, posteriorDecoding, CSR, 
+alphabetsize, 6, 0.09809732437133789, posteriorDecoding, CSR, 
+alphabetsize, 6, 0.09762859344482422, posteriorDecoding, CSR, 
+alphabetsize, 6, 0.09681510925292969, posteriorDecoding, CSR, 
+alphabetsize, 6, 0.0964200496673584, posteriorDecoding, CSR, 
+alphabetsize, 8, 0.09636187553405762, posteriorDecoding, CSR, 
+alphabetsize, 8, 0.09590363502502441, posteriorDecoding, CSR, 
+alphabetsize, 8, 0.09596800804138184, posteriorDecoding, CSR, 
+alphabetsize, 8, 0.09805798530578613, posteriorDecoding, CSR, 
+alphabetsize, 8, 0.09676647186279297, posteriorDecoding, CSR, 
+alphabetsize, 10, 0.09728193283081055, posteriorDecoding, CSR, 
+alphabetsize, 10, 0.09791994094848633, posteriorDecoding, CSR, 
+alphabetsize, 10, 0.09827899932861328, posteriorDecoding, CSR, 
+alphabetsize, 10, 0.09631657600402832, posteriorDecoding, CSR, 
+alphabetsize, 10, 0.09612345695495605, posteriorDecoding, CSR, 
+alphabetsize, 12, 0.09818077087402344, posteriorDecoding, CSR, 
+alphabetsize, 12, 0.09583377838134766, posteriorDecoding, CSR, 
+alphabetsize, 12, 0.09598708152770996, posteriorDecoding, CSR, 
+alphabetsize, 12, 0.10083293914794922, posteriorDecoding, CSR, 
+alphabetsize, 12, 0.09600090980529785, posteriorDecoding, CSR, 
+alphabetsize, 14, 0.09734010696411133, posteriorDecoding, CSR, 
+alphabetsize, 14, 0.09829998016357422, posteriorDecoding, CSR, 
+alphabetsize, 14, 0.09753584861755371, posteriorDecoding, CSR, 
+alphabetsize, 14, 0.09627079963684082, posteriorDecoding, CSR, 
+alphabetsize, 14, 0.09589505195617676, posteriorDecoding, CSR, 
+alphabetsize, 2, 0.16779637336730957, forward, CSR, 
+alphabetsize, 2, 0.165571928024292, forward, CSR, 
+alphabetsize, 2, 0.16744470596313477, forward, CSR, 
+alphabetsize, 2, 0.16736602783203125, forward, CSR, 
+alphabetsize, 2, 0.1687314510345459, forward, CSR, 
+alphabetsize, 4, 0.16746115684509277, forward, CSR, 
+alphabetsize, 4, 0.1636345386505127, forward, CSR, 
+alphabetsize, 4, 0.1655416488647461, forward, CSR, 
+alphabetsize, 4, 0.16428899765014648, forward, CSR, 
+alphabetsize, 4, 0.16432571411132812, forward, CSR, 
+alphabetsize, 6, 0.16774964332580566, forward, CSR, 
+alphabetsize, 6, 0.16351914405822754, forward, CSR, 
+alphabetsize, 6, 0.16396021842956543, forward, CSR, 
+alphabetsize, 6, 0.16507673263549805, forward, CSR, 
+alphabetsize, 6, 0.16350793838500977, forward, CSR, 
+alphabetsize, 8, 0.16627717018127441, forward, CSR, 
+alphabetsize, 8, 0.16740703582763672, forward, CSR, 
+alphabetsize, 8, 0.16320371627807617, forward, CSR, 
+alphabetsize, 8, 0.16577792167663574, forward, CSR, 
+alphabetsize, 8, 0.16622424125671387, forward, CSR, 
+alphabetsize, 10, 0.16631579399108887, forward, CSR, 
+alphabetsize, 10, 0.1673750877380371, forward, CSR, 
+alphabetsize, 10, 0.16554617881774902, forward, CSR, 
+alphabetsize, 10, 0.16337299346923828, forward, CSR, 
+alphabetsize, 10, 0.16341423988342285, forward, CSR, 
+alphabetsize, 12, 0.16807222366333008, forward, CSR, 
+alphabetsize, 12, 0.16432428359985352, forward, CSR, 
+alphabetsize, 12, 0.16518402099609375, forward, CSR, 
+alphabetsize, 12, 0.16422200202941895, forward, CSR, 
+alphabetsize, 12, 0.16380095481872559, forward, CSR, 
+alphabetsize, 14, 0.1662290096282959, forward, CSR, 
+alphabetsize, 14, 0.16657733917236328, forward, CSR, 
+alphabetsize, 14, 0.16366791725158691, forward, CSR, 
+alphabetsize, 14, 0.16634511947631836, forward, CSR, 
+alphabetsize, 14, 0.1639554500579834, forward, CSR, 
+alphabetsize, 2, 0.1658313274383545, backward_time, CSR, 
+alphabetsize, 2, 0.1639254093170166, backward_time, CSR, 
+alphabetsize, 2, 0.16816091537475586, backward_time, CSR, 
+alphabetsize, 2, 0.16394639015197754, backward_time, CSR, 
+alphabetsize, 2, 0.16860270500183105, backward_time, CSR, 
+alphabetsize, 4, 0.16685247421264648, backward_time, CSR, 
+alphabetsize, 4, 0.16378426551818848, backward_time, CSR, 
+alphabetsize, 4, 0.16337227821350098, backward_time, CSR, 
+alphabetsize, 4, 0.16672873497009277, backward_time, CSR, 
+alphabetsize, 4, 0.16432499885559082, backward_time, CSR, 
+alphabetsize, 6, 0.16747641563415527, backward_time, CSR, 
+alphabetsize, 6, 0.16330456733703613, backward_time, CSR, 
+alphabetsize, 6, 0.16376876831054688, backward_time, CSR, 
+alphabetsize, 6, 0.16355276107788086, backward_time, CSR, 
+alphabetsize, 6, 0.16466712951660156, backward_time, CSR, 
+alphabetsize, 8, 0.16736435890197754, backward_time, CSR, 
+alphabetsize, 8, 0.16524839401245117, backward_time, CSR, 
+alphabetsize, 8, 0.16338706016540527, backward_time, CSR, 
+alphabetsize, 8, 0.16347217559814453, backward_time, CSR, 
+alphabetsize, 8, 0.16547155380249023, backward_time, CSR, 
+alphabetsize, 10, 0.1682424545288086, backward_time, CSR, 
+alphabetsize, 10, 0.1632852554321289, backward_time, CSR, 
+alphabetsize, 10, 0.16518139839172363, backward_time, CSR, 
+alphabetsize, 10, 0.1640605926513672, backward_time, CSR, 
+alphabetsize, 10, 0.16299653053283691, backward_time, CSR, 
+alphabetsize, 12, 0.16334795951843262, backward_time, CSR, 
+alphabetsize, 12, 0.16641712188720703, backward_time, CSR, 
+alphabetsize, 12, 0.1649491786956787, backward_time, CSR, 
+alphabetsize, 12, 0.165114164352417, backward_time, CSR, 
+alphabetsize, 12, 0.16317081451416016, backward_time, CSR, 
+alphabetsize, 14, 0.16506505012512207, backward_time, CSR, 
+alphabetsize, 14, 0.16363072395324707, backward_time, CSR, 
+alphabetsize, 14, 0.16750097274780273, backward_time, CSR, 
+alphabetsize, 14, 0.16341638565063477, backward_time, CSR, 
+alphabetsize, 14, 0.16568279266357422, backward_time, CSR, 
+alphabetsize, 2, 0.24799728393554688, baumWelch, CSR, 1
+alphabetsize, 2, 0.25047731399536133, baumWelch, CSR, 1
+alphabetsize, 2, 0.24964427947998047, baumWelch, CSR, 1
+alphabetsize, 2, 0.25774645805358887, baumWelch, CSR, 1
+alphabetsize, 2, 0.2535402774810791, baumWelch, CSR, 1
+alphabetsize, 4, 0.2633843421936035, baumWelch, CSR, 1
+alphabetsize, 4, 0.2608914375305176, baumWelch, CSR, 1
+alphabetsize, 4, 0.2560107707977295, baumWelch, CSR, 1
+alphabetsize, 4, 0.2531261444091797, baumWelch, CSR, 1
+alphabetsize, 4, 0.2633850574493408, baumWelch, CSR, 1
+alphabetsize, 6, 0.2608828544616699, baumWelch, CSR, 1
+alphabetsize, 6, 0.25998497009277344, baumWelch, CSR, 1
+alphabetsize, 6, 0.25873303413391113, baumWelch, CSR, 1
+alphabetsize, 6, 0.2706749439239502, baumWelch, CSR, 1
+alphabetsize, 6, 0.2694106101989746, baumWelch, CSR, 1
+alphabetsize, 8, 0.26924943923950195, baumWelch, CSR, 1
+alphabetsize, 8, 0.2623026371002197, baumWelch, CSR, 1
+alphabetsize, 8, 0.2642660140991211, baumWelch, CSR, 1
+alphabetsize, 8, 0.27382469177246094, baumWelch, CSR, 1
+alphabetsize, 8, 0.26233601570129395, baumWelch, CSR, 1
+alphabetsize, 10, 0.28253698348999023, baumWelch, CSR, 1
+alphabetsize, 10, 0.2692577838897705, baumWelch, CSR, 1
+alphabetsize, 10, 0.27277088165283203, baumWelch, CSR, 1
+alphabetsize, 10, 0.2671377658843994, baumWelch, CSR, 1
+alphabetsize, 10, 0.27492237091064453, baumWelch, CSR, 1
+alphabetsize, 12, 0.2902212142944336, baumWelch, CSR, 1
+alphabetsize, 12, 0.27567076683044434, baumWelch, CSR, 1
+alphabetsize, 12, 0.2799961566925049, baumWelch, CSR, 1
+alphabetsize, 12, 0.28004002571105957, baumWelch, CSR, 1
+alphabetsize, 12, 0.27497100830078125, baumWelch, CSR, 1
+alphabetsize, 14, 0.2820463180541992, baumWelch, CSR, 1
+alphabetsize, 14, 0.28047990798950195, baumWelch, CSR, 1
+alphabetsize, 14, 0.2860984802246094, baumWelch, CSR, 1
+alphabetsize, 14, 0.2785952091217041, baumWelch, CSR, 1
+alphabetsize, 14, 0.2823052406311035, baumWelch, CSR, 1
+alphabetsize, 2, 0.23751115798950195, viterbi, RSB, 
+alphabetsize, 2, 0.23696231842041016, viterbi, RSB, 
+alphabetsize, 2, 0.21894001960754395, viterbi, RSB, 
+alphabetsize, 2, 0.23716449737548828, viterbi, RSB, 
+alphabetsize, 2, 0.2090132236480713, viterbi, RSB, 
+alphabetsize, 4, 0.241973876953125, viterbi, RSB, 
+alphabetsize, 4, 0.2325284481048584, viterbi, RSB, 
+alphabetsize, 4, 0.23836112022399902, viterbi, RSB, 
+alphabetsize, 4, 0.24113917350769043, viterbi, RSB, 
+alphabetsize, 4, 0.2426440715789795, viterbi, RSB, 
+alphabetsize, 6, 0.2522709369659424, viterbi, RSB, 
+alphabetsize, 6, 0.2489621639251709, viterbi, RSB, 
+alphabetsize, 6, 0.25501370429992676, viterbi, RSB, 
+alphabetsize, 6, 0.24268245697021484, viterbi, RSB, 
+alphabetsize, 6, 0.23891425132751465, viterbi, RSB, 
+alphabetsize, 8, 0.24850225448608398, viterbi, RSB, 
+alphabetsize, 8, 0.25360894203186035, viterbi, RSB, 
+alphabetsize, 8, 0.2472074031829834, viterbi, RSB, 
+alphabetsize, 8, 0.25452351570129395, viterbi, RSB, 
+alphabetsize, 8, 0.23673415184020996, viterbi, RSB, 
+alphabetsize, 10, 0.2548835277557373, viterbi, RSB, 
+alphabetsize, 10, 0.24371743202209473, viterbi, RSB, 
+alphabetsize, 10, 0.2561173439025879, viterbi, RSB, 
+alphabetsize, 10, 0.24849319458007812, viterbi, RSB, 
+alphabetsize, 10, 0.25685882568359375, viterbi, RSB, 
+alphabetsize, 12, 0.2504096031188965, viterbi, RSB, 
+alphabetsize, 12, 0.2428727149963379, viterbi, RSB, 
+alphabetsize, 12, 0.2394552230834961, viterbi, RSB, 
+alphabetsize, 12, 0.25627875328063965, viterbi, RSB, 
+alphabetsize, 12, 0.262164831161499, viterbi, RSB, 
+alphabetsize, 14, 0.2430887222290039, viterbi, RSB, 
+alphabetsize, 14, 0.25316882133483887, viterbi, RSB, 
+alphabetsize, 14, 0.24473810195922852, viterbi, RSB, 
+alphabetsize, 14, 0.26306915283203125, viterbi, RSB, 
+alphabetsize, 14, 0.23595571517944336, viterbi, RSB, 
+alphabetsize, 2, 0.08065080642700195, posteriorDecoding, RSB, 
+alphabetsize, 2, 0.07991147041320801, posteriorDecoding, RSB, 
+alphabetsize, 2, 0.07940888404846191, posteriorDecoding, RSB, 
+alphabetsize, 2, 0.08122706413269043, posteriorDecoding, RSB, 
+alphabetsize, 2, 0.0797879695892334, posteriorDecoding, RSB, 
+alphabetsize, 4, 0.08042669296264648, posteriorDecoding, RSB, 
+alphabetsize, 4, 0.0803978443145752, posteriorDecoding, RSB, 
+alphabetsize, 4, 0.08018898963928223, posteriorDecoding, RSB, 
+alphabetsize, 4, 0.08153915405273438, posteriorDecoding, RSB, 
+alphabetsize, 4, 0.07990431785583496, posteriorDecoding, RSB, 
+alphabetsize, 6, 0.08138918876647949, posteriorDecoding, RSB, 
+alphabetsize, 6, 0.07964110374450684, posteriorDecoding, RSB, 
+alphabetsize, 6, 0.07956171035766602, posteriorDecoding, RSB, 
+alphabetsize, 6, 0.07956671714782715, posteriorDecoding, RSB, 
+alphabetsize, 6, 0.07909488677978516, posteriorDecoding, RSB, 
+alphabetsize, 8, 0.08414340019226074, posteriorDecoding, RSB, 
+alphabetsize, 8, 0.08008241653442383, posteriorDecoding, RSB, 
+alphabetsize, 8, 0.07966732978820801, posteriorDecoding, RSB, 
+alphabetsize, 8, 0.08006000518798828, posteriorDecoding, RSB, 
+alphabetsize, 8, 0.08043527603149414, posteriorDecoding, RSB, 
+alphabetsize, 10, 0.08155488967895508, posteriorDecoding, RSB, 
+alphabetsize, 10, 0.08025860786437988, posteriorDecoding, RSB, 
+alphabetsize, 10, 0.07976460456848145, posteriorDecoding, RSB, 
+alphabetsize, 10, 0.07962346076965332, posteriorDecoding, RSB, 
+alphabetsize, 10, 0.07932448387145996, posteriorDecoding, RSB, 
+alphabetsize, 12, 0.0810697078704834, posteriorDecoding, RSB, 
+alphabetsize, 12, 0.08014249801635742, posteriorDecoding, RSB, 
+alphabetsize, 12, 0.08144807815551758, posteriorDecoding, RSB, 
+alphabetsize, 12, 0.07993173599243164, posteriorDecoding, RSB, 
+alphabetsize, 12, 0.08054637908935547, posteriorDecoding, RSB, 
+alphabetsize, 14, 0.08198857307434082, posteriorDecoding, RSB, 
+alphabetsize, 14, 0.0815582275390625, posteriorDecoding, RSB, 
+alphabetsize, 14, 0.08147931098937988, posteriorDecoding, RSB, 
+alphabetsize, 14, 0.07985043525695801, posteriorDecoding, RSB, 
+alphabetsize, 14, 0.07994890213012695, posteriorDecoding, RSB, 
+alphabetsize, 2, 0.14987969398498535, forward, RSB, 
+alphabetsize, 2, 0.14757871627807617, forward, RSB, 
+alphabetsize, 2, 0.15221834182739258, forward, RSB, 
+alphabetsize, 2, 0.146956205368042, forward, RSB, 
+alphabetsize, 2, 0.15354013442993164, forward, RSB, 
+alphabetsize, 4, 0.15075206756591797, forward, RSB, 
+alphabetsize, 4, 0.14725708961486816, forward, RSB, 
+alphabetsize, 4, 0.14730572700500488, forward, RSB, 
+alphabetsize, 4, 0.14858245849609375, forward, RSB, 
+alphabetsize, 4, 0.14735102653503418, forward, RSB, 
+alphabetsize, 6, 0.15011858940124512, forward, RSB, 
+alphabetsize, 6, 0.1484534740447998, forward, RSB, 
+alphabetsize, 6, 0.14807772636413574, forward, RSB, 
+alphabetsize, 6, 0.14725852012634277, forward, RSB, 
+alphabetsize, 6, 0.1467604637145996, forward, RSB, 
+alphabetsize, 8, 0.15309572219848633, forward, RSB, 
+alphabetsize, 8, 0.14748907089233398, forward, RSB, 
+alphabetsize, 8, 0.1501758098602295, forward, RSB, 
+alphabetsize, 8, 0.1490626335144043, forward, RSB, 
+alphabetsize, 8, 0.14989495277404785, forward, RSB, 
+alphabetsize, 10, 0.14924860000610352, forward, RSB, 
+alphabetsize, 10, 0.1485292911529541, forward, RSB, 
+alphabetsize, 10, 0.14763426780700684, forward, RSB, 
+alphabetsize, 10, 0.14756441116333008, forward, RSB, 
+alphabetsize, 10, 0.14946794509887695, forward, RSB, 
+alphabetsize, 12, 0.1482696533203125, forward, RSB, 
+alphabetsize, 12, 0.14755868911743164, forward, RSB, 
+alphabetsize, 12, 0.14710235595703125, forward, RSB, 
+alphabetsize, 12, 0.1503887176513672, forward, RSB, 
+alphabetsize, 12, 0.14715147018432617, forward, RSB, 
+alphabetsize, 14, 0.1516258716583252, forward, RSB, 
+alphabetsize, 14, 0.14850687980651855, forward, RSB, 
+alphabetsize, 14, 0.14929604530334473, forward, RSB, 
+alphabetsize, 14, 0.14948248863220215, forward, RSB, 
+alphabetsize, 14, 0.1502077579498291, forward, RSB, 
+alphabetsize, 2, 0.1659846305847168, backward_time, RSB, 
+alphabetsize, 2, 0.17066717147827148, backward_time, RSB, 
+alphabetsize, 2, 0.16569256782531738, backward_time, RSB, 
+alphabetsize, 2, 0.1638813018798828, backward_time, RSB, 
+alphabetsize, 2, 0.1645653247833252, backward_time, RSB, 
+alphabetsize, 4, 0.1666126251220703, backward_time, RSB, 
+alphabetsize, 4, 0.16429758071899414, backward_time, RSB, 
+alphabetsize, 4, 0.16387200355529785, backward_time, RSB, 
+alphabetsize, 4, 0.16512584686279297, backward_time, RSB, 
+alphabetsize, 4, 0.16381049156188965, backward_time, RSB, 
+alphabetsize, 6, 0.16730499267578125, backward_time, RSB, 
+alphabetsize, 6, 0.16558289527893066, backward_time, RSB, 
+alphabetsize, 6, 0.1633450984954834, backward_time, RSB, 
+alphabetsize, 6, 0.16705727577209473, backward_time, RSB, 
+alphabetsize, 6, 0.1687157154083252, backward_time, RSB, 
+alphabetsize, 8, 0.1686558723449707, backward_time, RSB, 
+alphabetsize, 8, 0.1657412052154541, backward_time, RSB, 
+alphabetsize, 8, 0.16792058944702148, backward_time, RSB, 
+alphabetsize, 8, 0.16610264778137207, backward_time, RSB, 
+alphabetsize, 8, 0.16682052612304688, backward_time, RSB, 
+alphabetsize, 10, 0.16605710983276367, backward_time, RSB, 
+alphabetsize, 10, 0.16342401504516602, backward_time, RSB, 
+alphabetsize, 10, 0.1642768383026123, backward_time, RSB, 
+alphabetsize, 10, 0.16511178016662598, backward_time, RSB, 
+alphabetsize, 10, 0.16318655014038086, backward_time, RSB, 
+alphabetsize, 12, 0.16688036918640137, backward_time, RSB, 
+alphabetsize, 12, 0.1644151210784912, backward_time, RSB, 
+alphabetsize, 12, 0.1635270118713379, backward_time, RSB, 
+alphabetsize, 12, 0.1657884120941162, backward_time, RSB, 
+alphabetsize, 12, 0.16712570190429688, backward_time, RSB, 
+alphabetsize, 14, 0.16459226608276367, backward_time, RSB, 
+alphabetsize, 14, 0.16608452796936035, backward_time, RSB, 
+alphabetsize, 14, 0.16337370872497559, backward_time, RSB, 
+alphabetsize, 14, 0.16399312019348145, backward_time, RSB, 
+alphabetsize, 14, 0.16264057159423828, backward_time, RSB, 
+alphabetsize, 2, 0.23503994941711426, baumWelch, RSB, 1
+alphabetsize, 2, 0.2358393669128418, baumWelch, RSB, 1
+alphabetsize, 2, 0.23270726203918457, baumWelch, RSB, 1
+alphabetsize, 2, 0.23466038703918457, baumWelch, RSB, 1
+alphabetsize, 2, 0.24672436714172363, baumWelch, RSB, 1
+alphabetsize, 4, 0.24246454238891602, baumWelch, RSB, 1
+alphabetsize, 4, 0.242783784866333, baumWelch, RSB, 1
+alphabetsize, 4, 0.23832368850708008, baumWelch, RSB, 1
+alphabetsize, 4, 0.25246238708496094, baumWelch, RSB, 1
+alphabetsize, 4, 0.23826050758361816, baumWelch, RSB, 1
+alphabetsize, 6, 0.24387431144714355, baumWelch, RSB, 1
+alphabetsize, 6, 0.24179673194885254, baumWelch, RSB, 1
+alphabetsize, 6, 0.2573409080505371, baumWelch, RSB, 1
+alphabetsize, 6, 0.24745559692382812, baumWelch, RSB, 1
+alphabetsize, 6, 0.24369192123413086, baumWelch, RSB, 1
+alphabetsize, 8, 0.25248265266418457, baumWelch, RSB, 1
+alphabetsize, 8, 0.2536628246307373, baumWelch, RSB, 1
+alphabetsize, 8, 0.2497262954711914, baumWelch, RSB, 1
+alphabetsize, 8, 0.24969029426574707, baumWelch, RSB, 1
+alphabetsize, 8, 0.24626636505126953, baumWelch, RSB, 1
+alphabetsize, 10, 0.2674121856689453, baumWelch, RSB, 1
+alphabetsize, 10, 0.26387953758239746, baumWelch, RSB, 1
+alphabetsize, 10, 0.25651097297668457, baumWelch, RSB, 1
+alphabetsize, 10, 0.2509303092956543, baumWelch, RSB, 1
+alphabetsize, 10, 0.25175976753234863, baumWelch, RSB, 1
+alphabetsize, 12, 0.2678647041320801, baumWelch, RSB, 1
+alphabetsize, 12, 0.25589895248413086, baumWelch, RSB, 1
+alphabetsize, 12, 0.2603130340576172, baumWelch, RSB, 1
+alphabetsize, 12, 0.2593369483947754, baumWelch, RSB, 1
+alphabetsize, 12, 0.27021169662475586, baumWelch, RSB, 1
+alphabetsize, 14, 0.2629363536834717, baumWelch, RSB, 1
+alphabetsize, 14, 0.27249646186828613, baumWelch, RSB, 1
+alphabetsize, 14, 0.2629544734954834, baumWelch, RSB, 1
+alphabetsize, 14, 0.26361632347106934, baumWelch, RSB, 1
+alphabetsize, 14, 0.26180171966552734, baumWelch, RSB, 1

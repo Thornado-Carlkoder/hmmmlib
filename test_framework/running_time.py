@@ -161,10 +161,15 @@ if __name__ == "__main__" :
 
         
         ## Conventional #
+        standard_test_inputsize("backward_time", "Conventional", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("backward_time", "BLAS", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("backward_time", "CSR", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("backward_time", "RSB", stspace, alphabet, start, stop, increment, file, 0) 
+        """
         standard_test_inputsize("viterbi", "Conventional", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("posteriorDecoding", "Conventional", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("forward", "Conventional", stspace, alphabet, start, stop, increment, file, 0)
-        standard_test_inputsize("backward", "Conventional", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("backward_time", "Conventional", stspace, alphabet, start, stop, increment, file, 0)
         for i in range(1, 7):
             standard_test_inputsize("baumWelch", "Conventional", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
 
@@ -172,7 +177,7 @@ if __name__ == "__main__" :
         standard_test_inputsize("viterbi", "BLAS", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("posteriorDecoding", "BLAS", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("forward", "BLAS", stspace, alphabet, start, stop, increment, file, 0)
-        standard_test_inputsize("backward", "BLAS", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("backward_time", "BLAS", stspace, alphabet, start, stop, increment, file, 0)
         for i in range(1, 7):
             standard_test_inputsize("baumWelch", "BLAS", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
 
@@ -180,7 +185,7 @@ if __name__ == "__main__" :
         standard_test_inputsize("viterbi", "CSR", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("posteriorDecoding", "CSR", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("forward", "CSR", stspace, alphabet, start, stop, increment, file, 0)
-        standard_test_inputsize("backward", "CSR", stspace, alphabet, start, stop, increment, file, 0)
+        standard_test_inputsize("backward_time", "CSR", stspace, alphabet, start, stop, increment, file, 0)
         for i in range(1, 7):
             standard_test_inputsize("baumWelch", "CSR", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
 
@@ -188,9 +193,9 @@ if __name__ == "__main__" :
         standard_test_inputsize("viterbi", "RSB", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("posteriorDecoding", "RSB", stspace, alphabet, start, stop, increment, file, 0)
         standard_test_inputsize("forward", "RSB", stspace, alphabet, start, stop, increment, file, 0)
-        standard_test_inputsize("backward", "RSB", stspace, alphabet, start, stop, increment, file, 0) 
+        standard_test_inputsize("backward_time", "RSB", stspace, alphabet, start, stop, increment, file, 0) 
         for i in range(1, 7):
-            standard_test_inputsize("baumWelch", "RSB", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
+            standard_test_inputsize("baumWelch", "RSB", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)"""
 
         
 
@@ -227,32 +232,35 @@ if __name__ == "__main__" :
         replicates = 5
         file = '../../test_framework/data/pantro3_X.fasta'
         
+
+
         ## Conventional ##        
+
         standard_test_statespace("viterbi", "Conventional", inputsize, start, stop, increment, file)
         standard_test_statespace("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
         standard_test_statespace("forward", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_statespace("backward", "Conventional", inputsize, start, stop, increment, file)
+        standard_test_statespace("backward_time", "Conventional", inputsize, start, stop, increment, file)
         standard_test_statespace("baumWelch", "Conventional", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## BLAS ##        
         standard_test_statespace("viterbi", "BLAS", inputsize, start, stop, increment, file)
         standard_test_statespace("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
         standard_test_statespace("forward", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_statespace("backward", "BLAS", inputsize, start, stop, increment, file)
+        standard_test_statespace("backward_time", "BLAS", inputsize, start, stop, increment, file)
         standard_test_statespace("baumWelch", "BLAS", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## CSR ##        
         standard_test_statespace("viterbi", "CSR", inputsize, start, stop, increment, file)
         standard_test_statespace("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
         standard_test_statespace("forward", "CSR", inputsize, start, stop, increment, file)
-        standard_test_statespace("backward", "CSR", inputsize, start, stop, increment, file)
+        standard_test_statespace("backward_time", "CSR", inputsize, start, stop, increment, file)
         standard_test_statespace("baumWelch", "CSR", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## RSB ##        
         standard_test_statespace("viterbi", "RSB", inputsize, start, stop, increment, file)        
         standard_test_statespace("posteriorDecoding", "RSB", inputsize, start, stop, increment, file)
         standard_test_statespace("forward", "RSB", inputsize, start, stop, increment, file)
-        standard_test_statespace("backward", "RSB", inputsize, start, stop, increment, file) 
+        standard_test_statespace("backward_time", "RSB", inputsize, start, stop, increment, file) 
         standard_test_statespace("baumWelch", "RSB", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         
@@ -409,28 +417,28 @@ if __name__ == "__main__" :
         standard_test_alphabet("viterbi", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "Conventional", inputsize, start, stop, increment, file)
-        standard_test_alphabet("backward", "Conventional", inputsize, start, stop, increment, file)
+        standard_test_alphabet("backward_time", "Conventional", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "Conventional", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## BLAS ##
         standard_test_alphabet("viterbi", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "BLAS", inputsize, start, stop, increment, file)
-        standard_test_alphabet("backward", "BLAS", inputsize, start, stop, increment, file)
+        standard_test_alphabet("backward_time", "BLAS", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "BLAS", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## CSR ##
         standard_test_alphabet("viterbi", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("posteriorDecoding", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "CSR", inputsize, start, stop, increment, file)
-        standard_test_alphabet("backward", "CSR", inputsize, start, stop, increment, file)
+        standard_test_alphabet("backward_time", "CSR", inputsize, start, stop, increment, file)
         standard_test_alphabet("baumWelch", "CSR", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         ## RSB ##        
         standard_test_alphabet("viterbi", "RSB", inputsize, start, stop, increment, file)        
         standard_test_alphabet("posteriorDecoding", "RSB", inputsize, start, stop, increment, file)
         standard_test_alphabet("forward", "RSB", inputsize, start, stop, increment, file)
-        standard_test_alphabet("backward", "RSB", inputsize, start, stop, increment, file) 
+        standard_test_alphabet("backward_time", "RSB", inputsize, start, stop, increment, file) 
         standard_test_alphabet("baumWelch", "RSB", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
         
