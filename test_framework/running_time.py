@@ -83,7 +83,7 @@ def set_random(hmm_obj, sparseness = 0):
         It automatically reads all sizes. """
     hmm_obj.setInitProbs(random_row(hmm_obj.n_hiddenstates, sparseness))
     hmm_obj.setTransitionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_hiddenstates, sparseness))
-    hmm_obj.setEmissionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_observations, sparseness))
+    hmm_obj.setEmissionProbs(random_matrix(hmm_obj.n_hiddenstates, hmm_obj.n_observations, sparseness)) # mangler at blive kørt med sparseness = 0
     return
 
 
