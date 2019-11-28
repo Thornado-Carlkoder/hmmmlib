@@ -10,6 +10,9 @@ names(data) = c('test',
                 'algorithm',
                 'variant',
                 'statespace')
+data$algorithm = data %>% pull(algorithm) %>% recode(forward = "Algorithm: Forward",
+                                                     backward_time = "Algorithm: Backward")
+
 
 ## Varying state space
 # data %>% View 
@@ -28,8 +31,8 @@ data_grouped %>% ggplot(aes(1-observations, mean, color = variant)) +
     labs(
         x = "denseness",
         y = "mean time [s]",
-        caption = "error bars: standard deviation of 5 replicates",
+        caption = "error bars: standard deviation of 5 replicates \ninputsize: 90000 characters, alphabet size: 4",
         title = "Denseness for different state spaces"
-    ) + 
+    )
     #geom_hline(yintercept = 0, alpha = 0)
-ggsave("denseness_vs_statespace_trans.pdf", height = 7, width = 10)
+ggsave("denseness_vs_statespace.pdf", height = 7, width = 10)
