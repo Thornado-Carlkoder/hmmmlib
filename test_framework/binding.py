@@ -223,6 +223,7 @@ class binded_HMM:
 
     
     def backward_time(self, observation_data):
+<<<<<<< HEAD
         # This is more or less a copy of backward() with the slight modification that it doesn't care at all about the scale factor matrix.
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor
             time_test_only overrides scalefactor"""
@@ -242,6 +243,13 @@ class binded_HMM:
                       scalefactor,
                       beta_matrix_c)
         return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary, but makes it easier to handle and check output.
+=======
+        # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
+        e_vector = len(observation_data) * [1]
+        scalefactor = (c.c_double * len(e_vector))(*e_vector)
+        
+        self.backward(observation_data, scalefactor)
+>>>>>>> master
 
 
 
@@ -270,9 +278,9 @@ class binded_HMM:
     
     def baumWelch(self, observation_data, n_iterations):
         _ = self.libhmm.baumWelch(self.hmm,
-                                       (c.c_int * len(observation_data))(*observation_data),
-                                       len(observation_data),
-                                       n_iterations)
+                                  (c.c_int * len(observation_data))(*observation_data),
+                                  len(observation_data),
+                                  n_iterations)
         return True
 
 
