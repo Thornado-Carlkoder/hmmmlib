@@ -115,8 +115,9 @@ if __name__ == "__main__" :
     if 'input' not in given_arguments \
         and 'statespace' not in given_arguments \
         and 'sparse' not in given_arguments \
+        and 'statesparse' not in given_arguments \
         and 'alphabet' not in given_arguments:
-        print("Error: Please give an argument <input|statespace|alphabet|sparse>")
+        print("Error: Please give an argument <input|statespace|alphabet|sparse|statesparse>")
         print("example:")
         print("$ python running_time.py input")
     else:
@@ -257,6 +258,61 @@ if __name__ == "__main__" :
         
 
 
+    ## Statespace and sparseness ##
+    if 'statesparse' in given_arguments:
+        def standard_test_sparseness(algorithm, hmmType, inputsize, hidden_states, start, stop, increment, file, algorithm_version = '', **kwargs):
+            """ This standard test tests a varying size statespace with a constant alphabet and inputsize."""
+
+            test_standard_data = [i for i in read_fasta(inputsize, file)]
+            for i in float_range(start, stop, increment):
+                print(f'{algorithm}\t{i}', file = sys.stderr, end = '\t', flush = True)
+
+                for _ in range(replicates):
+                    print('r', end = '', file = sys.stderr, flush = True)
+                    
+                    o = hmm_binding.binded_HMM(hidden_states, 4, hmmType = hmmType)
+                    
+                    set_random(o, i)    
+
+                    t0 = time.time()
+                    getattr(o, algorithm)(test_standard_data, **kwargs)
+                    t1 = time.time()
+                    o.deallocate()
+
+                    print(f'sparseness_{inputsize}, {round(i, 4)}, {t1-t0}, {algorithm}, {o.hmmType}, {algorithm_version}')
+                print('', file = sys.stderr, flush = True) # newline
+
+        print('## Testing varying sparseness of transition and emission matrices. ##', file = sys.stderr)
+        start = 0
+        stop = 1.001
+        increment = 0.1
+        replicates = 5
+        inputsize = 1500
+        file = '../../test_framework/data/pantro3_X.fasta'
+
+
+        for hidden_states in [32, 16, 4]:
+        
+            print('# hs:', hidden_states, file = sys.stderr)
+            
+            # Conventional #
+            standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+            # BLAS #
+            standard_test_sparseness("forward", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+            # CSR ##
+            standard_test_sparseness("forward", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+            # RSB #
+            standard_test_sparseness("forward", "RSB", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+            standard_test_sparseness("backward_time", "RSB", inputsize, hidden_states, start, stop, increment, file, hidden_states)
+
+
+
     ## Varying sparseness ##
     if 'sparse' in given_arguments:
         def standard_test_sparseness(algorithm, hmmType, inputsize, hidden_states, start, stop, increment, file, algorithm_version = '', **kwargs):
@@ -289,7 +345,7 @@ if __name__ == "__main__" :
         inputsize = 1500
         file = '../../test_framework/data/pantro3_X.fasta'
 
-        """
+        
         standard_test_sparseness("viterbi", "Conventional", inputsize, hidden_states, start, stop, increment, file)
         standard_test_sparseness("posteriorDecoding", "Conventional", inputsize, hidden_states, start, stop, increment, file)
         standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file)
@@ -310,31 +366,10 @@ if __name__ == "__main__" :
         standard_test_sparseness("posteriorDecoding", "CSR", inputsize, hidden_states, start, stop, increment, file)
         standard_test_sparseness("forward", "CSR", inputsize, hidden_states, start, stop, increment, file)
         standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file)
-        standard_test_sparseness("baumWelch", "CSR", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)"""
+        standard_test_sparseness("baumWelch", "CSR", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)
 
-        for hidden_states in [64, 16, 4]:
+    
         
-            print('# hs:', hidden_states, file = sys.stderr)
-            
-            # Conventional #
-            standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-
-            # BLAS #
-            standard_test_sparseness("forward", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "BLAS", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-
-            # CSR ##
-            standard_test_sparseness("forward", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-
-            # RSB #
-            standard_test_sparseness("forward", "RSB", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-            standard_test_sparseness("backward_time", "RSB", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-
-            
-            
-
 
     ## Varying alphabet size ##
     if 'alphabet' in given_arguments:
