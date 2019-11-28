@@ -233,31 +233,7 @@ class binded_HMM:
 
 
 
-    ''' def obackward(self, observation_data, alpha_from_forward, scalefactor_from_forward = None):
-        """ Inputs: 1: observation data: a list of integers, 2: scalefactors
-                for each columnn in observation data provided from forward. If
-                not supplied, the scalefactors will be retrieved automatically,
-                though this may be a waste of resources if already computed.
-            Outputs: Returns the table denoting the probability of each
-                state for each observation. 2: The scalefactors used for each
-                column in said table. """
-        
-        if scalefactor_from_forward is None:# retrieve scalefactors automatically
-            scalefactor = len(observation_data) * [0]
-            scalefactor_from_forward = (c.c_double * len(observation_data))(*scalefactor)
-            output = self.libhmm.forward(self.hmm,
-                                         (c.c_int * len(observation_data))(*observation_data),
-                                         len(observation_data),
-                                         scalefactor_from_forward,
-                                         (c.c_double * len(observation_data))( *(len(observation_data) * [0] )))
-        
-
-
-        output = self.libhmm.backward(self.hmm,
-                                     (c.c_int * len(observation_data))(*observation_data),
-                                     len(observation_data),
-                                     (c.c_double * len(observation_data))(*scalefactor_from_forward))
-        return [output[i] for i in range(len(observation_data)*self.n_hiddenstates)] # Evt. generator? '''
+    
     
 
     def viterbi(self, observation_data):
@@ -282,9 +258,9 @@ class binded_HMM:
     
     def baumWelch(self, observation_data, n_iterations):
         _ = self.libhmm.baumWelch(self.hmm,
-                                       (c.c_int * len(observation_data))(*observation_data),
-                                       len(observation_data),
-                                       n_iterations)
+                                  (c.c_int * len(observation_data))(*observation_data),
+                                  len(observation_data),
+                                  n_iterations)
         return True
 
 
