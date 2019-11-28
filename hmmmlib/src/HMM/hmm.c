@@ -171,12 +171,10 @@ void printHMM(const HMM *hmm){
 
 void HMMDeallocate(HMM * hmm){
 
-    //printf("Trying to deallocate ...");
     free(hmm->initProbs);
     free(hmm->emissionProbs);
     free(hmm->transitionProbs);
-    //free(hmm);
-    //printf(" success.\n");
+    free(hmm);
 
 }
 
