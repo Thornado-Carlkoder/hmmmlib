@@ -65,11 +65,15 @@ In this section all the documentation for the library is written as well as the 
 
 ## TASK MANAGEMENT 
 
-See the project manager in GITHUB
+See the [project manager](https://github.com/Thornado-Carlkoder/hmmmlib/projects)
+
+
 
 ## RUNNING TIME TESTS
 
 In order to quickly assess improvements to our algorithms, we have automated the running time tests.
+
+The automated running time tests are part of the test framework - Thus they are located in the  test_framework/ directory.
 
 Please note that density = 1 - sparseness 
 
@@ -79,7 +83,7 @@ These are the automated running time tests supported:
 * Varying input size: `running_time_input_size.py`
 * Varying density: `running_time_sparseness.py`
 * Varying state space: `running_time_state_space.py`
-* Covarying state space and density: `running_time_state_spaceVSsparseness.py`
+* Co-varying state space and density: `running_time_state_spaceVSsparseness.py`
 
 
 
@@ -89,11 +93,13 @@ Running each of these files with the python interpreter will run a series of tes
 python running_time_input_size.py > input_size.csv
 ```
 
-The scripts all output a csv-formatted file to STDOUT and progress diagostics to STDERR. Because of that, it is recommended to pipe the output to a separate file.
+The scripts all output a csv-formatted file to STDOUT and progress diagnostics to STDERR. Because of that, it is recommended to pipe the output to a separate file.
 
 
 
-Note: If you're using Mac or Windows, the shared object file will likely have a different file extension than what is hardcoded in the binding.py file. Please change the `address_to_so` variable in binding.py accordingly.
+Note: If you're using Mac or Windows, the shared object file will likely have a different file extension than what is hard coded in the binding.py file. Please change the `address_to_so` variable in binding.py accordingly.
+
+
 
 
 
