@@ -64,7 +64,7 @@ void runningTimeTest(){
     unsigned int observation2[obsLenght2];
     srand(time(NULL));
     for(i = 0; i < obsLenght2; i++){
-        observation2[i] = rand()%4;
+        observation2[i] = rand() % 4;
     }
     clock_t t;
     double time_taken;

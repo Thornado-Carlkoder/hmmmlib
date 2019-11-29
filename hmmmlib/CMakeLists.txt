@@ -13,6 +13,7 @@ include_directories(
        ${CMAKE_SOURCE_DIR}/src/Evaluation
        ${CMAKE_SOURCE_DIR}/src/Evaluation/blas
        ${CMAKE_SOURCE_DIR}/src/Evaluation/conventional
+       ${CMAKE_SOURCE_DIR}/src/Evaluation/conventionalsparse
        ${CMAKE_SOURCE_DIR}/src/Evaluation/csr
        ${CMAKE_SOURCE_DIR}/src/Evaluation/sblas
        ${CMAKE_SOURCE_DIR}/src/HMM
@@ -27,6 +28,8 @@ file(GLOB SOURCES
        ${PROJECT_SOURCE_DIR}/src/Evaluation/blas/*.h
        ${PROJECT_SOURCE_DIR}/src/Evaluation/conventional/*.c
        ${PROJECT_SOURCE_DIR}/src/Evaluation/conventional/*.h
+       ${PROJECT_SOURCE_DIR}/src/Evaluation/conventionalsparse/*.c
+       ${PROJECT_SOURCE_DIR}/src/Evaluation/conventionalsparse/*.h
        ${PROJECT_SOURCE_DIR}/src/Evaluation/csr/*.c
        ${PROJECT_SOURCE_DIR}/src/Evaluation/csr/*.h
        ${PROJECT_SOURCE_DIR}/src/Evaluation/sblas/*.c
@@ -72,6 +75,7 @@ include_directories(
        ${CMAKE_SOURCE_DIR}/src/Evaluation
        ${CMAKE_SOURCE_DIR}/src/Evaluation/blas
        ${CMAKE_SOURCE_DIR}/src/Evaluation/conventional
+       ${CMAKE_SOURCE_DIR}/src/Evaluation/conventionalsparse
        ${CMAKE_SOURCE_DIR}/src/Evaluation/csr
        ${CMAKE_SOURCE_DIR}/src/Evaluation/sblas
        ${CMAKE_SOURCE_DIR}/src/HMM
@@ -88,6 +92,8 @@ file(GLOB exeSOURCES
        ${PROJECT_SOURCE_DIR}/src/Evaluation/blas/*.h
        ${PROJECT_SOURCE_DIR}/src/Evaluation/conventional/*.c
        ${PROJECT_SOURCE_DIR}/src/Evaluation/conventional/*.h
+       ${PROJECT_SOURCE_DIR}/src/Evaluation/conventionalsparse/*.c
+       ${PROJECT_SOURCE_DIR}/src/Evaluation/conventionalsparse/*.h
        ${PROJECT_SOURCE_DIR}/src/Evaluation/csr/*.c
        ${PROJECT_SOURCE_DIR}/src/Evaluation/csr/*.h
        ${PROJECT_SOURCE_DIR}/src/Evaluation/sblas/*.c
@@ -142,8 +148,3 @@ foreach(FILE ${exeSOURCES})
 
     source_group("${GROUP}" FILES "${FILE}")
 endforeach()
-
-
-
-
-

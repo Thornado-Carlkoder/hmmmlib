@@ -12,6 +12,24 @@
 
 #include "forward_csr.h"
 #include "backward_csr.h"
+#include "forward_con_sparse.h"
+#include "backward_con_sparse.h"
+
+HMM * HMMConventionalsparse(const unsigned int hiddenStates, const unsigned int observations) {
+    HMM * newHMM = calloc(1, sizeof(HMM));
+
+    newHMM->forward = forward_con_sparse;
+    newHMM->backward = backward_con_sparse;
+
+    newHMM->hiddenStates = hiddenStates;
+    newHMM->observations = observations;
+
+    newHMM->initProbs = calloc(newHMM->hiddenStates ,sizeof(double));
+    newHMM->transitionProbs = calloc(newHMM->hiddenStates*newHMM->hiddenStates, sizeof(double));
+    newHMM->emissionProbs = calloc(newHMM->hiddenStates*newHMM->observations, sizeof(double));
+
+    return newHMM;
+}
 
 #include "forward_sblas.h"
 #include "backward_sblas.h"
@@ -179,12 +197,10 @@ void printHMM(const HMM *hmm){
 
 void HMMDeallocate(HMM * hmm){
 
-    //printf("Trying to deallocate ...");
     free(hmm->initProbs);
     free(hmm->emissionProbs);
     free(hmm->transitionProbs);
-    //free(hmm);
-    //printf(" success.\n");
+    //free(hmm); // the python binding doesn't know how to handle this.
 
 }
 
