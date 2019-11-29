@@ -89,7 +89,7 @@ These are the automated running time tests supported:
 
 Running each of these files with the python interpreter will run a series of tests. For instance, if we want to gauge the running time of increased input size, we will run the following command:
 
-```bash
+```sh
 cd test_framework/
 python running_time_input_size.py > input_size.csv
 ```
