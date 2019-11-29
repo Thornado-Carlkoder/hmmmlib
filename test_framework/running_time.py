@@ -299,7 +299,7 @@ if __name__ == "__main__" :
         file = '../../test_framework/data/pantro3_X.fasta'
 
 
-        for hidden_states in [300, 100, 30, 10]:
+        for hidden_states in [10]:
         
             print('# hs:', hidden_states, file = sys.stderr)
             
