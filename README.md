@@ -3,7 +3,7 @@
 
 
 
-# HMMMLIB <img src='ressourcer/hmmm.png' align="right" height="138.5" />
+# HMMMLIB <img src='ressourcer/hmm_smaller.png' align="right" height="138.5" />
 
 #### *Hidden Markov-Model Matrix Library*
 
@@ -66,6 +66,36 @@ In this section all the documentation for the library is written as well as the 
 ## TASK MANAGEMENT 
 
 See the project manager in GITHUB
+
+## RUNNING TIME TESTS
+
+In order to quickly assess improvements to our algorithms, we have automated the running time tests.
+
+Please note that density = 1 - sparseness 
+
+These are the automated running time tests supported:
+
+* Varying alphabet size :`running_time_alphabet_size.py`
+* Varying input size: `running_time_input_size.py`
+* Varying density: `running_time_sparseness.py`
+* Varying state space: `running_time_state_space.py`
+* Covarying state space and density: `running_time_state_spaceVSsparseness.py`
+
+
+
+Running each of these files with the python interpreter will run a series of tests. For instance, if we want to gauge the running time of increased input size, we will run the following command:
+
+```python3
+python running_time_input_size.py > input_size.csv
+```
+
+The scripts all output a csv-formatted file to STDOUT and progress diagostics to STDERR. Because of that, it is recommended to pipe the output to a separate file.
+
+
+
+Note: If you're using Mac or Windows, the shared object file will likely have a different file extension than what is hardcoded in the binding.py file. Please change the `address_to_so` variable in binding.py accordingly.
+
+
 
 ## READING MATERIAL
 
