@@ -1,5 +1,5 @@
 import ctypes as c
-import os, sys
+import os
 
 # authors: Thornado & Carl Koder
 
@@ -76,14 +76,9 @@ class binded_HMM:
         elif hmmType == "RSB": # Recursive Sparse Blocks, also named SBLAS in the c-library
             self.hmm = self.libhmm.HMMSBLAS(n_hiddenstates, n_observations)
         else:
-            raise ValueError("The hmmType argument given ({hmmType}) to binded_HMM() is invaled. Please give any of None, 'Conventional', 'BLAS', 'CSR' or 'RSB'. ")
-        
+            raise ValueError("The hmmType argument given ({hmmType}) to binded_HMM() is invalid. \
+                Please give any of None, 'Conventional', 'BLAS', 'CSR' or 'RSB'. ")
 
-        """ 
-        print('The following variables are accessible from the HMM struct')
-        for i in [i for i in dir(hmm[0]) if str(i)[0:1] != '_']:
-            print('\t', i)
-        """
 
 
     def presentHMM(self):
@@ -101,7 +96,7 @@ class binded_HMM:
 
 
         print()
-        print(" transitionProbs: [self.n_hiddenstates][self.n_hiddenstates]", end = '\n  ')
+        print(' transitionProbs: [self.n_hiddenstates][self.n_hiddenstates]', end = '\n  ')
         for row in range(self.n_hiddenstates):
             row_sum = 0
             for col in range(self.n_hiddenstates):
