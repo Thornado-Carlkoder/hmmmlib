@@ -174,6 +174,7 @@ print('Conventional sparse baum-welch', test_baumwelch("Consparse"))
 print('Conventional sparse posterior decoding', test_posterior_decoding("Consparse"))
 print('Conventional sparse viterbi', test_viterbi("Consparse"))
 
+
 print('BLAS fw', test_forward("BLAS"))
 print('BLAS bw', test_backward("BLAS"))
 print('BLAS baum-welch', test_baumwelch("BLAS")) 
