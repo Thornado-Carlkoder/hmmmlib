@@ -97,9 +97,16 @@ The scripts all output a csv-formatted file to STDOUT and progress diagnostics t
 
 
 
-Note: If you're using Mac or Windows, the shared object file will likely have a different file extension than what is hard coded in the binding.py file. Please change the `address_to_so` variable in binding.py accordingly.
+Note: If you're using Mac or Windows, the shared object file will likely have a different file extension than what is hard coded in the binding.py file. Please change the `address_to_so` variable in binding.py.
 
 
+
+If you want to change the paremeters given to the algorithms, you should open the files individually and edit the hard coded variables. These variables are the following:
+
+* `inputsize`: The length of the sequence that the HMM algorithm shold be applied to
+* `start`, `stop` and `increment`: The parameter vector.
+* `replicates`: The number of dependent replicates for each test. Used to infer the standard error of a measurement.
+* `file`: The fasta-formatted file used as sequence in all running time tests but the alphabet size test.
 
 
 
