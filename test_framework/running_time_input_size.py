@@ -3,7 +3,7 @@ import binding as hmm_binding
 import random, decimal
 import time, sys, os
 
-print('## Testing varying input size ##', file = sys.stderr)
+print('Testing varying input size', file = sys.stderr)
 stspace = 7
 alphabet = 4
 start = 10
@@ -22,7 +22,7 @@ def standard_test_inputsize(algorithm, hmmType, stspace, alphabet, start, stop, 
 
 
         o = hmm_binding.binded_HMM(stspace, alphabet, hmmType = hmmType)
-        for replicate in range(replicates):
+        for _ in range(replicates):
             print('r', end = '', file = sys.stderr, flush = True)    
             
             set_random(o, sparseness)
