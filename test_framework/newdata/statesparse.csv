@@ -1,88 +1,330 @@
-sparseness_1500, 0.0, 0.2140951156616211, forward, Conventional, 10
-sparseness_1500, 0.1, 0.2068009376525879, forward, Conventional, 10
-sparseness_1500, 0.2, 0.21184229850769043, forward, Conventional, 10
-sparseness_1500, 0.3, 0.2116069793701172, forward, Conventional, 10
-sparseness_1500, 0.4, 0.2114274501800537, forward, Conventional, 10
-sparseness_1500, 0.5, 0.21209955215454102, forward, Conventional, 10
-sparseness_1500, 0.6, 0.21176719665527344, forward, Conventional, 10
-sparseness_1500, 0.7, 0.2132740020751953, forward, Conventional, 10
-sparseness_1500, 0.8, 0.2127535343170166, forward, Conventional, 10
-sparseness_1500, 0.9, 0.21612095832824707, forward, Conventional, 10
-sparseness_1500, 1.0, 0.20910215377807617, forward, Conventional, 10
-sparseness_1500, 0.0, 0.25325489044189453, backward_time, Conventional, 10
-sparseness_1500, 0.1, 0.24235033988952637, backward_time, Conventional, 10
-sparseness_1500, 0.2, 0.22972822189331055, backward_time, Conventional, 10
-sparseness_1500, 0.3, 0.23169589042663574, backward_time, Conventional, 10
-sparseness_1500, 0.4, 0.22982454299926758, backward_time, Conventional, 10
-sparseness_1500, 0.5, 0.2346816062927246, backward_time, Conventional, 10
-sparseness_1500, 0.6, 0.23112940788269043, backward_time, Conventional, 10
-sparseness_1500, 0.7, 0.23096919059753418, backward_time, Conventional, 10
-sparseness_1500, 0.8, 0.2307119369506836, backward_time, Conventional, 10
-sparseness_1500, 0.9, 0.2338695526123047, backward_time, Conventional, 10
-sparseness_1500, 1.0, 0.23644113540649414, backward_time, Conventional, 10
-sparseness_1500, 0.0, 0.17360329627990723, forward, BLAS, 10
-sparseness_1500, 0.1, 0.17113614082336426, forward, BLAS, 10
-sparseness_1500, 0.2, 0.17185163497924805, forward, BLAS, 10
-sparseness_1500, 0.3, 0.1738758087158203, forward, BLAS, 10
-sparseness_1500, 0.4, 0.17200112342834473, forward, BLAS, 10
-sparseness_1500, 0.5, 0.17239904403686523, forward, BLAS, 10
-sparseness_1500, 0.6, 0.17318487167358398, forward, BLAS, 10
-sparseness_1500, 0.7, 0.17131257057189941, forward, BLAS, 10
-sparseness_1500, 0.8, 0.17298007011413574, forward, BLAS, 10
-sparseness_1500, 0.9, 0.17217707633972168, forward, BLAS, 10
-sparseness_1500, 1.0, 0.17160964012145996, forward, BLAS, 10
-sparseness_1500, 0.0, 0.17037105560302734, backward_time, BLAS, 10
-sparseness_1500, 0.1, 0.1709911823272705, backward_time, BLAS, 10
-sparseness_1500, 0.2, 0.1718916893005371, backward_time, BLAS, 10
-sparseness_1500, 0.3, 0.16964483261108398, backward_time, BLAS, 10
-sparseness_1500, 0.4, 0.17136287689208984, backward_time, BLAS, 10
-sparseness_1500, 0.5, 0.17297077178955078, backward_time, BLAS, 10
-sparseness_1500, 0.6, 0.17052769660949707, backward_time, BLAS, 10
-sparseness_1500, 0.7, 0.17003893852233887, backward_time, BLAS, 10
-sparseness_1500, 0.8, 0.1705491542816162, backward_time, BLAS, 10
-sparseness_1500, 0.9, 0.17187881469726562, backward_time, BLAS, 10
-sparseness_1500, 1.0, 0.16939926147460938, backward_time, BLAS, 10
-sparseness_1500, 0.0, 0.21049261093139648, forward, CSR, 10
-sparseness_1500, 0.1, 0.20508408546447754, forward, CSR, 10
-sparseness_1500, 0.2, 0.20147466659545898, forward, CSR, 10
-sparseness_1500, 0.3, 0.19817066192626953, forward, CSR, 10
-sparseness_1500, 0.4, 0.1943037509918213, forward, CSR, 10
-sparseness_1500, 0.5, 0.19704771041870117, forward, CSR, 10
-sparseness_1500, 0.6, 0.19299006462097168, forward, CSR, 10
-sparseness_1500, 0.7, 0.18885397911071777, forward, CSR, 10
-sparseness_1500, 0.8, 0.1814720630645752, forward, CSR, 10
-sparseness_1500, 0.9, 0.17764925956726074, forward, CSR, 10
-sparseness_1500, 1.0, 0.17438697814941406, forward, CSR, 10
-sparseness_1500, 0.0, 0.20927858352661133, backward_time, CSR, 10
-sparseness_1500, 0.1, 0.20673751831054688, backward_time, CSR, 10
-sparseness_1500, 0.2, 0.2020432949066162, backward_time, CSR, 10
-sparseness_1500, 0.3, 0.20201683044433594, backward_time, CSR, 10
-sparseness_1500, 0.4, 0.19268393516540527, backward_time, CSR, 10
-sparseness_1500, 0.5, 0.19226622581481934, backward_time, CSR, 10
-sparseness_1500, 0.6, 0.18968415260314941, backward_time, CSR, 10
-sparseness_1500, 0.7, 0.18981504440307617, backward_time, CSR, 10
-sparseness_1500, 0.8, 0.1853172779083252, backward_time, CSR, 10
-sparseness_1500, 0.9, 0.1827096939086914, backward_time, CSR, 10
-sparseness_1500, 1.0, 0.1765282154083252, backward_time, CSR, 10
-sparseness_1500, 0.0, 0.18186306953430176, forward, RSB, 10
-sparseness_1500, 0.1, 0.1843883991241455, forward, RSB, 10
-sparseness_1500, 0.2, 0.18055105209350586, forward, RSB, 10
-sparseness_1500, 0.3, 0.18069887161254883, forward, RSB, 10
-sparseness_1500, 0.4, 0.17984533309936523, forward, RSB, 10
-sparseness_1500, 0.5, 0.1782677173614502, forward, RSB, 10
-sparseness_1500, 0.6, 0.17827200889587402, forward, RSB, 10
-sparseness_1500, 0.7, 0.17863988876342773, forward, RSB, 10
-sparseness_1500, 0.8, 0.17651033401489258, forward, RSB, 10
-sparseness_1500, 0.9, 0.1734936237335205, forward, RSB, 10
-sparseness_1500, 1.0, 0.1741621494293213, forward, RSB, 10
-sparseness_1500, 0.0, 0.18250823020935059, backward_time, RSB, 10
-sparseness_1500, 0.1, 0.17754316329956055, backward_time, RSB, 10
-sparseness_1500, 0.2, 0.18150830268859863, backward_time, RSB, 10
-sparseness_1500, 0.3, 0.1833033561706543, backward_time, RSB, 10
-sparseness_1500, 0.4, 0.17936992645263672, backward_time, RSB, 10
-sparseness_1500, 0.5, 0.17940020561218262, backward_time, RSB, 10
-sparseness_1500, 0.6, 0.18011760711669922, backward_time, RSB, 10
-sparseness_1500, 0.7, 0.17790555953979492, backward_time, RSB, 10
-sparseness_1500, 0.8, 0.17748641967773438, backward_time, RSB, 10
-sparseness_1500, 0.9, 0.17584586143493652, backward_time, RSB, 10
-sparseness_1500, 1.0, 0.17386436462402344, backward_time, RSB, 10
+sparseness_1500, 0.0, 4.497817039489746, forward, Conventional, 100
+sparseness_1500, 0.1, 4.909760475158691, forward, Conventional, 100
+sparseness_1500, 0.2, 4.512052536010742, forward, Conventional, 100
+sparseness_1500, 0.3, 4.502288341522217, forward, Conventional, 100
+sparseness_1500, 0.4, 4.491953611373901, forward, Conventional, 100
+sparseness_1500, 0.5, 4.499257326126099, forward, Conventional, 100
+sparseness_1500, 0.6, 4.496243715286255, forward, Conventional, 100
+sparseness_1500, 0.7, 4.498627424240112, forward, Conventional, 100
+sparseness_1500, 0.8, 4.496463775634766, forward, Conventional, 100
+sparseness_1500, 0.9, 4.505035400390625, forward, Conventional, 100
+sparseness_1500, 1.0, 4.490176200866699, forward, Conventional, 100
+sparseness_1500, 0.0, 7.470953702926636, backward_time, Conventional, 100
+sparseness_1500, 0.1, 7.483504295349121, backward_time, Conventional, 100
+sparseness_1500, 0.2, 7.475120306015015, backward_time, Conventional, 100
+sparseness_1500, 0.3, 7.506013631820679, backward_time, Conventional, 100
+sparseness_1500, 0.4, 7.5162153244018555, backward_time, Conventional, 100
+sparseness_1500, 0.5, 7.486156463623047, backward_time, Conventional, 100
+sparseness_1500, 0.6, 7.467638254165649, backward_time, Conventional, 100
+sparseness_1500, 0.7, 7.473104238510132, backward_time, Conventional, 100
+sparseness_1500, 0.8, 7.4723896980285645, backward_time, Conventional, 100
+sparseness_1500, 0.9, 7.476801633834839, backward_time, Conventional, 100
+sparseness_1500, 1.0, 7.477577209472656, backward_time, Conventional, 100
+sparseness_1500, 0.0, 5.936974048614502, forward, Conventional sparse, 100
+sparseness_1500, 0.1, 6.089517116546631, forward, Conventional sparse, 100
+sparseness_1500, 0.2, 6.700742244720459, forward, Conventional sparse, 100
+sparseness_1500, 0.3, 7.658249616622925, forward, Conventional sparse, 100
+sparseness_1500, 0.4, 8.486488342285156, forward, Conventional sparse, 100
+sparseness_1500, 0.5, 9.131734371185303, forward, Conventional sparse, 100
+sparseness_1500, 0.6, 8.287559032440186, forward, Conventional sparse, 100
+sparseness_1500, 0.7, 6.871819257736206, forward, Conventional sparse, 100
+sparseness_1500, 0.8, 5.740693092346191, forward, Conventional sparse, 100
+sparseness_1500, 0.9, 4.6838953495025635, forward, Conventional sparse, 100
+sparseness_1500, 1.0, 3.740459680557251, forward, Conventional sparse, 100
+sparseness_1500, 0.0, 9.369423627853394, backward_time, Conventional sparse, 100
+sparseness_1500, 0.1, 9.289337158203125, backward_time, Conventional sparse, 100
+sparseness_1500, 0.2, 9.541108131408691, backward_time, Conventional sparse, 100
+sparseness_1500, 0.3, 10.2425537109375, backward_time, Conventional sparse, 100
+sparseness_1500, 0.4, 11.082556962966919, backward_time, Conventional sparse, 100
+sparseness_1500, 0.5, 11.291179180145264, backward_time, Conventional sparse, 100
+sparseness_1500, 0.6, 9.8868567943573, backward_time, Conventional sparse, 100
+sparseness_1500, 0.7, 8.097644329071045, backward_time, Conventional sparse, 100
+sparseness_1500, 0.8, 6.518113374710083, backward_time, Conventional sparse, 100
+sparseness_1500, 0.9, 5.110758543014526, backward_time, Conventional sparse, 100
+sparseness_1500, 1.0, 3.7868502140045166, backward_time, Conventional sparse, 100
+sparseness_1500, 0.0, 1.6813290119171143, forward, BLAS, 100
+sparseness_1500, 0.1, 1.6898057460784912, forward, BLAS, 100
+sparseness_1500, 0.2, 1.7170510292053223, forward, BLAS, 100
+sparseness_1500, 0.3, 1.6861724853515625, forward, BLAS, 100
+sparseness_1500, 0.4, 1.6826355457305908, forward, BLAS, 100
+sparseness_1500, 0.5, 1.68070650100708, forward, BLAS, 100
+sparseness_1500, 0.6, 1.6815009117126465, forward, BLAS, 100
+sparseness_1500, 0.7, 1.6872024536132812, forward, BLAS, 100
+sparseness_1500, 0.8, 1.706080436706543, forward, BLAS, 100
+sparseness_1500, 0.9, 1.6832880973815918, forward, BLAS, 100
+sparseness_1500, 1.0, 1.6897358894348145, forward, BLAS, 100
+sparseness_1500, 0.0, 1.6807897090911865, backward_time, BLAS, 100
+sparseness_1500, 0.1, 1.6806373596191406, backward_time, BLAS, 100
+sparseness_1500, 0.2, 1.6830387115478516, backward_time, BLAS, 100
+sparseness_1500, 0.3, 1.7137069702148438, backward_time, BLAS, 100
+sparseness_1500, 0.4, 1.7101359367370605, backward_time, BLAS, 100
+sparseness_1500, 0.5, 1.6805405616760254, backward_time, BLAS, 100
+sparseness_1500, 0.6, 1.691803216934204, backward_time, BLAS, 100
+sparseness_1500, 0.7, 1.672741174697876, backward_time, BLAS, 100
+sparseness_1500, 0.8, 1.675614595413208, backward_time, BLAS, 100
+sparseness_1500, 0.9, 1.6736376285552979, backward_time, BLAS, 100
+sparseness_1500, 1.0, 1.6663825511932373, backward_time, BLAS, 100
+sparseness_1500, 0.0, 5.131242513656616, forward, CSR, 100
+sparseness_1500, 0.1, 4.7782087326049805, forward, CSR, 100
+sparseness_1500, 0.2, 4.4098875522613525, forward, CSR, 100
+sparseness_1500, 0.3, 4.058017730712891, forward, CSR, 100
+sparseness_1500, 0.4, 3.7231924533843994, forward, CSR, 100
+sparseness_1500, 0.5, 3.3539986610412598, forward, CSR, 100
+sparseness_1500, 0.6, 3.0429766178131104, forward, CSR, 100
+sparseness_1500, 0.7, 2.662931203842163, forward, CSR, 100
+sparseness_1500, 0.8, 2.2520647048950195, forward, CSR, 100
+sparseness_1500, 0.9, 1.8408265113830566, forward, CSR, 100
+sparseness_1500, 1.0, 1.4912972450256348, forward, CSR, 100
+sparseness_1500, 0.0, 5.484136343002319, backward_time, CSR, 100
+sparseness_1500, 0.1, 5.087143421173096, backward_time, CSR, 100
+sparseness_1500, 0.2, 4.6844482421875, backward_time, CSR, 100
+sparseness_1500, 0.3, 4.280691862106323, backward_time, CSR, 100
+sparseness_1500, 0.4, 3.892185688018799, backward_time, CSR, 100
+sparseness_1500, 0.5, 3.5197091102600098, backward_time, CSR, 100
+sparseness_1500, 0.6, 3.159109592437744, backward_time, CSR, 100
+sparseness_1500, 0.7, 2.6817312240600586, backward_time, CSR, 100
+sparseness_1500, 0.8, 2.285430669784546, backward_time, CSR, 100
+sparseness_1500, 0.9, 1.8887064456939697, backward_time, CSR, 100
+sparseness_1500, 1.0, 1.4945859909057617, backward_time, CSR, 100
+sparseness_1500, 0.0, 1.992706298828125, forward, RSB, 100
+sparseness_1500, 0.1, 1.9628362655639648, forward, RSB, 100
+sparseness_1500, 0.2, 1.9000606536865234, forward, RSB, 100
+sparseness_1500, 0.3, 1.8254776000976562, forward, RSB, 100
+sparseness_1500, 0.4, 1.7789366245269775, forward, RSB, 100
+sparseness_1500, 0.5, 1.7115528583526611, forward, RSB, 100
+sparseness_1500, 0.6, 1.6670022010803223, forward, RSB, 100
+sparseness_1500, 0.7, 1.6276764869689941, forward, RSB, 100
+sparseness_1500, 0.8, 1.5724318027496338, forward, RSB, 100
+sparseness_1500, 0.9, 1.517026662826538, forward, RSB, 100
+sparseness_1500, 1.0, 1.4298248291015625, forward, RSB, 100
+sparseness_1500, 0.0, 2.1367483139038086, backward_time, RSB, 100
+sparseness_1500, 0.1, 2.083221197128296, backward_time, RSB, 100
+sparseness_1500, 0.2, 1.970020055770874, backward_time, RSB, 100
+sparseness_1500, 0.3, 1.9026596546173096, backward_time, RSB, 100
+sparseness_1500, 0.4, 1.7982935905456543, backward_time, RSB, 100
+sparseness_1500, 0.5, 1.7524700164794922, backward_time, RSB, 100
+sparseness_1500, 0.6, 1.6727495193481445, backward_time, RSB, 100
+sparseness_1500, 0.7, 1.603750467300415, backward_time, RSB, 100
+sparseness_1500, 0.8, 1.576265811920166, backward_time, RSB, 100
+sparseness_1500, 0.9, 1.5015320777893066, backward_time, RSB, 100
+sparseness_1500, 1.0, 1.436619758605957, backward_time, RSB, 100
+sparseness_1500, 0.0, 0.7366509437561035, forward, Conventional, 30
+sparseness_1500, 0.1, 0.7405271530151367, forward, Conventional, 30
+sparseness_1500, 0.2, 0.7337069511413574, forward, Conventional, 30
+sparseness_1500, 0.3, 0.7771503925323486, forward, Conventional, 30
+sparseness_1500, 0.4, 0.7380399703979492, forward, Conventional, 30
+sparseness_1500, 0.5, 0.7322404384613037, forward, Conventional, 30
+sparseness_1500, 0.6, 0.7312369346618652, forward, Conventional, 30
+sparseness_1500, 0.7, 0.7342040538787842, forward, Conventional, 30
+sparseness_1500, 0.8, 0.746859073638916, forward, Conventional, 30
+sparseness_1500, 0.9, 0.7377784252166748, forward, Conventional, 30
+sparseness_1500, 1.0, 0.7314465045928955, forward, Conventional, 30
+sparseness_1500, 0.0, 1.005270004272461, backward_time, Conventional, 30
+sparseness_1500, 0.1, 1.00553297996521, backward_time, Conventional, 30
+sparseness_1500, 0.2, 1.0013349056243896, backward_time, Conventional, 30
+sparseness_1500, 0.3, 1.0020904541015625, backward_time, Conventional, 30
+sparseness_1500, 0.4, 1.0177628993988037, backward_time, Conventional, 30
+sparseness_1500, 0.5, 1.0111396312713623, backward_time, Conventional, 30
+sparseness_1500, 0.6, 1.0092785358428955, backward_time, Conventional, 30
+sparseness_1500, 0.7, 1.0121307373046875, backward_time, Conventional, 30
+sparseness_1500, 0.8, 1.0097253322601318, backward_time, Conventional, 30
+sparseness_1500, 0.9, 1.0139684677124023, backward_time, Conventional, 30
+sparseness_1500, 1.0, 1.007430076599121, backward_time, Conventional, 30
+sparseness_1500, 0.0, 0.8596711158752441, forward, Conventional sparse, 30
+sparseness_1500, 0.1, 0.8499362468719482, forward, Conventional sparse, 30
+sparseness_1500, 0.2, 0.8195650577545166, forward, Conventional sparse, 30
+sparseness_1500, 0.3, 0.8104214668273926, forward, Conventional sparse, 30
+sparseness_1500, 0.4, 0.7709739208221436, forward, Conventional sparse, 30
+sparseness_1500, 0.5, 0.7702169418334961, forward, Conventional sparse, 30
+sparseness_1500, 0.6, 0.7495126724243164, forward, Conventional sparse, 30
+sparseness_1500, 0.7, 0.7276074886322021, forward, Conventional sparse, 30
+sparseness_1500, 0.8, 0.7102856636047363, forward, Conventional sparse, 30
+sparseness_1500, 0.9, 0.684575080871582, forward, Conventional sparse, 30
+sparseness_1500, 1.0, 0.6689720153808594, forward, Conventional sparse, 30
+sparseness_1500, 0.0, 1.1606314182281494, backward_time, Conventional sparse, 30
+sparseness_1500, 0.1, 1.1178107261657715, backward_time, Conventional sparse, 30
+sparseness_1500, 0.2, 1.0565078258514404, backward_time, Conventional sparse, 30
+sparseness_1500, 0.3, 1.0192692279815674, backward_time, Conventional sparse, 30
+sparseness_1500, 0.4, 0.9731497764587402, backward_time, Conventional sparse, 30
+sparseness_1500, 0.5, 0.9342434406280518, backward_time, Conventional sparse, 30
+sparseness_1500, 0.6, 0.8630151748657227, backward_time, Conventional sparse, 30
+sparseness_1500, 0.7, 0.8202724456787109, backward_time, Conventional sparse, 30
+sparseness_1500, 0.8, 0.7635481357574463, backward_time, Conventional sparse, 30
+sparseness_1500, 0.9, 0.7174420356750488, backward_time, Conventional sparse, 30
+sparseness_1500, 1.0, 0.6763310432434082, backward_time, Conventional sparse, 30
+sparseness_1500, 0.0, 0.4722788333892822, forward, BLAS, 30
+sparseness_1500, 0.1, 0.47912144660949707, forward, BLAS, 30
+sparseness_1500, 0.2, 0.47162461280822754, forward, BLAS, 30
+sparseness_1500, 0.3, 0.469768762588501, forward, BLAS, 30
+sparseness_1500, 0.4, 0.47208118438720703, forward, BLAS, 30
+sparseness_1500, 0.5, 0.46743083000183105, forward, BLAS, 30
+sparseness_1500, 0.6, 0.46929383277893066, forward, BLAS, 30
+sparseness_1500, 0.7, 0.46901917457580566, forward, BLAS, 30
+sparseness_1500, 0.8, 0.470501184463501, forward, BLAS, 30
+sparseness_1500, 0.9, 0.47438526153564453, forward, BLAS, 30
+sparseness_1500, 1.0, 0.470653772354126, forward, BLAS, 30
+sparseness_1500, 0.0, 0.4745643138885498, backward_time, BLAS, 30
+sparseness_1500, 0.1, 0.4756333827972412, backward_time, BLAS, 30
+sparseness_1500, 0.2, 0.4733757972717285, backward_time, BLAS, 30
+sparseness_1500, 0.3, 0.46971774101257324, backward_time, BLAS, 30
+sparseness_1500, 0.4, 0.471297025680542, backward_time, BLAS, 30
+sparseness_1500, 0.5, 0.4762122631072998, backward_time, BLAS, 30
+sparseness_1500, 0.6, 0.4750556945800781, backward_time, BLAS, 30
+sparseness_1500, 0.7, 0.47004270553588867, backward_time, BLAS, 30
+sparseness_1500, 0.8, 0.4694979190826416, backward_time, BLAS, 30
+sparseness_1500, 0.9, 0.47107720375061035, backward_time, BLAS, 30
+sparseness_1500, 1.0, 0.4775385856628418, backward_time, BLAS, 30
+sparseness_1500, 0.0, 0.7827718257904053, forward, CSR, 30
+sparseness_1500, 0.1, 0.7578697204589844, forward, CSR, 30
+sparseness_1500, 0.2, 0.7263741493225098, forward, CSR, 30
+sparseness_1500, 0.3, 0.6858968734741211, forward, CSR, 30
+sparseness_1500, 0.4, 0.6538183689117432, forward, CSR, 30
+sparseness_1500, 0.5, 0.6345694065093994, forward, CSR, 30
+sparseness_1500, 0.6, 0.5952825546264648, forward, CSR, 30
+sparseness_1500, 0.7, 0.5664477348327637, forward, CSR, 30
+sparseness_1500, 0.8, 0.530611515045166, forward, CSR, 30
+sparseness_1500, 0.9, 0.5030996799468994, forward, CSR, 30
+sparseness_1500, 1.0, 0.4647176265716553, forward, CSR, 30
+sparseness_1500, 0.0, 0.8041512966156006, backward_time, CSR, 30
+sparseness_1500, 0.1, 0.7699892520904541, backward_time, CSR, 30
+sparseness_1500, 0.2, 0.7357189655303955, backward_time, CSR, 30
+sparseness_1500, 0.3, 0.7007524967193604, backward_time, CSR, 30
+sparseness_1500, 0.4, 0.663421630859375, backward_time, CSR, 30
+sparseness_1500, 0.5, 0.6392250061035156, backward_time, CSR, 30
+sparseness_1500, 0.6, 0.604712963104248, backward_time, CSR, 30
+sparseness_1500, 0.7, 0.5676047801971436, backward_time, CSR, 30
+sparseness_1500, 0.8, 0.5335288047790527, backward_time, CSR, 30
+sparseness_1500, 0.9, 0.4964923858642578, backward_time, CSR, 30
+sparseness_1500, 1.0, 0.45951104164123535, backward_time, CSR, 30
+sparseness_1500, 0.0, 0.5060031414031982, forward, RSB, 30
+sparseness_1500, 0.1, 0.4961845874786377, forward, RSB, 30
+sparseness_1500, 0.2, 0.48951005935668945, forward, RSB, 30
+sparseness_1500, 0.3, 0.49028968811035156, forward, RSB, 30
+sparseness_1500, 0.4, 0.4849402904510498, forward, RSB, 30
+sparseness_1500, 0.5, 0.47652316093444824, forward, RSB, 30
+sparseness_1500, 0.6, 0.47270870208740234, forward, RSB, 30
+sparseness_1500, 0.7, 0.469221830368042, forward, RSB, 30
+sparseness_1500, 0.8, 0.4666750431060791, forward, RSB, 30
+sparseness_1500, 0.9, 0.4594309329986572, forward, RSB, 30
+sparseness_1500, 1.0, 0.44504213333129883, forward, RSB, 30
+sparseness_1500, 0.0, 0.5058543682098389, backward_time, RSB, 30
+sparseness_1500, 0.1, 0.49361085891723633, backward_time, RSB, 30
+sparseness_1500, 0.2, 0.49112415313720703, backward_time, RSB, 30
+sparseness_1500, 0.3, 0.48345947265625, backward_time, RSB, 30
+sparseness_1500, 0.4, 0.4809539318084717, backward_time, RSB, 30
+sparseness_1500, 0.5, 0.472733736038208, backward_time, RSB, 30
+sparseness_1500, 0.6, 0.46923184394836426, backward_time, RSB, 30
+sparseness_1500, 0.7, 0.46421146392822266, backward_time, RSB, 30
+sparseness_1500, 0.8, 0.4606204032897949, backward_time, RSB, 30
+sparseness_1500, 0.9, 0.49224042892456055, backward_time, RSB, 30
+sparseness_1500, 1.0, 0.462965726852417, backward_time, RSB, 30
+sparseness_1500, 0.0, 0.21062397956848145, forward, Conventional, 10
+sparseness_1500, 0.1, 0.20500850677490234, forward, Conventional, 10
+sparseness_1500, 0.2, 0.20442891120910645, forward, Conventional, 10
+sparseness_1500, 0.3, 0.20531153678894043, forward, Conventional, 10
+sparseness_1500, 0.4, 0.20363450050354004, forward, Conventional, 10
+sparseness_1500, 0.5, 0.2048649787902832, forward, Conventional, 10
+sparseness_1500, 0.6, 0.20550131797790527, forward, Conventional, 10
+sparseness_1500, 0.7, 0.20579290390014648, forward, Conventional, 10
+sparseness_1500, 0.8, 0.20596933364868164, forward, Conventional, 10
+sparseness_1500, 0.9, 0.20331788063049316, forward, Conventional, 10
+sparseness_1500, 1.0, 0.2047433853149414, forward, Conventional, 10
+sparseness_1500, 0.0, 0.22877287864685059, backward_time, Conventional, 10
+sparseness_1500, 0.1, 0.2290019989013672, backward_time, Conventional, 10
+sparseness_1500, 0.2, 0.23061013221740723, backward_time, Conventional, 10
+sparseness_1500, 0.3, 0.2299365997314453, backward_time, Conventional, 10
+sparseness_1500, 0.4, 0.22754287719726562, backward_time, Conventional, 10
+sparseness_1500, 0.5, 0.23159408569335938, backward_time, Conventional, 10
+sparseness_1500, 0.6, 0.22736620903015137, backward_time, Conventional, 10
+sparseness_1500, 0.7, 0.2293224334716797, backward_time, Conventional, 10
+sparseness_1500, 0.8, 0.23034214973449707, backward_time, Conventional, 10
+sparseness_1500, 0.9, 0.22649812698364258, backward_time, Conventional, 10
+sparseness_1500, 1.0, 0.2297685146331787, backward_time, Conventional, 10
+sparseness_1500, 0.0, 0.2181553840637207, forward, Conventional sparse, 10
+sparseness_1500, 0.1, 0.2169206142425537, forward, Conventional sparse, 10
+sparseness_1500, 0.2, 0.21432900428771973, forward, Conventional sparse, 10
+sparseness_1500, 0.3, 0.2099297046661377, forward, Conventional sparse, 10
+sparseness_1500, 0.4, 0.20912575721740723, forward, Conventional sparse, 10
+sparseness_1500, 0.5, 0.2105872631072998, forward, Conventional sparse, 10
+sparseness_1500, 0.6, 0.20446133613586426, forward, Conventional sparse, 10
+sparseness_1500, 0.7, 0.20378851890563965, forward, Conventional sparse, 10
+sparseness_1500, 0.8, 0.20198988914489746, forward, Conventional sparse, 10
+sparseness_1500, 0.9, 0.19547605514526367, forward, Conventional sparse, 10
+sparseness_1500, 1.0, 0.1944887638092041, forward, Conventional sparse, 10
+sparseness_1500, 0.0, 0.2495269775390625, backward_time, Conventional sparse, 10
+sparseness_1500, 0.1, 0.23859333992004395, backward_time, Conventional sparse, 10
+sparseness_1500, 0.2, 0.2352919578552246, backward_time, Conventional sparse, 10
+sparseness_1500, 0.3, 0.22784042358398438, backward_time, Conventional sparse, 10
+sparseness_1500, 0.4, 0.22375845909118652, backward_time, Conventional sparse, 10
+sparseness_1500, 0.5, 0.22648119926452637, backward_time, Conventional sparse, 10
+sparseness_1500, 0.6, 0.218353271484375, backward_time, Conventional sparse, 10
+sparseness_1500, 0.7, 0.21250152587890625, backward_time, Conventional sparse, 10
+sparseness_1500, 0.8, 0.20906782150268555, backward_time, Conventional sparse, 10
+sparseness_1500, 0.9, 0.19924235343933105, backward_time, Conventional sparse, 10
+sparseness_1500, 1.0, 0.19501852989196777, backward_time, Conventional sparse, 10
+sparseness_1500, 0.0, 0.17124462127685547, forward, BLAS, 10
+sparseness_1500, 0.1, 0.1728990077972412, forward, BLAS, 10
+sparseness_1500, 0.2, 0.17081356048583984, forward, BLAS, 10
+sparseness_1500, 0.3, 0.17043232917785645, forward, BLAS, 10
+sparseness_1500, 0.4, 0.1696929931640625, forward, BLAS, 10
+sparseness_1500, 0.5, 0.16918587684631348, forward, BLAS, 10
+sparseness_1500, 0.6, 0.16916275024414062, forward, BLAS, 10
+sparseness_1500, 0.7, 0.1722414493560791, forward, BLAS, 10
+sparseness_1500, 0.8, 0.17260169982910156, forward, BLAS, 10
+sparseness_1500, 0.9, 0.17045211791992188, forward, BLAS, 10
+sparseness_1500, 1.0, 0.16906285285949707, forward, BLAS, 10
+sparseness_1500, 0.0, 0.17020273208618164, backward_time, BLAS, 10
+sparseness_1500, 0.1, 0.17015910148620605, backward_time, BLAS, 10
+sparseness_1500, 0.2, 0.16702985763549805, backward_time, BLAS, 10
+sparseness_1500, 0.3, 0.1677720546722412, backward_time, BLAS, 10
+sparseness_1500, 0.4, 0.16892766952514648, backward_time, BLAS, 10
+sparseness_1500, 0.5, 0.16693401336669922, backward_time, BLAS, 10
+sparseness_1500, 0.6, 0.1673145294189453, backward_time, BLAS, 10
+sparseness_1500, 0.7, 0.16819500923156738, backward_time, BLAS, 10
+sparseness_1500, 0.8, 0.16748785972595215, backward_time, BLAS, 10
+sparseness_1500, 0.9, 0.16951656341552734, backward_time, BLAS, 10
+sparseness_1500, 1.0, 0.16742563247680664, backward_time, BLAS, 10
+sparseness_1500, 0.0, 0.20576167106628418, forward, CSR, 10
+sparseness_1500, 0.1, 0.2055985927581787, forward, CSR, 10
+sparseness_1500, 0.2, 0.19770216941833496, forward, CSR, 10
+sparseness_1500, 0.3, 0.1944882869720459, forward, CSR, 10
+sparseness_1500, 0.4, 0.19323158264160156, forward, CSR, 10
+sparseness_1500, 0.5, 0.19478416442871094, forward, CSR, 10
+sparseness_1500, 0.6, 0.18745851516723633, forward, CSR, 10
+sparseness_1500, 0.7, 0.1827986240386963, forward, CSR, 10
+sparseness_1500, 0.8, 0.180389404296875, forward, CSR, 10
+sparseness_1500, 0.9, 0.17817044258117676, forward, CSR, 10
+sparseness_1500, 1.0, 0.17169642448425293, forward, CSR, 10
+sparseness_1500, 0.0, 0.2091078758239746, backward_time, CSR, 10
+sparseness_1500, 0.1, 0.20630145072937012, backward_time, CSR, 10
+sparseness_1500, 0.2, 0.19884490966796875, backward_time, CSR, 10
+sparseness_1500, 0.3, 0.1975569725036621, backward_time, CSR, 10
+sparseness_1500, 0.4, 0.19350028038024902, backward_time, CSR, 10
+sparseness_1500, 0.5, 0.19030022621154785, backward_time, CSR, 10
+sparseness_1500, 0.6, 0.18907785415649414, backward_time, CSR, 10
+sparseness_1500, 0.7, 0.18597102165222168, backward_time, CSR, 10
+sparseness_1500, 0.8, 0.17930006980895996, backward_time, CSR, 10
+sparseness_1500, 0.9, 0.17473721504211426, backward_time, CSR, 10
+sparseness_1500, 1.0, 0.1753220558166504, backward_time, CSR, 10
+sparseness_1500, 0.0, 0.18000125885009766, forward, RSB, 10
+sparseness_1500, 0.1, 0.1788325309753418, forward, RSB, 10
+sparseness_1500, 0.2, 0.17726945877075195, forward, RSB, 10
+sparseness_1500, 0.3, 0.17797255516052246, forward, RSB, 10
+sparseness_1500, 0.4, 0.17566156387329102, forward, RSB, 10
+sparseness_1500, 0.5, 0.17733430862426758, forward, RSB, 10
+sparseness_1500, 0.6, 0.17618894577026367, forward, RSB, 10
+sparseness_1500, 0.7, 0.17533230781555176, forward, RSB, 10
+sparseness_1500, 0.8, 0.1753401756286621, forward, RSB, 10
+sparseness_1500, 0.9, 0.17554330825805664, forward, RSB, 10
+sparseness_1500, 1.0, 0.1711258888244629, forward, RSB, 10
+sparseness_1500, 0.0, 0.18525266647338867, backward_time, RSB, 10
+sparseness_1500, 0.1, 0.17685937881469727, backward_time, RSB, 10
+sparseness_1500, 0.2, 0.1757497787475586, backward_time, RSB, 10
+sparseness_1500, 0.3, 0.17621231079101562, backward_time, RSB, 10
+sparseness_1500, 0.4, 0.1738748550415039, backward_time, RSB, 10
+sparseness_1500, 0.5, 0.17731833457946777, backward_time, RSB, 10
+sparseness_1500, 0.6, 0.1737654209136963, backward_time, RSB, 10
+sparseness_1500, 0.7, 0.1754462718963623, backward_time, RSB, 10
+sparseness_1500, 0.8, 0.1735832691192627, backward_time, RSB, 10
+sparseness_1500, 0.9, 0.17376279830932617, backward_time, RSB, 10
+sparseness_1500, 1.0, 0.16997838020324707, backward_time, RSB, 10

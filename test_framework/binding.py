@@ -63,7 +63,7 @@ class binded_HMM:
         if hmmType == "Conventional" or hmmType is None:
             self.hmm = self.libhmm.HMMConventional(n_hiddenstates, n_observations)
             #print(" (A conventional hmm was created)")
-        elif hmmType == "Consparse":
+        elif hmmType == "Consparse" or hmmType == "Conventional sparse":
             self.hmm = self.libhmm.HMMConventionalsparse(n_hiddenstates, n_observations)
             #print(" (A conventional sparse hmm was created)")
         elif hmmType == "BLAS":
