@@ -13,7 +13,7 @@
 bool testForwardAlgorithm() {
     // Conventional
     HMM * hmmCon = HMMConventional(2, 2);
-    //HMM * hmmBLAS = HMMBLAS(2, 2); //?
+    HMM * hmmBLAS = HMMBLAS(2, 2); //?
     
     double transitionProbs[2][2] = {
         {0.5, 0.5},
@@ -29,7 +29,7 @@ bool testForwardAlgorithm() {
     
     for(unsigned int i = 0; i < hmmCon->hiddenStates; i++){
         hmmCon->initProbs[i] = initProbs[i];
-        //hmmBLAS->initProbs[i] = initProbs[i];
+        hmmBLAS->initProbs[i] = initProbs[i];
     }
 
     
@@ -37,13 +37,13 @@ bool testForwardAlgorithm() {
     int j;
     for(i = 0; i < hmmCon->hiddenStates; i++){
         for(j = 0; j < hmmCon->hiddenStates; j++){
-            //hmmBLAS->transitionProbs[i*hmmCon->hiddenStates+j] = transitionProbs[i][j];
+            hmmBLAS->transitionProbs[i*hmmCon->hiddenStates+j] = transitionProbs[i][j];
             hmmCon->transitionProbs[i*hmmCon->hiddenStates+j] = transitionProbs[i][j];
         }
     }
     for(i = 0; i < hmmCon->hiddenStates; i++){
         for(j = 0; j < hmmCon->observations; j++){
-            //hmmBLAS->emissionProbs[i*hmmCon->observations+j] = emissionProbs[i][j];
+            hmmBLAS->emissionProbs[i*hmmCon->observations+j] = emissionProbs[i][j];
             hmmCon->emissionProbs[i*hmmCon->observations+j] = emissionProbs[i][j];
         }
     }
@@ -60,7 +60,7 @@ bool testForwardAlgorithm() {
     double * scaleFactorBLAS = calloc(obsLenght, sizeof(double));
     
     F(hmmCon, observation, obsLenght, scaleFactorAlpha, alphaCon);
-    //F(hmmBLAS, observation, obsLenght, scaleFactorBLAS, alphaBLAS);
+    F(hmmBLAS, observation, obsLenght, scaleFactorBLAS, alphaBLAS);
     
     double test[20] = {
         0.085714, 0.914286,
@@ -84,10 +84,10 @@ bool testForwardAlgorithm() {
     }
     
     assert(validateHMM(hmmCon) == true);
-    //assert(validateHMM(hmmBLAS) == true);
+    assert(validateHMM(hmmBLAS) == true);
 
     HMMDeallocate(hmmCon);
-    //HMMDeallocate(hmmBLAS);
+    HMMDeallocate(hmmBLAS);
 
 
 
@@ -172,23 +172,20 @@ bool testForwardAlgorithm() {
     HMM * hmmConsparse = HMMConventionalsparse(2, 2);
 
     
+    double initProbs4[2] = {0.2, 0.8};
+    
     double transitionProbs4[2][2] = {
         {0.5, 0.5},
         {0.3, 0.7}
     };
-    
     double emissionProbs4[2][2] = {
         {0.3, 0.7},
         {0.8, 0.2}
     };
     
-    double initProbs4[2] = {0.2, 0.8};
-    
     for(unsigned int i = 0; i < hmmConsparse->hiddenStates; i++){
         hmmConsparse->initProbs[i] = initProbs4[i];
-    
     }
-
     
     for(i = 0; i < hmmConsparse->hiddenStates; i++){
         for(j = 0; j < hmmConsparse->hiddenStates; j++){
@@ -203,20 +200,14 @@ bool testForwardAlgorithm() {
         }
     }
     
-    
     const unsigned int observation4[10] = {0, 0, 0, 0, 0, 1, 1, 0, 0, 0};
     const unsigned int obsLenght4 = 10;
     
-    
     double * alphaCon4 = calloc(hmmConsparse->hiddenStates*obsLenght4, sizeof(double));
-    
-    
     double * scaleFactorAlpha4 = calloc(obsLenght4, sizeof(double));
-    
     
     F(hmmConsparse, observation4, obsLenght4, scaleFactorAlpha4, alphaCon4);
 
-    
     double test4[20] = {
         0.085714, 0.914286,
         0.148330, 0.851670,
@@ -229,8 +220,7 @@ bool testForwardAlgorithm() {
         0.165653, 0.834347,
         0.157773, 0.842227
     };
-    
-    
+        
     for(i = 0; i < obsLenght4; i++){
         for(j = 0; j < hmmConsparse->hiddenStates; j++){
         
@@ -239,7 +229,6 @@ bool testForwardAlgorithm() {
     }
     
     assert(validateHMM(hmmConsparse) == true);
-
 
     HMMDeallocate(hmmConsparse);
 
