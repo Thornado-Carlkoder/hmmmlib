@@ -11,7 +11,7 @@
 #include <time.h>
 
 bool testForwardAlgorithm() {
-    // Conventional
+    // Conventional and BLAS
     HMM * hmmCon = HMMConventional(2, 2);
     HMM * hmmBLAS = HMMBLAS(2, 2); //?
     
@@ -78,7 +78,7 @@ bool testForwardAlgorithm() {
     
     for(i = 0; i < obsLenght; i++){
         for(j = 0; j < hmmCon->hiddenStates; j++){
-            //assert(fabs(alphaBLAS[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j]) < 0.00001);
+            assert(fabs(alphaBLAS[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j]) < 0.00001);
             assert(fabs(alphaCon[i*hmmCon->hiddenStates+j]-test[i*hmmCon->hiddenStates+j]) < 0.00001);
         }
     }

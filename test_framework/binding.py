@@ -32,6 +32,7 @@ class binded_HMM:
         # Set restypes for internal functions.
         #self.libhmm.HMMCreate.restype = c.POINTER(HMM)
         self.libhmm.HMMConventional.restype = c.POINTER(HMM)
+        self.libhmm.HMMConventionalsparse.restype = c.POINTER(HMM)
         self.libhmm.HMMBLAS.restype = c.POINTER(HMM)
         self.libhmm.HMMCsr.restype = c.POINTER(HMM)
         
