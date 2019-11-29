@@ -8,7 +8,7 @@
 
 extern bool testBackwardAlgorithm() {
     HMM * hmmCon = HMMConventional(2, 2);
-    HMM * hmmBlas = HMMBLAS(2, 2);
+    HMM * hmmBlas = HMMConventional(2, 2);
     
     double transitionProbs[2][2] = {
         {0.5, 0.5},

@@ -1,7 +1,7 @@
-#include "backward.h"
+#include "backward_con_sparse.h"
 #include <stdlib.h>
 
-void backward(HMM *hmm, const unsigned int *Y, const unsigned int T, double * scalingFactor, double * beta){
+void backward_con_sparse(HMM *hmm, const unsigned int *Y, const unsigned int T, double * scalingFactor, double * beta){
     
     unsigned int i;
     unsigned int j;
@@ -18,7 +18,16 @@ void backward(HMM *hmm, const unsigned int *Y, const unsigned int T, double * sc
     for(i = T-1; i-- >0;){
         for(j = 0; j < hmm->hiddenStates; j++){
             for(int l = 0; l < hmm->hiddenStates; l++){
-                beta[i*hmm->hiddenStates+j] += hmm->transitionProbs[j*hmm->hiddenStates+l]*hmm->emissionProbs[l*hmm->observations+Y[i+1]]*beta[(i+1)*hmm->hiddenStates+l];
+                double transitionProb = hmm->transitionProbs[j*hmm->hiddenStates+l];
+                if(transitionProb > 0){
+                    double emissionProb = hmm->emissionProbs[l*hmm->observations+Y[i+1]];
+                    //if the emissionmatrix is dense then it should be slower 
+                    if(emissionProb > 0){
+                        double oldBeta = beta[(i+1)*hmm->hiddenStates+l];
+                        beta[i*hmm->hiddenStates+j] += transitionProb*emissionProb*oldBeta;
+                    }
+                }
+            
             }
             beta[i*hmm->hiddenStates+j] = beta[i*hmm->hiddenStates+j] / scalingFactor[i+1];
         }
