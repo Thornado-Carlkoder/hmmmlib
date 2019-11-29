@@ -65,6 +65,14 @@ standard_test_alphabet("forward", "CSR", inputsize, start, stop, increment, file
 standard_test_alphabet("backward_time", "CSR", inputsize, start, stop, increment, file)
 standard_test_alphabet("baumWelch", "CSR", inputsize, start, stop, increment, file, '1', n_iterations = 1)
 
+## RSB ##
+standard_test_alphabet("viterbi", "RSB", inputsize, start, stop, increment, file)
+standard_test_alphabet("posteriorDecoding", "RSB", inputsize, start, stop, increment, file)
+standard_test_alphabet("forward", "RSB", inputsize, start, stop, increment, file)
+standard_test_alphabet("backward_time", "RSB", inputsize, start, stop, increment, file)
+standard_test_alphabet("baumWelch", "RSB", inputsize, start, stop, increment, file, '1', n_iterations = 1)
+
+
 
 
 

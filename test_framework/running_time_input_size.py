@@ -81,6 +81,16 @@ for i in range(1, 7):
     standard_test_inputsize("baumWelch", "CSR", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
 
 
+## RSB ##
+standard_test_inputsize("viterbi", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+standard_test_inputsize("posteriorDecoding", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+standard_test_inputsize("forward", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+standard_test_inputsize("backward_time", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+standard_test_inputsize("backward_time", "RSB", stspace, alphabet, start, stop, increment, file, 0)
+for i in range(1, 7):
+    standard_test_inputsize("baumWelch", "RSB", stspace, alphabet, start, stop, increment, file, 0, str(i), n_iterations = 1)
+
+
 
 
 

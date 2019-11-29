@@ -66,6 +66,14 @@ standard_test_sparseness("backward_time", "CSR", inputsize, hidden_states, start
 standard_test_sparseness("baumWelch", "CSR", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)
 
 
+## RSB #
+standard_test_sparseness("viterbi", "RSB", inputsize, hidden_states, start, stop, increment, file)
+standard_test_sparseness("posteriorDecoding", "RSB", inputsize, hidden_states, start, stop, increment, file)
+standard_test_sparseness("forward", "RSB", inputsize, hidden_states, start, stop, increment, file)
+standard_test_sparseness("backward_time", "RSB", inputsize, hidden_states, start, stop, increment, file)
+standard_test_sparseness("baumWelch", "RSB", inputsize, hidden_states, start, stop, increment, file, str(1), n_iterations = 1)
+
+
 
 
 
