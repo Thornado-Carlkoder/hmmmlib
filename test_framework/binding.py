@@ -23,10 +23,12 @@ class HMM(c.Structure):
 
 class binded_HMM:
 
-    def __init__(self, n_hiddenstates, n_observations, address_to_so = "../../hmmmlib/build/libHMMLIB.so", hmmType = None):
+    def __init__(self, n_hiddenstates, n_observations, hmmType = None):
         
         
+        address_to_so = os.path.dirname(os.path.realpath(__file__)) + "/../hmmmlib/build/libHMMLIB.so"
         # Load the shared library into ctypes.
+
         self.libhmm = c.CDLL(os.path.abspath(address_to_so))
         
         # Set restypes for internal functions.
