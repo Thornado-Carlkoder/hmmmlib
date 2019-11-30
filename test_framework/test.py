@@ -168,6 +168,13 @@ print('Conventional baum-welch', test_baumwelch("Conventional"))
 print('Conventional posterior decoding', test_posterior_decoding("Conventional"))
 print('Conventional viterbi', test_viterbi("Conventional"))
 
+print('Conventional sparse fw', test_forward("Consparse"))
+print('Conventional sparse bw', test_backward("Consparse"))
+print('Conventional sparse baum-welch', test_baumwelch("Consparse")) 
+print('Conventional sparse posterior decoding', test_posterior_decoding("Consparse"))
+print('Conventional sparse viterbi', test_viterbi("Consparse"))
+
+
 print('BLAS fw', test_forward("BLAS"))
 print('BLAS bw', test_backward("BLAS"))
 print('BLAS baum-welch', test_baumwelch("BLAS")) 
@@ -177,6 +184,5 @@ print('BLAS viterbi', test_viterbi("BLAS"))
 print('CSR fw', test_forward("CSR"))
 print('CSR bw', test_backward("CSR"))
 print('CSR viterbi', test_viterbi("CSR"))
-
 print('CSR posterior decoding', test_posterior_decoding("CSR"))
 print('CSR baum-welch', test_baumwelch("CSR")) 

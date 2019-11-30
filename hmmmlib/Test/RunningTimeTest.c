@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-void blasRunningTime(){
-    HMM * hmm2 = HMMConventionalsparse(7, 4);
+void runningTimeTest(){
     
+    HMM * hmm2 = HMMConventionalsparse(7, 4);
     int i;
     int j;
     

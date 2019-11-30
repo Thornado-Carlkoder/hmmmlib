@@ -1,5 +1,5 @@
 import ctypes as c
-import os, sys
+import os
 
 # authors: Thornado & Carl Koder
 
@@ -23,17 +23,22 @@ class HMM(c.Structure):
 
 class binded_HMM:
 
-    def __init__(self, n_hiddenstates, n_observations, address_to_so = "../../hmmmlib/build/libHMMLIB.so", hmmType = None):
+    def __init__(self, n_hiddenstates, n_observations, hmmType = None):
         
         
+        address_to_so = os.path.dirname(os.path.realpath(__file__)) + "/../hmmmlib/build/libHMMLIB.so"
         # Load the shared library into ctypes.
+
         self.libhmm = c.CDLL(os.path.abspath(address_to_so))
         
         # Set restypes for internal functions.
         #self.libhmm.HMMCreate.restype = c.POINTER(HMM)
         self.libhmm.HMMConventional.restype = c.POINTER(HMM)
+        self.libhmm.HMMConventionalsparse.restype = c.POINTER(HMM)
         self.libhmm.HMMBLAS.restype = c.POINTER(HMM)
         self.libhmm.HMMCsr.restype = c.POINTER(HMM)
+        
+        
         
         
         self.libhmm.validateHMM.restype = c.c_bool
@@ -60,17 +65,18 @@ class binded_HMM:
         if hmmType == "Conventional" or hmmType is None:
             self.hmm = self.libhmm.HMMConventional(n_hiddenstates, n_observations)
             #print(" (A conventional hmm was created)")
+        elif hmmType == "Consparse" or hmmType == "Conventional sparse":
+            self.hmm = self.libhmm.HMMConventionalsparse(n_hiddenstates, n_observations)
+            #print(" (A conventional sparse hmm was created)")
         elif hmmType == "BLAS":
             self.hmm = self.libhmm.HMMBLAS(n_hiddenstates, n_observations)
             #print(" (A BLAS hmm was created)")
-        elif hmmType == "CSR":
+        elif hmmType == "CSR": # Compressed Sparse Row
             self.hmm = self.libhmm.HMMCsr(n_hiddenstates, n_observations)
+        else:
+            raise ValueError("The hmmType argument given ({hmmType}) to binded_HMM() is invalid. \
+                Please give any of None, 'Conventional', 'BLAS', 'CSR' or 'RSB'. ")
 
-        """ 
-        print('The following variables are accessible from the HMM struct')
-        for i in [i for i in dir(hmm[0]) if str(i)[0:1] != '_']:
-            print('\t', i)
-        """
 
 
     def presentHMM(self):
@@ -88,7 +94,7 @@ class binded_HMM:
 
 
         print()
-        print(" transitionProbs: [self.n_hiddenstates][self.n_hiddenstates]", end = '\n  ')
+        print(' transitionProbs: [self.n_hiddenstates][self.n_hiddenstates]', end = '\n  ')
         for row in range(self.n_hiddenstates):
             row_sum = 0
             for col in range(self.n_hiddenstates):
@@ -174,16 +180,14 @@ class binded_HMM:
         
 
     ## Algorithms ##
-    def forward(self, observation_data, as_pointers = True):
+    def forward(self, observation_data):
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor """
-        
-        self.n_hiddenstates = self.n_hiddenstates
         
         # Allocate scalefactor
         scalefactor = len(observation_data) * [0]
         scalefactor_c = (c.c_double * len(observation_data))(*scalefactor)
 
-        # empty alpha matrix
+        # Allocate alpha matrix
         alpha_matrix = len(observation_data) * self.n_hiddenstates * [0]
         alpha_matrix_c = (len(observation_data) * self.n_hiddenstates * c.c_double)(*alpha_matrix)
         
@@ -196,22 +200,15 @@ class binded_HMM:
         
         return alpha_matrix_c, scalefactor_c
     
-    def backward(self, observation_data, scalefactor = None, as_pointers = True, time_test_only = True):
+    def backward(self, observation_data, scalefactor = None):
         """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor
             time_test_only overrides scalefactor"""
-    
-        if time_test_only:
-            unit_vector = len(observation_data) * [1]
-            scalefactor = (c.c_double * len(unit_vector))(*unit_vector)
-            print('time test only', file = sys.stderr)
 
         # Automatically calculate scalefactor with forward, if it is missing.
         if scalefactor is None: # Compute scalefactor yourself
-            #scalefactor = self.forward(observation_data)[1]
-            pass
-
+            scalefactor = self.forward(observation_data)[1]
         
-        # empty beta matrix
+        # Allocate beta matrix
         beta_matrix = len(observation_data) * self.n_hiddenstates * [0]
         beta_matrix_c = (len(observation_data) * self.n_hiddenstates * c.c_double)(*beta_matrix)
         
@@ -225,11 +222,25 @@ class binded_HMM:
 
     
     def backward_time(self, observation_data):
-        # If we are only interested in the running time, we can give any non-zero scalefactor vector instead of the one from forward.
-        e_vector = len(observation_data) * [1]
-        scalefactor = (c.c_double * len(e_vector))(*e_vector)
+        # This is more or less a copy of backward() with the slight modification that it doesn't care at all about the scale factor matrix.
+        """ Returns a tuple. 1: pointer to alpha 2: Pointer to scalefactor
+            time_test_only overrides scalefactor"""
+    
+        # Allocate unit scale factor (dummy for time tests)
+        unit_vector = len(observation_data) * [1]
+        scalefactor = (c.c_double * len(unit_vector))(*unit_vector)
         
-        self.backward(observation_data, scalefactor)
+        # Allocate beta matrix
+        beta_matrix = len(observation_data) * self.n_hiddenstates * [0]
+        beta_matrix_c = (len(observation_data) * self.n_hiddenstates * c.c_double)(*beta_matrix)
+        
+    
+        self.libhmm.B(self.hmm,
+                      (c.c_int * len(observation_data))(*observation_data),
+                      len(observation_data),
+                      scalefactor,
+                      beta_matrix_c)
+        return beta_matrix_c, scalefactor # Returning the scalefactor might not be necessary, but makes it easier to handle and check output.
 
 
 

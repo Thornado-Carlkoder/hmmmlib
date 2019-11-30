@@ -21,7 +21,7 @@ int main() {
     /*
      RunningTimeTest
      */
-    blasRunningTime();
+    runningTimeTest();
     printf("\n");
     /*
      Testing the forward algorithm
