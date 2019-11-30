@@ -21,11 +21,8 @@ void backward_con_sparse(HMM *hmm, const unsigned int *Y, const unsigned int T, 
                 double transitionProb = hmm->transitionProbs[j*hmm->hiddenStates+l];
                 if(transitionProb > 0){
                     double emissionProb = hmm->emissionProbs[l*hmm->observations+Y[i+1]];
-                    //if the emissionmatrix is dense then it should be slower 
-                    if(emissionProb > 0){
-                        double oldBeta = beta[(i+1)*hmm->hiddenStates+l];
-                        beta[i*hmm->hiddenStates+j] += transitionProb*emissionProb*oldBeta;
-                    }
+                    double oldBeta = beta[(i+1)*hmm->hiddenStates+l];
+                    beta[i*hmm->hiddenStates+j] += transitionProb*emissionProb*oldBeta;
                 }
             
             }

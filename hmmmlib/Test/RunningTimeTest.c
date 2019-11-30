@@ -3,7 +3,7 @@
 #include <time.h>
 
 void blasRunningTime(){
-    HMM * hmm2 = HMMBLAS(7, 4);
+    HMM * hmm2 = HMMConventionalsparse(7, 4);
     
     int i;
     int j;
