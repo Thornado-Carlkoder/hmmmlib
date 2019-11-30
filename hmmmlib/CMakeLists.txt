@@ -33,16 +33,9 @@ file(GLOB SOURCES
        ${PROJECT_SOURCE_DIR}/src/Training/*.h)
 
 add_library(HMMLIB SHARED ${PROJECT_SOURCE_DIR}/src/shared.c)
-target_link_libraries(HMMLIB m)
-target_link_libraries(HMMLIB cblas)
+target_link_libraries(HMMLIB m cblas)
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY POSITION_INDEPENDENT_CODE 1) #or #set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-#
-#
-# For codecoverage
-#
-#
-#SET(GCC_COVERAGE_COMPILE_FLAGS "-fprofile-arcs -ftest-coverage")
 
 include_directories(
        ${CMAKE_SOURCE_DIR}/src/
@@ -80,7 +73,6 @@ file(GLOB exeSOURCES
        ${PROJECT_SOURCE_DIR}/src/Training/*.h)
 
 add_executable(exeHMMLIB ${exeSOURCES})
-set_source_files_properties(exeHMMLIB PROPERTIES COMPILE_FLAGS "-fprofile-arcs -ftest-coverage" )
 target_link_libraries(exeHMMLIB m cblas)
 
 
