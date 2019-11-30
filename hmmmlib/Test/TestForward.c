@@ -83,8 +83,8 @@ bool testForwardAlgorithm() {
         }
     }
     
-    assert(validateHMM(hmmCon) == true);
-    assert(validateHMM(hmmBLAS) == true);
+    assert(validateHMM(hmmCon));
+    assert(validateHMM(hmmBLAS));
 
     HMMDeallocate(hmmCon);
     HMMDeallocate(hmmBLAS);
@@ -161,7 +161,7 @@ bool testForwardAlgorithm() {
     
     free(alpha2);
     free(scaleFactor2);
-    assert(validateHMM(hmm2) == true);
+    assert(validateHMM(hmm2));
     HMMDeallocate(hmm2);
     
     return true;
@@ -228,7 +228,7 @@ bool testForwardAlgorithm() {
         }
     }
     
-    assert(validateHMM(hmmConsparse) == true);
+    assert(validateHMM(hmmConsparse));
 
     HMMDeallocate(hmmConsparse);
 

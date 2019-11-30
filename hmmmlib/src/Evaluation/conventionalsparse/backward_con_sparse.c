@@ -29,15 +29,4 @@ void backward_con_sparse(HMM *hmm, const unsigned int *Y, const unsigned int T, 
             beta[i*hmm->hiddenStates+j] = beta[i*hmm->hiddenStates+j] / scalingFactor[i+1];
         }
     }
-    
-//    printf("Backward\n");
-//    for(i = 0; i < T; i++){
-//       for(j = 0; j < hmm->hiddenStates; j++){
-//           printf("%f, ", beta[i*hmm->hiddenStates+j]);
-//       }
-//       printf("\n");
-//    }
-//    printf("\n");
-
-    
 }

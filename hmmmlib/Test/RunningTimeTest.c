@@ -73,6 +73,5 @@ void runningTimeTest(){
     free(alpha2);
     free(beta2);
     HMMDeallocate(hmm2);
-    printf("Running time blas!!!");
   
 }

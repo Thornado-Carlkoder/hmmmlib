@@ -7,7 +7,6 @@ void backward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
     
     unsigned int i;
     unsigned int j;
-    
     double ** new_emission_probs = calloc(hmm->observations, sizeof(double *));
     double * matrix = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
     
@@ -22,15 +21,6 @@ void backward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
 
     }
     free(matrix);
-//    for(int l = 0; l < hmm->observations; l++){
-//        for(i = 0; i < hmm->hiddenStates; i++){
-//            for(j = 0; j < hmm->hiddenStates; j++){
-//                printf("%f, ", new_emission_probs[l][i*hmm->hiddenStates+j]);
-//            }
-//            printf("\n");
-//        }
-//        printf("\n");
-//    }
     
     for(i = 0; i < hmm->hiddenStates; i++){
         beta[hmm->hiddenStates*T-1-i] = 1;
@@ -40,16 +30,6 @@ void backward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double
         cblas_dgemv(CblasRowMajor, CblasNoTrans, hmm->hiddenStates, hmm->hiddenStates, 1.0, new_emission_probs[Y[T-i]], hmm->hiddenStates, beta+hmm->hiddenStates*T-i*hmm->hiddenStates, 1, 0, beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
         cblas_dscal(hmm->hiddenStates, scalingFactor[T-i], beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
     }
-
-//    printf("Backward\n");
-//    for(i = 0; i < T; i++){
-//       for(j = 0; j < hmm->hiddenStates; j++){
-//           printf("%f, ", beta[i*hmm->hiddenStates+j]);
-//       }
-//       printf("\n");
-//    }
-//    printf("\n");
-    
     
     for(i = 0; i < hmm->observations; i++){
         free(new_emission_probs[i]);

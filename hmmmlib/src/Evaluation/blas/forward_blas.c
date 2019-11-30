@@ -7,8 +7,6 @@ void forward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double 
     
     unsigned int i;
     unsigned int j;
-    
-    //Creating the emission probs m*n into m, n*n matrix
     double ** new_emission_probs = calloc(hmm->observations, sizeof(double *));
     double * matrix = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
     
@@ -28,8 +26,6 @@ void forward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double 
     }
     free(matrix);
     
-
-    // Doing the matrix multiplication and then scalingFactor
     scalingFactor[0] = cblas_dasum(hmm->hiddenStates, alpha, 1);
     cblas_dscal(hmm->hiddenStates, (1.0/scalingFactor[0]), alpha, 1);
 

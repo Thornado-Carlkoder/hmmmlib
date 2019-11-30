@@ -39,13 +39,4 @@ void forward_con_sparse(HMM *hmm, const unsigned int *Y, const unsigned int T, d
             alpha[i*hmm->hiddenStates+j] = alpha[i*hmm->hiddenStates+j]/scalingFactor[i];
         }
     }
-    
-//    printf("Forward\n");
-//    for(i = 0; i < T; i++){
-//        for(j = 0; j < hmm->hiddenStates; j++){
-//            printf("%f, ", alpha[i*hmm->hiddenStates+j]);
-//        }
-//        printf("\n");
-//    }
-//    printf("\n");
 }

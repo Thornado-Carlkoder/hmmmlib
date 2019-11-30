@@ -6,11 +6,11 @@
 #include <math.h>
 #include <time.h>
 
-extern bool testBackwardAlgorithm() {
+bool testBackwardAlgorithm() {
 
-    // Conventional
+    // Conventional and BLAS
     HMM * hmmCon = HMMConventional(2, 2);
-    //HMM * hmmBlas = HMMConventional(2, 2); //?
+    HMM * hmmBlas = HMMBLAS(2, 2);
     
     double transitionProbs[2][2] = {
         {0.5, 0.5},
@@ -26,20 +26,20 @@ extern bool testBackwardAlgorithm() {
     
     for(unsigned int i = 0; i < hmmCon->hiddenStates; i++){
         hmmCon->initProbs[i] = initProbs[i];
-        //hmmBlas->initProbs[i] = initProbs[i];
+        hmmBlas->initProbs[i] = initProbs[i];
     }
     int i;
     int j;
     for(i = 0; i < hmmCon->hiddenStates; i++){
         for(j = 0; j < hmmCon->hiddenStates; j++){
             hmmCon->transitionProbs[i*hmmCon->hiddenStates+j] = transitionProbs[i][j];
-            //hmmBlas->transitionProbs[i*hmmCon->hiddenStates+j] = transitionProbs[i][j];
+            hmmBlas->transitionProbs[i*hmmCon->hiddenStates+j] = transitionProbs[i][j];
         }
     }
     for(i = 0; i < hmmCon->hiddenStates; i++){
         for(j = 0; j < hmmCon->observations; j++){
             hmmCon->emissionProbs[i*hmmCon->observations+j] = emissionProbs[i][j];
-            //hmmBlas->emissionProbs[i*hmmCon->observations+j] = emissionProbs[i][j];
+            hmmBlas->emissionProbs[i*hmmCon->observations+j] = emissionProbs[i][j];
         }
     }
     
@@ -55,9 +55,9 @@ extern bool testBackwardAlgorithm() {
     F(hmmCon, observation, obsLenght, scaleFactorAlpha, alphaCon);
     B(hmmCon, observation, obsLenght, scaleFactorAlpha, betaCon);
     
-    //double * scaleFactorBlas = calloc(obsLenght, sizeof(double));
-    //F(hmmBlas, observation, obsLenght, scaleFactorBlas, alphaBlas);
-    //B(hmmBlas, observation, obsLenght, scaleFactorBlas, betaBlas);
+    double * scaleFactorBlas = calloc(obsLenght, sizeof(double));
+    F(hmmBlas, observation, obsLenght, scaleFactorBlas, alphaBlas);
+    B(hmmBlas, observation, obsLenght, scaleFactorBlas, betaBlas);
     
     double test[20] = {
         0.838486, 1.015142,
@@ -75,16 +75,16 @@ extern bool testBackwardAlgorithm() {
     
     for(i = 0; i < obsLenght; i++){
        for(j = 0; j < hmmCon->hiddenStates; j++){
-           //assert(fabs(betaBlas[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j]) < 0.00001);
+           assert(fabs(betaBlas[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j]) < 0.00001);
            assert(fabs(betaCon[i*hmmCon->hiddenStates+j] - test[i*hmmCon->hiddenStates+j]) < 0.00001);
        }
     }
     
-    assert(validateHMM(hmmCon) == true);
+    assert(validateHMM(hmmCon));
     HMMDeallocate(hmmCon);
 
-    //assert(validateHMM(hmmBlas) == true);
-    //HMMDeallocate(hmmBlas);
+    assert(validateHMM(hmmBlas));
+    HMMDeallocate(hmmBlas);
     
 
     // BLAS
@@ -173,7 +173,7 @@ extern bool testBackwardAlgorithm() {
     free(alpha2);
     free(beta2);
     free(scaleFactor2);
-    assert(validateHMM(hmm2) == true);
+    assert(validateHMM(hmm2));
     HMMDeallocate(hmm2);
     
 
@@ -206,7 +206,7 @@ extern bool testBackwardAlgorithm() {
         }
     }
 
-    assert(validateHMM(hmm3) == true);
+    assert(validateHMM(hmm3));
     HMMDeallocate(hmm3);
     free(alpha3);
     free(scaleFactor3);
@@ -216,19 +216,30 @@ extern bool testBackwardAlgorithm() {
 
 
     // Test conventional sparse
-    HMM * hmmConsparse = HMMConventional(2, 2);
+    HMM * hmmConsparse = HMMConventional(7, 4);
     
-    double transitionProbs4[2][2] = {
-        {0.5, 0.5},
-        {0.3, 0.7}
+           
+    double transitionProbs4[7][7] = {
+       {0.0 , 0.0 , 0.9 , 0.1 , 0.0 , 0.0 , 0.0},
+       {1.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0},
+       {0.0 , 1.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0},
+       {0.0 , 0.0 , 0.05 , 0.9 , 0.05 , 0.0 , 0.0},
+       {0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 1.0 , 0.0},
+       {0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 0.0 , 1.0},
+       {0.0 , 0.0 , 0.0 , 0.1 , 0.9 , 0.0 , 0.0}
     };
-    
-    double emissionProbs4[2][2] = {
-        {0.3, 0.7},
-        {0.8, 0.2}
+
+    double emissionProbs4[7][4] = {
+       {0.3 , 0.25 , 0.25 , 0.2},
+       {0.2 , 0.35 , 0.15 , 0.3},
+       {0.4 , 0.15 , 0.2 , 0.25},
+       {0.25 , 0.25 , 0.25 , 0.25},
+       {0.2 , 0.4 , 0.3 , 0.1},
+       {0.3 , 0.2 , 0.3 , 0.2},
+       {0.15 , 0.3 , 0.2 , 0.35}
     };
-    
-    double initProbs4[2] = {0.2, 0.8};
+
+    double initProbs4[7] = {0.0 , 0.0 , 0.0 , 1.0 , 0.0 , 0.0 , 0.0};
     
     for(unsigned int i = 0; i < hmmConsparse->hiddenStates; i++){
         hmmConsparse->initProbs[i] = initProbs4[i];
@@ -248,7 +259,7 @@ extern bool testBackwardAlgorithm() {
         }
     }
     
-    const unsigned int observation4[10] = {0, 0, 0, 0, 0, 1, 1, 0, 0, 0};
+    const unsigned int observation4[10] = {0,1,2,3,3,2,1,3,2,1};
     const unsigned int obsLenght4 = 10;
     double * alphaCon4 = calloc(hmmConsparse->hiddenStates*obsLenght4, sizeof(double));
     double * betaCon4 = calloc(hmmConsparse->hiddenStates*obsLenght4, sizeof(double));
@@ -259,43 +270,16 @@ extern bool testBackwardAlgorithm() {
     F(hmmConsparse, observation4, obsLenght4, scaleFactorAlpha4, alphaCon4);
     B(hmmConsparse, observation4, obsLenght4, scaleFactorAlpha4, betaCon4);
     
-
-
-
-    
-    double test4[20] = {
-        0.838486, 1.015142,
-        0.848495, 1.026387,
-        0.854859, 1.026767,
-        0.898964, 1.018758,
-        1.267584, 0.950282,
-        1.076550, 0.867237,
-        0.944879, 1.143683,
-        0.862481, 1.041273,
-        0.868282, 1.026152,
-        1.000000, 1.000000
-    };
-    
     
     for(i = 0; i < obsLenght4; i++){
        for(j = 0; j < hmmConsparse->hiddenStates; j++){
-           //assert(fabs(betaBlas[i*hmmConsparse->hiddenStates+j] - test4[i*hmmConsparse->hiddenStates+j]) < 0.00001);
-           //assert(fabs(betaCon4[i*hmmConsparse->hiddenStates+j] - test4[i*hmmConsparse->hiddenStates+j]) < 0.00001);
-           ;
+           assert(fabs(alphaCon4[i*hmmConsparse->hiddenStates+j] - test2alpha[i*hmmConsparse->hiddenStates+j]) < 0.00001);
+           assert(fabs(betaCon4[i*hmmConsparse->hiddenStates+j] -test2beta[(obsLenght4-i-1)*hmmConsparse->hiddenStates+j]) < 0.00001);
        }
     }
     
-    assert(validateHMM(hmmConsparse) == true);
+    assert(validateHMM(hmmConsparse));
     HMMDeallocate(hmmConsparse);
-
-
-
-
-
-
-
-
-
 
     return true;
 }
