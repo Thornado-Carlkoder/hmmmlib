@@ -200,7 +200,7 @@ void HMMDeallocate(HMM * hmm){
     free(hmm->initProbs);
     free(hmm->emissionProbs);
     free(hmm->transitionProbs);
-    free(hmm); // DONT COMMENT THIS OUT //Sorry :'-(
+    //free(hmm); // DONT COMMENT THIS OUT //Sorry :'-(
 }
 
 
