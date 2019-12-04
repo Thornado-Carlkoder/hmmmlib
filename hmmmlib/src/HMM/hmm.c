@@ -200,8 +200,7 @@ void HMMDeallocate(HMM * hmm){
     free(hmm->initProbs);
     free(hmm->emissionProbs);
     free(hmm->transitionProbs);
-    //free(hmm); // the python binding doesn't know how to handle this.
-
+    free(hmm); // DONT COMMENT THIS OUT //Sorry :'-(
 }
 
 

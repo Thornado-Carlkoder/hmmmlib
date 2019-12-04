@@ -3,8 +3,8 @@
 #include <time.h>
 
 void runningTimeTest(){
-    HMM * hmm2 = HMMCsr(7, 4); // SBLAS is RSB
     
+    HMM * hmm2 = HMMConventionalsparse(7, 4);
     int i;
     int j;
     
@@ -89,6 +89,5 @@ void runningTimeTest(){
     free(alpha2);
     free(beta2);
     HMMDeallocate(hmm2);
-    printf("Running time test done.");
   
 }

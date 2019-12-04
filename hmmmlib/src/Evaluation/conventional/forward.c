@@ -16,12 +16,10 @@ void forward(HMM *hmm, const unsigned int *Y, const unsigned int T, double * sca
         scalingFactor[0] += alpha[i];
     }
     
-    // Scaling step
     for(j = 0; j < hmm->hiddenStates; j++){
         alpha[j] = alpha[j]/scalingFactor[0];
     }
     
-    // Now the "recursive" step starts
     for(i = 1; i < T; i++){
         for(j = 0; j < hmm->hiddenStates; j++){
             double emissionProb = hmm->emissionProbs[j*hmm->observations+Y[i]];
@@ -37,13 +35,4 @@ void forward(HMM *hmm, const unsigned int *Y, const unsigned int T, double * sca
             alpha[i*hmm->hiddenStates+j] = alpha[i*hmm->hiddenStates+j]/scalingFactor[i];
         }
     }
-    
-//    printf("Forward\n");
-//    for(i = 0; i < T; i++){
-//        for(j = 0; j < hmm->hiddenStates; j++){
-//            printf("%f, ", alpha[i*hmm->hiddenStates+j]);
-//        }
-//        printf("\n");
-//    }
-//    printf("\n");
 }

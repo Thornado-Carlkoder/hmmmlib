@@ -106,3 +106,15 @@ def set_sparse_1(hmm_obj):
                         [0.15, 0.30, 0.20, 0.35]])
 
 
+if __name__ == "__main__":
+    print('''This is just a script containing shared functions across the running time tests. 
+Call the running time tests with any of the following:
+    
+    $ python running_time_alphabet_size.py > data.csv
+    $ python running_time_input_size.py > data.csv
+    $ python running_time_sparseness.py > data.csv
+    $ python running_time_state_space.py > data.csv
+    $ python running_time_state_spaceVSsparseness.py > data.csv
+
+    
+    ''')

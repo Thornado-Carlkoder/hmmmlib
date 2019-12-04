@@ -62,12 +62,6 @@ target_link_libraries(HMMLIB /usr/local/lib/librsb.a)
 
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY POSITION_INDEPENDENT_CODE 1) #or #set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-#
-#
-# For codecoverage
-#
-#
-#SET(GCC_COVERAGE_COMPILE_FLAGS "-fprofile-arcs -ftest-coverage")
 
 include_directories(
        ${CMAKE_SOURCE_DIR}/src/
@@ -106,7 +100,6 @@ file(GLOB exeSOURCES
        ${PROJECT_SOURCE_DIR}/src/Training/*.h)
 
 add_executable(exeHMMLIB ${exeSOURCES})
-set_source_files_properties(exeHMMLIB PROPERTIES COMPILE_FLAGS "-fprofile-arcs -ftest-coverage" )
 target_link_libraries(exeHMMLIB m cblas)
 target_link_libraries(exeHMMLIB rsb)
 #target_link_libraries(exeHMMLIB hwloc)

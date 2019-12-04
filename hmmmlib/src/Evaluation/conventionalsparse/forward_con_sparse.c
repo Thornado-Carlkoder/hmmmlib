@@ -25,15 +25,13 @@ void forward_con_sparse(HMM *hmm, const unsigned int *Y, const unsigned int T, d
     for(i = 1; i < T; i++){
         for(j = 0; j < hmm->hiddenStates; j++){
             double emissionProb = hmm->emissionProbs[j*hmm->observations+Y[i]];
-            if(emissionProb > 0){
-                double pastTransProb = 0.0;
-                for(int l = 0; l < hmm->hiddenStates; l++){
-                    if(hmm->transitionProbs[l*hmm->hiddenStates+j]){
-                        pastTransProb += hmm->transitionProbs[l*hmm->hiddenStates+j]*alpha[(i-1)*hmm->hiddenStates+l];
-                    }
+            double pastTransProb = 0.0;
+            for(int l = 0; l < hmm->hiddenStates; l++){
+                if(hmm->transitionProbs[l*hmm->hiddenStates+j] > 0){
+                    pastTransProb += hmm->transitionProbs[l*hmm->hiddenStates+j]*alpha[(i-1)*hmm->hiddenStates+l];
                 }
-                alpha[i*hmm->hiddenStates+j] = emissionProb*pastTransProb;
             }
+            alpha[i*hmm->hiddenStates+j] = emissionProb*pastTransProb;
             scalingFactor[i] += alpha[i*hmm->hiddenStates+j];
         }
         // Scaling step
@@ -41,13 +39,4 @@ void forward_con_sparse(HMM *hmm, const unsigned int *Y, const unsigned int T, d
             alpha[i*hmm->hiddenStates+j] = alpha[i*hmm->hiddenStates+j]/scalingFactor[i];
         }
     }
-    
-//    printf("Forward\n");
-//    for(i = 0; i < T; i++){
-//        for(j = 0; j < hmm->hiddenStates; j++){
-//            printf("%f, ", alpha[i*hmm->hiddenStates+j]);
-//        }
-//        printf("\n");
-//    }
-//    printf("\n");
 }

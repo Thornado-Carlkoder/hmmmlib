@@ -1,0 +1,1800 @@
+inputsize, 600, 0.0018312931060791016, posteriorDecoding, Conventional, , 16
+inputsize, 600, 0.0017790794372558594, posteriorDecoding, Conventional, , 16
+inputsize, 600, 0.0018699169158935547, posteriorDecoding, Conventional, , 16
+inputsize, 600, 0.0017919540405273438, posteriorDecoding, Conventional, , 16
+inputsize, 600, 0.002785921096801758, posteriorDecoding, Conventional, , 16
+inputsize, 30600, 0.10419130325317383, posteriorDecoding, Conventional, , 16
+inputsize, 30600, 0.10348796844482422, posteriorDecoding, Conventional, , 16
+inputsize, 30600, 0.10346627235412598, posteriorDecoding, Conventional, , 16
+inputsize, 30600, 0.10260343551635742, posteriorDecoding, Conventional, , 16
+inputsize, 30600, 0.10275959968566895, posteriorDecoding, Conventional, , 16
+inputsize, 60600, 0.20529627799987793, posteriorDecoding, Conventional, , 16
+inputsize, 60600, 0.20159149169921875, posteriorDecoding, Conventional, , 16
+inputsize, 60600, 0.20261049270629883, posteriorDecoding, Conventional, , 16
+inputsize, 60600, 0.2052304744720459, posteriorDecoding, Conventional, , 16
+inputsize, 60600, 0.20165252685546875, posteriorDecoding, Conventional, , 16
+inputsize, 90600, 0.3041095733642578, posteriorDecoding, Conventional, , 16
+inputsize, 90600, 0.30497264862060547, posteriorDecoding, Conventional, , 16
+inputsize, 90600, 0.30028271675109863, posteriorDecoding, Conventional, , 16
+inputsize, 90600, 0.3005359172821045, posteriorDecoding, Conventional, , 16
+inputsize, 90600, 0.3003199100494385, posteriorDecoding, Conventional, , 16
+inputsize, 120600, 0.40140366554260254, posteriorDecoding, Conventional, , 16
+inputsize, 120600, 0.4013495445251465, posteriorDecoding, Conventional, , 16
+inputsize, 120600, 0.39951539039611816, posteriorDecoding, Conventional, , 16
+inputsize, 120600, 0.3982272148132324, posteriorDecoding, Conventional, , 16
+inputsize, 120600, 0.39881134033203125, posteriorDecoding, Conventional, , 16
+inputsize, 150600, 0.5000905990600586, posteriorDecoding, Conventional, , 16
+inputsize, 150600, 0.4976944923400879, posteriorDecoding, Conventional, , 16
+inputsize, 150600, 0.4979062080383301, posteriorDecoding, Conventional, , 16
+inputsize, 150600, 0.4970269203186035, posteriorDecoding, Conventional, , 16
+inputsize, 150600, 0.4991147518157959, posteriorDecoding, Conventional, , 16
+inputsize, 600, 0.0020418167114257812, forward, Conventional, , 16
+inputsize, 600, 0.001992940902709961, forward, Conventional, , 16
+inputsize, 600, 0.001972675323486328, forward, Conventional, , 16
+inputsize, 600, 0.001985788345336914, forward, Conventional, , 16
+inputsize, 600, 0.002025127410888672, forward, Conventional, , 16
+inputsize, 30600, 0.11585688591003418, forward, Conventional, , 16
+inputsize, 30600, 0.11517190933227539, forward, Conventional, , 16
+inputsize, 30600, 0.11365890502929688, forward, Conventional, , 16
+inputsize, 30600, 0.11349153518676758, forward, Conventional, , 16
+inputsize, 30600, 0.11320185661315918, forward, Conventional, , 16
+inputsize, 60600, 0.23073816299438477, forward, Conventional, , 16
+inputsize, 60600, 0.22474455833435059, forward, Conventional, , 16
+inputsize, 60600, 0.22603821754455566, forward, Conventional, , 16
+inputsize, 60600, 0.22565221786499023, forward, Conventional, , 16
+inputsize, 60600, 0.2270832061767578, forward, Conventional, , 16
+inputsize, 90600, 0.3405449390411377, forward, Conventional, , 16
+inputsize, 90600, 0.33527398109436035, forward, Conventional, , 16
+inputsize, 90600, 0.3355135917663574, forward, Conventional, , 16
+inputsize, 90600, 0.33857274055480957, forward, Conventional, , 16
+inputsize, 90600, 0.33510398864746094, forward, Conventional, , 16
+inputsize, 120600, 0.4507942199707031, forward, Conventional, , 16
+inputsize, 120600, 0.45238494873046875, forward, Conventional, , 16
+inputsize, 120600, 0.4488377571105957, forward, Conventional, , 16
+inputsize, 120600, 0.4479515552520752, forward, Conventional, , 16
+inputsize, 120600, 0.4467148780822754, forward, Conventional, , 16
+inputsize, 150600, 0.5620746612548828, forward, Conventional, , 16
+inputsize, 150600, 0.5594696998596191, forward, Conventional, , 16
+inputsize, 150600, 0.5632750988006592, forward, Conventional, , 16
+inputsize, 150600, 0.5590457916259766, forward, Conventional, , 16
+inputsize, 150600, 0.5593678951263428, forward, Conventional, , 16
+inputsize, 600, 0.0026721954345703125, backward_time, Conventional, , 16
+inputsize, 600, 0.0027549266815185547, backward_time, Conventional, , 16
+inputsize, 600, 0.0028328895568847656, backward_time, Conventional, , 16
+inputsize, 600, 0.003210306167602539, backward_time, Conventional, , 16
+inputsize, 600, 0.002777576446533203, backward_time, Conventional, , 16
+inputsize, 30600, 0.13875532150268555, backward_time, Conventional, , 16
+inputsize, 30600, 0.1380481719970703, backward_time, Conventional, , 16
+inputsize, 30600, 0.13734054565429688, backward_time, Conventional, , 16
+inputsize, 30600, 0.13774895668029785, backward_time, Conventional, , 16
+inputsize, 30600, 0.13680744171142578, backward_time, Conventional, , 16
+inputsize, 60600, 0.27420520782470703, backward_time, Conventional, , 16
+inputsize, 60600, 0.27179503440856934, backward_time, Conventional, , 16
+inputsize, 60600, 0.27118921279907227, backward_time, Conventional, , 16
+inputsize, 60600, 0.27090024948120117, backward_time, Conventional, , 16
+inputsize, 60600, 0.27092504501342773, backward_time, Conventional, , 16
+inputsize, 90600, 0.41100454330444336, backward_time, Conventional, , 16
+inputsize, 90600, 0.41019225120544434, backward_time, Conventional, , 16
+inputsize, 90600, 0.4141547679901123, backward_time, Conventional, , 16
+inputsize, 90600, 0.4083421230316162, backward_time, Conventional, , 16
+inputsize, 90600, 0.40897464752197266, backward_time, Conventional, , 16
+inputsize, 120600, 0.5412135124206543, backward_time, Conventional, , 16
+inputsize, 120600, 0.5397064685821533, backward_time, Conventional, , 16
+inputsize, 120600, 0.5418148040771484, backward_time, Conventional, , 16
+inputsize, 120600, 0.5477132797241211, backward_time, Conventional, , 16
+inputsize, 120600, 0.5378577709197998, backward_time, Conventional, , 16
+inputsize, 150600, 0.6823625564575195, backward_time, Conventional, , 16
+inputsize, 150600, 0.6747548580169678, backward_time, Conventional, , 16
+inputsize, 150600, 0.6732311248779297, backward_time, Conventional, , 16
+inputsize, 150600, 0.6736598014831543, backward_time, Conventional, , 16
+inputsize, 150600, 0.6777243614196777, backward_time, Conventional, , 16
+inputsize, 600, 0.0028214454650878906, backward_time, Conventional, , 16
+inputsize, 600, 0.00275421142578125, backward_time, Conventional, , 16
+inputsize, 600, 0.0027260780334472656, backward_time, Conventional, , 16
+inputsize, 600, 0.003010272979736328, backward_time, Conventional, , 16
+inputsize, 600, 0.0028600692749023438, backward_time, Conventional, , 16
+inputsize, 30600, 0.13883566856384277, backward_time, Conventional, , 16
+inputsize, 30600, 0.13826751708984375, backward_time, Conventional, , 16
+inputsize, 30600, 0.13840746879577637, backward_time, Conventional, , 16
+inputsize, 30600, 0.13663911819458008, backward_time, Conventional, , 16
+inputsize, 30600, 0.13616657257080078, backward_time, Conventional, , 16
+inputsize, 60600, 0.2756218910217285, backward_time, Conventional, , 16
+inputsize, 60600, 0.2707531452178955, backward_time, Conventional, , 16
+inputsize, 60600, 0.2706747055053711, backward_time, Conventional, , 16
+inputsize, 60600, 0.2702357769012451, backward_time, Conventional, , 16
+inputsize, 60600, 0.2696499824523926, backward_time, Conventional, , 16
+inputsize, 90600, 0.4094362258911133, backward_time, Conventional, , 16
+inputsize, 90600, 0.4041140079498291, backward_time, Conventional, , 16
+inputsize, 90600, 0.40560102462768555, backward_time, Conventional, , 16
+inputsize, 90600, 0.4038393497467041, backward_time, Conventional, , 16
+inputsize, 90600, 0.40465664863586426, backward_time, Conventional, , 16
+inputsize, 120600, 0.5408158302307129, backward_time, Conventional, , 16
+inputsize, 120600, 0.5405290126800537, backward_time, Conventional, , 16
+inputsize, 120600, 0.5506191253662109, backward_time, Conventional, , 16
+inputsize, 120600, 0.5430705547332764, backward_time, Conventional, , 16
+inputsize, 120600, 0.5379254817962646, backward_time, Conventional, , 16
+inputsize, 150600, 0.6760768890380859, backward_time, Conventional, , 16
+inputsize, 150600, 0.6714699268341064, backward_time, Conventional, , 16
+inputsize, 150600, 0.6739890575408936, backward_time, Conventional, , 16
+inputsize, 150600, 0.6735613346099854, backward_time, Conventional, , 16
+inputsize, 150600, 0.6730461120605469, backward_time, Conventional, , 16
+inputsize, 600, 0.005521059036254883, baumWelch, Conventional, 1, 16
+inputsize, 600, 0.00592803955078125, baumWelch, Conventional, 1, 16
+inputsize, 600, 0.005302906036376953, baumWelch, Conventional, 1, 16
+inputsize, 600, 0.00516200065612793, baumWelch, Conventional, 1, 16
+inputsize, 600, 0.005890607833862305, baumWelch, Conventional, 1, 16
+inputsize, 30600, 0.38125085830688477, baumWelch, Conventional, 1, 16
+inputsize, 30600, 0.3812692165374756, baumWelch, Conventional, 1, 16
+inputsize, 30600, 0.3784162998199463, baumWelch, Conventional, 1, 16
+inputsize, 30600, 0.37865710258483887, baumWelch, Conventional, 1, 16
+inputsize, 30600, 0.3755664825439453, baumWelch, Conventional, 1, 16
+inputsize, 60600, 0.882098913192749, baumWelch, Conventional, 1, 16
+inputsize, 60600, 0.8740139007568359, baumWelch, Conventional, 1, 16
+inputsize, 60600, 0.8720052242279053, baumWelch, Conventional, 1, 16
+inputsize, 60600, 0.892448902130127, baumWelch, Conventional, 1, 16
+inputsize, 60600, 0.873319149017334, baumWelch, Conventional, 1, 16
+inputsize, 90600, 1.3320462703704834, baumWelch, Conventional, 1, 16
+inputsize, 90600, 1.3255364894866943, baumWelch, Conventional, 1, 16
+inputsize, 90600, 1.3230180740356445, baumWelch, Conventional, 1, 16
+inputsize, 90600, 1.3293092250823975, baumWelch, Conventional, 1, 16
+inputsize, 90600, 1.3309919834136963, baumWelch, Conventional, 1, 16
+inputsize, 120600, 1.8105947971343994, baumWelch, Conventional, 1, 16
+inputsize, 120600, 1.8030922412872314, baumWelch, Conventional, 1, 16
+inputsize, 120600, 1.7914445400238037, baumWelch, Conventional, 1, 16
+inputsize, 120600, 1.7759084701538086, baumWelch, Conventional, 1, 16
+inputsize, 120600, 1.7758612632751465, baumWelch, Conventional, 1, 16
+inputsize, 150600, 2.2279467582702637, baumWelch, Conventional, 1, 16
+inputsize, 150600, 2.2504794597625732, baumWelch, Conventional, 1, 16
+inputsize, 150600, 2.2358181476593018, baumWelch, Conventional, 1, 16
+inputsize, 150600, 2.235812187194824, baumWelch, Conventional, 1, 16
+inputsize, 150600, 2.2425734996795654, baumWelch, Conventional, 1, 16
+inputsize, 600, 0.005178928375244141, baumWelch, Conventional, 2, 16
+inputsize, 600, 0.005315065383911133, baumWelch, Conventional, 2, 16
+inputsize, 600, 0.005407571792602539, baumWelch, Conventional, 2, 16
+inputsize, 600, 0.005286216735839844, baumWelch, Conventional, 2, 16
+inputsize, 600, 0.005292654037475586, baumWelch, Conventional, 2, 16
+inputsize, 30600, 0.37084293365478516, baumWelch, Conventional, 2, 16
+inputsize, 30600, 0.3713059425354004, baumWelch, Conventional, 2, 16
+inputsize, 30600, 0.3694126605987549, baumWelch, Conventional, 2, 16
+inputsize, 30600, 0.36954283714294434, baumWelch, Conventional, 2, 16
+inputsize, 30600, 0.37314939498901367, baumWelch, Conventional, 2, 16
+inputsize, 60600, 0.8695888519287109, baumWelch, Conventional, 2, 16
+inputsize, 60600, 0.8618969917297363, baumWelch, Conventional, 2, 16
+inputsize, 60600, 0.8697664737701416, baumWelch, Conventional, 2, 16
+inputsize, 60600, 0.8576500415802002, baumWelch, Conventional, 2, 16
+inputsize, 60600, 0.862328052520752, baumWelch, Conventional, 2, 16
+inputsize, 90600, 1.3155972957611084, baumWelch, Conventional, 2, 16
+inputsize, 90600, 1.3117384910583496, baumWelch, Conventional, 2, 16
+inputsize, 90600, 1.3149352073669434, baumWelch, Conventional, 2, 16
+inputsize, 90600, 1.3125817775726318, baumWelch, Conventional, 2, 16
+inputsize, 90600, 1.334845781326294, baumWelch, Conventional, 2, 16
+inputsize, 120600, 1.7838375568389893, baumWelch, Conventional, 2, 16
+inputsize, 120600, 1.7737421989440918, baumWelch, Conventional, 2, 16
+inputsize, 120600, 1.7736866474151611, baumWelch, Conventional, 2, 16
+inputsize, 120600, 1.7809183597564697, baumWelch, Conventional, 2, 16
+inputsize, 120600, 1.7701389789581299, baumWelch, Conventional, 2, 16
+inputsize, 150600, 2.26289701461792, baumWelch, Conventional, 2, 16
+inputsize, 150600, 2.261660575866699, baumWelch, Conventional, 2, 16
+inputsize, 150600, 2.244124412536621, baumWelch, Conventional, 2, 16
+inputsize, 150600, 2.261112689971924, baumWelch, Conventional, 2, 16
+inputsize, 150600, 2.2926101684570312, baumWelch, Conventional, 2, 16
+inputsize, 600, 0.005281209945678711, baumWelch, Conventional, 3, 16
+inputsize, 600, 0.005559444427490234, baumWelch, Conventional, 3, 16
+inputsize, 600, 0.005345821380615234, baumWelch, Conventional, 3, 16
+inputsize, 600, 0.005229949951171875, baumWelch, Conventional, 3, 16
+inputsize, 600, 0.005608797073364258, baumWelch, Conventional, 3, 16
+inputsize, 30600, 0.3733336925506592, baumWelch, Conventional, 3, 16
+inputsize, 30600, 0.37674498558044434, baumWelch, Conventional, 3, 16
+inputsize, 30600, 0.3752450942993164, baumWelch, Conventional, 3, 16
+inputsize, 30600, 0.37242794036865234, baumWelch, Conventional, 3, 16
+inputsize, 30600, 0.37288403511047363, baumWelch, Conventional, 3, 16
+inputsize, 60600, 0.8668699264526367, baumWelch, Conventional, 3, 16
+inputsize, 60600, 0.8574905395507812, baumWelch, Conventional, 3, 16
+inputsize, 60600, 0.8590636253356934, baumWelch, Conventional, 3, 16
+inputsize, 60600, 0.8617823123931885, baumWelch, Conventional, 3, 16
+inputsize, 60600, 0.8661141395568848, baumWelch, Conventional, 3, 16
+inputsize, 90600, 1.3393027782440186, baumWelch, Conventional, 3, 16
+inputsize, 90600, 1.3337931632995605, baumWelch, Conventional, 3, 16
+inputsize, 90600, 1.347717523574829, baumWelch, Conventional, 3, 16
+inputsize, 90600, 1.3463122844696045, baumWelch, Conventional, 3, 16
+inputsize, 90600, 1.3362247943878174, baumWelch, Conventional, 3, 16
+inputsize, 120600, 1.7928764820098877, baumWelch, Conventional, 3, 16
+inputsize, 120600, 1.7915709018707275, baumWelch, Conventional, 3, 16
+inputsize, 120600, 1.7903351783752441, baumWelch, Conventional, 3, 16
+inputsize, 120600, 1.8089358806610107, baumWelch, Conventional, 3, 16
+inputsize, 120600, 1.7955944538116455, baumWelch, Conventional, 3, 16
+inputsize, 150600, 2.282578468322754, baumWelch, Conventional, 3, 16
+inputsize, 150600, 2.2764151096343994, baumWelch, Conventional, 3, 16
+inputsize, 150600, 2.274606466293335, baumWelch, Conventional, 3, 16
+inputsize, 150600, 2.2740769386291504, baumWelch, Conventional, 3, 16
+inputsize, 150600, 2.2841832637786865, baumWelch, Conventional, 3, 16
+inputsize, 600, 0.0052509307861328125, baumWelch, Conventional, 4, 16
+inputsize, 600, 0.005172252655029297, baumWelch, Conventional, 4, 16
+inputsize, 600, 0.00540924072265625, baumWelch, Conventional, 4, 16
+inputsize, 600, 0.005236148834228516, baumWelch, Conventional, 4, 16
+inputsize, 600, 0.00527191162109375, baumWelch, Conventional, 4, 16
+inputsize, 30600, 0.3669135570526123, baumWelch, Conventional, 4, 16
+inputsize, 30600, 0.3670656681060791, baumWelch, Conventional, 4, 16
+inputsize, 30600, 0.36612772941589355, baumWelch, Conventional, 4, 16
+inputsize, 30600, 0.36703038215637207, baumWelch, Conventional, 4, 16
+inputsize, 30600, 0.36714887619018555, baumWelch, Conventional, 4, 16
+inputsize, 60600, 0.8755192756652832, baumWelch, Conventional, 4, 16
+inputsize, 60600, 0.8702716827392578, baumWelch, Conventional, 4, 16
+inputsize, 60600, 0.8719439506530762, baumWelch, Conventional, 4, 16
+inputsize, 60600, 0.8696060180664062, baumWelch, Conventional, 4, 16
+inputsize, 60600, 0.8890535831451416, baumWelch, Conventional, 4, 16
+inputsize, 90600, 1.3317666053771973, baumWelch, Conventional, 4, 16
+inputsize, 90600, 1.330047607421875, baumWelch, Conventional, 4, 16
+inputsize, 90600, 1.3300755023956299, baumWelch, Conventional, 4, 16
+inputsize, 90600, 1.332245111465454, baumWelch, Conventional, 4, 16
+inputsize, 90600, 1.3309178352355957, baumWelch, Conventional, 4, 16
+inputsize, 120600, 1.8126916885375977, baumWelch, Conventional, 4, 16
+inputsize, 120600, 1.8051118850708008, baumWelch, Conventional, 4, 16
+inputsize, 120600, 1.803565263748169, baumWelch, Conventional, 4, 16
+inputsize, 120600, 1.7872583866119385, baumWelch, Conventional, 4, 16
+inputsize, 120600, 1.7939567565917969, baumWelch, Conventional, 4, 16
+inputsize, 150600, 2.2628133296966553, baumWelch, Conventional, 4, 16
+inputsize, 150600, 2.2864298820495605, baumWelch, Conventional, 4, 16
+inputsize, 150600, 2.2901451587677, baumWelch, Conventional, 4, 16
+inputsize, 150600, 2.2926740646362305, baumWelch, Conventional, 4, 16
+inputsize, 150600, 2.255305290222168, baumWelch, Conventional, 4, 16
+inputsize, 600, 0.005391597747802734, baumWelch, Conventional, 5, 16
+inputsize, 600, 0.0053365230560302734, baumWelch, Conventional, 5, 16
+inputsize, 600, 0.005441904067993164, baumWelch, Conventional, 5, 16
+inputsize, 600, 0.005480766296386719, baumWelch, Conventional, 5, 16
+inputsize, 600, 0.0054357051849365234, baumWelch, Conventional, 5, 16
+inputsize, 30600, 0.3731191158294678, baumWelch, Conventional, 5, 16
+inputsize, 30600, 0.37221598625183105, baumWelch, Conventional, 5, 16
+inputsize, 30600, 0.37115025520324707, baumWelch, Conventional, 5, 16
+inputsize, 30600, 0.37064576148986816, baumWelch, Conventional, 5, 16
+inputsize, 30600, 0.37223339080810547, baumWelch, Conventional, 5, 16
+inputsize, 60600, 0.8901774883270264, baumWelch, Conventional, 5, 16
+inputsize, 60600, 0.8671777248382568, baumWelch, Conventional, 5, 16
+inputsize, 60600, 0.8764383792877197, baumWelch, Conventional, 5, 16
+inputsize, 60600, 0.8688452243804932, baumWelch, Conventional, 5, 16
+inputsize, 60600, 0.8735055923461914, baumWelch, Conventional, 5, 16
+inputsize, 90600, 1.3252005577087402, baumWelch, Conventional, 5, 16
+inputsize, 90600, 1.3382160663604736, baumWelch, Conventional, 5, 16
+inputsize, 90600, 1.3335435390472412, baumWelch, Conventional, 5, 16
+inputsize, 90600, 1.34922456741333, baumWelch, Conventional, 5, 16
+inputsize, 90600, 1.3667628765106201, baumWelch, Conventional, 5, 16
+inputsize, 120600, 1.8090412616729736, baumWelch, Conventional, 5, 16
+inputsize, 120600, 1.798598051071167, baumWelch, Conventional, 5, 16
+inputsize, 120600, 1.796323299407959, baumWelch, Conventional, 5, 16
+inputsize, 120600, 1.8215343952178955, baumWelch, Conventional, 5, 16
+inputsize, 120600, 1.807121753692627, baumWelch, Conventional, 5, 16
+inputsize, 150600, 2.301658868789673, baumWelch, Conventional, 5, 16
+inputsize, 150600, 2.2562060356140137, baumWelch, Conventional, 5, 16
+inputsize, 150600, 2.305443286895752, baumWelch, Conventional, 5, 16
+inputsize, 150600, 2.283064365386963, baumWelch, Conventional, 5, 16
+inputsize, 150600, 2.306650161743164, baumWelch, Conventional, 5, 16
+inputsize, 600, 0.005257844924926758, baumWelch, Conventional, 6, 16
+inputsize, 600, 0.005328655242919922, baumWelch, Conventional, 6, 16
+inputsize, 600, 0.005151510238647461, baumWelch, Conventional, 6, 16
+inputsize, 600, 0.005318641662597656, baumWelch, Conventional, 6, 16
+inputsize, 600, 0.005571126937866211, baumWelch, Conventional, 6, 16
+inputsize, 30600, 0.3807196617126465, baumWelch, Conventional, 6, 16
+inputsize, 30600, 0.3752293586730957, baumWelch, Conventional, 6, 16
+inputsize, 30600, 0.37695980072021484, baumWelch, Conventional, 6, 16
+inputsize, 30600, 0.371706485748291, baumWelch, Conventional, 6, 16
+inputsize, 30600, 0.37189435958862305, baumWelch, Conventional, 6, 16
+inputsize, 60600, 0.8695755004882812, baumWelch, Conventional, 6, 16
+inputsize, 60600, 0.8642711639404297, baumWelch, Conventional, 6, 16
+inputsize, 60600, 0.8702383041381836, baumWelch, Conventional, 6, 16
+inputsize, 60600, 0.8662807941436768, baumWelch, Conventional, 6, 16
+inputsize, 60600, 0.8708958625793457, baumWelch, Conventional, 6, 16
+inputsize, 90600, 1.3473782539367676, baumWelch, Conventional, 6, 16
+inputsize, 90600, 1.3593428134918213, baumWelch, Conventional, 6, 16
+inputsize, 90600, 1.3449435234069824, baumWelch, Conventional, 6, 16
+inputsize, 90600, 1.3490540981292725, baumWelch, Conventional, 6, 16
+inputsize, 90600, 1.3438122272491455, baumWelch, Conventional, 6, 16
+inputsize, 120600, 1.808685541152954, baumWelch, Conventional, 6, 16
+inputsize, 120600, 1.8069417476654053, baumWelch, Conventional, 6, 16
+inputsize, 120600, 1.7963852882385254, baumWelch, Conventional, 6, 16
+inputsize, 120600, 1.8230926990509033, baumWelch, Conventional, 6, 16
+inputsize, 120600, 1.8045859336853027, baumWelch, Conventional, 6, 16
+inputsize, 150600, 2.2735860347747803, baumWelch, Conventional, 6, 16
+inputsize, 150600, 2.3018932342529297, baumWelch, Conventional, 6, 16
+inputsize, 150600, 2.299307346343994, baumWelch, Conventional, 6, 16
+inputsize, 150600, 2.28564190864563, baumWelch, Conventional, 6, 16
+inputsize, 150600, 2.2662911415100098, baumWelch, Conventional, 6, 16
+inputsize, 600, 0.002302408218383789, posteriorDecoding, Conventional sparse, , 16
+inputsize, 600, 0.0022492408752441406, posteriorDecoding, Conventional sparse, , 16
+inputsize, 600, 0.0023305416107177734, posteriorDecoding, Conventional sparse, , 16
+inputsize, 600, 0.0022885799407958984, posteriorDecoding, Conventional sparse, , 16
+inputsize, 600, 0.002382040023803711, posteriorDecoding, Conventional sparse, , 16
+inputsize, 30600, 0.12921833992004395, posteriorDecoding, Conventional sparse, , 16
+inputsize, 30600, 0.12757205963134766, posteriorDecoding, Conventional sparse, , 16
+inputsize, 30600, 0.1282660961151123, posteriorDecoding, Conventional sparse, , 16
+inputsize, 30600, 0.12909984588623047, posteriorDecoding, Conventional sparse, , 16
+inputsize, 30600, 0.12807059288024902, posteriorDecoding, Conventional sparse, , 16
+inputsize, 60600, 0.2528698444366455, posteriorDecoding, Conventional sparse, , 16
+inputsize, 60600, 0.25636863708496094, posteriorDecoding, Conventional sparse, , 16
+inputsize, 60600, 0.2522454261779785, posteriorDecoding, Conventional sparse, , 16
+inputsize, 60600, 0.2539095878601074, posteriorDecoding, Conventional sparse, , 16
+inputsize, 60600, 0.25216150283813477, posteriorDecoding, Conventional sparse, , 16
+inputsize, 90600, 0.3869936466217041, posteriorDecoding, Conventional sparse, , 16
+inputsize, 90600, 0.377535343170166, posteriorDecoding, Conventional sparse, , 16
+inputsize, 90600, 0.38093113899230957, posteriorDecoding, Conventional sparse, , 16
+inputsize, 90600, 0.3765690326690674, posteriorDecoding, Conventional sparse, , 16
+inputsize, 90600, 0.3768134117126465, posteriorDecoding, Conventional sparse, , 16
+inputsize, 120600, 0.5018200874328613, posteriorDecoding, Conventional sparse, , 16
+inputsize, 120600, 0.5015168190002441, posteriorDecoding, Conventional sparse, , 16
+inputsize, 120600, 0.5046446323394775, posteriorDecoding, Conventional sparse, , 16
+inputsize, 120600, 0.5042541027069092, posteriorDecoding, Conventional sparse, , 16
+inputsize, 120600, 0.5020904541015625, posteriorDecoding, Conventional sparse, , 16
+inputsize, 150600, 0.6253235340118408, posteriorDecoding, Conventional sparse, , 16
+inputsize, 150600, 0.6292428970336914, posteriorDecoding, Conventional sparse, , 16
+inputsize, 150600, 0.6255428791046143, posteriorDecoding, Conventional sparse, , 16
+inputsize, 150600, 0.6240570545196533, posteriorDecoding, Conventional sparse, , 16
+inputsize, 150600, 0.6267938613891602, posteriorDecoding, Conventional sparse, , 16
+inputsize, 600, 0.0025131702423095703, forward, Conventional sparse, , 16
+inputsize, 600, 0.002247333526611328, forward, Conventional sparse, , 16
+inputsize, 600, 0.002205371856689453, forward, Conventional sparse, , 16
+inputsize, 600, 0.0022592544555664062, forward, Conventional sparse, , 16
+inputsize, 600, 0.002428770065307617, forward, Conventional sparse, , 16
+inputsize, 30600, 0.12629175186157227, forward, Conventional sparse, , 16
+inputsize, 30600, 0.12668061256408691, forward, Conventional sparse, , 16
+inputsize, 30600, 0.1275618076324463, forward, Conventional sparse, , 16
+inputsize, 30600, 0.1272745132446289, forward, Conventional sparse, , 16
+inputsize, 30600, 0.1268150806427002, forward, Conventional sparse, , 16
+inputsize, 60600, 0.250382661819458, forward, Conventional sparse, , 16
+inputsize, 60600, 0.24799180030822754, forward, Conventional sparse, , 16
+inputsize, 60600, 0.24739623069763184, forward, Conventional sparse, , 16
+inputsize, 60600, 0.24994540214538574, forward, Conventional sparse, , 16
+inputsize, 60600, 0.24901318550109863, forward, Conventional sparse, , 16
+inputsize, 90600, 0.37827420234680176, forward, Conventional sparse, , 16
+inputsize, 90600, 0.37194347381591797, forward, Conventional sparse, , 16
+inputsize, 90600, 0.3750147819519043, forward, Conventional sparse, , 16
+inputsize, 90600, 0.3702104091644287, forward, Conventional sparse, , 16
+inputsize, 90600, 0.3776733875274658, forward, Conventional sparse, , 16
+inputsize, 120600, 0.49625730514526367, forward, Conventional sparse, , 16
+inputsize, 120600, 0.4932098388671875, forward, Conventional sparse, , 16
+inputsize, 120600, 0.4932594299316406, forward, Conventional sparse, , 16
+inputsize, 120600, 0.5065367221832275, forward, Conventional sparse, , 16
+inputsize, 120600, 0.5140750408172607, forward, Conventional sparse, , 16
+inputsize, 150600, 0.6228790283203125, forward, Conventional sparse, , 16
+inputsize, 150600, 0.6177036762237549, forward, Conventional sparse, , 16
+inputsize, 150600, 0.6210339069366455, forward, Conventional sparse, , 16
+inputsize, 150600, 0.615567684173584, forward, Conventional sparse, , 16
+inputsize, 150600, 0.618095874786377, forward, Conventional sparse, , 16
+inputsize, 600, 0.0030863285064697266, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.003019571304321289, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.0030677318572998047, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.0033571720123291016, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.0029871463775634766, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.15453433990478516, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.15228843688964844, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.15159940719604492, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.15181350708007812, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.15141677856445312, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.30312585830688477, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.3024754524230957, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.301131010055542, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.299663782119751, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.3020162582397461, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.45296287536621094, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.4495055675506592, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.4524095058441162, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.4512135982513428, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.4516584873199463, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.600738525390625, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.5970442295074463, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.6026439666748047, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.6149258613586426, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.5986018180847168, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7539031505584717, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7579779624938965, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7517251968383789, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7475974559783936, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7667810916900635, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.002945423126220703, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.0029942989349365234, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.003663301467895508, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.0033180713653564453, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.003078460693359375, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.16051912307739258, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.15691685676574707, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.15881061553955078, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.16089487075805664, backward_time, Conventional sparse, , 16
+inputsize, 30600, 0.16339492797851562, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.32356977462768555, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.31830406188964844, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.30785036087036133, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.30197715759277344, backward_time, Conventional sparse, , 16
+inputsize, 60600, 0.3009788990020752, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.4552958011627197, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.45511507987976074, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.44879746437072754, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.44892382621765137, backward_time, Conventional sparse, , 16
+inputsize, 90600, 0.4495096206665039, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.6321134567260742, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.6023125648498535, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.614180326461792, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.6211035251617432, backward_time, Conventional sparse, , 16
+inputsize, 120600, 0.6204779148101807, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.746098518371582, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7476184368133545, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7445509433746338, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7457118034362793, backward_time, Conventional sparse, , 16
+inputsize, 150600, 0.7442638874053955, backward_time, Conventional sparse, , 16
+inputsize, 600, 0.005650758743286133, baumWelch, Conventional sparse, 1, 16
+inputsize, 600, 0.006047725677490234, baumWelch, Conventional sparse, 1, 16
+inputsize, 600, 0.0057125091552734375, baumWelch, Conventional sparse, 1, 16
+inputsize, 600, 0.005631685256958008, baumWelch, Conventional sparse, 1, 16
+inputsize, 600, 0.005870819091796875, baumWelch, Conventional sparse, 1, 16
+inputsize, 30600, 0.39996957778930664, baumWelch, Conventional sparse, 1, 16
+inputsize, 30600, 0.400860071182251, baumWelch, Conventional sparse, 1, 16
+inputsize, 30600, 0.40041399002075195, baumWelch, Conventional sparse, 1, 16
+inputsize, 30600, 0.40387988090515137, baumWelch, Conventional sparse, 1, 16
+inputsize, 30600, 0.4181234836578369, baumWelch, Conventional sparse, 1, 16
+inputsize, 60600, 0.989609956741333, baumWelch, Conventional sparse, 1, 16
+inputsize, 60600, 1.02370285987854, baumWelch, Conventional sparse, 1, 16
+inputsize, 60600, 0.9723107814788818, baumWelch, Conventional sparse, 1, 16
+inputsize, 60600, 0.9782528877258301, baumWelch, Conventional sparse, 1, 16
+inputsize, 60600, 0.971088171005249, baumWelch, Conventional sparse, 1, 16
+inputsize, 90600, 1.4148197174072266, baumWelch, Conventional sparse, 1, 16
+inputsize, 90600, 1.411010503768921, baumWelch, Conventional sparse, 1, 16
+inputsize, 90600, 1.4171805381774902, baumWelch, Conventional sparse, 1, 16
+inputsize, 90600, 1.4098711013793945, baumWelch, Conventional sparse, 1, 16
+inputsize, 90600, 1.428462028503418, baumWelch, Conventional sparse, 1, 16
+inputsize, 120600, 1.9118919372558594, baumWelch, Conventional sparse, 1, 16
+inputsize, 120600, 1.9272992610931396, baumWelch, Conventional sparse, 1, 16
+inputsize, 120600, 1.90958833694458, baumWelch, Conventional sparse, 1, 16
+inputsize, 120600, 1.9039409160614014, baumWelch, Conventional sparse, 1, 16
+inputsize, 120600, 1.9138727188110352, baumWelch, Conventional sparse, 1, 16
+inputsize, 150600, 2.4246702194213867, baumWelch, Conventional sparse, 1, 16
+inputsize, 150600, 2.392812728881836, baumWelch, Conventional sparse, 1, 16
+inputsize, 150600, 2.3905086517333984, baumWelch, Conventional sparse, 1, 16
+inputsize, 150600, 2.393749952316284, baumWelch, Conventional sparse, 1, 16
+inputsize, 150600, 2.4318604469299316, baumWelch, Conventional sparse, 1, 16
+inputsize, 600, 0.005753040313720703, baumWelch, Conventional sparse, 2, 16
+inputsize, 600, 0.005629301071166992, baumWelch, Conventional sparse, 2, 16
+inputsize, 600, 0.005614757537841797, baumWelch, Conventional sparse, 2, 16
+inputsize, 600, 0.0064389705657958984, baumWelch, Conventional sparse, 2, 16
+inputsize, 600, 0.005885124206542969, baumWelch, Conventional sparse, 2, 16
+inputsize, 30600, 0.40191078186035156, baumWelch, Conventional sparse, 2, 16
+inputsize, 30600, 0.4042181968688965, baumWelch, Conventional sparse, 2, 16
+inputsize, 30600, 0.40232229232788086, baumWelch, Conventional sparse, 2, 16
+inputsize, 30600, 0.40549182891845703, baumWelch, Conventional sparse, 2, 16
+inputsize, 30600, 0.40271687507629395, baumWelch, Conventional sparse, 2, 16
+inputsize, 60600, 0.9254562854766846, baumWelch, Conventional sparse, 2, 16
+inputsize, 60600, 0.92112135887146, baumWelch, Conventional sparse, 2, 16
+inputsize, 60600, 0.9251601696014404, baumWelch, Conventional sparse, 2, 16
+inputsize, 60600, 0.924964427947998, baumWelch, Conventional sparse, 2, 16
+inputsize, 60600, 0.9238567352294922, baumWelch, Conventional sparse, 2, 16
+inputsize, 90600, 1.4346318244934082, baumWelch, Conventional sparse, 2, 16
+inputsize, 90600, 1.4167566299438477, baumWelch, Conventional sparse, 2, 16
+inputsize, 90600, 1.4124367237091064, baumWelch, Conventional sparse, 2, 16
+inputsize, 90600, 1.413217306137085, baumWelch, Conventional sparse, 2, 16
+inputsize, 90600, 1.415360450744629, baumWelch, Conventional sparse, 2, 16
+inputsize, 120600, 1.9174070358276367, baumWelch, Conventional sparse, 2, 16
+inputsize, 120600, 1.9168150424957275, baumWelch, Conventional sparse, 2, 16
+inputsize, 120600, 1.9071292877197266, baumWelch, Conventional sparse, 2, 16
+inputsize, 120600, 1.8947229385375977, baumWelch, Conventional sparse, 2, 16
+inputsize, 120600, 1.8968493938446045, baumWelch, Conventional sparse, 2, 16
+inputsize, 150600, 2.42052960395813, baumWelch, Conventional sparse, 2, 16
+inputsize, 150600, 2.4241902828216553, baumWelch, Conventional sparse, 2, 16
+inputsize, 150600, 2.415817975997925, baumWelch, Conventional sparse, 2, 16
+inputsize, 150600, 2.383861541748047, baumWelch, Conventional sparse, 2, 16
+inputsize, 150600, 2.408393144607544, baumWelch, Conventional sparse, 2, 16
+inputsize, 600, 0.0057218074798583984, baumWelch, Conventional sparse, 3, 16
+inputsize, 600, 0.00586247444152832, baumWelch, Conventional sparse, 3, 16
+inputsize, 600, 0.0060577392578125, baumWelch, Conventional sparse, 3, 16
+inputsize, 600, 0.005716800689697266, baumWelch, Conventional sparse, 3, 16
+inputsize, 600, 0.005888223648071289, baumWelch, Conventional sparse, 3, 16
+inputsize, 30600, 0.40132737159729004, baumWelch, Conventional sparse, 3, 16
+inputsize, 30600, 0.3974430561065674, baumWelch, Conventional sparse, 3, 16
+inputsize, 30600, 0.39737439155578613, baumWelch, Conventional sparse, 3, 16
+inputsize, 30600, 0.3960697650909424, baumWelch, Conventional sparse, 3, 16
+inputsize, 30600, 0.3971569538116455, baumWelch, Conventional sparse, 3, 16
+inputsize, 60600, 0.9440352916717529, baumWelch, Conventional sparse, 3, 16
+inputsize, 60600, 0.9194297790527344, baumWelch, Conventional sparse, 3, 16
+inputsize, 60600, 0.9251515865325928, baumWelch, Conventional sparse, 3, 16
+inputsize, 60600, 0.9183948040008545, baumWelch, Conventional sparse, 3, 16
+inputsize, 60600, 0.9230225086212158, baumWelch, Conventional sparse, 3, 16
+inputsize, 90600, 1.4118077754974365, baumWelch, Conventional sparse, 3, 16
+inputsize, 90600, 1.4193496704101562, baumWelch, Conventional sparse, 3, 16
+inputsize, 90600, 1.4119229316711426, baumWelch, Conventional sparse, 3, 16
+inputsize, 90600, 1.4125220775604248, baumWelch, Conventional sparse, 3, 16
+inputsize, 90600, 1.420947790145874, baumWelch, Conventional sparse, 3, 16
+inputsize, 120600, 1.9022493362426758, baumWelch, Conventional sparse, 3, 16
+inputsize, 120600, 1.899388074874878, baumWelch, Conventional sparse, 3, 16
+inputsize, 120600, 1.9069831371307373, baumWelch, Conventional sparse, 3, 16
+inputsize, 120600, 1.900759220123291, baumWelch, Conventional sparse, 3, 16
+inputsize, 120600, 1.9289255142211914, baumWelch, Conventional sparse, 3, 16
+inputsize, 150600, 2.41707444190979, baumWelch, Conventional sparse, 3, 16
+inputsize, 150600, 2.4130849838256836, baumWelch, Conventional sparse, 3, 16
+inputsize, 150600, 2.4234087467193604, baumWelch, Conventional sparse, 3, 16
+inputsize, 150600, 2.448376178741455, baumWelch, Conventional sparse, 3, 16
+inputsize, 150600, 2.4156367778778076, baumWelch, Conventional sparse, 3, 16
+inputsize, 600, 0.005714893341064453, baumWelch, Conventional sparse, 4, 16
+inputsize, 600, 0.005776882171630859, baumWelch, Conventional sparse, 4, 16
+inputsize, 600, 0.005608797073364258, baumWelch, Conventional sparse, 4, 16
+inputsize, 600, 0.005564212799072266, baumWelch, Conventional sparse, 4, 16
+inputsize, 600, 0.005925416946411133, baumWelch, Conventional sparse, 4, 16
+inputsize, 30600, 0.40212583541870117, baumWelch, Conventional sparse, 4, 16
+inputsize, 30600, 0.40763187408447266, baumWelch, Conventional sparse, 4, 16
+inputsize, 30600, 0.40491414070129395, baumWelch, Conventional sparse, 4, 16
+inputsize, 30600, 0.40174436569213867, baumWelch, Conventional sparse, 4, 16
+inputsize, 30600, 0.40380406379699707, baumWelch, Conventional sparse, 4, 16
+inputsize, 60600, 0.9117016792297363, baumWelch, Conventional sparse, 4, 16
+inputsize, 60600, 0.9101972579956055, baumWelch, Conventional sparse, 4, 16
+inputsize, 60600, 0.9093859195709229, baumWelch, Conventional sparse, 4, 16
+inputsize, 60600, 0.9063668251037598, baumWelch, Conventional sparse, 4, 16
+inputsize, 60600, 0.9047329425811768, baumWelch, Conventional sparse, 4, 16
+inputsize, 90600, 1.4416191577911377, baumWelch, Conventional sparse, 4, 16
+inputsize, 90600, 1.4233462810516357, baumWelch, Conventional sparse, 4, 16
+inputsize, 90600, 1.4179904460906982, baumWelch, Conventional sparse, 4, 16
+inputsize, 90600, 1.4179644584655762, baumWelch, Conventional sparse, 4, 16
+inputsize, 90600, 1.4228768348693848, baumWelch, Conventional sparse, 4, 16
+inputsize, 120600, 1.9278182983398438, baumWelch, Conventional sparse, 4, 16
+inputsize, 120600, 1.9303832054138184, baumWelch, Conventional sparse, 4, 16
+inputsize, 120600, 1.9025979042053223, baumWelch, Conventional sparse, 4, 16
+inputsize, 120600, 1.9062511920928955, baumWelch, Conventional sparse, 4, 16
+inputsize, 120600, 1.9064927101135254, baumWelch, Conventional sparse, 4, 16
+inputsize, 150600, 2.4070355892181396, baumWelch, Conventional sparse, 4, 16
+inputsize, 150600, 2.397017002105713, baumWelch, Conventional sparse, 4, 16
+inputsize, 150600, 2.4046435356140137, baumWelch, Conventional sparse, 4, 16
+inputsize, 150600, 2.3990821838378906, baumWelch, Conventional sparse, 4, 16
+inputsize, 150600, 2.4081337451934814, baumWelch, Conventional sparse, 4, 16
+inputsize, 600, 0.005754709243774414, baumWelch, Conventional sparse, 5, 16
+inputsize, 600, 0.005686759948730469, baumWelch, Conventional sparse, 5, 16
+inputsize, 600, 0.005576133728027344, baumWelch, Conventional sparse, 5, 16
+inputsize, 600, 0.005685567855834961, baumWelch, Conventional sparse, 5, 16
+inputsize, 600, 0.006119966506958008, baumWelch, Conventional sparse, 5, 16
+inputsize, 30600, 0.3983581066131592, baumWelch, Conventional sparse, 5, 16
+inputsize, 30600, 0.3979620933532715, baumWelch, Conventional sparse, 5, 16
+inputsize, 30600, 0.399151086807251, baumWelch, Conventional sparse, 5, 16
+inputsize, 30600, 0.4291701316833496, baumWelch, Conventional sparse, 5, 16
+inputsize, 30600, 0.39909815788269043, baumWelch, Conventional sparse, 5, 16
+inputsize, 60600, 0.9217252731323242, baumWelch, Conventional sparse, 5, 16
+inputsize, 60600, 0.934014081954956, baumWelch, Conventional sparse, 5, 16
+inputsize, 60600, 0.9195854663848877, baumWelch, Conventional sparse, 5, 16
+inputsize, 60600, 0.9238665103912354, baumWelch, Conventional sparse, 5, 16
+inputsize, 60600, 0.9213035106658936, baumWelch, Conventional sparse, 5, 16
+inputsize, 90600, 1.4070279598236084, baumWelch, Conventional sparse, 5, 16
+inputsize, 90600, 1.4035298824310303, baumWelch, Conventional sparse, 5, 16
+inputsize, 90600, 1.4044394493103027, baumWelch, Conventional sparse, 5, 16
+inputsize, 90600, 1.4258828163146973, baumWelch, Conventional sparse, 5, 16
+inputsize, 90600, 1.4098567962646484, baumWelch, Conventional sparse, 5, 16
+inputsize, 120600, 1.9017770290374756, baumWelch, Conventional sparse, 5, 16
+inputsize, 120600, 1.9149956703186035, baumWelch, Conventional sparse, 5, 16
+inputsize, 120600, 1.886901617050171, baumWelch, Conventional sparse, 5, 16
+inputsize, 120600, 1.9071755409240723, baumWelch, Conventional sparse, 5, 16
+inputsize, 120600, 1.9305665493011475, baumWelch, Conventional sparse, 5, 16
+inputsize, 150600, 2.3985273838043213, baumWelch, Conventional sparse, 5, 16
+inputsize, 150600, 2.413597822189331, baumWelch, Conventional sparse, 5, 16
+inputsize, 150600, 2.4061853885650635, baumWelch, Conventional sparse, 5, 16
+inputsize, 150600, 2.41892671585083, baumWelch, Conventional sparse, 5, 16
+inputsize, 150600, 2.408350706100464, baumWelch, Conventional sparse, 5, 16
+inputsize, 600, 0.0056493282318115234, baumWelch, Conventional sparse, 6, 16
+inputsize, 600, 0.005738019943237305, baumWelch, Conventional sparse, 6, 16
+inputsize, 600, 0.0058901309967041016, baumWelch, Conventional sparse, 6, 16
+inputsize, 600, 0.005618572235107422, baumWelch, Conventional sparse, 6, 16
+inputsize, 600, 0.005958080291748047, baumWelch, Conventional sparse, 6, 16
+inputsize, 30600, 0.395280122756958, baumWelch, Conventional sparse, 6, 16
+inputsize, 30600, 0.39377570152282715, baumWelch, Conventional sparse, 6, 16
+inputsize, 30600, 0.39538002014160156, baumWelch, Conventional sparse, 6, 16
+inputsize, 30600, 0.39330124855041504, baumWelch, Conventional sparse, 6, 16
+inputsize, 30600, 0.39404296875, baumWelch, Conventional sparse, 6, 16
+inputsize, 60600, 0.9200098514556885, baumWelch, Conventional sparse, 6, 16
+inputsize, 60600, 0.9205029010772705, baumWelch, Conventional sparse, 6, 16
+inputsize, 60600, 0.9198868274688721, baumWelch, Conventional sparse, 6, 16
+inputsize, 60600, 0.916705846786499, baumWelch, Conventional sparse, 6, 16
+inputsize, 60600, 0.9373939037322998, baumWelch, Conventional sparse, 6, 16
+inputsize, 90600, 1.4230051040649414, baumWelch, Conventional sparse, 6, 16
+inputsize, 90600, 1.4288320541381836, baumWelch, Conventional sparse, 6, 16
+inputsize, 90600, 1.4265716075897217, baumWelch, Conventional sparse, 6, 16
+inputsize, 90600, 1.4268858432769775, baumWelch, Conventional sparse, 6, 16
+inputsize, 90600, 1.4281792640686035, baumWelch, Conventional sparse, 6, 16
+inputsize, 120600, 1.9046990871429443, baumWelch, Conventional sparse, 6, 16
+inputsize, 120600, 1.9252610206604004, baumWelch, Conventional sparse, 6, 16
+inputsize, 120600, 1.9043993949890137, baumWelch, Conventional sparse, 6, 16
+inputsize, 120600, 1.9057469367980957, baumWelch, Conventional sparse, 6, 16
+inputsize, 120600, 1.910611867904663, baumWelch, Conventional sparse, 6, 16
+inputsize, 150600, 2.441843032836914, baumWelch, Conventional sparse, 6, 16
+inputsize, 150600, 2.4370057582855225, baumWelch, Conventional sparse, 6, 16
+inputsize, 150600, 2.429565191268921, baumWelch, Conventional sparse, 6, 16
+inputsize, 150600, 2.414130449295044, baumWelch, Conventional sparse, 6, 16
+inputsize, 150600, 2.426163911819458, baumWelch, Conventional sparse, 6, 16
+inputsize, 600, 0.0005042552947998047, posteriorDecoding, BLAS, , 16
+inputsize, 600, 0.00041103363037109375, posteriorDecoding, BLAS, , 16
+inputsize, 600, 0.000408172607421875, posteriorDecoding, BLAS, , 16
+inputsize, 600, 0.0004401206970214844, posteriorDecoding, BLAS, , 16
+inputsize, 600, 0.0004100799560546875, posteriorDecoding, BLAS, , 16
+inputsize, 30600, 0.023433685302734375, posteriorDecoding, BLAS, , 16
+inputsize, 30600, 0.023791790008544922, posteriorDecoding, BLAS, , 16
+inputsize, 30600, 0.023117542266845703, posteriorDecoding, BLAS, , 16
+inputsize, 30600, 0.022626876831054688, posteriorDecoding, BLAS, , 16
+inputsize, 30600, 0.023486614227294922, posteriorDecoding, BLAS, , 16
+inputsize, 60600, 0.04546761512756348, posteriorDecoding, BLAS, , 16
+inputsize, 60600, 0.04497933387756348, posteriorDecoding, BLAS, , 16
+inputsize, 60600, 0.04494881629943848, posteriorDecoding, BLAS, , 16
+inputsize, 60600, 0.045098066329956055, posteriorDecoding, BLAS, , 16
+inputsize, 60600, 0.04474973678588867, posteriorDecoding, BLAS, , 16
+inputsize, 90600, 0.06703877449035645, posteriorDecoding, BLAS, , 16
+inputsize, 90600, 0.06743192672729492, posteriorDecoding, BLAS, , 16
+inputsize, 90600, 0.06737947463989258, posteriorDecoding, BLAS, , 16
+inputsize, 90600, 0.06874418258666992, posteriorDecoding, BLAS, , 16
+inputsize, 90600, 0.06957411766052246, posteriorDecoding, BLAS, , 16
+inputsize, 120600, 0.09105706214904785, posteriorDecoding, BLAS, , 16
+inputsize, 120600, 0.0909886360168457, posteriorDecoding, BLAS, , 16
+inputsize, 120600, 0.09077286720275879, posteriorDecoding, BLAS, , 16
+inputsize, 120600, 0.08946108818054199, posteriorDecoding, BLAS, , 16
+inputsize, 120600, 0.09135818481445312, posteriorDecoding, BLAS, , 16
+inputsize, 150600, 0.11323070526123047, posteriorDecoding, BLAS, , 16
+inputsize, 150600, 0.11261987686157227, posteriorDecoding, BLAS, , 16
+inputsize, 150600, 0.1131737232208252, posteriorDecoding, BLAS, , 16
+inputsize, 150600, 0.11255097389221191, posteriorDecoding, BLAS, , 16
+inputsize, 150600, 0.11260056495666504, posteriorDecoding, BLAS, , 16
+inputsize, 600, 0.0016033649444580078, forward, BLAS, , 16
+inputsize, 600, 0.0015478134155273438, forward, BLAS, , 16
+inputsize, 600, 0.0015225410461425781, forward, BLAS, , 16
+inputsize, 600, 0.0015361309051513672, forward, BLAS, , 16
+inputsize, 600, 0.001535177230834961, forward, BLAS, , 16
+inputsize, 30600, 0.08822941780090332, forward, BLAS, , 16
+inputsize, 30600, 0.08608436584472656, forward, BLAS, , 16
+inputsize, 30600, 0.08633828163146973, forward, BLAS, , 16
+inputsize, 30600, 0.08588457107543945, forward, BLAS, , 16
+inputsize, 30600, 0.08595776557922363, forward, BLAS, , 16
+inputsize, 60600, 0.1736586093902588, forward, BLAS, , 16
+inputsize, 60600, 0.1733412742614746, forward, BLAS, , 16
+inputsize, 60600, 0.17342066764831543, forward, BLAS, , 16
+inputsize, 60600, 0.17114973068237305, forward, BLAS, , 16
+inputsize, 60600, 0.17164850234985352, forward, BLAS, , 16
+inputsize, 90600, 0.25779128074645996, forward, BLAS, , 16
+inputsize, 90600, 0.25684690475463867, forward, BLAS, , 16
+inputsize, 90600, 0.2556116580963135, forward, BLAS, , 16
+inputsize, 90600, 0.2557559013366699, forward, BLAS, , 16
+inputsize, 90600, 0.25606322288513184, forward, BLAS, , 16
+inputsize, 120600, 0.3434157371520996, forward, BLAS, , 16
+inputsize, 120600, 0.3408224582672119, forward, BLAS, , 16
+inputsize, 120600, 0.3405470848083496, forward, BLAS, , 16
+inputsize, 120600, 0.3400249481201172, forward, BLAS, , 16
+inputsize, 120600, 0.34087395668029785, forward, BLAS, , 16
+inputsize, 150600, 0.4287443161010742, forward, BLAS, , 16
+inputsize, 150600, 0.43390941619873047, forward, BLAS, , 16
+inputsize, 150600, 0.4262423515319824, forward, BLAS, , 16
+inputsize, 150600, 0.4270772933959961, forward, BLAS, , 16
+inputsize, 150600, 0.4241361618041992, forward, BLAS, , 16
+inputsize, 600, 0.0018427371978759766, backward_time, BLAS, , 16
+inputsize, 600, 0.0018777847290039062, backward_time, BLAS, , 16
+inputsize, 600, 0.0018095970153808594, backward_time, BLAS, , 16
+inputsize, 600, 0.0018138885498046875, backward_time, BLAS, , 16
+inputsize, 600, 0.0020966529846191406, backward_time, BLAS, , 16
+inputsize, 30600, 0.08692550659179688, backward_time, BLAS, , 16
+inputsize, 30600, 0.08691525459289551, backward_time, BLAS, , 16
+inputsize, 30600, 0.08655953407287598, backward_time, BLAS, , 16
+inputsize, 30600, 0.08614993095397949, backward_time, BLAS, , 16
+inputsize, 30600, 0.08765625953674316, backward_time, BLAS, , 16
+inputsize, 60600, 0.17369294166564941, backward_time, BLAS, , 16
+inputsize, 60600, 0.17055702209472656, backward_time, BLAS, , 16
+inputsize, 60600, 0.17058563232421875, backward_time, BLAS, , 16
+inputsize, 60600, 0.16981244087219238, backward_time, BLAS, , 16
+inputsize, 60600, 0.17081880569458008, backward_time, BLAS, , 16
+inputsize, 90600, 0.25943946838378906, backward_time, BLAS, , 16
+inputsize, 90600, 0.26332831382751465, backward_time, BLAS, , 16
+inputsize, 90600, 0.26042866706848145, backward_time, BLAS, , 16
+inputsize, 90600, 0.26075148582458496, backward_time, BLAS, , 16
+inputsize, 90600, 0.26731276512145996, backward_time, BLAS, , 16
+inputsize, 120600, 0.3446798324584961, backward_time, BLAS, , 16
+inputsize, 120600, 0.34113407135009766, backward_time, BLAS, , 16
+inputsize, 120600, 0.33976054191589355, backward_time, BLAS, , 16
+inputsize, 120600, 0.35383057594299316, backward_time, BLAS, , 16
+inputsize, 120600, 0.34365129470825195, backward_time, BLAS, , 16
+inputsize, 150600, 0.4351956844329834, backward_time, BLAS, , 16
+inputsize, 150600, 0.425339937210083, backward_time, BLAS, , 16
+inputsize, 150600, 0.4246640205383301, backward_time, BLAS, , 16
+inputsize, 150600, 0.4232654571533203, backward_time, BLAS, , 16
+inputsize, 150600, 0.42539191246032715, backward_time, BLAS, , 16
+inputsize, 600, 0.0018062591552734375, backward_time, BLAS, , 16
+inputsize, 600, 0.0017940998077392578, backward_time, BLAS, , 16
+inputsize, 600, 0.0017886161804199219, backward_time, BLAS, , 16
+inputsize, 600, 0.0018019676208496094, backward_time, BLAS, , 16
+inputsize, 600, 0.0018913745880126953, backward_time, BLAS, , 16
+inputsize, 30600, 0.08947229385375977, backward_time, BLAS, , 16
+inputsize, 30600, 0.0882425308227539, backward_time, BLAS, , 16
+inputsize, 30600, 0.08750438690185547, backward_time, BLAS, , 16
+inputsize, 30600, 0.08768701553344727, backward_time, BLAS, , 16
+inputsize, 30600, 0.08808398246765137, backward_time, BLAS, , 16
+inputsize, 60600, 0.17240190505981445, backward_time, BLAS, , 16
+inputsize, 60600, 0.1702289581298828, backward_time, BLAS, , 16
+inputsize, 60600, 0.18602252006530762, backward_time, BLAS, , 16
+inputsize, 60600, 0.17083954811096191, backward_time, BLAS, , 16
+inputsize, 60600, 0.17127037048339844, backward_time, BLAS, , 16
+inputsize, 90600, 0.2617809772491455, backward_time, BLAS, , 16
+inputsize, 90600, 0.26201725006103516, backward_time, BLAS, , 16
+inputsize, 90600, 0.26012611389160156, backward_time, BLAS, , 16
+inputsize, 90600, 0.2598574161529541, backward_time, BLAS, , 16
+inputsize, 90600, 0.26018571853637695, backward_time, BLAS, , 16
+inputsize, 120600, 0.342144250869751, backward_time, BLAS, , 16
+inputsize, 120600, 0.3404111862182617, backward_time, BLAS, , 16
+inputsize, 120600, 0.34505295753479004, backward_time, BLAS, , 16
+inputsize, 120600, 0.3410332202911377, backward_time, BLAS, , 16
+inputsize, 120600, 0.34096431732177734, backward_time, BLAS, , 16
+inputsize, 150600, 0.43509531021118164, backward_time, BLAS, , 16
+inputsize, 150600, 0.43094325065612793, backward_time, BLAS, , 16
+inputsize, 150600, 0.43312716484069824, backward_time, BLAS, , 16
+inputsize, 150600, 0.44666147232055664, backward_time, BLAS, , 16
+inputsize, 150600, 0.4330120086669922, backward_time, BLAS, , 16
+inputsize, 600, 0.0038628578186035156, baumWelch, BLAS, 1, 16
+inputsize, 600, 0.0038275718688964844, baumWelch, BLAS, 1, 16
+inputsize, 600, 0.0041735172271728516, baumWelch, BLAS, 1, 16
+inputsize, 600, 0.0039119720458984375, baumWelch, BLAS, 1, 16
+inputsize, 600, 0.003904104232788086, baumWelch, BLAS, 1, 16
+inputsize, 30600, 0.2919886112213135, baumWelch, BLAS, 1, 16
+inputsize, 30600, 0.2902543544769287, baumWelch, BLAS, 1, 16
+inputsize, 30600, 0.29096126556396484, baumWelch, BLAS, 1, 16
+inputsize, 30600, 0.29011988639831543, baumWelch, BLAS, 1, 16
+inputsize, 30600, 0.2925107479095459, baumWelch, BLAS, 1, 16
+inputsize, 60600, 0.7453241348266602, baumWelch, BLAS, 1, 16
+inputsize, 60600, 0.7404658794403076, baumWelch, BLAS, 1, 16
+inputsize, 60600, 0.7439539432525635, baumWelch, BLAS, 1, 16
+inputsize, 60600, 0.7422747611999512, baumWelch, BLAS, 1, 16
+inputsize, 60600, 0.7417337894439697, baumWelch, BLAS, 1, 16
+inputsize, 90600, 1.113365650177002, baumWelch, BLAS, 1, 16
+inputsize, 90600, 1.1014032363891602, baumWelch, BLAS, 1, 16
+inputsize, 90600, 1.1048080921173096, baumWelch, BLAS, 1, 16
+inputsize, 90600, 1.1194138526916504, baumWelch, BLAS, 1, 16
+inputsize, 90600, 1.103149652481079, baumWelch, BLAS, 1, 16
+inputsize, 120600, 1.5241234302520752, baumWelch, BLAS, 1, 16
+inputsize, 120600, 1.5029797554016113, baumWelch, BLAS, 1, 16
+inputsize, 120600, 1.5088887214660645, baumWelch, BLAS, 1, 16
+inputsize, 120600, 1.494544267654419, baumWelch, BLAS, 1, 16
+inputsize, 120600, 1.505091905593872, baumWelch, BLAS, 1, 16
+inputsize, 150600, 1.9202473163604736, baumWelch, BLAS, 1, 16
+inputsize, 150600, 1.9005169868469238, baumWelch, BLAS, 1, 16
+inputsize, 150600, 1.8842999935150146, baumWelch, BLAS, 1, 16
+inputsize, 150600, 1.9087629318237305, baumWelch, BLAS, 1, 16
+inputsize, 150600, 1.907059669494629, baumWelch, BLAS, 1, 16
+inputsize, 600, 0.003870248794555664, baumWelch, BLAS, 2, 16
+inputsize, 600, 0.0038063526153564453, baumWelch, BLAS, 2, 16
+inputsize, 600, 0.003950834274291992, baumWelch, BLAS, 2, 16
+inputsize, 600, 0.003930568695068359, baumWelch, BLAS, 2, 16
+inputsize, 600, 0.003935813903808594, baumWelch, BLAS, 2, 16
+inputsize, 30600, 0.29589343070983887, baumWelch, BLAS, 2, 16
+inputsize, 30600, 0.2948765754699707, baumWelch, BLAS, 2, 16
+inputsize, 30600, 0.29403257369995117, baumWelch, BLAS, 2, 16
+inputsize, 30600, 0.29421520233154297, baumWelch, BLAS, 2, 16
+inputsize, 30600, 0.2995584011077881, baumWelch, BLAS, 2, 16
+inputsize, 60600, 0.7197220325469971, baumWelch, BLAS, 2, 16
+inputsize, 60600, 0.7113728523254395, baumWelch, BLAS, 2, 16
+inputsize, 60600, 0.7196242809295654, baumWelch, BLAS, 2, 16
+inputsize, 60600, 0.7142434120178223, baumWelch, BLAS, 2, 16
+inputsize, 60600, 0.7099449634552002, baumWelch, BLAS, 2, 16
+inputsize, 90600, 1.1126489639282227, baumWelch, BLAS, 2, 16
+inputsize, 90600, 1.1029646396636963, baumWelch, BLAS, 2, 16
+inputsize, 90600, 1.104278802871704, baumWelch, BLAS, 2, 16
+inputsize, 90600, 1.1070270538330078, baumWelch, BLAS, 2, 16
+inputsize, 90600, 1.1051256656646729, baumWelch, BLAS, 2, 16
+inputsize, 120600, 1.5170855522155762, baumWelch, BLAS, 2, 16
+inputsize, 120600, 1.5098087787628174, baumWelch, BLAS, 2, 16
+inputsize, 120600, 1.5119006633758545, baumWelch, BLAS, 2, 16
+inputsize, 120600, 1.5116877555847168, baumWelch, BLAS, 2, 16
+inputsize, 120600, 1.5164458751678467, baumWelch, BLAS, 2, 16
+inputsize, 150600, 1.913665771484375, baumWelch, BLAS, 2, 16
+inputsize, 150600, 1.925412893295288, baumWelch, BLAS, 2, 16
+inputsize, 150600, 1.9058048725128174, baumWelch, BLAS, 2, 16
+inputsize, 150600, 1.918311595916748, baumWelch, BLAS, 2, 16
+inputsize, 150600, 1.919727087020874, baumWelch, BLAS, 2, 16
+inputsize, 600, 0.003905773162841797, baumWelch, BLAS, 3, 16
+inputsize, 600, 0.003800630569458008, baumWelch, BLAS, 3, 16
+inputsize, 600, 0.004048824310302734, baumWelch, BLAS, 3, 16
+inputsize, 600, 0.004038333892822266, baumWelch, BLAS, 3, 16
+inputsize, 600, 0.0038089752197265625, baumWelch, BLAS, 3, 16
+inputsize, 30600, 0.29472970962524414, baumWelch, BLAS, 3, 16
+inputsize, 30600, 0.29637789726257324, baumWelch, BLAS, 3, 16
+inputsize, 30600, 0.2923908233642578, baumWelch, BLAS, 3, 16
+inputsize, 30600, 0.29344797134399414, baumWelch, BLAS, 3, 16
+inputsize, 30600, 0.29314374923706055, baumWelch, BLAS, 3, 16
+inputsize, 60600, 0.7205336093902588, baumWelch, BLAS, 3, 16
+inputsize, 60600, 0.7152934074401855, baumWelch, BLAS, 3, 16
+inputsize, 60600, 0.7186522483825684, baumWelch, BLAS, 3, 16
+inputsize, 60600, 0.730748176574707, baumWelch, BLAS, 3, 16
+inputsize, 60600, 0.7189815044403076, baumWelch, BLAS, 3, 16
+inputsize, 90600, 1.1109607219696045, baumWelch, BLAS, 3, 16
+inputsize, 90600, 1.1014280319213867, baumWelch, BLAS, 3, 16
+inputsize, 90600, 1.1046922206878662, baumWelch, BLAS, 3, 16
+inputsize, 90600, 1.103229284286499, baumWelch, BLAS, 3, 16
+inputsize, 90600, 1.1070148944854736, baumWelch, BLAS, 3, 16
+inputsize, 120600, 1.503542184829712, baumWelch, BLAS, 3, 16
+inputsize, 120600, 1.4972662925720215, baumWelch, BLAS, 3, 16
+inputsize, 120600, 1.5027189254760742, baumWelch, BLAS, 3, 16
+inputsize, 120600, 1.5033793449401855, baumWelch, BLAS, 3, 16
+inputsize, 120600, 1.5008015632629395, baumWelch, BLAS, 3, 16
+inputsize, 150600, 1.9001717567443848, baumWelch, BLAS, 3, 16
+inputsize, 150600, 1.9129223823547363, baumWelch, BLAS, 3, 16
+inputsize, 150600, 1.9155714511871338, baumWelch, BLAS, 3, 16
+inputsize, 150600, 1.9203388690948486, baumWelch, BLAS, 3, 16
+inputsize, 150600, 1.9224498271942139, baumWelch, BLAS, 3, 16
+inputsize, 600, 0.0038411617279052734, baumWelch, BLAS, 4, 16
+inputsize, 600, 0.0038080215454101562, baumWelch, BLAS, 4, 16
+inputsize, 600, 0.003888845443725586, baumWelch, BLAS, 4, 16
+inputsize, 600, 0.0038018226623535156, baumWelch, BLAS, 4, 16
+inputsize, 600, 0.0037958621978759766, baumWelch, BLAS, 4, 16
+inputsize, 30600, 0.2928025722503662, baumWelch, BLAS, 4, 16
+inputsize, 30600, 0.2912609577178955, baumWelch, BLAS, 4, 16
+inputsize, 30600, 0.2921276092529297, baumWelch, BLAS, 4, 16
+inputsize, 30600, 0.2927534580230713, baumWelch, BLAS, 4, 16
+inputsize, 30600, 0.291642427444458, baumWelch, BLAS, 4, 16
+inputsize, 60600, 0.7069768905639648, baumWelch, BLAS, 4, 16
+inputsize, 60600, 0.7046444416046143, baumWelch, BLAS, 4, 16
+inputsize, 60600, 0.7003810405731201, baumWelch, BLAS, 4, 16
+inputsize, 60600, 0.7050890922546387, baumWelch, BLAS, 4, 16
+inputsize, 60600, 0.7011890411376953, baumWelch, BLAS, 4, 16
+inputsize, 90600, 1.122375249862671, baumWelch, BLAS, 4, 16
+inputsize, 90600, 1.1131069660186768, baumWelch, BLAS, 4, 16
+inputsize, 90600, 1.1212899684906006, baumWelch, BLAS, 4, 16
+inputsize, 90600, 1.1113343238830566, baumWelch, BLAS, 4, 16
+inputsize, 90600, 1.1149406433105469, baumWelch, BLAS, 4, 16
+inputsize, 120600, 1.5057713985443115, baumWelch, BLAS, 4, 16
+inputsize, 120600, 1.4960405826568604, baumWelch, BLAS, 4, 16
+inputsize, 120600, 1.4909560680389404, baumWelch, BLAS, 4, 16
+inputsize, 120600, 1.5023176670074463, baumWelch, BLAS, 4, 16
+inputsize, 120600, 1.4894781112670898, baumWelch, BLAS, 4, 16
+inputsize, 150600, 1.8798260688781738, baumWelch, BLAS, 4, 16
+inputsize, 150600, 1.9023029804229736, baumWelch, BLAS, 4, 16
+inputsize, 150600, 1.9124929904937744, baumWelch, BLAS, 4, 16
+inputsize, 150600, 1.9030251502990723, baumWelch, BLAS, 4, 16
+inputsize, 150600, 1.893280267715454, baumWelch, BLAS, 4, 16
+inputsize, 600, 0.0038814544677734375, baumWelch, BLAS, 5, 16
+inputsize, 600, 0.0037832260131835938, baumWelch, BLAS, 5, 16
+inputsize, 600, 0.003938913345336914, baumWelch, BLAS, 5, 16
+inputsize, 600, 0.0037970542907714844, baumWelch, BLAS, 5, 16
+inputsize, 600, 0.004033327102661133, baumWelch, BLAS, 5, 16
+inputsize, 30600, 0.3019120693206787, baumWelch, BLAS, 5, 16
+inputsize, 30600, 0.2967245578765869, baumWelch, BLAS, 5, 16
+inputsize, 30600, 0.2924981117248535, baumWelch, BLAS, 5, 16
+inputsize, 30600, 0.29320216178894043, baumWelch, BLAS, 5, 16
+inputsize, 30600, 0.29222583770751953, baumWelch, BLAS, 5, 16
+inputsize, 60600, 0.7189576625823975, baumWelch, BLAS, 5, 16
+inputsize, 60600, 0.7197635173797607, baumWelch, BLAS, 5, 16
+inputsize, 60600, 0.7164051532745361, baumWelch, BLAS, 5, 16
+inputsize, 60600, 0.7188491821289062, baumWelch, BLAS, 5, 16
+inputsize, 60600, 0.7183842658996582, baumWelch, BLAS, 5, 16
+inputsize, 90600, 1.111626148223877, baumWelch, BLAS, 5, 16
+inputsize, 90600, 1.108360767364502, baumWelch, BLAS, 5, 16
+inputsize, 90600, 1.1094012260437012, baumWelch, BLAS, 5, 16
+inputsize, 90600, 1.1105163097381592, baumWelch, BLAS, 5, 16
+inputsize, 90600, 1.1133735179901123, baumWelch, BLAS, 5, 16
+inputsize, 120600, 1.4897387027740479, baumWelch, BLAS, 5, 16
+inputsize, 120600, 1.4905683994293213, baumWelch, BLAS, 5, 16
+inputsize, 120600, 1.4905576705932617, baumWelch, BLAS, 5, 16
+inputsize, 120600, 1.487769365310669, baumWelch, BLAS, 5, 16
+inputsize, 120600, 1.4848744869232178, baumWelch, BLAS, 5, 16
+inputsize, 150600, 1.908165693283081, baumWelch, BLAS, 5, 16
+inputsize, 150600, 1.88655424118042, baumWelch, BLAS, 5, 16
+inputsize, 150600, 1.9160432815551758, baumWelch, BLAS, 5, 16
+inputsize, 150600, 1.9038474559783936, baumWelch, BLAS, 5, 16
+inputsize, 150600, 1.8930015563964844, baumWelch, BLAS, 5, 16
+inputsize, 600, 0.0038428306579589844, baumWelch, BLAS, 6, 16
+inputsize, 600, 0.0037915706634521484, baumWelch, BLAS, 6, 16
+inputsize, 600, 0.0038979053497314453, baumWelch, BLAS, 6, 16
+inputsize, 600, 0.0039081573486328125, baumWelch, BLAS, 6, 16
+inputsize, 600, 0.0038640499114990234, baumWelch, BLAS, 6, 16
+inputsize, 30600, 0.2951078414916992, baumWelch, BLAS, 6, 16
+inputsize, 30600, 0.29741597175598145, baumWelch, BLAS, 6, 16
+inputsize, 30600, 0.30309510231018066, baumWelch, BLAS, 6, 16
+inputsize, 30600, 0.29426097869873047, baumWelch, BLAS, 6, 16
+inputsize, 30600, 0.29569005966186523, baumWelch, BLAS, 6, 16
+inputsize, 60600, 0.7130324840545654, baumWelch, BLAS, 6, 16
+inputsize, 60600, 0.7203691005706787, baumWelch, BLAS, 6, 16
+inputsize, 60600, 0.7136163711547852, baumWelch, BLAS, 6, 16
+inputsize, 60600, 0.7098844051361084, baumWelch, BLAS, 6, 16
+inputsize, 60600, 0.7136497497558594, baumWelch, BLAS, 6, 16
+inputsize, 90600, 1.1071512699127197, baumWelch, BLAS, 6, 16
+inputsize, 90600, 1.105536937713623, baumWelch, BLAS, 6, 16
+inputsize, 90600, 1.1052303314208984, baumWelch, BLAS, 6, 16
+inputsize, 90600, 1.1110076904296875, baumWelch, BLAS, 6, 16
+inputsize, 90600, 1.1082642078399658, baumWelch, BLAS, 6, 16
+inputsize, 120600, 1.4946413040161133, baumWelch, BLAS, 6, 16
+inputsize, 120600, 1.4980018138885498, baumWelch, BLAS, 6, 16
+inputsize, 120600, 1.4855921268463135, baumWelch, BLAS, 6, 16
+inputsize, 120600, 1.4907357692718506, baumWelch, BLAS, 6, 16
+inputsize, 120600, 1.4922146797180176, baumWelch, BLAS, 6, 16
+inputsize, 150600, 1.9060256481170654, baumWelch, BLAS, 6, 16
+inputsize, 150600, 1.9415855407714844, baumWelch, BLAS, 6, 16
+inputsize, 150600, 1.932959794998169, baumWelch, BLAS, 6, 16
+inputsize, 150600, 1.8973264694213867, baumWelch, BLAS, 6, 16
+inputsize, 150600, 1.9193072319030762, baumWelch, BLAS, 6, 16
+inputsize, 600, 0.000659942626953125, posteriorDecoding, Conventional, , 8
+inputsize, 600, 0.000682830810546875, posteriorDecoding, Conventional, , 8
+inputsize, 600, 0.0006670951843261719, posteriorDecoding, Conventional, , 8
+inputsize, 600, 0.0006442070007324219, posteriorDecoding, Conventional, , 8
+inputsize, 600, 0.0006475448608398438, posteriorDecoding, Conventional, , 8
+inputsize, 30600, 0.037445068359375, posteriorDecoding, Conventional, , 8
+inputsize, 30600, 0.0373232364654541, posteriorDecoding, Conventional, , 8
+inputsize, 30600, 0.03726673126220703, posteriorDecoding, Conventional, , 8
+inputsize, 30600, 0.03649735450744629, posteriorDecoding, Conventional, , 8
+inputsize, 30600, 0.03771710395812988, posteriorDecoding, Conventional, , 8
+inputsize, 60600, 0.07309508323669434, posteriorDecoding, Conventional, , 8
+inputsize, 60600, 0.07278084754943848, posteriorDecoding, Conventional, , 8
+inputsize, 60600, 0.07282638549804688, posteriorDecoding, Conventional, , 8
+inputsize, 60600, 0.07281827926635742, posteriorDecoding, Conventional, , 8
+inputsize, 60600, 0.07287287712097168, posteriorDecoding, Conventional, , 8
+inputsize, 90600, 0.10994887351989746, posteriorDecoding, Conventional, , 8
+inputsize, 90600, 0.10860967636108398, posteriorDecoding, Conventional, , 8
+inputsize, 90600, 0.10845756530761719, posteriorDecoding, Conventional, , 8
+inputsize, 90600, 0.10899472236633301, posteriorDecoding, Conventional, , 8
+inputsize, 90600, 0.10991668701171875, posteriorDecoding, Conventional, , 8
+inputsize, 120600, 0.14682507514953613, posteriorDecoding, Conventional, , 8
+inputsize, 120600, 0.14506769180297852, posteriorDecoding, Conventional, , 8
+inputsize, 120600, 0.14699244499206543, posteriorDecoding, Conventional, , 8
+inputsize, 120600, 0.14494895935058594, posteriorDecoding, Conventional, , 8
+inputsize, 120600, 0.1448519229888916, posteriorDecoding, Conventional, , 8
+inputsize, 150600, 0.1830446720123291, posteriorDecoding, Conventional, , 8
+inputsize, 150600, 0.18105769157409668, posteriorDecoding, Conventional, , 8
+inputsize, 150600, 0.1810441017150879, posteriorDecoding, Conventional, , 8
+inputsize, 150600, 0.18153119087219238, posteriorDecoding, Conventional, , 8
+inputsize, 150600, 0.18126463890075684, posteriorDecoding, Conventional, , 8
+inputsize, 600, 0.001018524169921875, forward, Conventional, , 8
+inputsize, 600, 0.0009613037109375, forward, Conventional, , 8
+inputsize, 600, 0.0009844303131103516, forward, Conventional, , 8
+inputsize, 600, 0.0009591579437255859, forward, Conventional, , 8
+inputsize, 600, 0.0009739398956298828, forward, Conventional, , 8
+inputsize, 30600, 0.056667327880859375, forward, Conventional, , 8
+inputsize, 30600, 0.05736541748046875, forward, Conventional, , 8
+inputsize, 30600, 0.05664944648742676, forward, Conventional, , 8
+inputsize, 30600, 0.058577775955200195, forward, Conventional, , 8
+inputsize, 30600, 0.0551600456237793, forward, Conventional, , 8
+inputsize, 60600, 0.11084961891174316, forward, Conventional, , 8
+inputsize, 60600, 0.1085653305053711, forward, Conventional, , 8
+inputsize, 60600, 0.10865998268127441, forward, Conventional, , 8
+inputsize, 60600, 0.10869050025939941, forward, Conventional, , 8
+inputsize, 60600, 0.11032962799072266, forward, Conventional, , 8
+inputsize, 90600, 0.16496801376342773, forward, Conventional, , 8
+inputsize, 90600, 0.16202688217163086, forward, Conventional, , 8
+inputsize, 90600, 0.16186738014221191, forward, Conventional, , 8
+inputsize, 90600, 0.16220498085021973, forward, Conventional, , 8
+inputsize, 90600, 0.16199684143066406, forward, Conventional, , 8
+inputsize, 120600, 0.21865415573120117, forward, Conventional, , 8
+inputsize, 120600, 0.22231411933898926, forward, Conventional, , 8
+inputsize, 120600, 0.21964526176452637, forward, Conventional, , 8
+inputsize, 120600, 0.21747684478759766, forward, Conventional, , 8
+inputsize, 120600, 0.2191174030303955, forward, Conventional, , 8
+inputsize, 150600, 0.27179551124572754, forward, Conventional, , 8
+inputsize, 150600, 0.26916933059692383, forward, Conventional, , 8
+inputsize, 150600, 0.26837897300720215, forward, Conventional, , 8
+inputsize, 150600, 0.2681267261505127, forward, Conventional, , 8
+inputsize, 150600, 0.2698090076446533, forward, Conventional, , 8
+inputsize, 600, 0.0011861324310302734, backward_time, Conventional, , 8
+inputsize, 600, 0.0011713504791259766, backward_time, Conventional, , 8
+inputsize, 600, 0.0011970996856689453, backward_time, Conventional, , 8
+inputsize, 600, 0.0011343955993652344, backward_time, Conventional, , 8
+inputsize, 600, 0.0011515617370605469, backward_time, Conventional, , 8
+inputsize, 30600, 0.06263947486877441, backward_time, Conventional, , 8
+inputsize, 30600, 0.06081676483154297, backward_time, Conventional, , 8
+inputsize, 30600, 0.0606381893157959, backward_time, Conventional, , 8
+inputsize, 30600, 0.06028389930725098, backward_time, Conventional, , 8
+inputsize, 30600, 0.059682607650756836, backward_time, Conventional, , 8
+inputsize, 60600, 0.12105488777160645, backward_time, Conventional, , 8
+inputsize, 60600, 0.11841964721679688, backward_time, Conventional, , 8
+inputsize, 60600, 0.11910748481750488, backward_time, Conventional, , 8
+inputsize, 60600, 0.11894369125366211, backward_time, Conventional, , 8
+inputsize, 60600, 0.1192774772644043, backward_time, Conventional, , 8
+inputsize, 90600, 0.1785106658935547, backward_time, Conventional, , 8
+inputsize, 90600, 0.17637062072753906, backward_time, Conventional, , 8
+inputsize, 90600, 0.1763007640838623, backward_time, Conventional, , 8
+inputsize, 90600, 0.17763209342956543, backward_time, Conventional, , 8
+inputsize, 90600, 0.1762409210205078, backward_time, Conventional, , 8
+inputsize, 120600, 0.2355213165283203, backward_time, Conventional, , 8
+inputsize, 120600, 0.23892927169799805, backward_time, Conventional, , 8
+inputsize, 120600, 0.23495817184448242, backward_time, Conventional, , 8
+inputsize, 120600, 0.2369701862335205, backward_time, Conventional, , 8
+inputsize, 120600, 0.23661160469055176, backward_time, Conventional, , 8
+inputsize, 150600, 0.2959902286529541, backward_time, Conventional, , 8
+inputsize, 150600, 0.29552197456359863, backward_time, Conventional, , 8
+inputsize, 150600, 0.2980623245239258, backward_time, Conventional, , 8
+inputsize, 150600, 0.29772186279296875, backward_time, Conventional, , 8
+inputsize, 150600, 0.294384241104126, backward_time, Conventional, , 8
+inputsize, 600, 0.0012366771697998047, backward_time, Conventional, , 8
+inputsize, 600, 0.001134634017944336, backward_time, Conventional, , 8
+inputsize, 600, 0.001134634017944336, backward_time, Conventional, , 8
+inputsize, 600, 0.0011434555053710938, backward_time, Conventional, , 8
+inputsize, 600, 0.0011396408081054688, backward_time, Conventional, , 8
+inputsize, 30600, 0.06272029876708984, backward_time, Conventional, , 8
+inputsize, 30600, 0.06077861785888672, backward_time, Conventional, , 8
+inputsize, 30600, 0.059894561767578125, backward_time, Conventional, , 8
+inputsize, 30600, 0.06103825569152832, backward_time, Conventional, , 8
+inputsize, 30600, 0.059871673583984375, backward_time, Conventional, , 8
+inputsize, 60600, 0.11970281600952148, backward_time, Conventional, , 8
+inputsize, 60600, 0.1191413402557373, backward_time, Conventional, , 8
+inputsize, 60600, 0.11977291107177734, backward_time, Conventional, , 8
+inputsize, 60600, 0.11902976036071777, backward_time, Conventional, , 8
+inputsize, 60600, 0.11868977546691895, backward_time, Conventional, , 8
+inputsize, 90600, 0.17885565757751465, backward_time, Conventional, , 8
+inputsize, 90600, 0.17699241638183594, backward_time, Conventional, , 8
+inputsize, 90600, 0.1847696304321289, backward_time, Conventional, , 8
+inputsize, 90600, 0.18428492546081543, backward_time, Conventional, , 8
+inputsize, 90600, 0.17736577987670898, backward_time, Conventional, , 8
+inputsize, 120600, 0.2376081943511963, backward_time, Conventional, , 8
+inputsize, 120600, 0.23659992218017578, backward_time, Conventional, , 8
+inputsize, 120600, 0.23601627349853516, backward_time, Conventional, , 8
+inputsize, 120600, 0.2355189323425293, backward_time, Conventional, , 8
+inputsize, 120600, 0.23462176322937012, backward_time, Conventional, , 8
+inputsize, 150600, 0.29802942276000977, backward_time, Conventional, , 8
+inputsize, 150600, 0.29939913749694824, backward_time, Conventional, , 8
+inputsize, 150600, 0.29560041427612305, backward_time, Conventional, , 8
+inputsize, 150600, 0.2954671382904053, backward_time, Conventional, , 8
+inputsize, 150600, 0.2976691722869873, backward_time, Conventional, , 8
+inputsize, 600, 0.001455068588256836, baumWelch, Conventional, 1, 8
+inputsize, 600, 0.0014967918395996094, baumWelch, Conventional, 1, 8
+inputsize, 600, 0.0014324188232421875, baumWelch, Conventional, 1, 8
+inputsize, 600, 0.0014603137969970703, baumWelch, Conventional, 1, 8
+inputsize, 600, 0.0014641284942626953, baumWelch, Conventional, 1, 8
+inputsize, 30600, 0.08533596992492676, baumWelch, Conventional, 1, 8
+inputsize, 30600, 0.08423376083374023, baumWelch, Conventional, 1, 8
+inputsize, 30600, 0.08442258834838867, baumWelch, Conventional, 1, 8
+inputsize, 30600, 0.08415699005126953, baumWelch, Conventional, 1, 8
+inputsize, 30600, 0.08404064178466797, baumWelch, Conventional, 1, 8
+inputsize, 60600, 0.1729142665863037, baumWelch, Conventional, 1, 8
+inputsize, 60600, 0.17202019691467285, baumWelch, Conventional, 1, 8
+inputsize, 60600, 0.17157864570617676, baumWelch, Conventional, 1, 8
+inputsize, 60600, 0.1736159324645996, baumWelch, Conventional, 1, 8
+inputsize, 60600, 0.17180347442626953, baumWelch, Conventional, 1, 8
+inputsize, 90600, 0.2661457061767578, baumWelch, Conventional, 1, 8
+inputsize, 90600, 0.26349568367004395, baumWelch, Conventional, 1, 8
+inputsize, 90600, 0.26320433616638184, baumWelch, Conventional, 1, 8
+inputsize, 90600, 0.2642242908477783, baumWelch, Conventional, 1, 8
+inputsize, 90600, 0.2631857395172119, baumWelch, Conventional, 1, 8
+inputsize, 120600, 0.355940580368042, baumWelch, Conventional, 1, 8
+inputsize, 120600, 0.3569514751434326, baumWelch, Conventional, 1, 8
+inputsize, 120600, 0.35547542572021484, baumWelch, Conventional, 1, 8
+inputsize, 120600, 0.3605501651763916, baumWelch, Conventional, 1, 8
+inputsize, 120600, 0.3548891544342041, baumWelch, Conventional, 1, 8
+inputsize, 150600, 0.4471006393432617, baumWelch, Conventional, 1, 8
+inputsize, 150600, 0.45052433013916016, baumWelch, Conventional, 1, 8
+inputsize, 150600, 0.44902825355529785, baumWelch, Conventional, 1, 8
+inputsize, 150600, 0.446030855178833, baumWelch, Conventional, 1, 8
+inputsize, 150600, 0.44650769233703613, baumWelch, Conventional, 1, 8
+inputsize, 600, 0.0014863014221191406, baumWelch, Conventional, 2, 8
+inputsize, 600, 0.0014309883117675781, baumWelch, Conventional, 2, 8
+inputsize, 600, 0.0014545917510986328, baumWelch, Conventional, 2, 8
+inputsize, 600, 0.0014636516571044922, baumWelch, Conventional, 2, 8
+inputsize, 600, 0.00142669677734375, baumWelch, Conventional, 2, 8
+inputsize, 30600, 0.08529353141784668, baumWelch, Conventional, 2, 8
+inputsize, 30600, 0.08510994911193848, baumWelch, Conventional, 2, 8
+inputsize, 30600, 0.08857250213623047, baumWelch, Conventional, 2, 8
+inputsize, 30600, 0.09192419052124023, baumWelch, Conventional, 2, 8
+inputsize, 30600, 0.08640027046203613, baumWelch, Conventional, 2, 8
+inputsize, 60600, 0.1752631664276123, baumWelch, Conventional, 2, 8
+inputsize, 60600, 0.17395901679992676, baumWelch, Conventional, 2, 8
+inputsize, 60600, 0.1744232177734375, baumWelch, Conventional, 2, 8
+inputsize, 60600, 0.17525911331176758, baumWelch, Conventional, 2, 8
+inputsize, 60600, 0.17282462120056152, baumWelch, Conventional, 2, 8
+inputsize, 90600, 0.26653027534484863, baumWelch, Conventional, 2, 8
+inputsize, 90600, 0.26302289962768555, baumWelch, Conventional, 2, 8
+inputsize, 90600, 0.2641623020172119, baumWelch, Conventional, 2, 8
+inputsize, 90600, 0.26795196533203125, baumWelch, Conventional, 2, 8
+inputsize, 90600, 0.26349949836730957, baumWelch, Conventional, 2, 8
+inputsize, 120600, 0.3579397201538086, baumWelch, Conventional, 2, 8
+inputsize, 120600, 0.35588741302490234, baumWelch, Conventional, 2, 8
+inputsize, 120600, 0.35627079010009766, baumWelch, Conventional, 2, 8
+inputsize, 120600, 0.35613179206848145, baumWelch, Conventional, 2, 8
+inputsize, 120600, 0.3580820560455322, baumWelch, Conventional, 2, 8
+inputsize, 150600, 0.4492347240447998, baumWelch, Conventional, 2, 8
+inputsize, 150600, 0.4482848644256592, baumWelch, Conventional, 2, 8
+inputsize, 150600, 0.447343111038208, baumWelch, Conventional, 2, 8
+inputsize, 150600, 0.4466214179992676, baumWelch, Conventional, 2, 8
+inputsize, 150600, 0.44916796684265137, baumWelch, Conventional, 2, 8
+inputsize, 600, 0.0015087127685546875, baumWelch, Conventional, 3, 8
+inputsize, 600, 0.0014407634735107422, baumWelch, Conventional, 3, 8
+inputsize, 600, 0.0015134811401367188, baumWelch, Conventional, 3, 8
+inputsize, 600, 0.0014379024505615234, baumWelch, Conventional, 3, 8
+inputsize, 600, 0.0014643669128417969, baumWelch, Conventional, 3, 8
+inputsize, 30600, 0.08551883697509766, baumWelch, Conventional, 3, 8
+inputsize, 30600, 0.08493256568908691, baumWelch, Conventional, 3, 8
+inputsize, 30600, 0.08487296104431152, baumWelch, Conventional, 3, 8
+inputsize, 30600, 0.08459877967834473, baumWelch, Conventional, 3, 8
+inputsize, 30600, 0.0840449333190918, baumWelch, Conventional, 3, 8
+inputsize, 60600, 0.17549347877502441, baumWelch, Conventional, 3, 8
+inputsize, 60600, 0.1729288101196289, baumWelch, Conventional, 3, 8
+inputsize, 60600, 0.17312169075012207, baumWelch, Conventional, 3, 8
+inputsize, 60600, 0.17193841934204102, baumWelch, Conventional, 3, 8
+inputsize, 60600, 0.17348241806030273, baumWelch, Conventional, 3, 8
+inputsize, 90600, 0.26569676399230957, baumWelch, Conventional, 3, 8
+inputsize, 90600, 0.26500868797302246, baumWelch, Conventional, 3, 8
+inputsize, 90600, 0.265887975692749, baumWelch, Conventional, 3, 8
+inputsize, 90600, 0.26451849937438965, baumWelch, Conventional, 3, 8
+inputsize, 90600, 0.26336026191711426, baumWelch, Conventional, 3, 8
+inputsize, 120600, 0.3556559085845947, baumWelch, Conventional, 3, 8
+inputsize, 120600, 0.3575770854949951, baumWelch, Conventional, 3, 8
+inputsize, 120600, 0.36548280715942383, baumWelch, Conventional, 3, 8
+inputsize, 120600, 0.35528039932250977, baumWelch, Conventional, 3, 8
+inputsize, 120600, 0.35587191581726074, baumWelch, Conventional, 3, 8
+inputsize, 150600, 0.44845008850097656, baumWelch, Conventional, 3, 8
+inputsize, 150600, 0.4489562511444092, baumWelch, Conventional, 3, 8
+inputsize, 150600, 0.45557475090026855, baumWelch, Conventional, 3, 8
+inputsize, 150600, 0.4481034278869629, baumWelch, Conventional, 3, 8
+inputsize, 150600, 0.44763994216918945, baumWelch, Conventional, 3, 8
+inputsize, 600, 0.0015320777893066406, baumWelch, Conventional, 4, 8
+inputsize, 600, 0.0014758110046386719, baumWelch, Conventional, 4, 8
+inputsize, 600, 0.0014386177062988281, baumWelch, Conventional, 4, 8
+inputsize, 600, 0.0014371871948242188, baumWelch, Conventional, 4, 8
+inputsize, 600, 0.0014636516571044922, baumWelch, Conventional, 4, 8
+inputsize, 30600, 0.08534002304077148, baumWelch, Conventional, 4, 8
+inputsize, 30600, 0.0849771499633789, baumWelch, Conventional, 4, 8
+inputsize, 30600, 0.08479833602905273, baumWelch, Conventional, 4, 8
+inputsize, 30600, 0.08404016494750977, baumWelch, Conventional, 4, 8
+inputsize, 30600, 0.0841054916381836, baumWelch, Conventional, 4, 8
+inputsize, 60600, 0.17492413520812988, baumWelch, Conventional, 4, 8
+inputsize, 60600, 0.1731092929840088, baumWelch, Conventional, 4, 8
+inputsize, 60600, 0.1753532886505127, baumWelch, Conventional, 4, 8
+inputsize, 60600, 0.17237401008605957, baumWelch, Conventional, 4, 8
+inputsize, 60600, 0.17197227478027344, baumWelch, Conventional, 4, 8
+inputsize, 90600, 0.26753926277160645, baumWelch, Conventional, 4, 8
+inputsize, 90600, 0.26432013511657715, baumWelch, Conventional, 4, 8
+inputsize, 90600, 0.2649235725402832, baumWelch, Conventional, 4, 8
+inputsize, 90600, 0.26347899436950684, baumWelch, Conventional, 4, 8
+inputsize, 90600, 0.26484036445617676, baumWelch, Conventional, 4, 8
+inputsize, 120600, 0.36063122749328613, baumWelch, Conventional, 4, 8
+inputsize, 120600, 0.3558349609375, baumWelch, Conventional, 4, 8
+inputsize, 120600, 0.35689854621887207, baumWelch, Conventional, 4, 8
+inputsize, 120600, 0.35682201385498047, baumWelch, Conventional, 4, 8
+inputsize, 120600, 0.35587334632873535, baumWelch, Conventional, 4, 8
+inputsize, 150600, 0.4464833736419678, baumWelch, Conventional, 4, 8
+inputsize, 150600, 0.4477114677429199, baumWelch, Conventional, 4, 8
+inputsize, 150600, 0.4459667205810547, baumWelch, Conventional, 4, 8
+inputsize, 150600, 0.44659876823425293, baumWelch, Conventional, 4, 8
+inputsize, 150600, 0.44615769386291504, baumWelch, Conventional, 4, 8
+inputsize, 600, 0.0014896392822265625, baumWelch, Conventional, 5, 8
+inputsize, 600, 0.0015106201171875, baumWelch, Conventional, 5, 8
+inputsize, 600, 0.0014781951904296875, baumWelch, Conventional, 5, 8
+inputsize, 600, 0.0014657974243164062, baumWelch, Conventional, 5, 8
+inputsize, 600, 0.0014395713806152344, baumWelch, Conventional, 5, 8
+inputsize, 30600, 0.08749222755432129, baumWelch, Conventional, 5, 8
+inputsize, 30600, 0.08792543411254883, baumWelch, Conventional, 5, 8
+inputsize, 30600, 0.08575820922851562, baumWelch, Conventional, 5, 8
+inputsize, 30600, 0.08757567405700684, baumWelch, Conventional, 5, 8
+inputsize, 30600, 0.08520841598510742, baumWelch, Conventional, 5, 8
+inputsize, 60600, 0.1739668846130371, baumWelch, Conventional, 5, 8
+inputsize, 60600, 0.17368221282958984, baumWelch, Conventional, 5, 8
+inputsize, 60600, 0.1725304126739502, baumWelch, Conventional, 5, 8
+inputsize, 60600, 0.1723802089691162, baumWelch, Conventional, 5, 8
+inputsize, 60600, 0.17267799377441406, baumWelch, Conventional, 5, 8
+inputsize, 90600, 0.26321959495544434, baumWelch, Conventional, 5, 8
+inputsize, 90600, 0.26184582710266113, baumWelch, Conventional, 5, 8
+inputsize, 90600, 0.2661006450653076, baumWelch, Conventional, 5, 8
+inputsize, 90600, 0.2644820213317871, baumWelch, Conventional, 5, 8
+inputsize, 90600, 0.2621924877166748, baumWelch, Conventional, 5, 8
+inputsize, 120600, 0.3571782112121582, baumWelch, Conventional, 5, 8
+inputsize, 120600, 0.3570108413696289, baumWelch, Conventional, 5, 8
+inputsize, 120600, 0.35508108139038086, baumWelch, Conventional, 5, 8
+inputsize, 120600, 0.35487818717956543, baumWelch, Conventional, 5, 8
+inputsize, 120600, 0.35959553718566895, baumWelch, Conventional, 5, 8
+inputsize, 150600, 0.4474029541015625, baumWelch, Conventional, 5, 8
+inputsize, 150600, 0.44509172439575195, baumWelch, Conventional, 5, 8
+inputsize, 150600, 0.44559407234191895, baumWelch, Conventional, 5, 8
+inputsize, 150600, 0.4470210075378418, baumWelch, Conventional, 5, 8
+inputsize, 150600, 0.44655895233154297, baumWelch, Conventional, 5, 8
+inputsize, 600, 0.0014767646789550781, baumWelch, Conventional, 6, 8
+inputsize, 600, 0.0014734268188476562, baumWelch, Conventional, 6, 8
+inputsize, 600, 0.001440286636352539, baumWelch, Conventional, 6, 8
+inputsize, 600, 0.0014390945434570312, baumWelch, Conventional, 6, 8
+inputsize, 600, 0.0014770030975341797, baumWelch, Conventional, 6, 8
+inputsize, 30600, 0.08698773384094238, baumWelch, Conventional, 6, 8
+inputsize, 30600, 0.08530354499816895, baumWelch, Conventional, 6, 8
+inputsize, 30600, 0.08631610870361328, baumWelch, Conventional, 6, 8
+inputsize, 30600, 0.08630609512329102, baumWelch, Conventional, 6, 8
+inputsize, 30600, 0.08548903465270996, baumWelch, Conventional, 6, 8
+inputsize, 60600, 0.1749417781829834, baumWelch, Conventional, 6, 8
+inputsize, 60600, 0.17363762855529785, baumWelch, Conventional, 6, 8
+inputsize, 60600, 0.17341256141662598, baumWelch, Conventional, 6, 8
+inputsize, 60600, 0.17289280891418457, baumWelch, Conventional, 6, 8
+inputsize, 60600, 0.17325282096862793, baumWelch, Conventional, 6, 8
+inputsize, 90600, 0.2668166160583496, baumWelch, Conventional, 6, 8
+inputsize, 90600, 0.26311683654785156, baumWelch, Conventional, 6, 8
+inputsize, 90600, 0.26390790939331055, baumWelch, Conventional, 6, 8
+inputsize, 90600, 0.2623255252838135, baumWelch, Conventional, 6, 8
+inputsize, 90600, 0.2628045082092285, baumWelch, Conventional, 6, 8
+inputsize, 120600, 0.35341787338256836, baumWelch, Conventional, 6, 8
+inputsize, 120600, 0.3577442169189453, baumWelch, Conventional, 6, 8
+inputsize, 120600, 0.3675119876861572, baumWelch, Conventional, 6, 8
+inputsize, 120600, 0.35417795181274414, baumWelch, Conventional, 6, 8
+inputsize, 120600, 0.35388755798339844, baumWelch, Conventional, 6, 8
+inputsize, 150600, 0.4464542865753174, baumWelch, Conventional, 6, 8
+inputsize, 150600, 0.4475522041320801, baumWelch, Conventional, 6, 8
+inputsize, 150600, 0.45025181770324707, baumWelch, Conventional, 6, 8
+inputsize, 150600, 0.44727516174316406, baumWelch, Conventional, 6, 8
+inputsize, 150600, 0.445087194442749, baumWelch, Conventional, 6, 8
+inputsize, 600, 0.0007855892181396484, posteriorDecoding, Conventional sparse, , 8
+inputsize, 600, 0.0007545948028564453, posteriorDecoding, Conventional sparse, , 8
+inputsize, 600, 0.0007889270782470703, posteriorDecoding, Conventional sparse, , 8
+inputsize, 600, 0.00075531005859375, posteriorDecoding, Conventional sparse, , 8
+inputsize, 600, 0.00075531005859375, posteriorDecoding, Conventional sparse, , 8
+inputsize, 30600, 0.044981956481933594, posteriorDecoding, Conventional sparse, , 8
+inputsize, 30600, 0.04330039024353027, posteriorDecoding, Conventional sparse, , 8
+inputsize, 30600, 0.043123722076416016, posteriorDecoding, Conventional sparse, , 8
+inputsize, 30600, 0.04372406005859375, posteriorDecoding, Conventional sparse, , 8
+inputsize, 30600, 0.04320526123046875, posteriorDecoding, Conventional sparse, , 8
+inputsize, 60600, 0.08559489250183105, posteriorDecoding, Conventional sparse, , 8
+inputsize, 60600, 0.0852057933807373, posteriorDecoding, Conventional sparse, , 8
+inputsize, 60600, 0.0857236385345459, posteriorDecoding, Conventional sparse, , 8
+inputsize, 60600, 0.08533644676208496, posteriorDecoding, Conventional sparse, , 8
+inputsize, 60600, 0.08550858497619629, posteriorDecoding, Conventional sparse, , 8
+inputsize, 90600, 0.1293034553527832, posteriorDecoding, Conventional sparse, , 8
+inputsize, 90600, 0.12841320037841797, posteriorDecoding, Conventional sparse, , 8
+inputsize, 90600, 0.12726235389709473, posteriorDecoding, Conventional sparse, , 8
+inputsize, 90600, 0.12669134140014648, posteriorDecoding, Conventional sparse, , 8
+inputsize, 90600, 0.1267397403717041, posteriorDecoding, Conventional sparse, , 8
+inputsize, 120600, 0.17098164558410645, posteriorDecoding, Conventional sparse, , 8
+inputsize, 120600, 0.16862964630126953, posteriorDecoding, Conventional sparse, , 8
+inputsize, 120600, 0.16925263404846191, posteriorDecoding, Conventional sparse, , 8
+inputsize, 120600, 0.16899847984313965, posteriorDecoding, Conventional sparse, , 8
+inputsize, 120600, 0.16892004013061523, posteriorDecoding, Conventional sparse, , 8
+inputsize, 150600, 0.21161222457885742, posteriorDecoding, Conventional sparse, , 8
+inputsize, 150600, 0.21132183074951172, posteriorDecoding, Conventional sparse, , 8
+inputsize, 150600, 0.21027922630310059, posteriorDecoding, Conventional sparse, , 8
+inputsize, 150600, 0.21179986000061035, posteriorDecoding, Conventional sparse, , 8
+inputsize, 150600, 0.2113025188446045, posteriorDecoding, Conventional sparse, , 8
+inputsize, 600, 0.0010690689086914062, forward, Conventional sparse, , 8
+inputsize, 600, 0.001020669937133789, forward, Conventional sparse, , 8
+inputsize, 600, 0.0010631084442138672, forward, Conventional sparse, , 8
+inputsize, 600, 0.0010082721710205078, forward, Conventional sparse, , 8
+inputsize, 600, 0.0010073184967041016, forward, Conventional sparse, , 8
+inputsize, 30600, 0.05889749526977539, forward, Conventional sparse, , 8
+inputsize, 30600, 0.05821657180786133, forward, Conventional sparse, , 8
+inputsize, 30600, 0.05835676193237305, forward, Conventional sparse, , 8
+inputsize, 30600, 0.058035850524902344, forward, Conventional sparse, , 8
+inputsize, 30600, 0.057939767837524414, forward, Conventional sparse, , 8
+inputsize, 60600, 0.11618733406066895, forward, Conventional sparse, , 8
+inputsize, 60600, 0.1163935661315918, forward, Conventional sparse, , 8
+inputsize, 60600, 0.11609077453613281, forward, Conventional sparse, , 8
+inputsize, 60600, 0.11539506912231445, forward, Conventional sparse, , 8
+inputsize, 60600, 0.1158907413482666, forward, Conventional sparse, , 8
+inputsize, 90600, 0.1731877326965332, forward, Conventional sparse, , 8
+inputsize, 90600, 0.1727614402770996, forward, Conventional sparse, , 8
+inputsize, 90600, 0.1698291301727295, forward, Conventional sparse, , 8
+inputsize, 90600, 0.16977548599243164, forward, Conventional sparse, , 8
+inputsize, 90600, 0.1720888614654541, forward, Conventional sparse, , 8
+inputsize, 120600, 0.22959303855895996, forward, Conventional sparse, , 8
+inputsize, 120600, 0.22871160507202148, forward, Conventional sparse, , 8
+inputsize, 120600, 0.22882819175720215, forward, Conventional sparse, , 8
+inputsize, 120600, 0.22770380973815918, forward, Conventional sparse, , 8
+inputsize, 120600, 0.22817420959472656, forward, Conventional sparse, , 8
+inputsize, 150600, 0.2855980396270752, forward, Conventional sparse, , 8
+inputsize, 150600, 0.2940680980682373, forward, Conventional sparse, , 8
+inputsize, 150600, 0.28832054138183594, forward, Conventional sparse, , 8
+inputsize, 150600, 0.2838888168334961, forward, Conventional sparse, , 8
+inputsize, 150600, 0.28641366958618164, forward, Conventional sparse, , 8
+inputsize, 600, 0.0012269020080566406, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.0011870861053466797, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.0011851787567138672, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.001216888427734375, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.0011968612670898438, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06510496139526367, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06369614601135254, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06354594230651855, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06352639198303223, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06411623954772949, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.12756872177124023, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.1265864372253418, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.12604212760925293, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.12780380249023438, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.12694191932678223, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.19025421142578125, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.19034194946289062, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.18808197975158691, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.18860363960266113, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.18894696235656738, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.25147271156311035, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.2502734661102295, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.25139498710632324, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.25129246711730957, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.24932336807250977, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.31346774101257324, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.3133547306060791, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.3126945495605469, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.31256747245788574, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.3126058578491211, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.0011959075927734375, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.001188516616821289, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.001233816146850586, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.0011904239654541016, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.0011882781982421875, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06437945365905762, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06406331062316895, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06355738639831543, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06328725814819336, backward_time, Conventional sparse, , 8
+inputsize, 30600, 0.06325411796569824, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.12583708763122559, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.1263730525970459, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.12636017799377441, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.12461638450622559, backward_time, Conventional sparse, , 8
+inputsize, 60600, 0.1244668960571289, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.1879420280456543, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.1910092830657959, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.1866607666015625, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.18738341331481934, backward_time, Conventional sparse, , 8
+inputsize, 90600, 0.1867828369140625, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.2514359951019287, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.258944034576416, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.2552452087402344, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.25498008728027344, backward_time, Conventional sparse, , 8
+inputsize, 120600, 0.25617432594299316, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.3128478527069092, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.31318187713623047, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.31089353561401367, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.3184497356414795, backward_time, Conventional sparse, , 8
+inputsize, 150600, 0.3137195110321045, backward_time, Conventional sparse, , 8
+inputsize, 600, 0.0016405582427978516, baumWelch, Conventional sparse, 1, 8
+inputsize, 600, 0.0015485286712646484, baumWelch, Conventional sparse, 1, 8
+inputsize, 600, 0.0015439987182617188, baumWelch, Conventional sparse, 1, 8
+inputsize, 600, 0.0015690326690673828, baumWelch, Conventional sparse, 1, 8
+inputsize, 600, 0.0015540122985839844, baumWelch, Conventional sparse, 1, 8
+inputsize, 30600, 0.09283566474914551, baumWelch, Conventional sparse, 1, 8
+inputsize, 30600, 0.09080791473388672, baumWelch, Conventional sparse, 1, 8
+inputsize, 30600, 0.09056258201599121, baumWelch, Conventional sparse, 1, 8
+inputsize, 30600, 0.09085869789123535, baumWelch, Conventional sparse, 1, 8
+inputsize, 30600, 0.09039640426635742, baumWelch, Conventional sparse, 1, 8
+inputsize, 60600, 0.18654537200927734, baumWelch, Conventional sparse, 1, 8
+inputsize, 60600, 0.1834404468536377, baumWelch, Conventional sparse, 1, 8
+inputsize, 60600, 0.18381786346435547, baumWelch, Conventional sparse, 1, 8
+inputsize, 60600, 0.18897294998168945, baumWelch, Conventional sparse, 1, 8
+inputsize, 60600, 0.18372535705566406, baumWelch, Conventional sparse, 1, 8
+inputsize, 90600, 0.2855398654937744, baumWelch, Conventional sparse, 1, 8
+inputsize, 90600, 0.2814967632293701, baumWelch, Conventional sparse, 1, 8
+inputsize, 90600, 0.281111478805542, baumWelch, Conventional sparse, 1, 8
+inputsize, 90600, 0.2807126045227051, baumWelch, Conventional sparse, 1, 8
+inputsize, 90600, 0.2803218364715576, baumWelch, Conventional sparse, 1, 8
+inputsize, 120600, 0.38097071647644043, baumWelch, Conventional sparse, 1, 8
+inputsize, 120600, 0.37816333770751953, baumWelch, Conventional sparse, 1, 8
+inputsize, 120600, 0.37946581840515137, baumWelch, Conventional sparse, 1, 8
+inputsize, 120600, 0.379610538482666, baumWelch, Conventional sparse, 1, 8
+inputsize, 120600, 0.37817978858947754, baumWelch, Conventional sparse, 1, 8
+inputsize, 150600, 0.47539210319519043, baumWelch, Conventional sparse, 1, 8
+inputsize, 150600, 0.47925400733947754, baumWelch, Conventional sparse, 1, 8
+inputsize, 150600, 0.47477102279663086, baumWelch, Conventional sparse, 1, 8
+inputsize, 150600, 0.4768187999725342, baumWelch, Conventional sparse, 1, 8
+inputsize, 150600, 0.4752318859100342, baumWelch, Conventional sparse, 1, 8
+inputsize, 600, 0.0016007423400878906, baumWelch, Conventional sparse, 2, 8
+inputsize, 600, 0.0015475749969482422, baumWelch, Conventional sparse, 2, 8
+inputsize, 600, 0.001569986343383789, baumWelch, Conventional sparse, 2, 8
+inputsize, 600, 0.0015416145324707031, baumWelch, Conventional sparse, 2, 8
+inputsize, 600, 0.0015499591827392578, baumWelch, Conventional sparse, 2, 8
+inputsize, 30600, 0.09155774116516113, baumWelch, Conventional sparse, 2, 8
+inputsize, 30600, 0.09079384803771973, baumWelch, Conventional sparse, 2, 8
+inputsize, 30600, 0.0915830135345459, baumWelch, Conventional sparse, 2, 8
+inputsize, 30600, 0.09043097496032715, baumWelch, Conventional sparse, 2, 8
+inputsize, 30600, 0.09021735191345215, baumWelch, Conventional sparse, 2, 8
+inputsize, 60600, 0.18879270553588867, baumWelch, Conventional sparse, 2, 8
+inputsize, 60600, 0.18398380279541016, baumWelch, Conventional sparse, 2, 8
+inputsize, 60600, 0.18497014045715332, baumWelch, Conventional sparse, 2, 8
+inputsize, 60600, 0.1840953826904297, baumWelch, Conventional sparse, 2, 8
+inputsize, 60600, 0.1835789680480957, baumWelch, Conventional sparse, 2, 8
+inputsize, 90600, 0.28177881240844727, baumWelch, Conventional sparse, 2, 8
+inputsize, 90600, 0.28055787086486816, baumWelch, Conventional sparse, 2, 8
+inputsize, 90600, 0.27983832359313965, baumWelch, Conventional sparse, 2, 8
+inputsize, 90600, 0.2863132953643799, baumWelch, Conventional sparse, 2, 8
+inputsize, 90600, 0.28478169441223145, baumWelch, Conventional sparse, 2, 8
+inputsize, 120600, 0.37923336029052734, baumWelch, Conventional sparse, 2, 8
+inputsize, 120600, 0.37859320640563965, baumWelch, Conventional sparse, 2, 8
+inputsize, 120600, 0.3796553611755371, baumWelch, Conventional sparse, 2, 8
+inputsize, 120600, 0.38024044036865234, baumWelch, Conventional sparse, 2, 8
+inputsize, 120600, 0.3798823356628418, baumWelch, Conventional sparse, 2, 8
+inputsize, 150600, 0.4778313636779785, baumWelch, Conventional sparse, 2, 8
+inputsize, 150600, 0.475689172744751, baumWelch, Conventional sparse, 2, 8
+inputsize, 150600, 0.4734656810760498, baumWelch, Conventional sparse, 2, 8
+inputsize, 150600, 0.47785377502441406, baumWelch, Conventional sparse, 2, 8
+inputsize, 150600, 0.47577571868896484, baumWelch, Conventional sparse, 2, 8
+inputsize, 600, 0.0015978813171386719, baumWelch, Conventional sparse, 3, 8
+inputsize, 600, 0.0015788078308105469, baumWelch, Conventional sparse, 3, 8
+inputsize, 600, 0.0015451908111572266, baumWelch, Conventional sparse, 3, 8
+inputsize, 600, 0.0015819072723388672, baumWelch, Conventional sparse, 3, 8
+inputsize, 600, 0.0015645027160644531, baumWelch, Conventional sparse, 3, 8
+inputsize, 30600, 0.09158706665039062, baumWelch, Conventional sparse, 3, 8
+inputsize, 30600, 0.09033489227294922, baumWelch, Conventional sparse, 3, 8
+inputsize, 30600, 0.09025812149047852, baumWelch, Conventional sparse, 3, 8
+inputsize, 30600, 0.09028863906860352, baumWelch, Conventional sparse, 3, 8
+inputsize, 30600, 0.0900886058807373, baumWelch, Conventional sparse, 3, 8
+inputsize, 60600, 0.18521952629089355, baumWelch, Conventional sparse, 3, 8
+inputsize, 60600, 0.18401789665222168, baumWelch, Conventional sparse, 3, 8
+inputsize, 60600, 0.18436717987060547, baumWelch, Conventional sparse, 3, 8
+inputsize, 60600, 0.1845107078552246, baumWelch, Conventional sparse, 3, 8
+inputsize, 60600, 0.18337559700012207, baumWelch, Conventional sparse, 3, 8
+inputsize, 90600, 0.2852299213409424, baumWelch, Conventional sparse, 3, 8
+inputsize, 90600, 0.28078556060791016, baumWelch, Conventional sparse, 3, 8
+inputsize, 90600, 0.2855219841003418, baumWelch, Conventional sparse, 3, 8
+inputsize, 90600, 0.28011035919189453, baumWelch, Conventional sparse, 3, 8
+inputsize, 90600, 0.28040170669555664, baumWelch, Conventional sparse, 3, 8
+inputsize, 120600, 0.3798544406890869, baumWelch, Conventional sparse, 3, 8
+inputsize, 120600, 0.3819122314453125, baumWelch, Conventional sparse, 3, 8
+inputsize, 120600, 0.3785068988800049, baumWelch, Conventional sparse, 3, 8
+inputsize, 120600, 0.37922096252441406, baumWelch, Conventional sparse, 3, 8
+inputsize, 120600, 0.37851405143737793, baumWelch, Conventional sparse, 3, 8
+inputsize, 150600, 0.4802701473236084, baumWelch, Conventional sparse, 3, 8
+inputsize, 150600, 0.4810776710510254, baumWelch, Conventional sparse, 3, 8
+inputsize, 150600, 0.47688722610473633, baumWelch, Conventional sparse, 3, 8
+inputsize, 150600, 0.48178982734680176, baumWelch, Conventional sparse, 3, 8
+inputsize, 150600, 0.49391865730285645, baumWelch, Conventional sparse, 3, 8
+inputsize, 600, 0.001653432846069336, baumWelch, Conventional sparse, 4, 8
+inputsize, 600, 0.0015668869018554688, baumWelch, Conventional sparse, 4, 8
+inputsize, 600, 0.0015709400177001953, baumWelch, Conventional sparse, 4, 8
+inputsize, 600, 0.0015916824340820312, baumWelch, Conventional sparse, 4, 8
+inputsize, 600, 0.0015802383422851562, baumWelch, Conventional sparse, 4, 8
+inputsize, 30600, 0.09284377098083496, baumWelch, Conventional sparse, 4, 8
+inputsize, 30600, 0.09251952171325684, baumWelch, Conventional sparse, 4, 8
+inputsize, 30600, 0.0924677848815918, baumWelch, Conventional sparse, 4, 8
+inputsize, 30600, 0.09252691268920898, baumWelch, Conventional sparse, 4, 8
+inputsize, 30600, 0.09182524681091309, baumWelch, Conventional sparse, 4, 8
+inputsize, 60600, 0.18557476997375488, baumWelch, Conventional sparse, 4, 8
+inputsize, 60600, 0.18458986282348633, baumWelch, Conventional sparse, 4, 8
+inputsize, 60600, 0.1841738224029541, baumWelch, Conventional sparse, 4, 8
+inputsize, 60600, 0.18393421173095703, baumWelch, Conventional sparse, 4, 8
+inputsize, 60600, 0.18362164497375488, baumWelch, Conventional sparse, 4, 8
+inputsize, 90600, 0.29076075553894043, baumWelch, Conventional sparse, 4, 8
+inputsize, 90600, 0.2915356159210205, baumWelch, Conventional sparse, 4, 8
+inputsize, 90600, 0.2885913848876953, baumWelch, Conventional sparse, 4, 8
+inputsize, 90600, 0.2826271057128906, baumWelch, Conventional sparse, 4, 8
+inputsize, 90600, 0.29174137115478516, baumWelch, Conventional sparse, 4, 8
+inputsize, 120600, 0.3892185688018799, baumWelch, Conventional sparse, 4, 8
+inputsize, 120600, 0.38037657737731934, baumWelch, Conventional sparse, 4, 8
+inputsize, 120600, 0.3773493766784668, baumWelch, Conventional sparse, 4, 8
+inputsize, 120600, 0.3824911117553711, baumWelch, Conventional sparse, 4, 8
+inputsize, 120600, 0.3770134449005127, baumWelch, Conventional sparse, 4, 8
+inputsize, 150600, 0.4797642230987549, baumWelch, Conventional sparse, 4, 8
+inputsize, 150600, 0.47419309616088867, baumWelch, Conventional sparse, 4, 8
+inputsize, 150600, 0.4750382900238037, baumWelch, Conventional sparse, 4, 8
+inputsize, 150600, 0.47560882568359375, baumWelch, Conventional sparse, 4, 8
+inputsize, 150600, 0.4747896194458008, baumWelch, Conventional sparse, 4, 8
+inputsize, 600, 0.0015671253204345703, baumWelch, Conventional sparse, 5, 8
+inputsize, 600, 0.0015828609466552734, baumWelch, Conventional sparse, 5, 8
+inputsize, 600, 0.0015451908111572266, baumWelch, Conventional sparse, 5, 8
+inputsize, 600, 0.0015821456909179688, baumWelch, Conventional sparse, 5, 8
+inputsize, 600, 0.0015439987182617188, baumWelch, Conventional sparse, 5, 8
+inputsize, 30600, 0.09145927429199219, baumWelch, Conventional sparse, 5, 8
+inputsize, 30600, 0.09099912643432617, baumWelch, Conventional sparse, 5, 8
+inputsize, 30600, 0.09050226211547852, baumWelch, Conventional sparse, 5, 8
+inputsize, 30600, 0.09033060073852539, baumWelch, Conventional sparse, 5, 8
+inputsize, 30600, 0.09018516540527344, baumWelch, Conventional sparse, 5, 8
+inputsize, 60600, 0.18568825721740723, baumWelch, Conventional sparse, 5, 8
+inputsize, 60600, 0.1857461929321289, baumWelch, Conventional sparse, 5, 8
+inputsize, 60600, 0.19617605209350586, baumWelch, Conventional sparse, 5, 8
+inputsize, 60600, 0.18594717979431152, baumWelch, Conventional sparse, 5, 8
+inputsize, 60600, 0.183762788772583, baumWelch, Conventional sparse, 5, 8
+inputsize, 90600, 0.282346248626709, baumWelch, Conventional sparse, 5, 8
+inputsize, 90600, 0.2804720401763916, baumWelch, Conventional sparse, 5, 8
+inputsize, 90600, 0.28034186363220215, baumWelch, Conventional sparse, 5, 8
+inputsize, 90600, 0.280332088470459, baumWelch, Conventional sparse, 5, 8
+inputsize, 90600, 0.280353307723999, baumWelch, Conventional sparse, 5, 8
+inputsize, 120600, 0.3840827941894531, baumWelch, Conventional sparse, 5, 8
+inputsize, 120600, 0.3780064582824707, baumWelch, Conventional sparse, 5, 8
+inputsize, 120600, 0.37865185737609863, baumWelch, Conventional sparse, 5, 8
+inputsize, 120600, 0.3781619071960449, baumWelch, Conventional sparse, 5, 8
+inputsize, 120600, 0.37839412689208984, baumWelch, Conventional sparse, 5, 8
+inputsize, 150600, 0.4802427291870117, baumWelch, Conventional sparse, 5, 8
+inputsize, 150600, 0.47455358505249023, baumWelch, Conventional sparse, 5, 8
+inputsize, 150600, 0.47339582443237305, baumWelch, Conventional sparse, 5, 8
+inputsize, 150600, 0.47393059730529785, baumWelch, Conventional sparse, 5, 8
+inputsize, 150600, 0.47764039039611816, baumWelch, Conventional sparse, 5, 8
+inputsize, 600, 0.0015714168548583984, baumWelch, Conventional sparse, 6, 8
+inputsize, 600, 0.0015599727630615234, baumWelch, Conventional sparse, 6, 8
+inputsize, 600, 0.0015368461608886719, baumWelch, Conventional sparse, 6, 8
+inputsize, 600, 0.0015437602996826172, baumWelch, Conventional sparse, 6, 8
+inputsize, 600, 0.0015799999237060547, baumWelch, Conventional sparse, 6, 8
+inputsize, 30600, 0.09152650833129883, baumWelch, Conventional sparse, 6, 8
+inputsize, 30600, 0.09039545059204102, baumWelch, Conventional sparse, 6, 8
+inputsize, 30600, 0.09018492698669434, baumWelch, Conventional sparse, 6, 8
+inputsize, 30600, 0.09032273292541504, baumWelch, Conventional sparse, 6, 8
+inputsize, 30600, 0.09024214744567871, baumWelch, Conventional sparse, 6, 8
+inputsize, 60600, 0.18655657768249512, baumWelch, Conventional sparse, 6, 8
+inputsize, 60600, 0.18520784378051758, baumWelch, Conventional sparse, 6, 8
+inputsize, 60600, 0.18373584747314453, baumWelch, Conventional sparse, 6, 8
+inputsize, 60600, 0.1837444305419922, baumWelch, Conventional sparse, 6, 8
+inputsize, 60600, 0.18356084823608398, baumWelch, Conventional sparse, 6, 8
+inputsize, 90600, 0.28096604347229004, baumWelch, Conventional sparse, 6, 8
+inputsize, 90600, 0.2833857536315918, baumWelch, Conventional sparse, 6, 8
+inputsize, 90600, 0.28165721893310547, baumWelch, Conventional sparse, 6, 8
+inputsize, 90600, 0.28025174140930176, baumWelch, Conventional sparse, 6, 8
+inputsize, 90600, 0.28007006645202637, baumWelch, Conventional sparse, 6, 8
+inputsize, 120600, 0.3777937889099121, baumWelch, Conventional sparse, 6, 8
+inputsize, 120600, 0.37816429138183594, baumWelch, Conventional sparse, 6, 8
+inputsize, 120600, 0.38671445846557617, baumWelch, Conventional sparse, 6, 8
+inputsize, 120600, 0.3788025379180908, baumWelch, Conventional sparse, 6, 8
+inputsize, 120600, 0.37940239906311035, baumWelch, Conventional sparse, 6, 8
+inputsize, 150600, 0.4758286476135254, baumWelch, Conventional sparse, 6, 8
+inputsize, 150600, 0.4759840965270996, baumWelch, Conventional sparse, 6, 8
+inputsize, 150600, 0.4779839515686035, baumWelch, Conventional sparse, 6, 8
+inputsize, 150600, 0.4771597385406494, baumWelch, Conventional sparse, 6, 8
+inputsize, 150600, 0.4764437675476074, baumWelch, Conventional sparse, 6, 8
+inputsize, 600, 0.00034427642822265625, posteriorDecoding, BLAS, , 8
+inputsize, 600, 0.0002918243408203125, posteriorDecoding, BLAS, , 8
+inputsize, 600, 0.0002899169921875, posteriorDecoding, BLAS, , 8
+inputsize, 600, 0.0002989768981933594, posteriorDecoding, BLAS, , 8
+inputsize, 600, 0.00028514862060546875, posteriorDecoding, BLAS, , 8
+inputsize, 30600, 0.016911983489990234, posteriorDecoding, BLAS, , 8
+inputsize, 30600, 0.016633272171020508, posteriorDecoding, BLAS, , 8
+inputsize, 30600, 0.016660213470458984, posteriorDecoding, BLAS, , 8
+inputsize, 30600, 0.016505002975463867, posteriorDecoding, BLAS, , 8
+inputsize, 30600, 0.016149044036865234, posteriorDecoding, BLAS, , 8
+inputsize, 60600, 0.03273129463195801, posteriorDecoding, BLAS, , 8
+inputsize, 60600, 0.03258919715881348, posteriorDecoding, BLAS, , 8
+inputsize, 60600, 0.032892465591430664, posteriorDecoding, BLAS, , 8
+inputsize, 60600, 0.03278350830078125, posteriorDecoding, BLAS, , 8
+inputsize, 60600, 0.03251361846923828, posteriorDecoding, BLAS, , 8
+inputsize, 90600, 0.048998355865478516, posteriorDecoding, BLAS, , 8
+inputsize, 90600, 0.048281192779541016, posteriorDecoding, BLAS, , 8
+inputsize, 90600, 0.048134803771972656, posteriorDecoding, BLAS, , 8
+inputsize, 90600, 0.04843783378601074, posteriorDecoding, BLAS, , 8
+inputsize, 90600, 0.047597646713256836, posteriorDecoding, BLAS, , 8
+inputsize, 120600, 0.06445550918579102, posteriorDecoding, BLAS, , 8
+inputsize, 120600, 0.06391000747680664, posteriorDecoding, BLAS, , 8
+inputsize, 120600, 0.06379532814025879, posteriorDecoding, BLAS, , 8
+inputsize, 120600, 0.06359410285949707, posteriorDecoding, BLAS, , 8
+inputsize, 120600, 0.06466293334960938, posteriorDecoding, BLAS, , 8
+inputsize, 150600, 0.0805199146270752, posteriorDecoding, BLAS, , 8
+inputsize, 150600, 0.07961058616638184, posteriorDecoding, BLAS, , 8
+inputsize, 150600, 0.0796358585357666, posteriorDecoding, BLAS, , 8
+inputsize, 150600, 0.08010649681091309, posteriorDecoding, BLAS, , 8
+inputsize, 150600, 0.07967638969421387, posteriorDecoding, BLAS, , 8
+inputsize, 600, 0.0008962154388427734, forward, BLAS, , 8
+inputsize, 600, 0.00084686279296875, forward, BLAS, , 8
+inputsize, 600, 0.0008420944213867188, forward, BLAS, , 8
+inputsize, 600, 0.000865936279296875, forward, BLAS, , 8
+inputsize, 600, 0.0008411407470703125, forward, BLAS, , 8
+inputsize, 30600, 0.04934859275817871, forward, BLAS, , 8
+inputsize, 30600, 0.048531532287597656, forward, BLAS, , 8
+inputsize, 30600, 0.04865264892578125, forward, BLAS, , 8
+inputsize, 30600, 0.04866290092468262, forward, BLAS, , 8
+inputsize, 30600, 0.0485992431640625, forward, BLAS, , 8
+inputsize, 60600, 0.09442472457885742, forward, BLAS, , 8
+inputsize, 60600, 0.09554481506347656, forward, BLAS, , 8
+inputsize, 60600, 0.09368515014648438, forward, BLAS, , 8
+inputsize, 60600, 0.09429073333740234, forward, BLAS, , 8
+inputsize, 60600, 0.09349679946899414, forward, BLAS, , 8
+inputsize, 90600, 0.14316105842590332, forward, BLAS, , 8
+inputsize, 90600, 0.142838716506958, forward, BLAS, , 8
+inputsize, 90600, 0.14277148246765137, forward, BLAS, , 8
+inputsize, 90600, 0.14258289337158203, forward, BLAS, , 8
+inputsize, 90600, 0.14260578155517578, forward, BLAS, , 8
+inputsize, 120600, 0.20169305801391602, forward, BLAS, , 8
+inputsize, 120600, 0.1859726905822754, forward, BLAS, , 8
+inputsize, 120600, 0.1876983642578125, forward, BLAS, , 8
+inputsize, 120600, 0.18731307983398438, forward, BLAS, , 8
+inputsize, 120600, 0.18785357475280762, forward, BLAS, , 8
+inputsize, 150600, 0.237260103225708, forward, BLAS, , 8
+inputsize, 150600, 0.23526263236999512, forward, BLAS, , 8
+inputsize, 150600, 0.23423147201538086, forward, BLAS, , 8
+inputsize, 150600, 0.2347116470336914, forward, BLAS, , 8
+inputsize, 150600, 0.23959684371948242, forward, BLAS, , 8
+inputsize, 600, 0.001009225845336914, backward_time, BLAS, , 8
+inputsize, 600, 0.0008826255798339844, backward_time, BLAS, , 8
+inputsize, 600, 0.0009288787841796875, backward_time, BLAS, , 8
+inputsize, 600, 0.0009293556213378906, backward_time, BLAS, , 8
+inputsize, 600, 0.0009200572967529297, backward_time, BLAS, , 8
+inputsize, 30600, 0.04890584945678711, backward_time, BLAS, , 8
+inputsize, 30600, 0.04883599281311035, backward_time, BLAS, , 8
+inputsize, 30600, 0.04834413528442383, backward_time, BLAS, , 8
+inputsize, 30600, 0.04826831817626953, backward_time, BLAS, , 8
+inputsize, 30600, 0.048348426818847656, backward_time, BLAS, , 8
+inputsize, 60600, 0.09576725959777832, backward_time, BLAS, , 8
+inputsize, 60600, 0.09340405464172363, backward_time, BLAS, , 8
+inputsize, 60600, 0.09350347518920898, backward_time, BLAS, , 8
+inputsize, 60600, 0.09364914894104004, backward_time, BLAS, , 8
+inputsize, 60600, 0.09293985366821289, backward_time, BLAS, , 8
+inputsize, 90600, 0.14516925811767578, backward_time, BLAS, , 8
+inputsize, 90600, 0.13914036750793457, backward_time, BLAS, , 8
+inputsize, 90600, 0.13949942588806152, backward_time, BLAS, , 8
+inputsize, 90600, 0.13925671577453613, backward_time, BLAS, , 8
+inputsize, 90600, 0.13963985443115234, backward_time, BLAS, , 8
+inputsize, 120600, 0.18700146675109863, backward_time, BLAS, , 8
+inputsize, 120600, 0.1970996856689453, backward_time, BLAS, , 8
+inputsize, 120600, 0.18879294395446777, backward_time, BLAS, , 8
+inputsize, 120600, 0.18473577499389648, backward_time, BLAS, , 8
+inputsize, 120600, 0.18523573875427246, backward_time, BLAS, , 8
+inputsize, 150600, 0.23651552200317383, backward_time, BLAS, , 8
+inputsize, 150600, 0.23470187187194824, backward_time, BLAS, , 8
+inputsize, 150600, 0.24405527114868164, backward_time, BLAS, , 8
+inputsize, 150600, 0.23182201385498047, backward_time, BLAS, , 8
+inputsize, 150600, 0.2323291301727295, backward_time, BLAS, , 8
+inputsize, 600, 0.0009248256683349609, backward_time, BLAS, , 8
+inputsize, 600, 0.0009157657623291016, backward_time, BLAS, , 8
+inputsize, 600, 0.0009818077087402344, backward_time, BLAS, , 8
+inputsize, 600, 0.0009124279022216797, backward_time, BLAS, , 8
+inputsize, 600, 0.0008661746978759766, backward_time, BLAS, , 8
+inputsize, 30600, 0.04843497276306152, backward_time, BLAS, , 8
+inputsize, 30600, 0.047615766525268555, backward_time, BLAS, , 8
+inputsize, 30600, 0.04794883728027344, backward_time, BLAS, , 8
+inputsize, 30600, 0.0472874641418457, backward_time, BLAS, , 8
+inputsize, 30600, 0.04733157157897949, backward_time, BLAS, , 8
+inputsize, 60600, 0.09645724296569824, backward_time, BLAS, , 8
+inputsize, 60600, 0.09548091888427734, backward_time, BLAS, , 8
+inputsize, 60600, 0.09432458877563477, backward_time, BLAS, , 8
+inputsize, 60600, 0.09410762786865234, backward_time, BLAS, , 8
+inputsize, 60600, 0.09539008140563965, backward_time, BLAS, , 8
+inputsize, 90600, 0.13940930366516113, backward_time, BLAS, , 8
+inputsize, 90600, 0.13935565948486328, backward_time, BLAS, , 8
+inputsize, 90600, 0.1385486125946045, backward_time, BLAS, , 8
+inputsize, 90600, 0.1393587589263916, backward_time, BLAS, , 8
+inputsize, 90600, 0.1383824348449707, backward_time, BLAS, , 8
+inputsize, 120600, 0.18534111976623535, backward_time, BLAS, , 8
+inputsize, 120600, 0.18482303619384766, backward_time, BLAS, , 8
+inputsize, 120600, 0.1851339340209961, backward_time, BLAS, , 8
+inputsize, 120600, 0.18495845794677734, backward_time, BLAS, , 8
+inputsize, 120600, 0.18622994422912598, backward_time, BLAS, , 8
+inputsize, 150600, 0.2306678295135498, backward_time, BLAS, , 8
+inputsize, 150600, 0.2313060760498047, backward_time, BLAS, , 8
+inputsize, 150600, 0.23260879516601562, backward_time, BLAS, , 8
+inputsize, 150600, 0.23237824440002441, backward_time, BLAS, , 8
+inputsize, 150600, 0.23084402084350586, backward_time, BLAS, , 8
+inputsize, 600, 0.0011320114135742188, baumWelch, BLAS, 1, 8
+inputsize, 600, 0.0010900497436523438, baumWelch, BLAS, 1, 8
+inputsize, 600, 0.0010836124420166016, baumWelch, BLAS, 1, 8
+inputsize, 600, 0.00112152099609375, baumWelch, BLAS, 1, 8
+inputsize, 600, 0.0010881423950195312, baumWelch, BLAS, 1, 8
+inputsize, 30600, 0.06653308868408203, baumWelch, BLAS, 1, 8
+inputsize, 30600, 0.06463146209716797, baumWelch, BLAS, 1, 8
+inputsize, 30600, 0.06411170959472656, baumWelch, BLAS, 1, 8
+inputsize, 30600, 0.06454157829284668, baumWelch, BLAS, 1, 8
+inputsize, 30600, 0.06374144554138184, baumWelch, BLAS, 1, 8
+inputsize, 60600, 0.13308024406433105, baumWelch, BLAS, 1, 8
+inputsize, 60600, 0.13187003135681152, baumWelch, BLAS, 1, 8
+inputsize, 60600, 0.13199067115783691, baumWelch, BLAS, 1, 8
+inputsize, 60600, 0.13480544090270996, baumWelch, BLAS, 1, 8
+inputsize, 60600, 0.1316232681274414, baumWelch, BLAS, 1, 8
+inputsize, 90600, 0.20200300216674805, baumWelch, BLAS, 1, 8
+inputsize, 90600, 0.2028026580810547, baumWelch, BLAS, 1, 8
+inputsize, 90600, 0.20465517044067383, baumWelch, BLAS, 1, 8
+inputsize, 90600, 0.2015540599822998, baumWelch, BLAS, 1, 8
+inputsize, 90600, 0.2007591724395752, baumWelch, BLAS, 1, 8
+inputsize, 120600, 0.27355456352233887, baumWelch, BLAS, 1, 8
+inputsize, 120600, 0.2734405994415283, baumWelch, BLAS, 1, 8
+inputsize, 120600, 0.27706050872802734, baumWelch, BLAS, 1, 8
+inputsize, 120600, 0.27272510528564453, baumWelch, BLAS, 1, 8
+inputsize, 120600, 0.2741506099700928, baumWelch, BLAS, 1, 8
+inputsize, 150600, 0.3462395668029785, baumWelch, BLAS, 1, 8
+inputsize, 150600, 0.3453059196472168, baumWelch, BLAS, 1, 8
+inputsize, 150600, 0.34600257873535156, baumWelch, BLAS, 1, 8
+inputsize, 150600, 0.35697269439697266, baumWelch, BLAS, 1, 8
+inputsize, 150600, 0.34648728370666504, baumWelch, BLAS, 1, 8
+inputsize, 600, 0.0011641979217529297, baumWelch, BLAS, 2, 8
+inputsize, 600, 0.0010955333709716797, baumWelch, BLAS, 2, 8
+inputsize, 600, 0.0010867118835449219, baumWelch, BLAS, 2, 8
+inputsize, 600, 0.0011324882507324219, baumWelch, BLAS, 2, 8
+inputsize, 600, 0.001085042953491211, baumWelch, BLAS, 2, 8
+inputsize, 30600, 0.06685972213745117, baumWelch, BLAS, 2, 8
+inputsize, 30600, 0.06456470489501953, baumWelch, BLAS, 2, 8
+inputsize, 30600, 0.06457304954528809, baumWelch, BLAS, 2, 8
+inputsize, 30600, 0.06473016738891602, baumWelch, BLAS, 2, 8
+inputsize, 30600, 0.06374263763427734, baumWelch, BLAS, 2, 8
+inputsize, 60600, 0.1335432529449463, baumWelch, BLAS, 2, 8
+inputsize, 60600, 0.1309828758239746, baumWelch, BLAS, 2, 8
+inputsize, 60600, 0.1308002471923828, baumWelch, BLAS, 2, 8
+inputsize, 60600, 0.13132023811340332, baumWelch, BLAS, 2, 8
+inputsize, 60600, 0.13051867485046387, baumWelch, BLAS, 2, 8
+inputsize, 90600, 0.20454835891723633, baumWelch, BLAS, 2, 8
+inputsize, 90600, 0.20592856407165527, baumWelch, BLAS, 2, 8
+inputsize, 90600, 0.2033073902130127, baumWelch, BLAS, 2, 8
+inputsize, 90600, 0.20645618438720703, baumWelch, BLAS, 2, 8
+inputsize, 90600, 0.20234298706054688, baumWelch, BLAS, 2, 8
+inputsize, 120600, 0.2781257629394531, baumWelch, BLAS, 2, 8
+inputsize, 120600, 0.2749631404876709, baumWelch, BLAS, 2, 8
+inputsize, 120600, 0.27420926094055176, baumWelch, BLAS, 2, 8
+inputsize, 120600, 0.27477335929870605, baumWelch, BLAS, 2, 8
+inputsize, 120600, 0.2742493152618408, baumWelch, BLAS, 2, 8
+inputsize, 150600, 0.353410005569458, baumWelch, BLAS, 2, 8
+inputsize, 150600, 0.34691357612609863, baumWelch, BLAS, 2, 8
+inputsize, 150600, 0.3473854064941406, baumWelch, BLAS, 2, 8
+inputsize, 150600, 0.3470802307128906, baumWelch, BLAS, 2, 8
+inputsize, 150600, 0.3464500904083252, baumWelch, BLAS, 2, 8
+inputsize, 600, 0.00118255615234375, baumWelch, BLAS, 3, 8
+inputsize, 600, 0.0011227130889892578, baumWelch, BLAS, 3, 8
+inputsize, 600, 0.0010852813720703125, baumWelch, BLAS, 3, 8
+inputsize, 600, 0.0011105537414550781, baumWelch, BLAS, 3, 8
+inputsize, 600, 0.001108407974243164, baumWelch, BLAS, 3, 8
+inputsize, 30600, 0.06595373153686523, baumWelch, BLAS, 3, 8
+inputsize, 30600, 0.06563186645507812, baumWelch, BLAS, 3, 8
+inputsize, 30600, 0.06535029411315918, baumWelch, BLAS, 3, 8
+inputsize, 30600, 0.06547856330871582, baumWelch, BLAS, 3, 8
+inputsize, 30600, 0.06467890739440918, baumWelch, BLAS, 3, 8
+inputsize, 60600, 0.13608407974243164, baumWelch, BLAS, 3, 8
+inputsize, 60600, 0.13176631927490234, baumWelch, BLAS, 3, 8
+inputsize, 60600, 0.13160991668701172, baumWelch, BLAS, 3, 8
+inputsize, 60600, 0.13172650337219238, baumWelch, BLAS, 3, 8
+inputsize, 60600, 0.13184213638305664, baumWelch, BLAS, 3, 8
+inputsize, 90600, 0.21181201934814453, baumWelch, BLAS, 3, 8
+inputsize, 90600, 0.20846247673034668, baumWelch, BLAS, 3, 8
+inputsize, 90600, 0.20753264427185059, baumWelch, BLAS, 3, 8
+inputsize, 90600, 0.20755529403686523, baumWelch, BLAS, 3, 8
+inputsize, 90600, 0.2083122730255127, baumWelch, BLAS, 3, 8
+inputsize, 120600, 0.27513909339904785, baumWelch, BLAS, 3, 8
+inputsize, 120600, 0.2778027057647705, baumWelch, BLAS, 3, 8
+inputsize, 120600, 0.2735745906829834, baumWelch, BLAS, 3, 8
+inputsize, 120600, 0.27445220947265625, baumWelch, BLAS, 3, 8
+inputsize, 120600, 0.27413320541381836, baumWelch, BLAS, 3, 8
+inputsize, 150600, 0.3456885814666748, baumWelch, BLAS, 3, 8
+inputsize, 150600, 0.34630608558654785, baumWelch, BLAS, 3, 8
+inputsize, 150600, 0.3640768527984619, baumWelch, BLAS, 3, 8
+inputsize, 150600, 0.34519052505493164, baumWelch, BLAS, 3, 8
+inputsize, 150600, 0.346355676651001, baumWelch, BLAS, 3, 8
+inputsize, 600, 0.0011816024780273438, baumWelch, BLAS, 4, 8
+inputsize, 600, 0.001081228256225586, baumWelch, BLAS, 4, 8
+inputsize, 600, 0.0010957717895507812, baumWelch, BLAS, 4, 8
+inputsize, 600, 0.0011096000671386719, baumWelch, BLAS, 4, 8
+inputsize, 600, 0.0010831356048583984, baumWelch, BLAS, 4, 8
+inputsize, 30600, 0.06621217727661133, baumWelch, BLAS, 4, 8
+inputsize, 30600, 0.0642387866973877, baumWelch, BLAS, 4, 8
+inputsize, 30600, 0.06412672996520996, baumWelch, BLAS, 4, 8
+inputsize, 30600, 0.06428408622741699, baumWelch, BLAS, 4, 8
+inputsize, 30600, 0.06350922584533691, baumWelch, BLAS, 4, 8
+inputsize, 60600, 0.13198113441467285, baumWelch, BLAS, 4, 8
+inputsize, 60600, 0.1302635669708252, baumWelch, BLAS, 4, 8
+inputsize, 60600, 0.13077688217163086, baumWelch, BLAS, 4, 8
+inputsize, 60600, 0.1307833194732666, baumWelch, BLAS, 4, 8
+inputsize, 60600, 0.132429838180542, baumWelch, BLAS, 4, 8
+inputsize, 90600, 0.20259952545166016, baumWelch, BLAS, 4, 8
+inputsize, 90600, 0.2045152187347412, baumWelch, BLAS, 4, 8
+inputsize, 90600, 0.20172405242919922, baumWelch, BLAS, 4, 8
+inputsize, 90600, 0.20346975326538086, baumWelch, BLAS, 4, 8
+inputsize, 90600, 0.2055072784423828, baumWelch, BLAS, 4, 8
+inputsize, 120600, 0.2750120162963867, baumWelch, BLAS, 4, 8
+inputsize, 120600, 0.2735927104949951, baumWelch, BLAS, 4, 8
+inputsize, 120600, 0.27271127700805664, baumWelch, BLAS, 4, 8
+inputsize, 120600, 0.27281904220581055, baumWelch, BLAS, 4, 8
+inputsize, 120600, 0.2774319648742676, baumWelch, BLAS, 4, 8
+inputsize, 150600, 0.34296393394470215, baumWelch, BLAS, 4, 8
+inputsize, 150600, 0.34259486198425293, baumWelch, BLAS, 4, 8
+inputsize, 150600, 0.3424685001373291, baumWelch, BLAS, 4, 8
+inputsize, 150600, 0.3427853584289551, baumWelch, BLAS, 4, 8
+inputsize, 150600, 0.3415563106536865, baumWelch, BLAS, 4, 8
+inputsize, 600, 0.001203298568725586, baumWelch, BLAS, 5, 8
+inputsize, 600, 0.0010864734649658203, baumWelch, BLAS, 5, 8
+inputsize, 600, 0.0010788440704345703, baumWelch, BLAS, 5, 8
+inputsize, 600, 0.0011055469512939453, baumWelch, BLAS, 5, 8
+inputsize, 600, 0.0010747909545898438, baumWelch, BLAS, 5, 8
+inputsize, 30600, 0.06537795066833496, baumWelch, BLAS, 5, 8
+inputsize, 30600, 0.06528544425964355, baumWelch, BLAS, 5, 8
+inputsize, 30600, 0.06411361694335938, baumWelch, BLAS, 5, 8
+inputsize, 30600, 0.06402754783630371, baumWelch, BLAS, 5, 8
+inputsize, 30600, 0.06410598754882812, baumWelch, BLAS, 5, 8
+inputsize, 60600, 0.13149452209472656, baumWelch, BLAS, 5, 8
+inputsize, 60600, 0.13131165504455566, baumWelch, BLAS, 5, 8
+inputsize, 60600, 0.13121771812438965, baumWelch, BLAS, 5, 8
+inputsize, 60600, 0.13289713859558105, baumWelch, BLAS, 5, 8
+inputsize, 60600, 0.1308424472808838, baumWelch, BLAS, 5, 8
+inputsize, 90600, 0.20279550552368164, baumWelch, BLAS, 5, 8
+inputsize, 90600, 0.20150518417358398, baumWelch, BLAS, 5, 8
+inputsize, 90600, 0.20166873931884766, baumWelch, BLAS, 5, 8
+inputsize, 90600, 0.20167279243469238, baumWelch, BLAS, 5, 8
+inputsize, 90600, 0.20190167427062988, baumWelch, BLAS, 5, 8
+inputsize, 120600, 0.27614879608154297, baumWelch, BLAS, 5, 8
+inputsize, 120600, 0.27207446098327637, baumWelch, BLAS, 5, 8
+inputsize, 120600, 0.2721529006958008, baumWelch, BLAS, 5, 8
+inputsize, 120600, 0.2727172374725342, baumWelch, BLAS, 5, 8
+inputsize, 120600, 0.2720515727996826, baumWelch, BLAS, 5, 8
+inputsize, 150600, 0.34450507164001465, baumWelch, BLAS, 5, 8
+inputsize, 150600, 0.35378241539001465, baumWelch, BLAS, 5, 8
+inputsize, 150600, 0.34526515007019043, baumWelch, BLAS, 5, 8
+inputsize, 150600, 0.3436553478240967, baumWelch, BLAS, 5, 8
+inputsize, 150600, 0.34322547912597656, baumWelch, BLAS, 5, 8
+inputsize, 600, 0.0011949539184570312, baumWelch, BLAS, 6, 8
+inputsize, 600, 0.0011277198791503906, baumWelch, BLAS, 6, 8
+inputsize, 600, 0.00107574462890625, baumWelch, BLAS, 6, 8
+inputsize, 600, 0.0010883808135986328, baumWelch, BLAS, 6, 8
+inputsize, 600, 0.0010826587677001953, baumWelch, BLAS, 6, 8
+inputsize, 30600, 0.0650336742401123, baumWelch, BLAS, 6, 8
+inputsize, 30600, 0.06395602226257324, baumWelch, BLAS, 6, 8
+inputsize, 30600, 0.06371402740478516, baumWelch, BLAS, 6, 8
+inputsize, 30600, 0.06386113166809082, baumWelch, BLAS, 6, 8
+inputsize, 30600, 0.06341171264648438, baumWelch, BLAS, 6, 8
+inputsize, 60600, 0.13288545608520508, baumWelch, BLAS, 6, 8
+inputsize, 60600, 0.13098764419555664, baumWelch, BLAS, 6, 8
+inputsize, 60600, 0.13332200050354004, baumWelch, BLAS, 6, 8
+inputsize, 60600, 0.13137269020080566, baumWelch, BLAS, 6, 8
+inputsize, 60600, 0.13329720497131348, baumWelch, BLAS, 6, 8
+inputsize, 90600, 0.20090484619140625, baumWelch, BLAS, 6, 8
+inputsize, 90600, 0.19993233680725098, baumWelch, BLAS, 6, 8
+inputsize, 90600, 0.20061779022216797, baumWelch, BLAS, 6, 8
+inputsize, 90600, 0.1999363899230957, baumWelch, BLAS, 6, 8
+inputsize, 90600, 0.20046114921569824, baumWelch, BLAS, 6, 8
+inputsize, 120600, 0.27477478981018066, baumWelch, BLAS, 6, 8
+inputsize, 120600, 0.2735748291015625, baumWelch, BLAS, 6, 8
+inputsize, 120600, 0.2737424373626709, baumWelch, BLAS, 6, 8
+inputsize, 120600, 0.2767963409423828, baumWelch, BLAS, 6, 8
+inputsize, 120600, 0.27271342277526855, baumWelch, BLAS, 6, 8
+inputsize, 150600, 0.3466670513153076, baumWelch, BLAS, 6, 8
+inputsize, 150600, 0.3463277816772461, baumWelch, BLAS, 6, 8
+inputsize, 150600, 0.34418702125549316, baumWelch, BLAS, 6, 8
+inputsize, 150600, 0.3442254066467285, baumWelch, BLAS, 6, 8
+inputsize, 150600, 0.34856510162353516, baumWelch, BLAS, 6, 8
