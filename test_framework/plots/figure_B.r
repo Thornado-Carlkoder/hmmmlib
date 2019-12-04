@@ -64,7 +64,7 @@ ggsave("figure_B.pdf", height = 7, width = 10)
 data_grouped %>% filter(observations >= 0.1) %>%  ggplot(aes(observations, mean/n_edges(statespace, observations), mean, color = variant)) +
     geom_point() +
     geom_line() +
-    geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), width = 0.05, alpha = .65) +
+    #geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), width = 0.05, alpha = .65) +
     facet_grid(statespace ~ algorithm, scales = "free") +
     labs(
         x = "density",
