@@ -32,8 +32,9 @@ names(data) = c('test',
                 'statespace')
 data$algorithm = data %>% pull(algorithm) %>% recode(forward = "Forward",
                                                      backward_time = "Backward")
+data$algorithm = factor(data$algorithm, levels=(data$algorithm %>% unique %>% sort(decreasing = T)))
 
-caption = "error bars: standard deviation of 1 replicates \ninputsize: 90000 characters, alphabet size: 4"
+caption = "error bars: standard deviation of 5 replicates \ninputsize: 90000 characters, alphabet size: 4"
 data_grouped = data %>%
     #filter(variant != "CSR") %>% 
     mutate(observations = 1-observations) %>% # turn sparseness into density
