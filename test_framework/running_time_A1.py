@@ -14,7 +14,7 @@ increment = 100000
 if True: # print csv-header
     print('test, observations, time, algorithm, variant, statespace')
 
-for stspace in [30, 10]:
+for stspace in [300, 100, 30, 10]:
     for algorithm in ['forward', 'backward_time']:
         for hmmType in ['Conventional', 'BLAS']:
             for input_size in range(start, stop, increment):
