@@ -5,18 +5,16 @@ void backward_con_sparse(HMM *hmm, const unsigned int *Y, const unsigned int T, 
     
     unsigned int i;
     unsigned int j;
+    unsigned int l;
     
-    // 2D beta matrix
-    //
-    // [state][time]
-    //
+    
     for(i = 0; i < hmm->hiddenStates; i++){
         beta[T*hmm->hiddenStates-1-i] = 1.0;
     }
     
     for(i = T-1; i-- >0;){
         for(j = 0; j < hmm->hiddenStates; j++){
-            for(int l = 0; l < hmm->hiddenStates; l++){
+            for(l = 0; l < hmm->hiddenStates; l++){
                 double transitionProb = hmm->transitionProbs[j*hmm->hiddenStates+l];
                 if(transitionProb > 0){
                     double emissionProb = hmm->emissionProbs[l*hmm->observations+Y[i+1]];
