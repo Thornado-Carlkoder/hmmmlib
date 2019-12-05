@@ -20,7 +20,7 @@ if True:
 for hidden_states in [300, 100, 30, 10]:
 
     for algorithm in ['forward', 'backward_time']:
-        for hmmType in ['BLAS', 'RSB']:
+        for hmmType in ['Conventional sparse', 'CSR']:
     
             
 
