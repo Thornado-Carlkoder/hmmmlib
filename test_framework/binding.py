@@ -267,7 +267,7 @@ class binded_HMM:
 
     
     
-    def baumWelch(self, observation_data, n_iterations):
+    def baumWelch(self, observation_data, n_iterations = 1):
         _ = self.libhmm.baumWelch(self.hmm,
                                   (c.c_int * len(observation_data))(*observation_data),
                                   len(observation_data),
