@@ -43,7 +43,7 @@ for hidden_states in [400]:#300, 100, 30, 10]:
     # Conventional #
     #standard_test_sparseness("forward", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
     #standard_test_sparseness("backward_time", "Conventional", inputsize, hidden_states, start, stop, increment, file, hidden_states)
-
+    #
     ## Conventionalsparse #
     #standard_test_sparseness("forward", "Conventional sparse", inputsize, hidden_states, start, stop, increment, file, hidden_states)
     #standard_test_sparseness("backward_time", "Conventional sparse", inputsize, hidden_states, start, stop, increment, file, hidden_states)
