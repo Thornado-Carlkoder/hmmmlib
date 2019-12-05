@@ -17,7 +17,7 @@ increment = 0.1
 if True:
     print('test, observations, time, algorithm, variant, states')
 
-for hidden_states in [300, 100, 30, 10]:
+for hidden_states in [400, 300, 100, 30, 10]:
 
     for algorithm in ['forward', 'backward_time']:
         for hmmType in ['Conventional sparse', 'CSR']:
