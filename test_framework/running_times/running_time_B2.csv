@@ -1,4 +1,4 @@
-test, observations, time, algorithm, variant, states
+test, observations, time, algorithm, variant, statespace
 sparseness, 0.0, 98.42585110664368, forward, Conventional sparse, 400
 sparseness, 0.0, 98.47177743911743, forward, Conventional sparse, 400
 sparseness, 0.0, 98.70942401885986, forward, Conventional sparse, 400

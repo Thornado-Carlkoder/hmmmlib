@@ -15,7 +15,7 @@ stop = 1.001
 increment = 0.1
 
 if True:
-    print('test, observations, time, algorithm, variant, states')
+    print('test, observations, time, algorithm, variant, statespace')
 
 for hidden_states in [300, 100, 30, 10]:
 

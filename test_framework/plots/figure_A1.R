@@ -18,14 +18,8 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 
 ## Inputsize ##
 
-data = read_csv("../data/A.csv", col_names = F)
-names(data) = c('test',
-                'observations',
-                'time',
-                'algorithm',
-                'variant',
-                'iterations',
-                'statespace')
+data = read_csv("../running_times/running_time_A1.csv", col_names = T, comment = '#')
+#names(data) = c('test', 'observations', 'time', 'algorithm', 'variant', 'iterations', 'statespace')
 
 data$algorithm = data %>% pull(algorithm) %>% recode(forward = "Forward",
                                                      backward_time = "Backward",
@@ -40,14 +34,13 @@ data_input = data %>% filter(test == "inputsize")
 
 
 data_input_grouped = data_input %>%
-    mutate_at(vars(iterations), factor) %>%
-    group_by(observations, algorithm, variant, iterations, statespace) %>%
+    #mutate_at(vars(iterations), factor) %>%
+    group_by(observations, algorithm, variant, statespace) %>%
     summarise(mean = mean(time), sd = sd(time))
 
 
 
-data_input_grouped %>% filter(iterations == "1" |
-                                  is.na(iterations)) %>%
+data_input_grouped %>% 
     filter(variant != "Conventional sparse") %>%
     ggplot(aes(observations, mean / observations, color = variant)) +
     geom_point() +
@@ -55,11 +48,12 @@ data_input_grouped %>% filter(iterations == "1" |
     geom_errorbar(aes(ymin = (mean - sd)/observations, ymax = (mean + sd)/observations), size = 0.3, alpha = .65) +
     facet_grid(statespace ~ algorithm, scales = "free") +
     labs(y = "mean time [s] scaled",
-         caption = "error bars: standard deviation of 5 replicates\nalphabet size: 4",
-         title = "Running time (scaled) for increasing input size",
-         subtitle = "Linear algebra based implementations are faster.") +
+         caption = "error bars: standard deviation of 3 replicates\nalphabet size: 4"
+         #title = "Running time (scaled) for increasing input size",
+         #subtitle = "Linear algebra based implementations are faster."
+         ) +
     geom_hline(yintercept = 0, alpha = 0)
-ggsave("figure_A.pdf", height = 6, width = 10)
+ggsave("figure_A1.pdf", height = 6, width = 10)
 
 
 

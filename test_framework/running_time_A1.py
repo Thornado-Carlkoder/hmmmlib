@@ -36,7 +36,7 @@ for stspace in [400, 300, 100, 30, 10]:
                     t1 = time.time()
                     
                     # Print to csv
-                    print(f'inputsize, {input_size}, {t1-t0}, {algorithm}, {o.hmmType}, {""}')
+                    print(f'inputsize, {input_size}, {t1-t0}, {algorithm}, {o.hmmType}, {stspace}')
                 
                 print('', file = sys.stderr, flush = True) # newline
                 o.deallocate()
