@@ -7,7 +7,7 @@ import time, sys, os
         
 print('## Testing varying alphabet size ##', file = sys.stderr)
 
-replicates = 5
+replicates = 3
 input_size = 100000 
 
 # Varying alphabet size
@@ -22,7 +22,7 @@ if True:
 
 
 for algorithm in ['posteriorDecoding', 'baumWelch', 'viterbi']:
-    for hmmType in ['Conventional', 'Conventional sparse', 'BLAS', 'CSR']: # Don't forget RSB
+    for hmmType in ['Conventional', 'Conventional sparse', 'BLAS', 'CSR', 'RSB']: # Don't forget RSB
 
         #standard_test_alphabet(algorithm, hmmType, input_size, start, stop, increment, file)
 

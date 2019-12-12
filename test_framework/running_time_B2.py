@@ -6,7 +6,7 @@ import time, sys, os
 
 
 print('## Testing varying sparseness of transition and emission matrices. ##', file = sys.stderr)
-replicates = 5
+replicates = 3
 input_size = 100000
 alphabet_size = 4
 

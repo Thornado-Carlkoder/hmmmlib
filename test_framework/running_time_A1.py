@@ -6,7 +6,7 @@ import time, sys, os
 print('Testing varying input size', file = sys.stderr)
 
 alphabet_size = 4
-replicates = 5
+replicates = 3
 start = 10
 stop = 1000010  # levels out at ~ 200K
 increment = 100000

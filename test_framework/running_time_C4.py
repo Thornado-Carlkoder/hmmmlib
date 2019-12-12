@@ -14,7 +14,7 @@ Why: Sanity check; does increasing number of iterations increase by a constant?
 
 input_size = 100000 # the input size is constant
 alphabet_size = 4
-replicates = 5
+replicates = 3
 hidden_states = 10
 
 # Number of iterations
@@ -28,7 +28,7 @@ if True:
     print('test, observations, time, algorithm, variant')
     
 
-for hmmType in ['Conventional sparse', 'Conventional', 'BLAS', 'CSR']: # Don't forget RSB
+for hmmType in ['Conventional sparse', 'Conventional', 'BLAS', 'CSR', 'RSB']: # Don't forget RSB
     
     test_standard_data = random.choices([j for j in range(alphabet_size)], k = input_size) # Generates a data set with an arbitrary alphabet size (uniform).
     

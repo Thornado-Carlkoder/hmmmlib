@@ -1,0 +1,6 @@
+test, observations, time, algorithm, variant
+baumwelchiterations, 2, 0.06855630874633789, baumWelch, Conventional sparse
+baumwelchiterations, 2, 0.06704831123352051, baumWelch, Conventional sparse
+baumwelchiterations, 2, 0.06424450874328613, baumWelch, Conventional sparse
+baumwelchiterations, 3, 0.16025662422180176, baumWelch, Conventional sparse
+baumwelchiterations, 3, 0.15990996360778809, baumWelch, Conventional sparse

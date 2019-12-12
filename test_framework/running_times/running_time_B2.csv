@@ -1,0 +1,661 @@
+test, observations, time, algorithm, variant, states
+sparseness, 0.0, 98.42585110664368, forward, Conventional sparse, 400
+sparseness, 0.0, 98.47177743911743, forward, Conventional sparse, 400
+sparseness, 0.0, 98.70942401885986, forward, Conventional sparse, 400
+sparseness, 0.1, 117.95195746421814, forward, Conventional sparse, 400
+sparseness, 0.1, 117.9115080833435, forward, Conventional sparse, 400
+sparseness, 0.1, 117.93792700767517, forward, Conventional sparse, 400
+sparseness, 0.2, 136.65168380737305, forward, Conventional sparse, 400
+sparseness, 0.2, 136.77306032180786, forward, Conventional sparse, 400
+sparseness, 0.2, 136.59527730941772, forward, Conventional sparse, 400
+sparseness, 0.3, 156.05715370178223, forward, Conventional sparse, 400
+sparseness, 0.3, 156.13558292388916, forward, Conventional sparse, 400
+sparseness, 0.3, 156.28071904182434, forward, Conventional sparse, 400
+sparseness, 0.4, 175.24910426139832, forward, Conventional sparse, 400
+sparseness, 0.4, 175.12378120422363, forward, Conventional sparse, 400
+sparseness, 0.4, 175.06264662742615, forward, Conventional sparse, 400
+sparseness, 0.5, 180.5409049987793, forward, Conventional sparse, 400
+sparseness, 0.5, 180.19081950187683, forward, Conventional sparse, 400
+sparseness, 0.5, 180.66672682762146, forward, Conventional sparse, 400
+sparseness, 0.6, 160.27102756500244, forward, Conventional sparse, 400
+sparseness, 0.6, 160.50665283203125, forward, Conventional sparse, 400
+sparseness, 0.6, 160.43049883842468, forward, Conventional sparse, 400
+sparseness, 0.7, 131.43405079841614, forward, Conventional sparse, 400
+sparseness, 0.7, 131.4311647415161, forward, Conventional sparse, 400
+sparseness, 0.7, 131.24249601364136, forward, Conventional sparse, 400
+sparseness, 0.8, 104.19896101951599, forward, Conventional sparse, 400
+sparseness, 0.8, 104.43470311164856, forward, Conventional sparse, 400
+sparseness, 0.8, 104.23895359039307, forward, Conventional sparse, 400
+sparseness, 0.9, 77.45095419883728, forward, Conventional sparse, 400
+sparseness, 0.9, 77.39173245429993, forward, Conventional sparse, 400
+sparseness, 0.9, 77.48241567611694, forward, Conventional sparse, 400
+sparseness, 1.0, 50.997809171676636, forward, Conventional sparse, 400
+sparseness, 1.0, 51.028456926345825, forward, Conventional sparse, 400
+sparseness, 1.0, 51.069539070129395, forward, Conventional sparse, 400
+sparseness, 0.0, 71.2373435497284, forward, CSR, 400
+sparseness, 0.0, 71.29822540283203, forward, CSR, 400
+sparseness, 0.0, 71.18607687950134, forward, CSR, 400
+sparseness, 0.1, 64.68790316581726, forward, CSR, 400
+sparseness, 0.1, 64.75305366516113, forward, CSR, 400
+sparseness, 0.1, 64.65951943397522, forward, CSR, 400
+sparseness, 0.2, 58.21298289299011, forward, CSR, 400
+sparseness, 0.2, 58.208749294281006, forward, CSR, 400
+sparseness, 0.2, 58.19865584373474, forward, CSR, 400
+sparseness, 0.3, 51.69495940208435, forward, CSR, 400
+sparseness, 0.3, 51.69455552101135, forward, CSR, 400
+sparseness, 0.3, 51.673277378082275, forward, CSR, 400
+sparseness, 0.4, 45.2517249584198, forward, CSR, 400
+sparseness, 0.4, 45.23974418640137, forward, CSR, 400
+sparseness, 0.4, 45.25296640396118, forward, CSR, 400
+sparseness, 0.5, 38.956202030181885, forward, CSR, 400
+sparseness, 0.5, 38.94364070892334, forward, CSR, 400
+sparseness, 0.5, 38.83885598182678, forward, CSR, 400
+sparseness, 0.6, 32.544604778289795, forward, CSR, 400
+sparseness, 0.6, 32.57849073410034, forward, CSR, 400
+sparseness, 0.6, 32.576186418533325, forward, CSR, 400
+sparseness, 0.7, 26.13676881790161, forward, CSR, 400
+sparseness, 0.7, 26.13964867591858, forward, CSR, 400
+sparseness, 0.7, 26.178447246551514, forward, CSR, 400
+sparseness, 0.8, 19.74193239212036, forward, CSR, 400
+sparseness, 0.8, 19.704602479934692, forward, CSR, 400
+sparseness, 0.8, 19.714444637298584, forward, CSR, 400
+sparseness, 0.9, 13.28290867805481, forward, CSR, 400
+sparseness, 0.9, 13.309498310089111, forward, CSR, 400
+sparseness, 0.9, 13.327144384384155, forward, CSR, 400
+sparseness, 1.0, 6.396028757095337, forward, CSR, 400
+sparseness, 1.0, 6.4065141677856445, forward, CSR, 400
+sparseness, 1.0, 6.397167921066284, forward, CSR, 400
+sparseness, 0.0, 142.91876459121704, backward_time, Conventional sparse, 400
+sparseness, 0.0, 142.86222529411316, backward_time, Conventional sparse, 400
+sparseness, 0.0, 142.95556235313416, backward_time, Conventional sparse, 400
+sparseness, 0.1, 155.77349305152893, backward_time, Conventional sparse, 400
+sparseness, 0.1, 155.85965943336487, backward_time, Conventional sparse, 400
+sparseness, 0.1, 155.86148500442505, backward_time, Conventional sparse, 400
+sparseness, 0.2, 168.38155674934387, backward_time, Conventional sparse, 400
+sparseness, 0.2, 167.98689198493958, backward_time, Conventional sparse, 400
+sparseness, 0.2, 168.2587592601776, backward_time, Conventional sparse, 400
+sparseness, 0.3, 182.21250224113464, backward_time, Conventional sparse, 400
+sparseness, 0.3, 181.4420506954193, backward_time, Conventional sparse, 400
+sparseness, 0.3, 182.0881175994873, backward_time, Conventional sparse, 400
+sparseness, 0.4, 196.28365850448608, backward_time, Conventional sparse, 400
+sparseness, 0.4, 194.7260935306549, backward_time, Conventional sparse, 400
+sparseness, 0.4, 194.85652613639832, backward_time, Conventional sparse, 400
+sparseness, 0.5, 196.14797472953796, backward_time, Conventional sparse, 400
+sparseness, 0.5, 196.21405911445618, backward_time, Conventional sparse, 400
+sparseness, 0.5, 196.28992915153503, backward_time, Conventional sparse, 400
+sparseness, 0.6, 173.18313193321228, backward_time, Conventional sparse, 400
+sparseness, 0.6, 172.90244317054749, backward_time, Conventional sparse, 400
+sparseness, 0.6, 174.95098662376404, backward_time, Conventional sparse, 400
+sparseness, 0.7, 138.88893055915833, backward_time, Conventional sparse, 400
+sparseness, 0.7, 141.01638317108154, backward_time, Conventional sparse, 400
+sparseness, 0.7, 139.964506149292, backward_time, Conventional sparse, 400
+sparseness, 0.8, 106.22781229019165, backward_time, Conventional sparse, 400
+sparseness, 0.8, 106.42959356307983, backward_time, Conventional sparse, 400
+sparseness, 0.8, 106.57250761985779, backward_time, Conventional sparse, 400
+sparseness, 0.9, 75.01590323448181, backward_time, Conventional sparse, 400
+sparseness, 0.9, 75.18198227882385, backward_time, Conventional sparse, 400
+sparseness, 0.9, 75.08818435668945, backward_time, Conventional sparse, 400
+sparseness, 1.0, 45.291606187820435, backward_time, Conventional sparse, 400
+sparseness, 1.0, 45.305214166641235, backward_time, Conventional sparse, 400
+sparseness, 1.0, 45.290810108184814, backward_time, Conventional sparse, 400
+sparseness, 0.0, 77.73138284683228, backward_time, CSR, 400
+sparseness, 0.0, 77.8944571018219, backward_time, CSR, 400
+sparseness, 0.0, 77.76607728004456, backward_time, CSR, 400
+sparseness, 0.1, 70.75263452529907, backward_time, CSR, 400
+sparseness, 0.1, 70.67606139183044, backward_time, CSR, 400
+sparseness, 0.1, 70.46361780166626, backward_time, CSR, 400
+sparseness, 0.2, 63.4548978805542, backward_time, CSR, 400
+sparseness, 0.2, 63.327433824539185, backward_time, CSR, 400
+sparseness, 0.2, 63.43884491920471, backward_time, CSR, 400
+sparseness, 0.3, 56.21759271621704, backward_time, CSR, 400
+sparseness, 0.3, 56.16169261932373, backward_time, CSR, 400
+sparseness, 0.3, 56.01273322105408, backward_time, CSR, 400
+sparseness, 0.4, 49.04769468307495, backward_time, CSR, 400
+sparseness, 0.4, 48.90616536140442, backward_time, CSR, 400
+sparseness, 0.4, 49.05218052864075, backward_time, CSR, 400
+sparseness, 0.5, 41.875744342803955, backward_time, CSR, 400
+sparseness, 0.5, 41.93429255485535, backward_time, CSR, 400
+sparseness, 0.5, 41.823800802230835, backward_time, CSR, 400
+sparseness, 0.6, 35.066118240356445, backward_time, CSR, 400
+sparseness, 0.6, 34.93192648887634, backward_time, CSR, 400
+sparseness, 0.6, 34.952964305877686, backward_time, CSR, 400
+sparseness, 0.7, 27.889827013015747, backward_time, CSR, 400
+sparseness, 0.7, 27.883657932281494, backward_time, CSR, 400
+sparseness, 0.7, 27.86809492111206, backward_time, CSR, 400
+sparseness, 0.8, 20.931993007659912, backward_time, CSR, 400
+sparseness, 0.8, 20.822583198547363, backward_time, CSR, 400
+sparseness, 0.8, 20.927955627441406, backward_time, CSR, 400
+sparseness, 0.9, 13.722087621688843, backward_time, CSR, 400
+sparseness, 0.9, 13.84124493598938, backward_time, CSR, 400
+sparseness, 0.9, 13.727662324905396, backward_time, CSR, 400
+sparseness, 1.0, 6.379236221313477, backward_time, CSR, 400
+sparseness, 1.0, 6.502584218978882, backward_time, CSR, 400
+sparseness, 1.0, 6.521604776382446, backward_time, CSR, 400
+sparseness, 0.0, 53.46063208580017, forward, Conventional sparse, 300
+sparseness, 0.0, 53.4467658996582, forward, Conventional sparse, 300
+sparseness, 0.0, 53.51537370681763, forward, Conventional sparse, 300
+sparseness, 0.1, 62.55452084541321, forward, Conventional sparse, 300
+sparseness, 0.1, 62.53206157684326, forward, Conventional sparse, 300
+sparseness, 0.1, 62.58652353286743, forward, Conventional sparse, 300
+sparseness, 0.2, 72.08008909225464, forward, Conventional sparse, 300
+sparseness, 0.2, 72.13500046730042, forward, Conventional sparse, 300
+sparseness, 0.2, 72.08150863647461, forward, Conventional sparse, 300
+sparseness, 0.3, 82.54384231567383, forward, Conventional sparse, 300
+sparseness, 0.3, 82.58385229110718, forward, Conventional sparse, 300
+sparseness, 0.3, 82.02639651298523, forward, Conventional sparse, 300
+sparseness, 0.4, 93.20488119125366, forward, Conventional sparse, 300
+sparseness, 0.4, 93.06671619415283, forward, Conventional sparse, 300
+sparseness, 0.4, 93.12728071212769, forward, Conventional sparse, 300
+sparseness, 0.5, 97.3541750907898, forward, Conventional sparse, 300
+sparseness, 0.5, 97.76833868026733, forward, Conventional sparse, 300
+sparseness, 0.5, 97.67491030693054, forward, Conventional sparse, 300
+sparseness, 0.6, 87.9328088760376, forward, Conventional sparse, 300
+sparseness, 0.6, 87.68944764137268, forward, Conventional sparse, 300
+sparseness, 0.6, 87.72679209709167, forward, Conventional sparse, 300
+sparseness, 0.7, 71.92535018920898, forward, Conventional sparse, 300
+sparseness, 0.7, 71.6207845211029, forward, Conventional sparse, 300
+sparseness, 0.7, 71.8680899143219, forward, Conventional sparse, 300
+sparseness, 0.8, 56.60740041732788, forward, Conventional sparse, 300
+sparseness, 0.8, 56.68046426773071, forward, Conventional sparse, 300
+sparseness, 0.8, 56.56020474433899, forward, Conventional sparse, 300
+sparseness, 0.9, 42.32734775543213, forward, Conventional sparse, 300
+sparseness, 0.9, 42.33665490150452, forward, Conventional sparse, 300
+sparseness, 0.9, 42.22005271911621, forward, Conventional sparse, 300
+sparseness, 1.0, 28.438223600387573, forward, Conventional sparse, 300
+sparseness, 1.0, 28.397698879241943, forward, Conventional sparse, 300
+sparseness, 1.0, 28.532583236694336, forward, Conventional sparse, 300
+sparseness, 0.0, 41.12251687049866, forward, CSR, 300
+sparseness, 0.0, 41.1314218044281, forward, CSR, 300
+sparseness, 0.0, 41.11205744743347, forward, CSR, 300
+sparseness, 0.1, 37.408103942871094, forward, CSR, 300
+sparseness, 0.1, 37.451865434646606, forward, CSR, 300
+sparseness, 0.1, 37.52283000946045, forward, CSR, 300
+sparseness, 0.2, 33.88216495513916, forward, CSR, 300
+sparseness, 0.2, 33.91828489303589, forward, CSR, 300
+sparseness, 0.2, 33.81355142593384, forward, CSR, 300
+sparseness, 0.3, 30.301203966140747, forward, CSR, 300
+sparseness, 0.3, 30.227842330932617, forward, CSR, 300
+sparseness, 0.3, 30.315020084381104, forward, CSR, 300
+sparseness, 0.4, 26.612167835235596, forward, CSR, 300
+sparseness, 0.4, 26.725085496902466, forward, CSR, 300
+sparseness, 0.4, 26.627097606658936, forward, CSR, 300
+sparseness, 0.5, 23.13832426071167, forward, CSR, 300
+sparseness, 0.5, 23.095275163650513, forward, CSR, 300
+sparseness, 0.5, 23.118184089660645, forward, CSR, 300
+sparseness, 0.6, 19.554396629333496, forward, CSR, 300
+sparseness, 0.6, 19.631937980651855, forward, CSR, 300
+sparseness, 0.6, 19.56324791908264, forward, CSR, 300
+sparseness, 0.7, 16.04198956489563, forward, CSR, 300
+sparseness, 0.7, 15.950002908706665, forward, CSR, 300
+sparseness, 0.7, 16.035351753234863, forward, CSR, 300
+sparseness, 0.8, 12.34540319442749, forward, CSR, 300
+sparseness, 0.8, 12.432788848876953, forward, CSR, 300
+sparseness, 0.8, 12.394606828689575, forward, CSR, 300
+sparseness, 0.9, 8.82615852355957, forward, CSR, 300
+sparseness, 0.9, 8.728585958480835, forward, CSR, 300
+sparseness, 0.9, 8.799630165100098, forward, CSR, 300
+sparseness, 1.0, 4.867777347564697, forward, CSR, 300
+sparseness, 1.0, 4.882445812225342, forward, CSR, 300
+sparseness, 1.0, 4.782931089401245, forward, CSR, 300
+sparseness, 0.0, 81.70354628562927, backward_time, Conventional sparse, 300
+sparseness, 0.0, 81.68768453598022, backward_time, Conventional sparse, 300
+sparseness, 0.0, 81.75173258781433, backward_time, Conventional sparse, 300
+sparseness, 0.1, 88.64773178100586, backward_time, Conventional sparse, 300
+sparseness, 0.1, 88.70444965362549, backward_time, Conventional sparse, 300
+sparseness, 0.1, 88.78895950317383, backward_time, Conventional sparse, 300
+sparseness, 0.2, 95.96062684059143, backward_time, Conventional sparse, 300
+sparseness, 0.2, 95.88039374351501, backward_time, Conventional sparse, 300
+sparseness, 0.2, 95.90689516067505, backward_time, Conventional sparse, 300
+sparseness, 0.3, 103.58962392807007, backward_time, Conventional sparse, 300
+sparseness, 0.3, 102.93475317955017, backward_time, Conventional sparse, 300
+sparseness, 0.3, 103.31227254867554, backward_time, Conventional sparse, 300
+sparseness, 0.4, 111.44165658950806, backward_time, Conventional sparse, 300
+sparseness, 0.4, 111.20365452766418, backward_time, Conventional sparse, 300
+sparseness, 0.4, 111.60683846473694, backward_time, Conventional sparse, 300
+sparseness, 0.5, 111.3260247707367, backward_time, Conventional sparse, 300
+sparseness, 0.5, 112.54851651191711, backward_time, Conventional sparse, 300
+sparseness, 0.5, 111.52796173095703, backward_time, Conventional sparse, 300
+sparseness, 0.6, 98.7257912158966, backward_time, Conventional sparse, 300
+sparseness, 0.6, 98.70503878593445, backward_time, Conventional sparse, 300
+sparseness, 0.6, 98.83329606056213, backward_time, Conventional sparse, 300
+sparseness, 0.7, 79.95322227478027, backward_time, Conventional sparse, 300
+sparseness, 0.7, 80.41927480697632, backward_time, Conventional sparse, 300
+sparseness, 0.7, 80.32321405410767, backward_time, Conventional sparse, 300
+sparseness, 0.8, 60.92530679702759, backward_time, Conventional sparse, 300
+sparseness, 0.8, 61.20446014404297, backward_time, Conventional sparse, 300
+sparseness, 0.8, 60.98085308074951, backward_time, Conventional sparse, 300
+sparseness, 0.9, 43.482816219329834, backward_time, Conventional sparse, 300
+sparseness, 0.9, 43.35465621948242, backward_time, Conventional sparse, 300
+sparseness, 0.9, 43.4678430557251, backward_time, Conventional sparse, 300
+sparseness, 1.0, 26.813881874084473, backward_time, Conventional sparse, 300
+sparseness, 1.0, 26.814270973205566, backward_time, Conventional sparse, 300
+sparseness, 1.0, 26.728703022003174, backward_time, Conventional sparse, 300
+sparseness, 0.0, 44.77570843696594, backward_time, CSR, 300
+sparseness, 0.0, 44.663862466812134, backward_time, CSR, 300
+sparseness, 0.0, 44.70388960838318, backward_time, CSR, 300
+sparseness, 0.1, 40.664671897888184, backward_time, CSR, 300
+sparseness, 0.1, 40.708284854888916, backward_time, CSR, 300
+sparseness, 0.1, 40.65524959564209, backward_time, CSR, 300
+sparseness, 0.2, 36.771469831466675, backward_time, CSR, 300
+sparseness, 0.2, 36.67670822143555, backward_time, CSR, 300
+sparseness, 0.2, 36.68854093551636, backward_time, CSR, 300
+sparseness, 0.3, 32.693336725234985, backward_time, CSR, 300
+sparseness, 0.3, 32.685914278030396, backward_time, CSR, 300
+sparseness, 0.3, 32.678919553756714, backward_time, CSR, 300
+sparseness, 0.4, 28.709484100341797, backward_time, CSR, 300
+sparseness, 0.4, 28.712400436401367, backward_time, CSR, 300
+sparseness, 0.4, 28.78040909767151, backward_time, CSR, 300
+sparseness, 0.5, 24.731792211532593, backward_time, CSR, 300
+sparseness, 0.5, 24.74599575996399, backward_time, CSR, 300
+sparseness, 0.5, 24.734302520751953, backward_time, CSR, 300
+sparseness, 0.6, 20.91528820991516, backward_time, CSR, 300
+sparseness, 0.6, 20.890578031539917, backward_time, CSR, 300
+sparseness, 0.6, 20.8906569480896, backward_time, CSR, 300
+sparseness, 0.7, 16.92525029182434, backward_time, CSR, 300
+sparseness, 0.7, 16.919095754623413, backward_time, CSR, 300
+sparseness, 0.7, 16.913223028182983, backward_time, CSR, 300
+sparseness, 0.8, 12.99716591835022, backward_time, CSR, 300
+sparseness, 0.8, 12.938609838485718, backward_time, CSR, 300
+sparseness, 0.8, 12.934794425964355, backward_time, CSR, 300
+sparseness, 0.9, 8.720600605010986, backward_time, CSR, 300
+sparseness, 0.9, 8.71275281906128, backward_time, CSR, 300
+sparseness, 0.9, 8.730146408081055, backward_time, CSR, 300
+sparseness, 1.0, 4.774762392044067, backward_time, CSR, 300
+sparseness, 1.0, 4.778828382492065, backward_time, CSR, 300
+sparseness, 1.0, 4.778797626495361, backward_time, CSR, 300
+sparseness, 0.0, 6.485336065292358, forward, Conventional sparse, 100
+sparseness, 0.0, 6.500833988189697, forward, Conventional sparse, 100
+sparseness, 0.0, 6.492769002914429, forward, Conventional sparse, 100
+sparseness, 0.1, 6.835066795349121, forward, Conventional sparse, 100
+sparseness, 0.1, 6.808178186416626, forward, Conventional sparse, 100
+sparseness, 0.1, 6.825176477432251, forward, Conventional sparse, 100
+sparseness, 0.2, 7.327205181121826, forward, Conventional sparse, 100
+sparseness, 0.2, 7.3303542137146, forward, Conventional sparse, 100
+sparseness, 0.2, 7.366276264190674, forward, Conventional sparse, 100
+sparseness, 0.3, 8.26293683052063, forward, Conventional sparse, 100
+sparseness, 0.3, 8.22955322265625, forward, Conventional sparse, 100
+sparseness, 0.3, 8.265959978103638, forward, Conventional sparse, 100
+sparseness, 0.4, 9.246891021728516, forward, Conventional sparse, 100
+sparseness, 0.4, 9.192776203155518, forward, Conventional sparse, 100
+sparseness, 0.4, 9.305577516555786, forward, Conventional sparse, 100
+sparseness, 0.5, 9.818504571914673, forward, Conventional sparse, 100
+sparseness, 0.5, 9.695460081100464, forward, Conventional sparse, 100
+sparseness, 0.5, 9.812689304351807, forward, Conventional sparse, 100
+sparseness, 0.6, 8.938236951828003, forward, Conventional sparse, 100
+sparseness, 0.6, 8.919851779937744, forward, Conventional sparse, 100
+sparseness, 0.6, 8.952735900878906, forward, Conventional sparse, 100
+sparseness, 0.7, 7.4167351722717285, forward, Conventional sparse, 100
+sparseness, 0.7, 7.432913780212402, forward, Conventional sparse, 100
+sparseness, 0.7, 7.482190132141113, forward, Conventional sparse, 100
+sparseness, 0.8, 6.240058898925781, forward, Conventional sparse, 100
+sparseness, 0.8, 6.198781251907349, forward, Conventional sparse, 100
+sparseness, 0.8, 6.2352845668792725, forward, Conventional sparse, 100
+sparseness, 0.9, 5.168413877487183, forward, Conventional sparse, 100
+sparseness, 0.9, 5.096486806869507, forward, Conventional sparse, 100
+sparseness, 0.9, 5.15852165222168, forward, Conventional sparse, 100
+sparseness, 1.0, 4.041492700576782, forward, Conventional sparse, 100
+sparseness, 1.0, 4.052628040313721, forward, Conventional sparse, 100
+sparseness, 1.0, 4.034214735031128, forward, Conventional sparse, 100
+sparseness, 0.0, 5.686493396759033, forward, CSR, 100
+sparseness, 0.0, 5.685850143432617, forward, CSR, 100
+sparseness, 0.0, 5.717188596725464, forward, CSR, 100
+sparseness, 0.1, 5.3261919021606445, forward, CSR, 100
+sparseness, 0.1, 5.31753134727478, forward, CSR, 100
+sparseness, 0.1, 5.323855876922607, forward, CSR, 100
+sparseness, 0.2, 4.920237064361572, forward, CSR, 100
+sparseness, 0.2, 4.91723108291626, forward, CSR, 100
+sparseness, 0.2, 4.91944694519043, forward, CSR, 100
+sparseness, 0.3, 4.51758074760437, forward, CSR, 100
+sparseness, 0.3, 4.534836292266846, forward, CSR, 100
+sparseness, 0.3, 4.527580499649048, forward, CSR, 100
+sparseness, 0.4, 4.103595495223999, forward, CSR, 100
+sparseness, 0.4, 4.104112148284912, forward, CSR, 100
+sparseness, 0.4, 4.097734689712524, forward, CSR, 100
+sparseness, 0.5, 3.7406041622161865, forward, CSR, 100
+sparseness, 0.5, 3.7303552627563477, forward, CSR, 100
+sparseness, 0.5, 3.7328851222991943, forward, CSR, 100
+sparseness, 0.6, 3.374378204345703, forward, CSR, 100
+sparseness, 0.6, 3.37463641166687, forward, CSR, 100
+sparseness, 0.6, 3.3731849193573, forward, CSR, 100
+sparseness, 0.7, 2.962205171585083, forward, CSR, 100
+sparseness, 0.7, 2.9560365676879883, forward, CSR, 100
+sparseness, 0.7, 2.9611995220184326, forward, CSR, 100
+sparseness, 0.8, 2.510986089706421, forward, CSR, 100
+sparseness, 0.8, 2.4605319499969482, forward, CSR, 100
+sparseness, 0.8, 2.4851036071777344, forward, CSR, 100
+sparseness, 0.9, 2.0319507122039795, forward, CSR, 100
+sparseness, 0.9, 2.0272319316864014, forward, CSR, 100
+sparseness, 0.9, 2.031572103500366, forward, CSR, 100
+sparseness, 1.0, 1.6099116802215576, forward, CSR, 100
+sparseness, 1.0, 1.6404850482940674, forward, CSR, 100
+sparseness, 1.0, 1.6405606269836426, forward, CSR, 100
+sparseness, 0.0, 10.256314516067505, backward_time, Conventional sparse, 100
+sparseness, 0.0, 10.26920485496521, backward_time, Conventional sparse, 100
+sparseness, 0.0, 10.274454593658447, backward_time, Conventional sparse, 100
+sparseness, 0.1, 10.191813230514526, backward_time, Conventional sparse, 100
+sparseness, 0.1, 10.140992164611816, backward_time, Conventional sparse, 100
+sparseness, 0.1, 10.151604890823364, backward_time, Conventional sparse, 100
+sparseness, 0.2, 10.528677940368652, backward_time, Conventional sparse, 100
+sparseness, 0.2, 10.575330972671509, backward_time, Conventional sparse, 100
+sparseness, 0.2, 10.509094715118408, backward_time, Conventional sparse, 100
+sparseness, 0.3, 11.3797767162323, backward_time, Conventional sparse, 100
+sparseness, 0.3, 11.332879304885864, backward_time, Conventional sparse, 100
+sparseness, 0.3, 11.335222244262695, backward_time, Conventional sparse, 100
+sparseness, 0.4, 12.08905291557312, backward_time, Conventional sparse, 100
+sparseness, 0.4, 11.985726118087769, backward_time, Conventional sparse, 100
+sparseness, 0.4, 12.028433322906494, backward_time, Conventional sparse, 100
+sparseness, 0.5, 12.206068515777588, backward_time, Conventional sparse, 100
+sparseness, 0.5, 12.290101051330566, backward_time, Conventional sparse, 100
+sparseness, 0.5, 12.304306983947754, backward_time, Conventional sparse, 100
+sparseness, 0.6, 10.865512132644653, backward_time, Conventional sparse, 100
+sparseness, 0.6, 10.794508218765259, backward_time, Conventional sparse, 100
+sparseness, 0.6, 12.45420217514038, backward_time, Conventional sparse, 100
+sparseness, 0.7, 8.854872941970825, backward_time, Conventional sparse, 100
+sparseness, 0.7, 8.798572778701782, backward_time, Conventional sparse, 100
+sparseness, 0.7, 8.82615327835083, backward_time, Conventional sparse, 100
+sparseness, 0.8, 7.1385650634765625, backward_time, Conventional sparse, 100
+sparseness, 0.8, 7.120007276535034, backward_time, Conventional sparse, 100
+sparseness, 0.8, 7.136593580245972, backward_time, Conventional sparse, 100
+sparseness, 0.9, 5.804485082626343, backward_time, Conventional sparse, 100
+sparseness, 0.9, 5.5867369174957275, backward_time, Conventional sparse, 100
+sparseness, 0.9, 5.60144567489624, backward_time, Conventional sparse, 100
+sparseness, 1.0, 4.202526330947876, backward_time, Conventional sparse, 100
+sparseness, 1.0, 4.191622495651245, backward_time, Conventional sparse, 100
+sparseness, 1.0, 4.204291105270386, backward_time, Conventional sparse, 100
+sparseness, 0.0, 6.090677738189697, backward_time, CSR, 100
+sparseness, 0.0, 6.09017539024353, backward_time, CSR, 100
+sparseness, 0.0, 6.0901031494140625, backward_time, CSR, 100
+sparseness, 0.1, 5.6508190631866455, backward_time, CSR, 100
+sparseness, 0.1, 5.647080183029175, backward_time, CSR, 100
+sparseness, 0.1, 5.647966146469116, backward_time, CSR, 100
+sparseness, 0.2, 5.183297395706177, backward_time, CSR, 100
+sparseness, 0.2, 5.2460691928863525, backward_time, CSR, 100
+sparseness, 0.2, 5.176573753356934, backward_time, CSR, 100
+sparseness, 0.3, 4.761523485183716, backward_time, CSR, 100
+sparseness, 0.3, 4.761322259902954, backward_time, CSR, 100
+sparseness, 0.3, 4.757257461547852, backward_time, CSR, 100
+sparseness, 0.4, 4.324334621429443, backward_time, CSR, 100
+sparseness, 0.4, 4.321160793304443, backward_time, CSR, 100
+sparseness, 0.4, 4.320780992507935, backward_time, CSR, 100
+sparseness, 0.5, 3.879087209701538, backward_time, CSR, 100
+sparseness, 0.5, 3.876899242401123, backward_time, CSR, 100
+sparseness, 0.5, 3.879331111907959, backward_time, CSR, 100
+sparseness, 0.6, 3.478422164916992, backward_time, CSR, 100
+sparseness, 0.6, 3.480105400085449, backward_time, CSR, 100
+sparseness, 0.6, 3.476501703262329, backward_time, CSR, 100
+sparseness, 0.7, 2.9572954177856445, backward_time, CSR, 100
+sparseness, 0.7, 2.993583917617798, backward_time, CSR, 100
+sparseness, 0.7, 2.9540090560913086, backward_time, CSR, 100
+sparseness, 0.8, 2.5254228115081787, backward_time, CSR, 100
+sparseness, 0.8, 2.5244336128234863, backward_time, CSR, 100
+sparseness, 0.8, 2.516839027404785, backward_time, CSR, 100
+sparseness, 0.9, 2.0823400020599365, backward_time, CSR, 100
+sparseness, 0.9, 2.088482141494751, backward_time, CSR, 100
+sparseness, 0.9, 2.0788097381591797, backward_time, CSR, 100
+sparseness, 1.0, 1.642411708831787, backward_time, CSR, 100
+sparseness, 1.0, 1.6481380462646484, backward_time, CSR, 100
+sparseness, 1.0, 1.6407318115234375, backward_time, CSR, 100
+sparseness, 0.0, 0.9400308132171631, forward, Conventional sparse, 30
+sparseness, 0.0, 0.9388546943664551, forward, Conventional sparse, 30
+sparseness, 0.0, 0.9401850700378418, forward, Conventional sparse, 30
+sparseness, 0.1, 0.9133052825927734, forward, Conventional sparse, 30
+sparseness, 0.1, 0.913092851638794, forward, Conventional sparse, 30
+sparseness, 0.1, 0.9102373123168945, forward, Conventional sparse, 30
+sparseness, 0.2, 0.8857302665710449, forward, Conventional sparse, 30
+sparseness, 0.2, 0.8816695213317871, forward, Conventional sparse, 30
+sparseness, 0.2, 0.8898200988769531, forward, Conventional sparse, 30
+sparseness, 0.3, 0.8592376708984375, forward, Conventional sparse, 30
+sparseness, 0.3, 0.8600971698760986, forward, Conventional sparse, 30
+sparseness, 0.3, 0.862846851348877, forward, Conventional sparse, 30
+sparseness, 0.4, 0.8355913162231445, forward, Conventional sparse, 30
+sparseness, 0.4, 0.8387808799743652, forward, Conventional sparse, 30
+sparseness, 0.4, 0.8462631702423096, forward, Conventional sparse, 30
+sparseness, 0.5, 0.851508378982544, forward, Conventional sparse, 30
+sparseness, 0.5, 0.832427978515625, forward, Conventional sparse, 30
+sparseness, 0.5, 0.8203577995300293, forward, Conventional sparse, 30
+sparseness, 0.6, 0.8108749389648438, forward, Conventional sparse, 30
+sparseness, 0.6, 0.8078863620758057, forward, Conventional sparse, 30
+sparseness, 0.6, 0.8079445362091064, forward, Conventional sparse, 30
+sparseness, 0.7, 0.7843294143676758, forward, Conventional sparse, 30
+sparseness, 0.7, 0.7730357646942139, forward, Conventional sparse, 30
+sparseness, 0.7, 0.783083438873291, forward, Conventional sparse, 30
+sparseness, 0.8, 0.751685619354248, forward, Conventional sparse, 30
+sparseness, 0.8, 0.7653381824493408, forward, Conventional sparse, 30
+sparseness, 0.8, 0.7540998458862305, forward, Conventional sparse, 30
+sparseness, 0.9, 0.7376563549041748, forward, Conventional sparse, 30
+sparseness, 0.9, 0.7478675842285156, forward, Conventional sparse, 30
+sparseness, 0.9, 0.74690842628479, forward, Conventional sparse, 30
+sparseness, 1.0, 0.7357938289642334, forward, Conventional sparse, 30
+sparseness, 1.0, 0.728588342666626, forward, Conventional sparse, 30
+sparseness, 1.0, 0.7262618541717529, forward, Conventional sparse, 30
+sparseness, 0.0, 0.8682887554168701, forward, CSR, 30
+sparseness, 0.0, 0.8633401393890381, forward, CSR, 30
+sparseness, 0.0, 0.8746886253356934, forward, CSR, 30
+sparseness, 0.1, 0.8452222347259521, forward, CSR, 30
+sparseness, 0.1, 0.8382976055145264, forward, CSR, 30
+sparseness, 0.1, 0.836756706237793, forward, CSR, 30
+sparseness, 0.2, 0.8036248683929443, forward, CSR, 30
+sparseness, 0.2, 0.8138761520385742, forward, CSR, 30
+sparseness, 0.2, 0.8094868659973145, forward, CSR, 30
+sparseness, 0.3, 0.7606911659240723, forward, CSR, 30
+sparseness, 0.3, 0.7682609558105469, forward, CSR, 30
+sparseness, 0.3, 0.7566025257110596, forward, CSR, 30
+sparseness, 0.4, 0.7260472774505615, forward, CSR, 30
+sparseness, 0.4, 0.7239270210266113, forward, CSR, 30
+sparseness, 0.4, 0.7232258319854736, forward, CSR, 30
+sparseness, 0.5, 0.7139253616333008, forward, CSR, 30
+sparseness, 0.5, 0.709181547164917, forward, CSR, 30
+sparseness, 0.5, 0.7101819515228271, forward, CSR, 30
+sparseness, 0.6, 0.6739156246185303, forward, CSR, 30
+sparseness, 0.6, 0.6838588714599609, forward, CSR, 30
+sparseness, 0.6, 0.6594212055206299, forward, CSR, 30
+sparseness, 0.7, 0.6317059993743896, forward, CSR, 30
+sparseness, 0.7, 0.6196763515472412, forward, CSR, 30
+sparseness, 0.7, 0.6282999515533447, forward, CSR, 30
+sparseness, 0.8, 0.599111795425415, forward, CSR, 30
+sparseness, 0.8, 0.5940372943878174, forward, CSR, 30
+sparseness, 0.8, 0.5928733348846436, forward, CSR, 30
+sparseness, 0.9, 0.5502290725708008, forward, CSR, 30
+sparseness, 0.9, 0.5563557147979736, forward, CSR, 30
+sparseness, 0.9, 0.555816650390625, forward, CSR, 30
+sparseness, 1.0, 0.5276660919189453, forward, CSR, 30
+sparseness, 1.0, 0.5190424919128418, forward, CSR, 30
+sparseness, 1.0, 0.5193841457366943, forward, CSR, 30
+sparseness, 0.0, 1.2550711631774902, backward_time, Conventional sparse, 30
+sparseness, 0.0, 1.2578129768371582, backward_time, Conventional sparse, 30
+sparseness, 0.0, 1.261267900466919, backward_time, Conventional sparse, 30
+sparseness, 0.1, 1.2204012870788574, backward_time, Conventional sparse, 30
+sparseness, 0.1, 1.2186808586120605, backward_time, Conventional sparse, 30
+sparseness, 0.1, 1.208094835281372, backward_time, Conventional sparse, 30
+sparseness, 0.2, 1.1548571586608887, backward_time, Conventional sparse, 30
+sparseness, 0.2, 1.1694402694702148, backward_time, Conventional sparse, 30
+sparseness, 0.2, 1.1604681015014648, backward_time, Conventional sparse, 30
+sparseness, 0.3, 1.1201646327972412, backward_time, Conventional sparse, 30
+sparseness, 0.3, 1.1019351482391357, backward_time, Conventional sparse, 30
+sparseness, 0.3, 1.1095318794250488, backward_time, Conventional sparse, 30
+sparseness, 0.4, 1.0571935176849365, backward_time, Conventional sparse, 30
+sparseness, 0.4, 1.0523815155029297, backward_time, Conventional sparse, 30
+sparseness, 0.4, 1.0556108951568604, backward_time, Conventional sparse, 30
+sparseness, 0.5, 1.0166938304901123, backward_time, Conventional sparse, 30
+sparseness, 0.5, 1.0107884407043457, backward_time, Conventional sparse, 30
+sparseness, 0.5, 1.0360548496246338, backward_time, Conventional sparse, 30
+sparseness, 0.6, 0.9600365161895752, backward_time, Conventional sparse, 30
+sparseness, 0.6, 0.9540412425994873, backward_time, Conventional sparse, 30
+sparseness, 0.6, 0.9550223350524902, backward_time, Conventional sparse, 30
+sparseness, 0.7, 0.904616117477417, backward_time, Conventional sparse, 30
+sparseness, 0.7, 0.9027194976806641, backward_time, Conventional sparse, 30
+sparseness, 0.7, 0.9121043682098389, backward_time, Conventional sparse, 30
+sparseness, 0.8, 0.8461675643920898, backward_time, Conventional sparse, 30
+sparseness, 0.8, 0.8515417575836182, backward_time, Conventional sparse, 30
+sparseness, 0.8, 0.8430674076080322, backward_time, Conventional sparse, 30
+sparseness, 0.9, 0.7976491451263428, backward_time, Conventional sparse, 30
+sparseness, 0.9, 0.7905054092407227, backward_time, Conventional sparse, 30
+sparseness, 0.9, 0.7861621379852295, backward_time, Conventional sparse, 30
+sparseness, 1.0, 0.7563285827636719, backward_time, Conventional sparse, 30
+sparseness, 1.0, 0.7624447345733643, backward_time, Conventional sparse, 30
+sparseness, 1.0, 0.7414960861206055, backward_time, Conventional sparse, 30
+sparseness, 0.0, 0.8905260562896729, backward_time, CSR, 30
+sparseness, 0.0, 0.8975200653076172, backward_time, CSR, 30
+sparseness, 0.0, 0.9008476734161377, backward_time, CSR, 30
+sparseness, 0.1, 0.8602619171142578, backward_time, CSR, 30
+sparseness, 0.1, 0.8530168533325195, backward_time, CSR, 30
+sparseness, 0.1, 0.8612799644470215, backward_time, CSR, 30
+sparseness, 0.2, 0.8159816265106201, backward_time, CSR, 30
+sparseness, 0.2, 0.8230545520782471, backward_time, CSR, 30
+sparseness, 0.2, 0.8108398914337158, backward_time, CSR, 30
+sparseness, 0.3, 0.7864503860473633, backward_time, CSR, 30
+sparseness, 0.3, 0.7733240127563477, backward_time, CSR, 30
+sparseness, 0.3, 0.782545804977417, backward_time, CSR, 30
+sparseness, 0.4, 0.7339932918548584, backward_time, CSR, 30
+sparseness, 0.4, 0.7415590286254883, backward_time, CSR, 30
+sparseness, 0.4, 0.7416658401489258, backward_time, CSR, 30
+sparseness, 0.5, 0.717963695526123, backward_time, CSR, 30
+sparseness, 0.5, 0.7142021656036377, backward_time, CSR, 30
+sparseness, 0.5, 0.7171146869659424, backward_time, CSR, 30
+sparseness, 0.6, 0.6674997806549072, backward_time, CSR, 30
+sparseness, 0.6, 0.6659834384918213, backward_time, CSR, 30
+sparseness, 0.6, 0.6737604141235352, backward_time, CSR, 30
+sparseness, 0.7, 0.628591775894165, backward_time, CSR, 30
+sparseness, 0.7, 0.626509428024292, backward_time, CSR, 30
+sparseness, 0.7, 0.6292057037353516, backward_time, CSR, 30
+sparseness, 0.8, 0.5994205474853516, backward_time, CSR, 30
+sparseness, 0.8, 0.5966048240661621, backward_time, CSR, 30
+sparseness, 0.8, 0.597628116607666, backward_time, CSR, 30
+sparseness, 0.9, 0.5597660541534424, backward_time, CSR, 30
+sparseness, 0.9, 0.5565083026885986, backward_time, CSR, 30
+sparseness, 0.9, 0.5570707321166992, backward_time, CSR, 30
+sparseness, 1.0, 0.5190351009368896, backward_time, CSR, 30
+sparseness, 1.0, 0.5159389972686768, backward_time, CSR, 30
+sparseness, 1.0, 0.5156068801879883, backward_time, CSR, 30
+sparseness, 0.0, 0.23942279815673828, forward, Conventional sparse, 10
+sparseness, 0.0, 0.24443936347961426, forward, Conventional sparse, 10
+sparseness, 0.0, 0.23713135719299316, forward, Conventional sparse, 10
+sparseness, 0.1, 0.23515892028808594, forward, Conventional sparse, 10
+sparseness, 0.1, 0.2343916893005371, forward, Conventional sparse, 10
+sparseness, 0.1, 0.23299551010131836, forward, Conventional sparse, 10
+sparseness, 0.2, 0.23248672485351562, forward, Conventional sparse, 10
+sparseness, 0.2, 0.23374605178833008, forward, Conventional sparse, 10
+sparseness, 0.2, 0.23491644859313965, forward, Conventional sparse, 10
+sparseness, 0.3, 0.23241233825683594, forward, Conventional sparse, 10
+sparseness, 0.3, 0.23433947563171387, forward, Conventional sparse, 10
+sparseness, 0.3, 0.23204898834228516, forward, Conventional sparse, 10
+sparseness, 0.4, 0.23148107528686523, forward, Conventional sparse, 10
+sparseness, 0.4, 0.22488713264465332, forward, Conventional sparse, 10
+sparseness, 0.4, 0.22989606857299805, forward, Conventional sparse, 10
+sparseness, 0.5, 0.22673320770263672, forward, Conventional sparse, 10
+sparseness, 0.5, 0.22650361061096191, forward, Conventional sparse, 10
+sparseness, 0.5, 0.2286510467529297, forward, Conventional sparse, 10
+sparseness, 0.6, 0.2239241600036621, forward, Conventional sparse, 10
+sparseness, 0.6, 0.22813081741333008, forward, Conventional sparse, 10
+sparseness, 0.6, 0.22310662269592285, forward, Conventional sparse, 10
+sparseness, 0.7, 0.22127413749694824, forward, Conventional sparse, 10
+sparseness, 0.7, 0.22050738334655762, forward, Conventional sparse, 10
+sparseness, 0.7, 0.2232065200805664, forward, Conventional sparse, 10
+sparseness, 0.8, 0.2185680866241455, forward, Conventional sparse, 10
+sparseness, 0.8, 0.21808576583862305, forward, Conventional sparse, 10
+sparseness, 0.8, 0.2166132926940918, forward, Conventional sparse, 10
+sparseness, 0.9, 0.21846866607666016, forward, Conventional sparse, 10
+sparseness, 0.9, 0.2198481559753418, forward, Conventional sparse, 10
+sparseness, 0.9, 0.21787047386169434, forward, Conventional sparse, 10
+sparseness, 1.0, 0.21342682838439941, forward, Conventional sparse, 10
+sparseness, 1.0, 0.21099567413330078, forward, Conventional sparse, 10
+sparseness, 1.0, 0.21569371223449707, forward, Conventional sparse, 10
+sparseness, 0.0, 0.23193812370300293, forward, CSR, 10
+sparseness, 0.0, 0.23175549507141113, forward, CSR, 10
+sparseness, 0.0, 0.23051881790161133, forward, CSR, 10
+sparseness, 0.1, 0.2245471477508545, forward, CSR, 10
+sparseness, 0.1, 0.22314739227294922, forward, CSR, 10
+sparseness, 0.1, 0.22275733947753906, forward, CSR, 10
+sparseness, 0.2, 0.2200627326965332, forward, CSR, 10
+sparseness, 0.2, 0.21854019165039062, forward, CSR, 10
+sparseness, 0.2, 0.22309136390686035, forward, CSR, 10
+sparseness, 0.3, 0.218308687210083, forward, CSR, 10
+sparseness, 0.3, 0.2177441120147705, forward, CSR, 10
+sparseness, 0.3, 0.21870160102844238, forward, CSR, 10
+sparseness, 0.4, 0.21404099464416504, forward, CSR, 10
+sparseness, 0.4, 0.2163372039794922, forward, CSR, 10
+sparseness, 0.4, 0.21056795120239258, forward, CSR, 10
+sparseness, 0.5, 0.21123671531677246, forward, CSR, 10
+sparseness, 0.5, 0.21052885055541992, forward, CSR, 10
+sparseness, 0.5, 0.21026849746704102, forward, CSR, 10
+sparseness, 0.6, 0.2109999656677246, forward, CSR, 10
+sparseness, 0.6, 0.21009206771850586, forward, CSR, 10
+sparseness, 0.6, 0.20768189430236816, forward, CSR, 10
+sparseness, 0.7, 0.2032470703125, forward, CSR, 10
+sparseness, 0.7, 0.20476365089416504, forward, CSR, 10
+sparseness, 0.7, 0.2039635181427002, forward, CSR, 10
+sparseness, 0.8, 0.19854211807250977, forward, CSR, 10
+sparseness, 0.8, 0.1996750831604004, forward, CSR, 10
+sparseness, 0.8, 0.20135235786437988, forward, CSR, 10
+sparseness, 0.9, 0.1984877586364746, forward, CSR, 10
+sparseness, 0.9, 0.19812297821044922, forward, CSR, 10
+sparseness, 0.9, 0.19383907318115234, forward, CSR, 10
+sparseness, 1.0, 0.1903846263885498, forward, CSR, 10
+sparseness, 1.0, 0.19016242027282715, forward, CSR, 10
+sparseness, 1.0, 0.19139671325683594, forward, CSR, 10
+sparseness, 0.0, 0.27278995513916016, backward_time, Conventional sparse, 10
+sparseness, 0.0, 0.2696950435638428, backward_time, Conventional sparse, 10
+sparseness, 0.0, 0.27299928665161133, backward_time, Conventional sparse, 10
+sparseness, 0.1, 0.2681906223297119, backward_time, Conventional sparse, 10
+sparseness, 0.1, 0.26138901710510254, backward_time, Conventional sparse, 10
+sparseness, 0.1, 0.26198744773864746, backward_time, Conventional sparse, 10
+sparseness, 0.2, 0.2578248977661133, backward_time, Conventional sparse, 10
+sparseness, 0.2, 0.25768327713012695, backward_time, Conventional sparse, 10
+sparseness, 0.2, 0.2574882507324219, backward_time, Conventional sparse, 10
+sparseness, 0.3, 0.25176429748535156, backward_time, Conventional sparse, 10
+sparseness, 0.3, 0.2526280879974365, backward_time, Conventional sparse, 10
+sparseness, 0.3, 0.25284409523010254, backward_time, Conventional sparse, 10
+sparseness, 0.4, 0.24775123596191406, backward_time, Conventional sparse, 10
+sparseness, 0.4, 0.2477867603302002, backward_time, Conventional sparse, 10
+sparseness, 0.4, 0.2463085651397705, backward_time, Conventional sparse, 10
+sparseness, 0.5, 0.25041913986206055, backward_time, Conventional sparse, 10
+sparseness, 0.5, 0.24846100807189941, backward_time, Conventional sparse, 10
+sparseness, 0.5, 0.24704647064208984, backward_time, Conventional sparse, 10
+sparseness, 0.6, 0.24578857421875, backward_time, Conventional sparse, 10
+sparseness, 0.6, 0.24100995063781738, backward_time, Conventional sparse, 10
+sparseness, 0.6, 0.23743414878845215, backward_time, Conventional sparse, 10
+sparseness, 0.7, 0.23473000526428223, backward_time, Conventional sparse, 10
+sparseness, 0.7, 0.23105549812316895, backward_time, Conventional sparse, 10
+sparseness, 0.7, 0.2390754222869873, backward_time, Conventional sparse, 10
+sparseness, 0.8, 0.2252945899963379, backward_time, Conventional sparse, 10
+sparseness, 0.8, 0.22882461547851562, backward_time, Conventional sparse, 10
+sparseness, 0.8, 0.2252819538116455, backward_time, Conventional sparse, 10
+sparseness, 0.9, 0.22254443168640137, backward_time, Conventional sparse, 10
+sparseness, 0.9, 0.21931219100952148, backward_time, Conventional sparse, 10
+sparseness, 0.9, 0.22195768356323242, backward_time, Conventional sparse, 10
+sparseness, 1.0, 0.2170403003692627, backward_time, Conventional sparse, 10
+sparseness, 1.0, 0.21627449989318848, backward_time, Conventional sparse, 10
+sparseness, 1.0, 0.21744084358215332, backward_time, Conventional sparse, 10
+sparseness, 0.0, 0.23271512985229492, backward_time, CSR, 10
+sparseness, 0.0, 0.2334613800048828, backward_time, CSR, 10
+sparseness, 0.0, 0.23199725151062012, backward_time, CSR, 10
+sparseness, 0.1, 0.22544264793395996, backward_time, CSR, 10
+sparseness, 0.1, 0.22381973266601562, backward_time, CSR, 10
+sparseness, 0.1, 0.22680377960205078, backward_time, CSR, 10
+sparseness, 0.2, 0.2193131446838379, backward_time, CSR, 10
+sparseness, 0.2, 0.22351527214050293, backward_time, CSR, 10
+sparseness, 0.2, 0.22002553939819336, backward_time, CSR, 10
+sparseness, 0.3, 0.21794509887695312, backward_time, CSR, 10
+sparseness, 0.3, 0.21521878242492676, backward_time, CSR, 10
+sparseness, 0.3, 0.22054409980773926, backward_time, CSR, 10
+sparseness, 0.4, 0.21427106857299805, backward_time, CSR, 10
+sparseness, 0.4, 0.21360564231872559, backward_time, CSR, 10
+sparseness, 0.4, 0.2157449722290039, backward_time, CSR, 10
+sparseness, 0.5, 0.21382427215576172, backward_time, CSR, 10
+sparseness, 0.5, 0.21316170692443848, backward_time, CSR, 10
+sparseness, 0.5, 0.21772503852844238, backward_time, CSR, 10
+sparseness, 0.6, 0.21019935607910156, backward_time, CSR, 10
+sparseness, 0.6, 0.20900559425354004, backward_time, CSR, 10
+sparseness, 0.6, 0.20699214935302734, backward_time, CSR, 10
+sparseness, 0.7, 0.20257997512817383, backward_time, CSR, 10
+sparseness, 0.7, 0.20497965812683105, backward_time, CSR, 10
+sparseness, 0.7, 0.2014315128326416, backward_time, CSR, 10
+sparseness, 0.8, 0.20075607299804688, backward_time, CSR, 10
+sparseness, 0.8, 0.19726133346557617, backward_time, CSR, 10
+sparseness, 0.8, 0.20047783851623535, backward_time, CSR, 10
+sparseness, 0.9, 0.19791102409362793, backward_time, CSR, 10
+sparseness, 0.9, 0.19560575485229492, backward_time, CSR, 10
+sparseness, 0.9, 0.19688010215759277, backward_time, CSR, 10
+sparseness, 1.0, 0.19217753410339355, backward_time, CSR, 10
+sparseness, 1.0, 0.19111943244934082, backward_time, CSR, 10
+sparseness, 1.0, 0.1918177604675293, backward_time, CSR, 10

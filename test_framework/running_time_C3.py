@@ -18,7 +18,7 @@ alphabet_size = 4
 start = 2 # the state space
 stop = 100 # baumwelch cache-jumps at 20
 increment = 4
-replicates = 5
+replicates = 3
 
 
 
@@ -27,7 +27,7 @@ if True:
     
 
 for algorithm in ['forward', 'backward_time', 'posteriorDecoding', 'baumWelch', 'viterbi']:
-    for hmmType in ['Conventional sparse', 'Conventional', 'BLAS', 'CSR']: # Don't forget RSB
+    for hmmType in ['Conventional sparse', 'Conventional', 'BLAS', 'CSR', 'RSB']: # Don't forget RSB
         
         test_standard_data = random.choices([j for j in range(alphabet_size)], k = input_size) # Generates a data set with an arbitrary alphabet size (uniform).
         

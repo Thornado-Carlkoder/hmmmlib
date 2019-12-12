@@ -1,0 +1,226 @@
+test, observations, time, algorithm, variant
+alphabetsize, 4, 0.12423992156982422, posteriorDecoding, Conventional
+alphabetsize, 4, 0.12153196334838867, posteriorDecoding, Conventional
+alphabetsize, 4, 0.12134242057800293, posteriorDecoding, Conventional
+alphabetsize, 14, 0.1233527660369873, posteriorDecoding, Conventional
+alphabetsize, 14, 0.12394499778747559, posteriorDecoding, Conventional
+alphabetsize, 14, 0.12266302108764648, posteriorDecoding, Conventional
+alphabetsize, 24, 0.12938523292541504, posteriorDecoding, Conventional
+alphabetsize, 24, 0.12449193000793457, posteriorDecoding, Conventional
+alphabetsize, 24, 0.12273573875427246, posteriorDecoding, Conventional
+alphabetsize, 34, 0.12360429763793945, posteriorDecoding, Conventional
+alphabetsize, 34, 0.12346100807189941, posteriorDecoding, Conventional
+alphabetsize, 34, 0.12331128120422363, posteriorDecoding, Conventional
+alphabetsize, 44, 0.12375450134277344, posteriorDecoding, Conventional
+alphabetsize, 44, 0.12451863288879395, posteriorDecoding, Conventional
+alphabetsize, 44, 0.12338995933532715, posteriorDecoding, Conventional
+alphabetsize, 4, 0.1425023078918457, posteriorDecoding, Conventional sparse
+alphabetsize, 4, 0.14197802543640137, posteriorDecoding, Conventional sparse
+alphabetsize, 4, 0.1425631046295166, posteriorDecoding, Conventional sparse
+alphabetsize, 14, 0.14340686798095703, posteriorDecoding, Conventional sparse
+alphabetsize, 14, 0.14241862297058105, posteriorDecoding, Conventional sparse
+alphabetsize, 14, 0.14441180229187012, posteriorDecoding, Conventional sparse
+alphabetsize, 24, 0.1450181007385254, posteriorDecoding, Conventional sparse
+alphabetsize, 24, 0.14327168464660645, posteriorDecoding, Conventional sparse
+alphabetsize, 24, 0.14295196533203125, posteriorDecoding, Conventional sparse
+alphabetsize, 34, 0.14518976211547852, posteriorDecoding, Conventional sparse
+alphabetsize, 34, 0.1434917449951172, posteriorDecoding, Conventional sparse
+alphabetsize, 34, 0.14223051071166992, posteriorDecoding, Conventional sparse
+alphabetsize, 44, 0.14292287826538086, posteriorDecoding, Conventional sparse
+alphabetsize, 44, 0.14276981353759766, posteriorDecoding, Conventional sparse
+alphabetsize, 44, 0.14273953437805176, posteriorDecoding, Conventional sparse
+alphabetsize, 4, 0.05629992485046387, posteriorDecoding, BLAS
+alphabetsize, 4, 0.055789947509765625, posteriorDecoding, BLAS
+alphabetsize, 4, 0.05540013313293457, posteriorDecoding, BLAS
+alphabetsize, 14, 0.0565950870513916, posteriorDecoding, BLAS
+alphabetsize, 14, 0.05588674545288086, posteriorDecoding, BLAS
+alphabetsize, 14, 0.055822134017944336, posteriorDecoding, BLAS
+alphabetsize, 24, 0.0561528205871582, posteriorDecoding, BLAS
+alphabetsize, 24, 0.05618596076965332, posteriorDecoding, BLAS
+alphabetsize, 24, 0.055719852447509766, posteriorDecoding, BLAS
+alphabetsize, 34, 0.0593104362487793, posteriorDecoding, BLAS
+alphabetsize, 34, 0.056441545486450195, posteriorDecoding, BLAS
+alphabetsize, 34, 0.05586862564086914, posteriorDecoding, BLAS
+alphabetsize, 44, 0.05605912208557129, posteriorDecoding, BLAS
+alphabetsize, 44, 0.05626416206359863, posteriorDecoding, BLAS
+alphabetsize, 44, 0.0563662052154541, posteriorDecoding, BLAS
+alphabetsize, 4, 0.1098024845123291, posteriorDecoding, CSR
+alphabetsize, 4, 0.1096506118774414, posteriorDecoding, CSR
+alphabetsize, 4, 0.10969686508178711, posteriorDecoding, CSR
+alphabetsize, 14, 0.10969138145446777, posteriorDecoding, CSR
+alphabetsize, 14, 0.1085362434387207, posteriorDecoding, CSR
+alphabetsize, 14, 0.10989570617675781, posteriorDecoding, CSR
+alphabetsize, 24, 0.11038708686828613, posteriorDecoding, CSR
+alphabetsize, 24, 0.1093900203704834, posteriorDecoding, CSR
+alphabetsize, 24, 0.10921955108642578, posteriorDecoding, CSR
+alphabetsize, 34, 0.10929584503173828, posteriorDecoding, CSR
+alphabetsize, 34, 0.10968184471130371, posteriorDecoding, CSR
+alphabetsize, 34, 0.10986757278442383, posteriorDecoding, CSR
+alphabetsize, 44, 0.11016321182250977, posteriorDecoding, CSR
+alphabetsize, 44, 0.10918068885803223, posteriorDecoding, CSR
+alphabetsize, 44, 0.11035537719726562, posteriorDecoding, CSR
+alphabetsize, 4, 0.07249712944030762, posteriorDecoding, RSB
+alphabetsize, 4, 0.07235288619995117, posteriorDecoding, RSB
+alphabetsize, 4, 0.07234954833984375, posteriorDecoding, RSB
+alphabetsize, 14, 0.07342910766601562, posteriorDecoding, RSB
+alphabetsize, 14, 0.07167625427246094, posteriorDecoding, RSB
+alphabetsize, 14, 0.07156133651733398, posteriorDecoding, RSB
+alphabetsize, 24, 0.07250857353210449, posteriorDecoding, RSB
+alphabetsize, 24, 0.07252264022827148, posteriorDecoding, RSB
+alphabetsize, 24, 0.07201075553894043, posteriorDecoding, RSB
+alphabetsize, 34, 0.07220005989074707, posteriorDecoding, RSB
+alphabetsize, 34, 0.0707857608795166, posteriorDecoding, RSB
+alphabetsize, 34, 0.07025742530822754, posteriorDecoding, RSB
+alphabetsize, 44, 0.07164669036865234, posteriorDecoding, RSB
+alphabetsize, 44, 0.07084536552429199, posteriorDecoding, RSB
+alphabetsize, 44, 0.07099533081054688, posteriorDecoding, RSB
+alphabetsize, 4, 0.3007338047027588, baumWelch, Conventional
+alphabetsize, 4, 0.29749536514282227, baumWelch, Conventional
+alphabetsize, 4, 0.298140287399292, baumWelch, Conventional
+alphabetsize, 14, 0.32854604721069336, baumWelch, Conventional
+alphabetsize, 14, 0.32808899879455566, baumWelch, Conventional
+alphabetsize, 14, 0.32740020751953125, baumWelch, Conventional
+alphabetsize, 24, 0.3581092357635498, baumWelch, Conventional
+alphabetsize, 24, 0.3562338352203369, baumWelch, Conventional
+alphabetsize, 24, 0.3608365058898926, baumWelch, Conventional
+alphabetsize, 34, 0.39003705978393555, baumWelch, Conventional
+alphabetsize, 34, 0.38640642166137695, baumWelch, Conventional
+alphabetsize, 34, 0.38728809356689453, baumWelch, Conventional
+alphabetsize, 44, 0.41846776008605957, baumWelch, Conventional
+alphabetsize, 44, 0.4203615188598633, baumWelch, Conventional
+alphabetsize, 44, 0.41809725761413574, baumWelch, Conventional
+alphabetsize, 4, 0.31703710556030273, baumWelch, Conventional sparse
+alphabetsize, 4, 0.3140435218811035, baumWelch, Conventional sparse
+alphabetsize, 4, 0.3151204586029053, baumWelch, Conventional sparse
+alphabetsize, 14, 0.35016393661499023, baumWelch, Conventional sparse
+alphabetsize, 14, 0.34645915031433105, baumWelch, Conventional sparse
+alphabetsize, 14, 0.34476137161254883, baumWelch, Conventional sparse
+alphabetsize, 24, 0.3810412883758545, baumWelch, Conventional sparse
+alphabetsize, 24, 0.37565016746520996, baumWelch, Conventional sparse
+alphabetsize, 24, 0.3733839988708496, baumWelch, Conventional sparse
+alphabetsize, 34, 0.40978169441223145, baumWelch, Conventional sparse
+alphabetsize, 34, 0.4072864055633545, baumWelch, Conventional sparse
+alphabetsize, 34, 0.40493226051330566, baumWelch, Conventional sparse
+alphabetsize, 44, 0.4358103275299072, baumWelch, Conventional sparse
+alphabetsize, 44, 0.43750619888305664, baumWelch, Conventional sparse
+alphabetsize, 44, 0.4362657070159912, baumWelch, Conventional sparse
+alphabetsize, 4, 0.23034167289733887, baumWelch, BLAS
+alphabetsize, 4, 0.2296922206878662, baumWelch, BLAS
+alphabetsize, 4, 0.22922348976135254, baumWelch, BLAS
+alphabetsize, 14, 0.257169246673584, baumWelch, BLAS
+alphabetsize, 14, 0.25714826583862305, baumWelch, BLAS
+alphabetsize, 14, 0.25701904296875, baumWelch, BLAS
+alphabetsize, 24, 0.2911369800567627, baumWelch, BLAS
+alphabetsize, 24, 0.28787899017333984, baumWelch, BLAS
+alphabetsize, 24, 0.28725576400756836, baumWelch, BLAS
+alphabetsize, 34, 0.3192176818847656, baumWelch, BLAS
+alphabetsize, 34, 0.31720590591430664, baumWelch, BLAS
+alphabetsize, 34, 0.3174631595611572, baumWelch, BLAS
+alphabetsize, 44, 0.3551981449127197, baumWelch, BLAS
+alphabetsize, 44, 0.3513824939727783, baumWelch, BLAS
+alphabetsize, 44, 0.35227465629577637, baumWelch, BLAS
+alphabetsize, 4, 0.2836766242980957, baumWelch, CSR
+alphabetsize, 4, 0.2834899425506592, baumWelch, CSR
+alphabetsize, 4, 0.28316235542297363, baumWelch, CSR
+alphabetsize, 14, 0.3163168430328369, baumWelch, CSR
+alphabetsize, 14, 0.31393980979919434, baumWelch, CSR
+alphabetsize, 14, 0.31316709518432617, baumWelch, CSR
+alphabetsize, 24, 0.34769749641418457, baumWelch, CSR
+alphabetsize, 24, 0.35027122497558594, baumWelch, CSR
+alphabetsize, 24, 0.34142422676086426, baumWelch, CSR
+alphabetsize, 34, 0.3764646053314209, baumWelch, CSR
+alphabetsize, 34, 0.375732421875, baumWelch, CSR
+alphabetsize, 34, 0.37326860427856445, baumWelch, CSR
+alphabetsize, 44, 0.40560245513916016, baumWelch, CSR
+alphabetsize, 44, 0.4043426513671875, baumWelch, CSR
+alphabetsize, 44, 0.4067656993865967, baumWelch, CSR
+alphabetsize, 4, 0.24562454223632812, baumWelch, RSB
+alphabetsize, 4, 0.24490571022033691, baumWelch, RSB
+alphabetsize, 4, 0.24482345581054688, baumWelch, RSB
+alphabetsize, 14, 0.2749977111816406, baumWelch, RSB
+alphabetsize, 14, 0.2722358703613281, baumWelch, RSB
+alphabetsize, 14, 0.27333950996398926, baumWelch, RSB
+alphabetsize, 24, 0.30999755859375, baumWelch, RSB
+alphabetsize, 24, 0.30545854568481445, baumWelch, RSB
+alphabetsize, 24, 0.3060152530670166, baumWelch, RSB
+alphabetsize, 34, 0.3351869583129883, baumWelch, RSB
+alphabetsize, 34, 0.3350670337677002, baumWelch, RSB
+alphabetsize, 34, 0.33422422409057617, baumWelch, RSB
+alphabetsize, 44, 0.3730330467224121, baumWelch, RSB
+alphabetsize, 44, 0.36811280250549316, baumWelch, RSB
+alphabetsize, 44, 0.36749696731567383, baumWelch, RSB
+alphabetsize, 4, 0.26955199241638184, viterbi, Conventional
+alphabetsize, 4, 0.27431201934814453, viterbi, Conventional
+alphabetsize, 4, 0.2531881332397461, viterbi, Conventional
+alphabetsize, 14, 0.2780430316925049, viterbi, Conventional
+alphabetsize, 14, 0.28127121925354004, viterbi, Conventional
+alphabetsize, 14, 0.28374266624450684, viterbi, Conventional
+alphabetsize, 24, 0.27342748641967773, viterbi, Conventional
+alphabetsize, 24, 0.27753734588623047, viterbi, Conventional
+alphabetsize, 24, 0.2684297561645508, viterbi, Conventional
+alphabetsize, 34, 0.26519131660461426, viterbi, Conventional
+alphabetsize, 34, 0.2777884006500244, viterbi, Conventional
+alphabetsize, 34, 0.29003143310546875, viterbi, Conventional
+alphabetsize, 44, 0.27292633056640625, viterbi, Conventional
+alphabetsize, 44, 0.27329182624816895, viterbi, Conventional
+alphabetsize, 44, 0.27462172508239746, viterbi, Conventional
+alphabetsize, 4, 0.2709972858428955, viterbi, Conventional sparse
+alphabetsize, 4, 0.26541733741760254, viterbi, Conventional sparse
+alphabetsize, 4, 0.2627899646759033, viterbi, Conventional sparse
+alphabetsize, 14, 0.26504945755004883, viterbi, Conventional sparse
+alphabetsize, 14, 0.2670557498931885, viterbi, Conventional sparse
+alphabetsize, 14, 0.2784554958343506, viterbi, Conventional sparse
+alphabetsize, 24, 0.2651853561401367, viterbi, Conventional sparse
+alphabetsize, 24, 0.26923704147338867, viterbi, Conventional sparse
+alphabetsize, 24, 0.2733478546142578, viterbi, Conventional sparse
+alphabetsize, 34, 0.26560544967651367, viterbi, Conventional sparse
+alphabetsize, 34, 0.2746753692626953, viterbi, Conventional sparse
+alphabetsize, 34, 0.26630210876464844, viterbi, Conventional sparse
+alphabetsize, 44, 0.2805166244506836, viterbi, Conventional sparse
+alphabetsize, 44, 0.28194212913513184, viterbi, Conventional sparse
+alphabetsize, 44, 0.2650940418243408, viterbi, Conventional sparse
+alphabetsize, 4, 0.2597322463989258, viterbi, BLAS
+alphabetsize, 4, 0.26386260986328125, viterbi, BLAS
+alphabetsize, 4, 0.2647433280944824, viterbi, BLAS
+alphabetsize, 14, 0.278214693069458, viterbi, BLAS
+alphabetsize, 14, 0.2660350799560547, viterbi, BLAS
+alphabetsize, 14, 0.27391910552978516, viterbi, BLAS
+alphabetsize, 24, 0.27107858657836914, viterbi, BLAS
+alphabetsize, 24, 0.2764406204223633, viterbi, BLAS
+alphabetsize, 24, 0.2688612937927246, viterbi, BLAS
+alphabetsize, 34, 0.27175068855285645, viterbi, BLAS
+alphabetsize, 34, 0.2664182186126709, viterbi, BLAS
+alphabetsize, 34, 0.27979397773742676, viterbi, BLAS
+alphabetsize, 44, 0.2800164222717285, viterbi, BLAS
+alphabetsize, 44, 0.27416014671325684, viterbi, BLAS
+alphabetsize, 44, 0.28014063835144043, viterbi, BLAS
+alphabetsize, 4, 0.27254390716552734, viterbi, CSR
+alphabetsize, 4, 0.2588539123535156, viterbi, CSR
+alphabetsize, 4, 0.26226353645324707, viterbi, CSR
+alphabetsize, 14, 0.2793006896972656, viterbi, CSR
+alphabetsize, 14, 0.2597496509552002, viterbi, CSR
+alphabetsize, 14, 0.27634215354919434, viterbi, CSR
+alphabetsize, 24, 0.2745077610015869, viterbi, CSR
+alphabetsize, 24, 0.2739856243133545, viterbi, CSR
+alphabetsize, 24, 0.2817211151123047, viterbi, CSR
+alphabetsize, 34, 0.27460336685180664, viterbi, CSR
+alphabetsize, 34, 0.28362298011779785, viterbi, CSR
+alphabetsize, 34, 0.2796037197113037, viterbi, CSR
+alphabetsize, 44, 0.2745964527130127, viterbi, CSR
+alphabetsize, 44, 0.2745635509490967, viterbi, CSR
+alphabetsize, 44, 0.2799804210662842, viterbi, CSR
+alphabetsize, 4, 0.2787466049194336, viterbi, RSB
+alphabetsize, 4, 0.2695155143737793, viterbi, RSB
+alphabetsize, 4, 0.26592159271240234, viterbi, RSB
+alphabetsize, 14, 0.27206969261169434, viterbi, RSB
+alphabetsize, 14, 0.26961255073547363, viterbi, RSB
+alphabetsize, 14, 0.27111268043518066, viterbi, RSB
+alphabetsize, 24, 0.2624797821044922, viterbi, RSB
+alphabetsize, 24, 0.27786993980407715, viterbi, RSB
+alphabetsize, 24, 0.2757225036621094, viterbi, RSB
+alphabetsize, 34, 0.26070213317871094, viterbi, RSB
+alphabetsize, 34, 0.27505064010620117, viterbi, RSB
+alphabetsize, 34, 0.27631711959838867, viterbi, RSB
+alphabetsize, 44, 0.2850615978240967, viterbi, RSB
+alphabetsize, 44, 0.28570556640625, viterbi, RSB
+alphabetsize, 44, 0.2766561508178711, viterbi, RSB
