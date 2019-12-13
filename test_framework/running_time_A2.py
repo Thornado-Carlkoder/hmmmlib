@@ -14,8 +14,13 @@ increment = 100000
 if True: # print csv-header
     print('test, observations, time, algorithm, variant, statespace')
 
-for stspace in [300, 100, 30, 10]:
+#for stspace in [300, 100, 30, 10]:
+for stspace in [30, 10]:
+
     for algorithm in ['baumWelch', 'posteriorDecoding', 'viterbi']:
+        if algorithm == 'baumWelch' and stspace == 300:
+            continue
+            #pass
         for hmmType in ['Conventional', 'BLAS']:
             for input_size in range(start, stop, increment):
             
@@ -38,7 +43,7 @@ for stspace in [300, 100, 30, 10]:
                     t1 = time.time()
                     
                     # Print to csv
-                    print(f'inputsize, {input_size}, {t1-t0}, {algorithm}, {o.hmmType}, {""}')
+                    print(f'inputsize, {input_size}, {t1-t0}, {algorithm}, {o.hmmType}, {stspace}')
                 
                 print('', file = sys.stderr, flush = True) # newline
                 o.deallocate()

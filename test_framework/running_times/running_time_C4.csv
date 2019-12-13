@@ -1,0 +1,271 @@
+test, observations, time, algorithm, variant
+baumwelchiterations, 2, 0.06862044334411621, baumWelch, Conventional sparse
+baumwelchiterations, 2, 0.06643843650817871, baumWelch, Conventional sparse
+baumwelchiterations, 2, 0.06444859504699707, baumWelch, Conventional sparse
+baumwelchiterations, 3, 0.1608583927154541, baumWelch, Conventional sparse
+baumwelchiterations, 3, 0.15997695922851562, baumWelch, Conventional sparse
+baumwelchiterations, 3, 0.15875768661499023, baumWelch, Conventional sparse
+baumwelchiterations, 4, 0.33267903327941895, baumWelch, Conventional sparse
+baumwelchiterations, 4, 0.33602237701416016, baumWelch, Conventional sparse
+baumwelchiterations, 4, 0.3331425189971924, baumWelch, Conventional sparse
+baumwelchiterations, 5, 0.6101748943328857, baumWelch, Conventional sparse
+baumwelchiterations, 5, 0.6089351177215576, baumWelch, Conventional sparse
+baumwelchiterations, 5, 0.6112945079803467, baumWelch, Conventional sparse
+baumwelchiterations, 6, 1.0095152854919434, baumWelch, Conventional sparse
+baumwelchiterations, 6, 1.0116181373596191, baumWelch, Conventional sparse
+baumwelchiterations, 6, 1.0064401626586914, baumWelch, Conventional sparse
+baumwelchiterations, 7, 1.5637733936309814, baumWelch, Conventional sparse
+baumwelchiterations, 7, 1.563551902770996, baumWelch, Conventional sparse
+baumwelchiterations, 7, 1.5773191452026367, baumWelch, Conventional sparse
+baumwelchiterations, 8, 2.344208002090454, baumWelch, Conventional sparse
+baumwelchiterations, 8, 2.344231367111206, baumWelch, Conventional sparse
+baumwelchiterations, 8, 2.343266725540161, baumWelch, Conventional sparse
+baumwelchiterations, 9, 3.3980205059051514, baumWelch, Conventional sparse
+baumwelchiterations, 9, 3.3945066928863525, baumWelch, Conventional sparse
+baumwelchiterations, 9, 3.4005377292633057, baumWelch, Conventional sparse
+baumwelchiterations, 10, 4.759804010391235, baumWelch, Conventional sparse
+baumwelchiterations, 10, 4.75935435295105, baumWelch, Conventional sparse
+baumwelchiterations, 10, 4.768150806427002, baumWelch, Conventional sparse
+baumwelchiterations, 11, 6.457937955856323, baumWelch, Conventional sparse
+baumwelchiterations, 11, 6.461490869522095, baumWelch, Conventional sparse
+baumwelchiterations, 11, 6.4540088176727295, baumWelch, Conventional sparse
+baumwelchiterations, 12, 8.725781440734863, baumWelch, Conventional sparse
+baumwelchiterations, 12, 8.710179328918457, baumWelch, Conventional sparse
+baumwelchiterations, 12, 8.780450105667114, baumWelch, Conventional sparse
+baumwelchiterations, 13, 11.323148488998413, baumWelch, Conventional sparse
+baumwelchiterations, 13, 11.332669973373413, baumWelch, Conventional sparse
+baumwelchiterations, 13, 11.30646562576294, baumWelch, Conventional sparse
+baumwelchiterations, 14, 14.751258134841919, baumWelch, Conventional sparse
+baumwelchiterations, 14, 14.757031440734863, baumWelch, Conventional sparse
+baumwelchiterations, 14, 14.769097328186035, baumWelch, Conventional sparse
+baumwelchiterations, 15, 18.972254276275635, baumWelch, Conventional sparse
+baumwelchiterations, 15, 18.970582723617554, baumWelch, Conventional sparse
+baumwelchiterations, 15, 18.970428228378296, baumWelch, Conventional sparse
+baumwelchiterations, 16, 24.171963453292847, baumWelch, Conventional sparse
+baumwelchiterations, 16, 24.17919921875, baumWelch, Conventional sparse
+baumwelchiterations, 16, 24.204071760177612, baumWelch, Conventional sparse
+baumwelchiterations, 17, 31.864168167114258, baumWelch, Conventional sparse
+baumwelchiterations, 17, 31.88689136505127, baumWelch, Conventional sparse
+baumwelchiterations, 17, 31.883232593536377, baumWelch, Conventional sparse
+baumwelchiterations, 18, 38.79621076583862, baumWelch, Conventional sparse
+baumwelchiterations, 18, 38.82046604156494, baumWelch, Conventional sparse
+baumwelchiterations, 18, 38.48652625083923, baumWelch, Conventional sparse
+baumwelchiterations, 19, 46.89153027534485, baumWelch, Conventional sparse
+baumwelchiterations, 19, 46.82744646072388, baumWelch, Conventional sparse
+baumwelchiterations, 19, 46.863276720047, baumWelch, Conventional sparse
+baumwelchiterations, 2, 0.06381607055664062, baumWelch, Conventional
+baumwelchiterations, 2, 0.06247115135192871, baumWelch, Conventional
+baumwelchiterations, 2, 0.06254220008850098, baumWelch, Conventional
+baumwelchiterations, 3, 0.15418601036071777, baumWelch, Conventional
+baumwelchiterations, 3, 0.15279412269592285, baumWelch, Conventional
+baumwelchiterations, 3, 0.15363574028015137, baumWelch, Conventional
+baumwelchiterations, 4, 0.317563533782959, baumWelch, Conventional
+baumwelchiterations, 4, 0.3173036575317383, baumWelch, Conventional
+baumwelchiterations, 4, 0.31967592239379883, baumWelch, Conventional
+baumwelchiterations, 5, 0.57757568359375, baumWelch, Conventional
+baumwelchiterations, 5, 0.5736746788024902, baumWelch, Conventional
+baumwelchiterations, 5, 0.5739266872406006, baumWelch, Conventional
+baumwelchiterations, 6, 0.9580056667327881, baumWelch, Conventional
+baumwelchiterations, 6, 0.9530270099639893, baumWelch, Conventional
+baumwelchiterations, 6, 0.9549975395202637, baumWelch, Conventional
+baumwelchiterations, 7, 1.4767301082611084, baumWelch, Conventional
+baumwelchiterations, 7, 1.47139573097229, baumWelch, Conventional
+baumwelchiterations, 7, 1.4773979187011719, baumWelch, Conventional
+baumwelchiterations, 8, 2.204714298248291, baumWelch, Conventional
+baumwelchiterations, 8, 2.201007843017578, baumWelch, Conventional
+baumwelchiterations, 8, 2.2101311683654785, baumWelch, Conventional
+baumwelchiterations, 9, 3.1866095066070557, baumWelch, Conventional
+baumwelchiterations, 9, 3.1893975734710693, baumWelch, Conventional
+baumwelchiterations, 9, 3.1823606491088867, baumWelch, Conventional
+baumwelchiterations, 10, 4.492961883544922, baumWelch, Conventional
+baumwelchiterations, 10, 4.49836540222168, baumWelch, Conventional
+baumwelchiterations, 10, 4.496583700180054, baumWelch, Conventional
+baumwelchiterations, 11, 6.081719398498535, baumWelch, Conventional
+baumwelchiterations, 11, 6.074998140335083, baumWelch, Conventional
+baumwelchiterations, 11, 6.084349870681763, baumWelch, Conventional
+baumwelchiterations, 12, 8.19566559791565, baumWelch, Conventional
+baumwelchiterations, 12, 8.205394983291626, baumWelch, Conventional
+baumwelchiterations, 12, 8.201424598693848, baumWelch, Conventional
+baumwelchiterations, 13, 10.623693466186523, baumWelch, Conventional
+baumwelchiterations, 13, 10.602124452590942, baumWelch, Conventional
+baumwelchiterations, 13, 10.60791015625, baumWelch, Conventional
+baumwelchiterations, 14, 13.863611459732056, baumWelch, Conventional
+baumwelchiterations, 14, 13.869113445281982, baumWelch, Conventional
+baumwelchiterations, 14, 13.876173973083496, baumWelch, Conventional
+baumwelchiterations, 15, 17.84481143951416, baumWelch, Conventional
+baumwelchiterations, 15, 17.841209888458252, baumWelch, Conventional
+baumwelchiterations, 15, 17.840681791305542, baumWelch, Conventional
+baumwelchiterations, 16, 22.986467838287354, baumWelch, Conventional
+baumwelchiterations, 16, 22.949803590774536, baumWelch, Conventional
+baumwelchiterations, 16, 22.920568466186523, baumWelch, Conventional
+baumwelchiterations, 17, 30.486833572387695, baumWelch, Conventional
+baumwelchiterations, 17, 30.501943826675415, baumWelch, Conventional
+baumwelchiterations, 17, 30.49520230293274, baumWelch, Conventional
+baumwelchiterations, 18, 36.596574783325195, baumWelch, Conventional
+baumwelchiterations, 18, 36.55427289009094, baumWelch, Conventional
+baumwelchiterations, 18, 36.592276096343994, baumWelch, Conventional
+baumwelchiterations, 19, 44.77459096908569, baumWelch, Conventional
+baumwelchiterations, 19, 44.77491784095764, baumWelch, Conventional
+baumwelchiterations, 19, 44.773489236831665, baumWelch, Conventional
+baumwelchiterations, 2, 0.06193137168884277, baumWelch, BLAS
+baumwelchiterations, 2, 0.06124567985534668, baumWelch, BLAS
+baumwelchiterations, 2, 0.06087613105773926, baumWelch, BLAS
+baumwelchiterations, 3, 0.1307830810546875, baumWelch, BLAS
+baumwelchiterations, 3, 0.13012957572937012, baumWelch, BLAS
+baumwelchiterations, 3, 0.13056588172912598, baumWelch, BLAS
+baumwelchiterations, 4, 0.2548995018005371, baumWelch, BLAS
+baumwelchiterations, 4, 0.254138708114624, baumWelch, BLAS
+baumwelchiterations, 4, 0.25476813316345215, baumWelch, BLAS
+baumwelchiterations, 5, 0.4496114253997803, baumWelch, BLAS
+baumwelchiterations, 5, 0.44870781898498535, baumWelch, BLAS
+baumwelchiterations, 5, 0.4489624500274658, baumWelch, BLAS
+baumwelchiterations, 6, 0.7239558696746826, baumWelch, BLAS
+baumwelchiterations, 6, 0.7257852554321289, baumWelch, BLAS
+baumwelchiterations, 6, 0.7216711044311523, baumWelch, BLAS
+baumwelchiterations, 7, 1.108654499053955, baumWelch, BLAS
+baumwelchiterations, 7, 1.1100316047668457, baumWelch, BLAS
+baumwelchiterations, 7, 1.1173439025878906, baumWelch, BLAS
+baumwelchiterations, 8, 1.6647229194641113, baumWelch, BLAS
+baumwelchiterations, 8, 1.6653234958648682, baumWelch, BLAS
+baumwelchiterations, 8, 1.6763725280761719, baumWelch, BLAS
+baumwelchiterations, 9, 2.4202067852020264, baumWelch, BLAS
+baumwelchiterations, 9, 2.422427177429199, baumWelch, BLAS
+baumwelchiterations, 9, 2.417714834213257, baumWelch, BLAS
+baumwelchiterations, 10, 3.414067029953003, baumWelch, BLAS
+baumwelchiterations, 10, 3.422389030456543, baumWelch, BLAS
+baumwelchiterations, 10, 3.410968542098999, baumWelch, BLAS
+baumwelchiterations, 11, 4.67837929725647, baumWelch, BLAS
+baumwelchiterations, 11, 4.692646265029907, baumWelch, BLAS
+baumwelchiterations, 11, 4.688993692398071, baumWelch, BLAS
+baumwelchiterations, 12, 6.348477602005005, baumWelch, BLAS
+baumwelchiterations, 12, 6.356215000152588, baumWelch, BLAS
+baumwelchiterations, 12, 6.359687566757202, baumWelch, BLAS
+baumwelchiterations, 13, 8.390192747116089, baumWelch, BLAS
+baumwelchiterations, 13, 8.458319187164307, baumWelch, BLAS
+baumwelchiterations, 13, 8.38128662109375, baumWelch, BLAS
+baumwelchiterations, 14, 11.061702251434326, baumWelch, BLAS
+baumwelchiterations, 14, 11.069010972976685, baumWelch, BLAS
+baumwelchiterations, 14, 11.080409288406372, baumWelch, BLAS
+baumwelchiterations, 15, 14.847482204437256, baumWelch, BLAS
+baumwelchiterations, 15, 14.832337617874146, baumWelch, BLAS
+baumwelchiterations, 15, 14.820247650146484, baumWelch, BLAS
+baumwelchiterations, 16, 18.89852476119995, baumWelch, BLAS
+baumwelchiterations, 16, 18.988160848617554, baumWelch, BLAS
+baumwelchiterations, 16, 19.008925914764404, baumWelch, BLAS
+baumwelchiterations, 17, 24.81511664390564, baumWelch, BLAS
+baumwelchiterations, 17, 24.82540535926819, baumWelch, BLAS
+baumwelchiterations, 17, 24.837090730667114, baumWelch, BLAS
+baumwelchiterations, 18, 30.7039794921875, baumWelch, BLAS
+baumwelchiterations, 18, 30.726677417755127, baumWelch, BLAS
+baumwelchiterations, 18, 31.040703058242798, baumWelch, BLAS
+baumwelchiterations, 19, 38.303961515426636, baumWelch, BLAS
+baumwelchiterations, 19, 38.30777907371521, baumWelch, BLAS
+baumwelchiterations, 19, 38.27766489982605, baumWelch, BLAS
+baumwelchiterations, 2, 0.06291484832763672, baumWelch, CSR
+baumwelchiterations, 2, 0.06191587448120117, baumWelch, CSR
+baumwelchiterations, 2, 0.06189441680908203, baumWelch, CSR
+baumwelchiterations, 3, 0.14695286750793457, baumWelch, CSR
+baumwelchiterations, 3, 0.14780735969543457, baumWelch, CSR
+baumwelchiterations, 3, 0.14883804321289062, baumWelch, CSR
+baumwelchiterations, 4, 0.3005545139312744, baumWelch, CSR
+baumwelchiterations, 4, 0.30109095573425293, baumWelch, CSR
+baumwelchiterations, 4, 0.3019556999206543, baumWelch, CSR
+baumwelchiterations, 5, 0.5455267429351807, baumWelch, CSR
+baumwelchiterations, 5, 0.5449905395507812, baumWelch, CSR
+baumwelchiterations, 5, 0.544703483581543, baumWelch, CSR
+baumwelchiterations, 6, 0.8992471694946289, baumWelch, CSR
+baumwelchiterations, 6, 0.9005744457244873, baumWelch, CSR
+baumwelchiterations, 6, 0.8976337909698486, baumWelch, CSR
+baumwelchiterations, 7, 1.392582654953003, baumWelch, CSR
+baumwelchiterations, 7, 1.3892436027526855, baumWelch, CSR
+baumwelchiterations, 7, 1.3947727680206299, baumWelch, CSR
+baumwelchiterations, 8, 2.087275266647339, baumWelch, CSR
+baumwelchiterations, 8, 2.079726457595825, baumWelch, CSR
+baumwelchiterations, 8, 2.080897331237793, baumWelch, CSR
+baumwelchiterations, 9, 3.020350456237793, baumWelch, CSR
+baumwelchiterations, 9, 3.0181527137756348, baumWelch, CSR
+baumwelchiterations, 9, 3.0192642211914062, baumWelch, CSR
+baumwelchiterations, 10, 4.253796577453613, baumWelch, CSR
+baumwelchiterations, 10, 4.254879474639893, baumWelch, CSR
+baumwelchiterations, 10, 4.254628419876099, baumWelch, CSR
+baumwelchiterations, 11, 5.749922513961792, baumWelch, CSR
+baumwelchiterations, 11, 5.751759767532349, baumWelch, CSR
+baumwelchiterations, 11, 5.752404689788818, baumWelch, CSR
+baumwelchiterations, 12, 7.751661062240601, baumWelch, CSR
+baumwelchiterations, 12, 7.738821744918823, baumWelch, CSR
+baumwelchiterations, 12, 7.751266241073608, baumWelch, CSR
+baumwelchiterations, 13, 10.227334022521973, baumWelch, CSR
+baumwelchiterations, 13, 10.211331605911255, baumWelch, CSR
+baumwelchiterations, 13, 10.216050863265991, baumWelch, CSR
+baumwelchiterations, 14, 13.41119122505188, baumWelch, CSR
+baumwelchiterations, 14, 13.41287088394165, baumWelch, CSR
+baumwelchiterations, 14, 13.421177387237549, baumWelch, CSR
+baumwelchiterations, 15, 17.393108367919922, baumWelch, CSR
+baumwelchiterations, 15, 17.367213010787964, baumWelch, CSR
+baumwelchiterations, 15, 17.36664605140686, baumWelch, CSR
+baumwelchiterations, 16, 21.9872567653656, baumWelch, CSR
+baumwelchiterations, 16, 21.982993364334106, baumWelch, CSR
+baumwelchiterations, 16, 21.927444458007812, baumWelch, CSR
+baumwelchiterations, 17, 29.05599284172058, baumWelch, CSR
+baumwelchiterations, 17, 29.078437328338623, baumWelch, CSR
+baumwelchiterations, 17, 29.090800285339355, baumWelch, CSR
+baumwelchiterations, 18, 35.86629939079285, baumWelch, CSR
+baumwelchiterations, 18, 36.34870004653931, baumWelch, CSR
+baumwelchiterations, 18, 36.367685079574585, baumWelch, CSR
+baumwelchiterations, 19, 43.90441870689392, baumWelch, CSR
+baumwelchiterations, 19, 44.010849714279175, baumWelch, CSR
+baumwelchiterations, 19, 43.9715633392334, baumWelch, CSR
+baumwelchiterations, 2, 0.07919907569885254, baumWelch, RSB
+baumwelchiterations, 2, 0.07832455635070801, baumWelch, RSB
+baumwelchiterations, 2, 0.07813143730163574, baumWelch, RSB
+baumwelchiterations, 3, 0.16068649291992188, baumWelch, RSB
+baumwelchiterations, 3, 0.16162490844726562, baumWelch, RSB
+baumwelchiterations, 3, 0.16108107566833496, baumWelch, RSB
+baumwelchiterations, 4, 0.296248197555542, baumWelch, RSB
+baumwelchiterations, 4, 0.2984120845794678, baumWelch, RSB
+baumwelchiterations, 4, 0.29531192779541016, baumWelch, RSB
+baumwelchiterations, 5, 0.5111722946166992, baumWelch, RSB
+baumwelchiterations, 5, 0.5056846141815186, baumWelch, RSB
+baumwelchiterations, 5, 0.5063064098358154, baumWelch, RSB
+baumwelchiterations, 6, 0.8038091659545898, baumWelch, RSB
+baumwelchiterations, 6, 0.8059837818145752, baumWelch, RSB
+baumwelchiterations, 6, 0.8024728298187256, baumWelch, RSB
+baumwelchiterations, 7, 1.2269260883331299, baumWelch, RSB
+baumwelchiterations, 7, 1.21311616897583, baumWelch, RSB
+baumwelchiterations, 7, 1.2210426330566406, baumWelch, RSB
+baumwelchiterations, 8, 1.77713942527771, baumWelch, RSB
+baumwelchiterations, 8, 1.7766976356506348, baumWelch, RSB
+baumwelchiterations, 8, 1.7864413261413574, baumWelch, RSB
+baumwelchiterations, 9, 2.5727005004882812, baumWelch, RSB
+baumwelchiterations, 9, 2.5544686317443848, baumWelch, RSB
+baumwelchiterations, 9, 2.5601847171783447, baumWelch, RSB
+baumwelchiterations, 10, 3.5806002616882324, baumWelch, RSB
+baumwelchiterations, 10, 3.588974714279175, baumWelch, RSB
+baumwelchiterations, 10, 3.5899152755737305, baumWelch, RSB
+baumwelchiterations, 11, 4.892032861709595, baumWelch, RSB
+baumwelchiterations, 11, 4.89333963394165, baumWelch, RSB
+baumwelchiterations, 11, 4.8885509967803955, baumWelch, RSB
+baumwelchiterations, 12, 6.5883629322052, baumWelch, RSB
+baumwelchiterations, 12, 6.585366249084473, baumWelch, RSB
+baumwelchiterations, 12, 6.590010404586792, baumWelch, RSB
+baumwelchiterations, 13, 8.674092292785645, baumWelch, RSB
+baumwelchiterations, 13, 8.66425108909607, baumWelch, RSB
+baumwelchiterations, 13, 8.713633060455322, baumWelch, RSB
+baumwelchiterations, 14, 11.473347902297974, baumWelch, RSB
+baumwelchiterations, 14, 11.50814175605774, baumWelch, RSB
+baumwelchiterations, 14, 11.494630336761475, baumWelch, RSB
+baumwelchiterations, 15, 14.976317167282104, baumWelch, RSB
+baumwelchiterations, 15, 14.955830335617065, baumWelch, RSB
+baumwelchiterations, 15, 14.961551189422607, baumWelch, RSB
+baumwelchiterations, 16, 19.26032066345215, baumWelch, RSB
+baumwelchiterations, 16, 19.24076557159424, baumWelch, RSB
+baumwelchiterations, 16, 19.27453923225403, baumWelch, RSB
+baumwelchiterations, 17, 25.70355463027954, baumWelch, RSB
+baumwelchiterations, 17, 25.573259353637695, baumWelch, RSB
+baumwelchiterations, 17, 25.571388959884644, baumWelch, RSB
+baumwelchiterations, 18, 31.348324298858643, baumWelch, RSB
+baumwelchiterations, 18, 31.360740900039673, baumWelch, RSB
+baumwelchiterations, 18, 31.39632749557495, baumWelch, RSB
+baumwelchiterations, 19, 38.28295969963074, baumWelch, RSB
+baumwelchiterations, 19, 38.47948932647705, baumWelch, RSB
+baumwelchiterations, 19, 38.94695210456848, baumWelch, RSB
