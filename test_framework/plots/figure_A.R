@@ -9,6 +9,7 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 # scaled by theoretical running time
 # full density
 
+state = "2"
 
 # Consider varying statespace and varying alphabet
 # Yet i don't know how to show that the iterations in baum-welch are linearly scaled
@@ -18,16 +19,17 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 
 ## Inputsize ##
 
-data = read_csv("../running_times/running_time_A1.csv", col_names = T, comment = '#')
+data = read_csv(paste0("../running_times/running_time_A", state, ".csv"), col_names = T, comment = '#')
 #names(data) = c('test', 'observations', 'time', 'algorithm', 'variant', 'iterations', 'statespace')
 
 data$algorithm = data %>% pull(algorithm) %>% recode(forward = "Forward",
                                                      backward_time = "Backward",
                                                      baumWelch = "Baum-Welch (1 iteration)",
-                                                     posteriorDecoding = "Posterior Decoding")
+                                                     posteriorDecoding = "Posterior Decoding",
+                                                     viterbi = "Viterbi")
 
 # Control the order of variables in geom_grid
-data$algorithm = factor(data$algorithm, levels=c("Forward", "Backward", "Posterior Decoding", "Baum-Welch (1 iteration)"))
+data$algorithm = factor(data$algorithm, levels=c("Forward", "Backward", "Posterior Decoding", "Baum-Welch (1 iteration)", "Viterbi"))
 
 
 data_input = data %>% filter(test == "inputsize")
@@ -53,7 +55,7 @@ data_input_grouped %>%
          #subtitle = "Linear algebra based implementations are faster."
          ) +
     geom_hline(yintercept = 0, alpha = 0)
-ggsave("figure_A1.pdf", height = 6, width = 10)
+ggsave(paste0("figure_A", state, ".pdf"), height = 6, width = 10)
 
 
 
