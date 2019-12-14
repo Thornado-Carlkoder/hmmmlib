@@ -61,7 +61,7 @@ In this section all the documentation for the library is written as well as the 
 
 ## TASK MANAGEMENT 
 
-See the [project manager](https://github.com/Thornado-Carlkoder/hmmmlib/projects)
+See the [GitHub project manager](https://github.com/Thornado-Carlkoder/hmmmlib/projects)
 
 
 
