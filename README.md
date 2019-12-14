@@ -17,47 +17,43 @@
 The goal of this project is:
 
 	- To get a strong theoretical understanding of HMM's and different versions of the latter
-	- Create a robust and easy to use libeary for both C and python
-	- After finishing the initial project make it open source for everyone to add and use
+	- Create a robust and easy to use library for both C and Python
+	- When the project is finished, make it open source for everyone to add and use
 
 ### Project description:
-The goal of the project is to implement an efficient C library for hidden Markov models that supports the Forward and Backward algorithms, Viterbi and posterior decoding and parameter optimisation. The focus will be on algorithmic engineering for dense matrix HMMs and we will in particular compare the straightforward implementations with BLAS based linear algebra formulations of the algorithms.
+The goal of the project is to implement an efficient C library for hidden Markov models that supports the Forward and Backward algorithms, Viterbi and Posterior decoding and parameter optimisation (Baum-Welch). The focus will be on algorithmic engineering for dense matrix HMMs and in particular we will compare the straightforward implementations with BLAS based linear algebra formulations of the algorithms.
 
 
 ### Learning goals:
-A brief and clear presentation of what the student should be able do to after the project. Formulated as 3-5 items, e.g.: 
-* The student should be able to describe the general HMM, forward and backward algorithm and Viterbi and posterior decoding
-* The student should be able to implement HMM, forward and backward algorithm and Viterbi and posterior decoding - The student should be able to analyse the different implementations of the latter in terms og speed.
-* The student should be able to discuss and evaluate the findings of the experiments in contrast to the implementation decisions.
+* The student should be able to describe a general HMM, implement a HMM, the forward, backward, viterbi and posterior decoding algorithms - The student should be able to analyse the different implementations in terms of running time.
+* The student should be able to discuss and evaluate the findings of the experiments in contrast to the decisions behind the implementation.
 
 
 ## WEEKLY MEETING:
-
 * INTERNAL: Torsdag kl 11
 * THOMAS: Torsdag kl 12
 
 ## GENERAL WORK PLAN
-
 1. Make HMM with basic algorithms
 2. Make a test framework with BLAS
-3. Implement optimised algorithms
+3. Make sparse matrix optimized algorithms
 
 
 ### Evaluation problem
-Evaluation problem answers the question: what is the probability that a particular sequence of symbols is produced by a particular model?
+The evaluation problem regards the probability that a particular sequence of symbols is produced by a particular model.
 For evaluation we use two algorithms: the forward algorithm or the backward algorithm
 
 ### Decoding problem
-Decoding problem answers the question: Given a sequence of symbols (your observations) and a model, what is the most likely sequence of states that produced the sequence.
-For decoding we use the Viterbi algorithm and Posterior Decoding.
+The decoding problem regards to inferring the most likely sequence of states produced by a given sequence of observables.
+For decoding we apply the Viterbi and Posterior Decoding algorithms.
 
 ### Training problem
 Training problem answers the question: Given a model structure and a set of sequences, find the model that best fits the data.
-For this problem we can use the Baum Welch = forward-backward algorithm
+For this problem we can use the Baum Welch = forward\*backward algorithm
 
 Possible optimisations: 
 
-* Solving the "training" problem as a constrinted optimisation problem and use lagrange multipliers?
+* Solving the "training" problem as a constrained optimisation problem and use lagrange multipliers?
 
 ## DOCUMENTATION
 
@@ -79,7 +75,7 @@ Please note that density = 1 - sparseness
 
 These are the automated running time tests supported:
 
-* Varying alphabet size :`running_time_alphabet_size.py`
+* Varying alphabet size: `running_time_alphabet_size.py`
 * Varying input size: `running_time_input_size.py`
 * Varying density: `running_time_sparseness.py`
 * Varying state space: `running_time_state_space.py`
@@ -94,15 +90,15 @@ cd test_framework/
 python running_time_input_size.py > input_size.csv
 ```
 
-The scripts all output a csv-formatted file to STDOUT and progress diagnostics to STDERR. Because of that, it is recommended to pipe the output to a separate file.
+The scripts all output a csv-formatted file to STDOUT and progress diagnostics to STDERR. Because of this, it is recommended to pipe STDOUT to a separate file.
 
 
 
-Note: If you're using Mac or Windows, the shared object file will likely have a different file extension than what is hard coded in the binding.py file. Please change the `address_to_so` variable in binding.py.
+Note: If you're using Mac or Windows, the shared object file will likely have a varying file extension than what is hard coded in the binding.py file. Please change the `address_to_so` variable in binding.py.
 
 
 
-If you want to change the paremeters given to the algorithms, you should open the files individually and edit the hard coded variables. These variables are the following:
+If you want to change the paremeters passed to the algorithms, you should open the files individually and edit the hard coded variables. These variables are the following:
 
 * `inputsize`: The length of the sequence that the HMM algorithm shold be applied to
 * `start`, `stop` and `increment`: The parameter vector.
