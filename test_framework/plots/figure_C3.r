@@ -46,10 +46,11 @@ data_statespace_grouped %>% ggplot(aes(observations, mean / (observations ^ 2), 
     facet_wrap(. ~ algorithm, scales = "free") +
     labs(
         x = "hidden states",
-        y = "mean time [s]",
+        y = "mean time [s] scaled",
         caption = caption,
         title = "Running time of increasing hidden state space"
     )
-ggsave("figure_C3_normalized.pdf",
+ggsave("figure_C3_scaled.pdf",
        height = 5,
        width = 9)
+

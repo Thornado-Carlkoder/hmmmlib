@@ -41,7 +41,7 @@ data_grouped %>% ggplot(aes(iterations, mean / iterations, color = variant)) +
     #facet_wrap(. ~ algorithm, scales = "free") +
     labs(
         x = "iterations",
-        y = "mean time [s]",
+        y = "mean time [s] scaled",
         caption = caption,
         title = "Baum-Welch"
     )
