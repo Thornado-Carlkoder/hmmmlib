@@ -4,12 +4,13 @@ library(ggpubr)
 library(svglite)
 
 figurewidth = 8
+figureheight = 4.5
 
 # This is for plotting figure B
 # For the algorithms Forward and Backward, we want to show that the sparse implementations are faster than the dense implementations.
 
 
-state = "1"
+state = "2"
 
 
 setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
@@ -50,7 +51,7 @@ data_grouped %>% #filter(variant %in% c("RSB", "BLAS")) %>%
     facet_grid(statespace ~ algorithm, scales = "free") +
     
     labs(
-        x = "density",
+        x = "transition matrix density",
         y = "mean time [s]"
         #caption = caption
         #title = "Running time for density versus state space",
@@ -58,8 +59,8 @@ data_grouped %>% #filter(variant %in% c("RSB", "BLAS")) %>%
     )+ 
     theme_light()
 #geom_hline(yintercept = 0, alpha = 0)
-ggsave(paste0("pdf/figure_B", state, ".pdf"), width = figurewidth)
-ggsave(paste0("svg/figure_B", state, ".svg"), width = figurewidth)
+ggsave(paste0("pdf/figure_B", state, ".pdf"), width = figurewidth, height = figureheight)
+ggsave(paste0("svg/figure_B", state, ".svg"), width = figurewidth, height = figureheight)
 
 
 
@@ -71,15 +72,15 @@ data_grouped %>% filter(observations >= 0.1) %>%  ggplot(aes(observations, mean/
     #geom_errorbar(aes(ymin = (mean - sd), ymax = (mean + sd)), width = 0.05, alpha = .65) +
     facet_grid(statespace ~ algorithm, scales = "free") +
     labs(
-        x = "density",
+        x = "transition matrix density",
         y = "mean time [s] scaled to number of edges"
         #caption = caption
         #title = "Running time for density versus state space"
     ) +
     theme_light() 
     #geom_hline(yintercept = 0, alpha = 0)
-ggsave(paste0("pdf/figure_B", state, "_scaled.pdf"), width = figurewidth)
-ggsave(paste0("svg/figure_B", state, "_scaled.svg"), width = figurewidth)
+ggsave(paste0("pdf/figure_B", state, "_scaled.pdf"), width = figurewidth, height = figureheight)
+ggsave(paste0("svg/figure_B", state, "_scaled.svg"), width = figurewidth, height = figureheight)
 
 
 
