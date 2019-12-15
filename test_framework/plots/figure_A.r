@@ -1,7 +1,9 @@
+rm(list = ls())
 library(tidyverse)
 library(ggpubr)
 library(svglite)
 
+figurewidth = 8
 setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 
 # This figure shows that the matrix implementation is faster than the conventional implementation
@@ -9,7 +11,7 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 # scaled by theoretical running time
 # full density
 
-state = "2"
+state = "1"
 
 # Consider varying statespace and varying alphabet
 # Yet i don't know how to show that the iterations in baum-welch are linearly scaled
@@ -49,13 +51,17 @@ data_input_grouped %>%
     geom_line() +
     geom_errorbar(aes(ymin = (mean - sd)/observations, ymax = (mean + sd)/observations), size = 0.3, alpha = .65) +
     facet_grid(statespace ~ algorithm, scales = "free") +
-    labs(y = "mean time [s] scaled",
-         caption = "error bars: standard deviation of 3 replicates\nalphabet size: 4"
+    labs(y = "mean time [s] scaled"
+         #caption = "error bars: standard deviation of 3 replicates\nalphabet size: 4"
          #title = "Running time (scaled) for increasing input size",
          #subtitle = "Linear algebra based implementations are faster."
          ) +
-    geom_hline(yintercept = 0, alpha = 0)
-ggsave(paste0("figure_A", state, ".pdf"), height = 6, width = 10)
+    geom_hline(yintercept = 0, alpha = 0) + 
+    theme_light()
+ggsave(paste0("pdf/figure_A", state, ".pdf"), width = figurewidth)
+ggsave(paste0("svg/figure_A", state, ".svg"), width = figurewidth)
+
+
 
 
 

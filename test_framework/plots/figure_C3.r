@@ -1,6 +1,9 @@
+rm(list = ls())
 library(tidyverse)
 library(ggpubr)
 library(svglite)
+figurewidth = 8
+
 
 setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 
@@ -27,10 +30,13 @@ data_statespace_grouped %>% ggplot(aes(observations, mean, color = variant)) +
     labs(
         x = "hidden states",
         y = "mean time [s]",
-        caption = caption,
+        #caption = caption,
         title = "Running time of increasing hidden state space"
-    )
-ggsave("figure_C3_raw.pdf", height = 5, width = 9)
+    ) + theme_light()
+ggsave("pdf/figure_C3_raw.pdf", width = figurewidth)
+ggsave("svg/figure_C3_raw.svg", width = figurewidth)
+
+
 
 data_statespace_grouped %>% ggplot(aes(observations, mean / (observations ^ 2), color = variant)) +
     geom_point() +
@@ -47,10 +53,10 @@ data_statespace_grouped %>% ggplot(aes(observations, mean / (observations ^ 2), 
     labs(
         x = "hidden states",
         y = "mean time [s] scaled",
-        caption = caption,
+        #caption = caption,
         title = "Running time of increasing hidden state space"
-    )
-ggsave("figure_C3_scaled.pdf",
-       height = 5,
-       width = 9)
+    ) + theme_light()
+ggsave("pdf/figure_C3_scaled.pdf", width = figurewidth)
+ggsave("svg/figure_C3_scaled.svg", width = figurewidth)
+
 

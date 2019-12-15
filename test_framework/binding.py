@@ -1,5 +1,5 @@
 import ctypes as c
-import os
+import os, random
 
 # authors: Thornado & Carl Koder
 
@@ -12,6 +12,28 @@ In then mirrors all its methods and algorithms in python such that all functiona
 This file is used in test.py, which validates output of all the algorithms
 It is also used by running_time.py, which calls each function on increasing parameters and records the timing.
 """
+
+def random_row(n, seed = None):
+    """ Generates a random row of size n with sparseness between 0 and 1.
+        A sparseness of 1 (sparse) means that only a single value per row is non-zero.
+        A sparseness of 0 (dense) means that all values are non-zero. """
+
+    row = [random.uniform(0, 1) for _ in range(n)] # random numbers uniformly between [-1, 1)
+    
+    row_sum = sum(row)
+    row = [i/row_sum for i in row]
+
+    return row
+
+
+def random_matrix(m, n, seed = None):
+    """ Generates a random matrix with size m*n. """
+    if seed is not None:
+        random.seed(seed)
+    
+    return [random_row(n, seed) for _ in range(m)]
+
+
 
 class HMM(c.Structure):
     """ creates a struct to match HMM """
@@ -82,39 +104,37 @@ class binded_HMM:
 
 
     def presentHMM(self):
-        
-        
 
-        print('Presenting the HMM with the presentHMM()-function from the python-binding')
+        #print('Presenting the HMM with the presentHMM()-function from the python-binding')
         print(' hiddenStates =', self.n_hiddenstates)
         print(' observations =', self.n_observations)
         
         print()
         formattedInitProbs = ["{:7.3f}".format(self.hmm[0].initProbs[i]) for i in range(self.n_hiddenstates)]
-        print(' initProbs: [self.n_hiddenstates]\n ', ''.join(formattedInitProbs))
+        print(' initProbs: [n_states]\n ', ''.join(formattedInitProbs))
         print('\t(' + str(sum([self.hmm[0].initProbs[i] for i in range(self.n_hiddenstates)])) + ')')
 
 
         print()
-        print(' transitionProbs: [self.n_hiddenstates][self.n_hiddenstates]', end = '\n  ')
+        print(' transitionProbs: [n_states][n_states]', end = '\n  ')
         for row in range(self.n_hiddenstates):
             row_sum = 0
             for col in range(self.n_hiddenstates):
                 value = self.hmm[0].transitionProbs[row*self.n_hiddenstates+col]
                 print("{:7.3f}".format(value), end = ' ')
                 row_sum += value
-            print(end = '\t(' + str(row_sum) + ')\n  ')
+            print(end = '\t(' + str(round(row_sum, 5)) + ')\n  ')
         print()
 
         
-        print(' emissionProbs: [self.n_hiddenstates][self.n_observations]', end = '\n  ') # [7][4] eller [self.n_hiddenstates][self.n_observations]
+        print(' emissionProbs: [n_states][n_obs]', end = '\n  ') # [7][4] eller [self.n_hiddenstates][self.n_observations]
         for row in range(self.n_hiddenstates):
             row_sum = 0
             for col in range(self.n_observations):
                 value = self.hmm[0].emissionProbs[row*self.n_observations+col]
                 print("{:7.3f}".format(self.hmm[0].emissionProbs[row*self.n_observations+col]), end = ' ')
                 row_sum += value
-            print(end = '\t(' + str(row_sum) + ')\n  ')
+            print(end = '\t(' + str(round(row_sum, 5)) + ')\n  ')
         print()
         print(' The internal validation state is:', self.libhmm.validateHMM(self.hmm))
 
@@ -283,3 +303,52 @@ class binded_HMM:
 
 
 
+    def set_random(self):
+        """ Sets all the matrices in a given hmm to random values.
+            It automatically reads all sizes. """
+        self.setInitProbs(random_row(self.n_hiddenstates))
+        self.setTransitionProbs(random_matrix(self.n_hiddenstates, self.n_hiddenstates))
+        self.setEmissionProbs(random_matrix(self.n_hiddenstates, self.n_observations))
+        return
+
+
+
+
+
+
+if __name__ == "__main__":
+
+    from binding import *
+
+    hmmm = binded_HMM(3, 2, hmmType = "BLAS") 
+    hmmm.set_random()   # set initialization, transition and emission matrices to random values
+    hmmm.setInitProbs([1,0,0])
+    assert(hmmm.validate())
+
+    model = hmmm.baumWelch([1,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,0,0,1,0,1,0,0,1,1,0,1,0,1,0,1,0,1,0,1,0,0,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1], n_iterations = 5)
+    #model = hmmm.baumWelch(observations = [1,0,1,0,1,0,1,...,1,0,1,1,0,1,0,1],
+    #                   states = [0,1,1,1,2,2,2,...,2,1,1,1,1,0,0,0],
+    #                   n_iterations = 5)
+
+    hmmm.presentHMM()
+    #> hiddenStates = 3
+    #> observations = 2
+    #> 
+    #> initProbs: [n_states]
+    #>    1.000  0.000  0.000
+    #>        (1.0)
+    #> 
+    #> transitionProbs: [n_states][n_states]
+    #>    0.006   0.613   0.381       (1.0)
+    #>    0.305   0.342   0.353       (1.0)
+    #>    0.069   0.243   0.687       (1.0)
+    #>  
+    #> emissionProbs: [n_states][n_obs]
+    #>    0.024   0.976       (1.0)
+    #>    0.618   0.382       (1.0)
+    #>    0.499   0.501       (1.0)
+    #>  
+    #> The internal validation state is: True
+
+
+    hmmm.deallocate()
