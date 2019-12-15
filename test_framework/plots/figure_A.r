@@ -11,7 +11,7 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 # scaled by theoretical running time
 # full density
 
-state = "1"
+state = "2"
 
 # Consider varying statespace and varying alphabet
 # Yet i don't know how to show that the iterations in baum-welch are linearly scaled
