@@ -21,8 +21,6 @@ for hidden_states in [300, 100, 30, 10]:
 
     for algorithm in ['forward', 'backward_time']:
         for hmmType in ['BLAS', 'RSB']:
-    
-            
 
             # Generate data
             test_standard_data = random.choices([choice for choice in range(alphabet_size)], k = input_size)  # Generates a data set with an arbitrary alphabet_size size (uniform).
