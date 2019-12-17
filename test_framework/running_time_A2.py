@@ -1,7 +1,7 @@
 from running_time import *
 import binding as hmm_binding
 import random, decimal
-import time, sys, os
+import time, sys
 
 print('Testing varying input size', file = sys.stderr)
 
@@ -23,11 +23,12 @@ for stspace in [300, 100, 30, 10]:
                 print(f'{algorithm}\t{input_size}', file = sys.stderr, end = '\t', flush = True)
                 
                 # Generate data
-                test_standard_data = random.choices([choice for choice in range(alphabet_size)], k = input_size)  # Generates a data set with an arbitrary alphabet_size size (uniform).
+                test_standard_data = random.choices([choice for choice in range(alphabet_size)], k = input_size) 
+                # Generates a data set with an arbitrary alphabet_size size (uniform).
 
                 o = hmm_binding.binded_HMM(stspace, alphabet_size, hmmType = hmmType)
                 for _ in range(replicates):
-                    print('r', end = '', file = sys.stderr, flush = True)    
+                    print('r', end = '', file = sys.stderr, flush = True)
                     
                     set_random(o, sparseness = 0)
 
@@ -39,6 +40,6 @@ for stspace in [300, 100, 30, 10]:
                     
                     # Print to csv
                     print(f'inputsize, {input_size}, {t1-t0}, {algorithm}, {o.hmmType}, {""}')
-                
+
                 print('', file = sys.stderr, flush = True) # newline
                 o.deallocate()
