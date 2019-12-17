@@ -1,7 +1,7 @@
 from running_time import *
 import binding as hmm_binding
 import random, decimal
-import time, sys, os
+import time, sys
 
 
         
@@ -28,7 +28,7 @@ for algorithm in ['posteriorDecoding', 'baumWelch', 'viterbi']:
 
         for alphabet_size in range(start, stop, increment): # alphabet size
             print(f'{algorithm}\t{alphabet_size}', file = sys.stderr, end = '\t', flush = True)
-            test_standard_data = random.choices([j for j in range(alphabet_size)], k = input_size) # Generates a data set with an arbitrary alphabet size (uniform).
+            test_standard_data = random.choices([j for j in range(alphabet_size)], k = input_size) 
 
             for _ in range(replicates):
                 print('r', end = '', file = sys.stderr, flush = True)
@@ -37,7 +37,7 @@ for algorithm in ['posteriorDecoding', 'baumWelch', 'viterbi']:
                 set_random(o)
 
                 t0 = time.time()
-                
+
                 getattr(o, algorithm)(test_standard_data)
                 t1 = time.time()
                 o.deallocate()

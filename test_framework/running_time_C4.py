@@ -1,7 +1,7 @@
 from running_time import *
 import binding as hmm_binding
 import random, decimal
-import time, sys, os
+import time, sys
 
 
 """
@@ -18,7 +18,7 @@ replicates = 3
 hidden_states = 10
 
 # Number of iterations
-start = 2 
+start = 2
 stop = 20
 increment = 1
 
@@ -37,7 +37,7 @@ for hmmType in ['Conventional sparse', 'Conventional', 'BLAS', 'CSR', 'RSB']: # 
 
         for _ in range(replicates):
             print('r', end = '', file = sys.stderr, flush = True)    
-            
+
             o = hmm_binding.binded_HMM(n_iterations, 4, hmmType = hmmType)
             set_random(o)
 

@@ -1,7 +1,7 @@
 from running_time import *
 import binding as hmm_binding
 import random, decimal
-import time, sys, os
+import time, sys
 
 
 """
@@ -29,14 +29,15 @@ if True:
 for algorithm in ['forward', 'backward_time', 'posteriorDecoding', 'baumWelch', 'viterbi']:
     for hmmType in ['Conventional sparse', 'Conventional', 'BLAS', 'CSR', 'RSB']: # Don't forget RSB
         
-        test_standard_data = random.choices([j for j in range(alphabet_size)], k = input_size) # Generates a data set with an arbitrary alphabet size (uniform).
+        test_standard_data = random.choices([j for j in range(alphabet_size)], k = input_size)
+        # Generates a data set with an arbitrary alphabet size (uniform).
         
         for hidden_states in range(start, stop, increment):
             print(f'{algorithm}\t{hidden_states}', file = sys.stderr, end = '\t', flush = True)
 
             for _ in range(replicates):
-                print('r', end = '', file = sys.stderr, flush = True)    
-                
+                print('r', end = '', file = sys.stderr, flush = True)
+
                 o = hmm_binding.binded_HMM(hidden_states, 4, hmmType = hmmType)
                 set_random(o)
 

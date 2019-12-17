@@ -301,7 +301,9 @@ class binded_HMM:
         c_struct = c.POINTER(HMM)(self.hmm)
         self.libhmm.HMMDeallocate(c_struct)
 
-
+    def __del__(self):
+        """ called when self’s reference count reaches zero. """
+        self.deallocate()
 
     def set_random(self):
         """ Sets all the matrices in a given hmm to random values.
