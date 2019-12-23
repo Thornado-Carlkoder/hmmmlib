@@ -12,7 +12,7 @@ setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 # scaled by theoretical running time
 # full density
 
-state = "1"
+state = "2"
 
 # Consider varying statespace and varying alphabet
 # Yet i don't know how to show that the iterations in baum-welch are linearly scaled
@@ -22,7 +22,8 @@ state = "1"
 
 ## Inputsize ##
 
-data = read_csv(paste0("../running_times/running_time_A", state, ".csv"), col_names = T, comment = '#')
+data = read_csv(paste0("../running_times/running_time_A", state, ".csv"), col_names = T, comment = '#') %>% 
+    filter(algorithm != "viterbi")
 #names(data) = c('test', 'observations', 'time', 'algorithm', 'variant', 'iterations', 'statespace')
 
 data$algorithm = data %>% pull(algorithm) %>% recode(forward = "Forward",
@@ -52,7 +53,7 @@ data_input_grouped %>%
     geom_line() +
     geom_errorbar(aes(ymin = (mean - sd)/observations, ymax = (mean + sd)/observations), size = 0.3, alpha = .65) +
     facet_grid(statespace ~ algorithm, scales = "free") +
-    labs(y = "mean time [s] scaled"
+    labs(y = "time [s] / |observations| "
          #caption = "error bars: standard deviation of 3 replicates\nalphabet size: 4"
          #title = "Running time (scaled) for increasing input size",
          #subtitle = "Linear algebra based implementations are faster."
@@ -69,17 +70,7 @@ ggsave(paste0("svg/figure_A", state, ".svg"), width = figurewidth, height = figu
 
 # A3 ratio with increasing statespace
 
-if (state == "1") {
-    
-    data_input_grouped %>% mutate(mean_scaled = mean/observations) %>% 
-        ggplot(aes(observations, mean_scaled)) + geom_point()
-}
-
-
-
-
-
-
-
-
-
+# if (state == "1") {
+#     data_input_grouped %>% mutate(mean_scaled = mean / observations) %>%
+#         ggplot(aes(observations, mean_scaled)) + geom_point()
+# }

@@ -10,8 +10,9 @@ figureheight = 4.5
 # For the algorithms Forward and Backward, we want to show that the sparse implementations are faster than the dense implementations.
 
 
-state = "2"
 
+
+#B3: CSR RSB
 
 setwd("~/bioinformatics/hmm/git_tc_hmmmlib/test_framework/plots")
 
@@ -27,7 +28,20 @@ n_edges = function(n, d) {
 
 #data = read_csv("../newdata/statesparse.csv", col_names = F)
 #data = read_csv("../bigvs.csv", col_names = F)
-data = read_csv(paste0("../running_times/running_time_B", state, ".csv"), comment = '#') 
+data1 = read_csv(paste0("../running_times/running_time_B1.csv"), comment = '#') 
+data2 = read_csv(paste0("../running_times/running_time_B2.csv"), comment = '#')
+
+state = "3"
+data = bind_rows(data1, data2)
+if (state == 1) { #BLAS RSB
+    data = data %>% filter(variant %in% c("BLAS", "RSB"))
+} else if (state == 2) { # Conv.-sparse CSR
+    data = data %>% filter(variant %in% c("Conventional sparse", "CSR"))
+} else if (state == 3) { #CSR RSB
+    data = data %>% filter(variant %in% c("CSR", "RSB")) %>% filter(statespace <= 300)
+}
+
+
 #names(data) = c('test', 'observations', 'time', 'algorithm', 'variant', 'statespace')
 
 data$algorithm = data %>% pull(algorithm) %>% recode(forward = "Forward",
@@ -52,7 +66,7 @@ data_grouped %>% #filter(variant %in% c("RSB", "BLAS")) %>%
     
     labs(
         x = "transition matrix density",
-        y = "mean time [s]"
+        y = "time [s]"
         #caption = caption
         #title = "Running time for density versus state space",
         #subtitle = "Higher state space prefers sparse implementation"
@@ -73,7 +87,7 @@ data_grouped %>% filter(observations >= 0.1) %>%  ggplot(aes(observations, mean/
     facet_grid(statespace ~ algorithm, scales = "free") +
     labs(
         x = "transition matrix density",
-        y = "mean time [s] scaled to number of edges"
+        y = "time [s] divided by number of edges"
         #caption = caption
         #title = "Running time for density versus state space"
     ) +

@@ -1176,7 +1176,7 @@
 <polyline points='45.32,233.94 48.06,233.94 ' style='stroke-width: 0.53; stroke: #B3B3B3; stroke-linecap: butt;' clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)' />
 <polyline points='45.32,223.61 48.06,223.61 ' style='stroke-width: 0.53; stroke: #B3B3B3; stroke-linecap: butt;' clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)' />
 <g clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)'><text x='221.62' y='280.21' style='font-size: 11.00px; font-family: Arial;' textLength='62.37px' lengthAdjust='spacingAndGlyphs'>observations</text></g>
-<g clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)'><text transform='translate(13.35,189.89) rotate(-90)' style='font-size: 11.00px; font-family: Arial;' textLength='100.87px' lengthAdjust='spacingAndGlyphs'>mean time [s] scaled</text></g>
+<g clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)'><text transform='translate(13.35,197.33) rotate(-90)' style='font-size: 11.00px; font-family: Arial;' textLength='115.76px' lengthAdjust='spacingAndGlyphs'>time [s] / |observations| </text></g>
 <rect x='485.43' y='108.86' width='85.09' height='61.19' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)' />
 <g clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)'><text x='490.91' y='123.37' style='font-size: 11.00px; font-family: Arial;' textLength='33.02px' lengthAdjust='spacingAndGlyphs'>variant</text></g>
 <rect x='490.91' y='130.01' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' clip-path='url(#cpMC4wMHw1NzYuMDB8Mjg4LjAwfDAuMDA=)' />
