@@ -40,7 +40,7 @@ void forward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double 
     }
     free(matrix);
     
-    
+    // BLAS sum of alpha
     scalingFactor[0] = cblas_dasum(hmm->hiddenStates, alpha, 1);
     
     // BLAS alpha = alpha / scalingFactor[0]
