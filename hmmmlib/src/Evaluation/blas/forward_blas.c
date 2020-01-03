@@ -24,8 +24,8 @@ void forward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double 
         //
         
         if(i == Y[0]){ 
-            // BLAS alpha :=  matrix * hmm->initProbs + alpha
             // cblas_dsymv() computes alpha*A*x + beta*y and stores the results in Y.
+            // BLAS alpha :=  matrix * hmm->initProbs + alpha
             cblas_dsymv(CblasRowMajor,  121, hmm->hiddenStates,   1.0, matrix, hmm->hiddenStates, hmm->initProbs,    1,    1, alpha,    1);
             //                 Layout, uplo,                 n, alpha,     *a,               lda,              x, incx, beta,     y, incy
         }
