@@ -8,20 +8,34 @@ void forward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double 
     unsigned int i;
     unsigned int j;
     double ** new_emission_probs = calloc(hmm->observations, sizeof(double *));
-    double * matrix = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
+    double * matrix = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(double)); // Zero matrix
     
-    for(i = 0; i < hmm->observations; i++){
+    for(i = 0; i < hmm->observations; i++){ // For each symbol in the alphabet
         
-        for(j = 0; j < hmm->hiddenStates; j++){
-            matrix[j*hmm->hiddenStates+j] = hmm->emissionProbs[j*hmm->observations+i];
+        
+        // A diagonal matrix 'matrix[j]' is created for each symbol in the alphabet
+        // It contains the probability of emitting the i'th symbol from state j
+        for(j = 0; j < hmm->hiddenStates; j++){ // (For each hidden state in the state space.)
+            matrix[j*hmm->hiddenStates+j] = hmm->emissionProbs[j*hmm->observations+i]; 
         }
         
-        if(i == Y[0]){
-            cblas_dsymv(CblasRowMajor, 121, hmm->hiddenStates, 1.0, matrix, hmm->hiddenStates, hmm->initProbs, 1, 1, alpha, 1);
+        
+        // If the i'th symbol is equal to the first in the data:
+        // Use BLAS to compute the following:
+        // alpha :=  matrix * hmm->initProbs + alpha
+        if(i == Y[0]){ 
+            cblas_dsymv(CblasRowMajor, 121, hmm->hiddenStates,   1.0, matrix, hmm->hiddenStates, hmm->initProbs,    1,    1, alpha,    1);
+            //          Layout        uplo,                 n, alpha,     *a,               lda,              x, incx, beta,     y, incy
         }
         
         double * emission_probs = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
-        cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, hmm->hiddenStates, hmm->hiddenStates, hmm->hiddenStates, 1.0, hmm->transitionProbs, hmm->hiddenStates, matrix, hmm->hiddenStates, 0.0, emission_probs, hmm->hiddenStates);
+        
+        // Use BLAS to calculate the following:
+        // emission_probs = hmm->transitionProbs * matrix      
+        cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, hmm->hiddenStates, hmm->hiddenStates, hmm->hiddenStates,     1.0, hmm->transitionProbs, hmm->hiddenStates, matrix, hmm->hiddenStates,  0.0, emission_probs, hmm->hiddenStates);
+        //                  Order,       TransA,       TransB,                 M,                 N,                 K,   alpha,                    A,               lda,      B                ldb, beta,              C,               ldc
+        
+        // Save this emission_probs in a list.
         new_emission_probs[i] = emission_probs;
     }
     free(matrix);
