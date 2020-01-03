@@ -20,7 +20,6 @@ void forward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double 
         }
         
         // When we stumble upon the first symbol in data, the initial column of alpha can be set.
-        //
         if(i == Y[0]){ 
             // cblas_dsymv() computes alpha*A*x + beta*y and stores the results in Y.
             // BLAS alpha :=  matrix * hmm->initProbs + alpha
@@ -30,32 +29,33 @@ void forward_blas(HMM *hmm, const unsigned int *Y, const unsigned int T, double 
         
         double * emission_probs = calloc(hmm->hiddenStates*hmm->hiddenStates, sizeof(double));
         
-        
+        // Calculate the probability of transitioning from previous state to present state and emit symbol i.
         // BLAS emission_probs = hmm->transitionProbs * matrix      
         cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, hmm->hiddenStates, hmm->hiddenStates, hmm->hiddenStates,     1.0, hmm->transitionProbs, hmm->hiddenStates, matrix, hmm->hiddenStates,  0.0, emission_probs, hmm->hiddenStates);
         //                  Order,       TransA,       TransB,                 M,                 N,                 K,   alpha,                    A,               lda,      B                ldb, beta,              C,               ldc
         
-        // Save this emission_probs (ETMs) in a list.
+        // The ETM is done, save it.
         new_emission_probs[i] = emission_probs;
     }
     free(matrix);
     
+    // Scale initial column
     // BLAS sum of alpha
     scalingFactor[0] = cblas_dasum(hmm->hiddenStates, alpha, 1);
-    
     // BLAS alpha = alpha / scalingFactor[0]
     cblas_dscal(hmm->hiddenStates, (1.0/scalingFactor[0]), alpha, 1);
 
+    // Fill out the rest of alpha
     for(i = 1; i<T; i++){
         // Y = alpha AX + beta Y
-        // BLAS  ? = new_emission_probs[Y[i]] * alpha+hmm->hiddenStates*(i-1) 
+        // BLAS  alpha[hmm->hiddenStates*i] = new_emission_probs[Y[i]] * alpha+hmm->hiddenStates*(i-1) 
         cblas_dgemv(CblasRowMajor, CblasTrans, hmm->hiddenStates, hmm->hiddenStates,   1.0, new_emission_probs[Y[i]], hmm->hiddenStates, alpha+hmm->hiddenStates*(i-1),    1,    0, alpha+hmm->hiddenStates*i,    1);
         //                  order,     TransA,                 M,                 N, alpha,                        A,               lda,                             X, incX, beta,                         Y, incY
         
+        // Scale column
         scalingFactor[i] = 1.0/cblas_dasum(hmm->hiddenStates, alpha+hmm->hiddenStates*i, 1);
         // BLAS alpha+hmm->hiddenStates*i / scalingFactor[i]
         cblas_dscal(hmm->hiddenStates, scalingFactor[i], alpha+hmm->hiddenStates*i, 1);
-        
     }
     for(i = 0; i < hmm->observations; i++){
         free(new_emission_probs[i]);
