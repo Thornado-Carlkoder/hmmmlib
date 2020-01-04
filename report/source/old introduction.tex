@@ -1,0 +1,27 @@
+\section{Introduction}
+A Hidden Markov Model (HMM) is a Markov Model where an underlying process is hidden. A HMM can be described with 3 data data structures. First is the initialisation vector, which states the probability of initialising into each hidden state. Next comes the transition matrix, which states the probability of transitioning between each hidden state, and lastly; the emission matrix, which describes the probability of emitting each observable state, from each hidden state. These data structures can be set manually, or inferred from a data set, given assumptions on the number of hidden states.
+
+\subsection{Overview of HMM algorithms}
+%c Forvirrer denne oversigt mere end den gavner?
+HMMs can be inferred, tested and applied with a handful of algorithms. We infer our HMMs with the Bauw-Welch algorithm which applies the matrix product?? of the likelihood matrices from the Forward and Backward algorithms iteratively in order to achieve a local optimum for the transition matrix. The Forward and Backward algorithms are also applied in the Posterior Decoding algorithm, which computes the likelihood of observing a sequence of hidden states, given a model and a data set. The Viterbi algorithm sees much the same application as the Posterior Decoding algorithm, but computes the maximum likelihood.
+
+%c Inkluder noget med applications?
+
+
+\subsection{Definitions of HMM algorithms}
+\subsubsection{Forward and Backward}
+For each observed state in a data set, the Forward and Backward algorithms compute a likelihood of each hidden state...
+
+\subsubsection{Posterior Decoding}
+Posterior decoding utilizes the information from the product of Forward and Backward to infer the hidden state in each position in the data set...
+
+\subsubsection{Baum-Welch}
+\subsubsection{Viterbi}
+Viterbi is equivalent to finding the best path in a trellis diagram...
+
+
+\subsection{Motivation}
+All algorithms in our project will be implemented in the C programming language. We are trying to answer two main questions: 1. If we define the algorithms algebraically and compute these with an optimized matrix operation library, will we then see a speed up compared to a conventional implementation using straightforward C code? 2. Observing that many transition state matrices in HMMs are sparse, will a sparse matrix library give a worthwhile speed up of the algebraic definitions? 
+
+In our quest to answer these questions, we sought to implement a complete C-library, with an interface to connect all the algorithms as well as a Python-binding, which helps applying the algorithms in a less technical scripting environment.
+

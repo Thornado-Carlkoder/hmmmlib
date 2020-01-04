@@ -1,0 +1,94 @@
+\section{Speeding up using matrix multiplications}\label{sec:ForwardBackward}
+
+Our main observation during this project is to what extend Baum-Welch and Posterior Decoding depend on the Forward and Backward algorithms. Looking closely at their structures they both run the Forward and the Backward algorithms, otherwise only doing one loop over the total length of the input without any computationally heavy operations. Our hypothesis is that if the efficiency of the Forward and Backward algorithms is increased, there will be an equal increase in the efficiency of the Baum-Welch and Posterior Decoding algorithms.
+
+\subsection{Linear algebra formulations of the Forward and Backward algorithms}
+The reason for formulating the Forward and the Backward algorithms using linear algebra is that it allows the implementation to take advantage of fast low level operations of the computer like SIMD.
+
+Formulating the algorithms using linear algebra corresponds to generalizing the summations of the algorithms into matrix multiplications. While doing so we came up with a new matrix for replacing the emission and transition matrix in the context of the Forward and the Backward algorithms called the emission-transition matrix (ETM). In the following section we go through this generalization and show how the ETM is derived.
+
+\subsubsection{Forward algorithm}
+The following is the definition of $\alpha_{i,j}$ as described in \textbf{section \ref{sec:forward}}:
+\begin{align}\label{forward:summation}
+  \alpha_{i,j} &= \sum\limits_{l=1}^{N} \theta_{Y_i,j}\cdot\varphi_{l,j}\cdot\alpha_{i-1,l}
+\end{align}
+
+Instead of having a definition for each index of $\alpha$ we made a formulation for each column of $\alpha$. Let $\Theta_{Y_i}$ denote the diagonal matrix made from the $i$'th row in $\theta$. We use that $\Theta_{Y_i}\cdot\varphi$ results in a matrix where each row contains the same values as each iteration of the corresponding summation from \textbf{(\ref{forward:summation})}. Using this observation we can now define the $i$'th column of $\alpha$ as: %in $\theta_{Y_i,j}\cdot\varphi_{l,j}$ for $l=1\cdots|\varphi|$:
+\begin{align}\label{forward:matrixmulti}
+  \alpha_{i} &= \Theta_{Y_i}\cdot\varphi\cdot\alpha_{i-1}
+\end{align}
+We notice that we in equation \textbf{(\ref{forward:matrixmulti})} do a matrix-matrix multiplication, $\Theta_{Y_i}\cdot\varphi$, for each observation in the sequence $Y$. This can be avoided by introducing the ETM as $\hat{\Theta}_{Y_i} = \Theta_{Y_i}\cdot\varphi$. We avoid the matrix matrix multiplication because we can compute all the $ M $ ETMs as a preprocessing step so that for any $Y$ of length $K$ where $K>M$ the ETMs reduce the amount of matrix matrix multiplications compared to \textbf{(\ref{forward:matrixmulti})}. Using the definition of the ETM we can now define the $i$'th column of $\alpha$ as:
+\begin{align}\label{forward:final}
+  \alpha_i &= \hat{\Theta}_{Y_i}\cdot\alpha_{i-1}
+\end{align}
+
+It is not possible to use the ETM in the initial step of the forward algorithm but it can still be described using linear algebra using the $\Theta_{Y_{1}}$ from \textbf{(\ref{forward:matrixmulti})}:
+\begin{align*}
+  \alpha_{1} &= \pi\cdot\Theta_{Y_{1}}
+\end{align*}
+
+\subsubsection{Backward algorithm}
+
+The initial step of the Backward algorithm cannot be meaningfully described with linear algebra since no operations are made. However the $i$'th step can and we will introduce the notation of ETM for the $i$'th step of the backward algorithm. The $i,j$'th index of $\beta$ is defined as:
+\begin{align*}
+  \beta_{i,j} &= \sum\limits_{l=1}^{N} \beta_{i+1,l}\cdot\varphi_{j,l}\cdot\theta_{Y_{i+1},j}
+\end{align*}
+
+We now introduce $\Theta_{Y_{i+1}}$ from \textbf{(\ref{forward:matrixmulti})} and write $i$'th column of $\beta$ as:
+\begin{align*}
+  \beta_i = \beta_{i+1}\cdot\varphi\cdot\Theta_{Y_{i+1}}
+\end{align*}
+
+Finally we introduce the ETM into the definition of the $i$'th column of $\beta$:
+\begin{align}\label{beta:one}
+  \beta_{i} &= \beta_{i+1}\cdot\hat{\Theta}_{Y_{i+1}}
+\end{align}
+        
+\subsubsection{Increased space consumption}
+
+The ETM matrix has the dimension $N \times N$ and since there are $ M $ of them, we get a space consumption increase of $\mathcal{O}(M \cdot N^2)$.
+
+\subsubsection{Sparse matrix}
+
+Because we introduced the linear algebra formulation of the Forward and the Backward algorithms the instances where the emission or the transition matrix is sparse should be addressed. A sparse matrix is a matrix where most of the elements are zero, which means doing vector matrix multiplication most of the multiplications will have the form: 
+
+$$A\cdot x = a_{i,1}\cdot x_1\cdots a_{i,n}\cdot x_n = 0\cdot x_1\cdots0\cdot x_n$$
+
+It is clear that these multiplications are trivial. Our hypothesis is that in these instances it is possible to achieve an even greater speed up than expected for the straight forward linear algebra implementation. 
+First of all we see that the ETMs are sparse when the transition matrix or the emission matrix is sparse. This means only one of the matrices have to be sparse before we consider our instance to be sparse. It is possible to represent a sparse matrix on a format where all zero values are omitted. If such a format allows for vector matrix multiplications it can be used for representing the ETM. There exist many different sparse matrix formats that support matrix vector multiplication. We choose to focus on the Compressed Sparse Row (CSR) format and the Recursive Sparse Block (RSB) format. 
+
+
+\subsection{Implementation}\label{sec:impel}
+
+In the following section we will go though the main points of our implementations of the Forward and the Backward algorithms with respect to the dense and sparse instance of the ETM.
+
+\subsubsection{BLAS}\label{sec:blas}
+BLAS\cite{blackford2002updated} stands for basic linear algebra subprograms. It is a specification that describes a set of routines for performing basic linear algebra operations. BLAS is typically implemented so that it is optimized for specific hardware. The major vendors like AMD\cite{amd} and Intel\cite{intel} have their own implementation optimized for their own CPUs. BLAS is the de facto specification for linear algebra operations which is the reason why we choose it for implementing our linear algebra formulation of the Forward and the Backward algorithms. We chose the ATLAS\cite{ATLAS} distribution which complies so that it is optimized for the hardware it is compiled on.
+
+
+The following code snippet performs the calculation for the $i$'th column of $\alpha$ as described in \textbf{equation (\ref{forward:final})} using BLAS. In this step only one matrix vector multiplication is necessary. This is done by using the \texttt{cblas\_dgemv} function. \texttt{cblas\_dgemv} computes \texttt{y := alpha*A*x + beta*y} or where \texttt{A} is transposed depending on the input. In the following code we perform the transposed version. To achieve just the \texttt{y := A*x} part we set \texttt{alpha=1}, \texttt{beta=0} and \texttt{y} is a pointer to the beginning of the $i$'th column of $\alpha$. We transpose the \texttt{A} (ETM) because it is stored in transpose order in the implementation and transposing it again moves it back.
+
+
+\begin{lstlisting}[style=CStyle]
+cblas_dgemv(CblasRowMajor, CblasTrans, hmm->hiddenStates, hmm->hiddenStates, 1.0, new_emission_probs[Y_i], hmm->hiddenStates, alpha+hmm->hiddenStates*(i-1), 1, 0, alpha+hmm->hiddenStates*i, 1);
+\end{lstlisting}
+
+
+The following code snippet performs the calculation for the $i$'th column of $\beta$ using BLAS. Here we do the same as previous code but where we use the first, untransposed, version. Because we want to perform a vector matrix multiplication as denoted in \textbf{(\ref{beta:one})}, but \texttt{cblas\_dgemv} only allows us to do a matrix vector multiplication, we benefit form the ETM being quadratic. By transposing the ETM and then doing a matrix vector multiplication makes it the same as doing a vector matrix multiplication. As the ETM is transposed by default we do nothing.
+\begin{lstlisting}[style=CStyle]
+cblas_dgemv(CblasRowMajor, CblasNoTrans, hmm->hiddenStates, hmm->hiddenStates, 1.0, new_emission_probs[Y[T-i]], hmm->hiddenStates, beta+hmm->hiddenStates*T-i*hmm->hiddenStates, 1, 0, beta+hmm->hiddenStates*T-i*hmm->hiddenStates-hmm->hiddenStates, 1);
+\end{lstlisting}
+
+We can also calculate the ETM's using BLAS which we did.
+
+\subsubsection{CSR}\label{sec:csr}
+
+The CSR format represent a sparse matrix using three arrays. One that contains all the non zero values of the matrix and two arrays for keeping track of the value indices in the original matrix. The format allows for vector matrix multiplication. The implementation utilizing the CSR format has a larger preprocessing step as we have to calculate the ETMs and then turn them into the CSR format. The matrix vector multiplication using the CSR format consists of two nested loops that goes through the two index arrays. The amount of iterations in the loops and therefore the amount of multiplications are bounded by the amount of non-zero values in the ETM. The implementation uses BLAS for calculating the ETM's.
+
+\subsubsection{RSB}
+There is no straight forward implementation of sparse matrix vector multiplication utilizing low level operations of the computer like there is with BLAS. Instead we found libRSB\cite{librsb}, a library that implements the sparse BLAS specifications, which is a subset of the original BLAS operations for sparse matrix operations. The implementation takes advantage of the recursive sparse block matrix format that allows for cache efficient and multi threaded matrix operations. We use the libRSB as shown in the code snippet in \textbf{section (\ref{sec:blas})} the corresponding libRSB function is just called \texttt{rsb\_spmv}. The \texttt{rsb\_spmv} function takes the same parameters however the input matrix must be in CSR format. Therefore the implementations of the Forward and the Backward algorithms for the sparse instance of  an HMM utilizing RSB has the same preprocessing step as the CSR version described in \textbf{section (\ref{sec:csr})}. The implementation uses BLAS for calculating the ETM's.
+
+\subsection{Scaling}
+In order to avoid the numerical problems associated with multiplying probabilities (or numbers smaller than 1) we have to scale the results for each iteration of the Forward and the Backward algorithms. For the Forward algorithm we divide each cell in the current column with its sum. The sum was then saved in the \texttt{scaleFactor} variable to be used for scaling the Backward algorithm. To obtain compatible scaling, we use the same scale factor for the Forward algorithm when scaling the Backward algorithm, as in: we divide each cell with the sum of the corresponding column of the result of the Forward algorithm. 
+
+The scaling step can be done in just two lines when using BLAS, which we did for both the BLAS, CSR and RSB implementations. The conventional implementation of the Forward and Backward algorithms is scaled using a simple loop.
