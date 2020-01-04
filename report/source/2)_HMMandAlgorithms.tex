@@ -4,7 +4,7 @@ In the following we will introduce the Hidden Markov Model and the three basic p
 
 \subsection{A Hidden Markov Model}
 
-A Hidden Markov Model (HMM) is a probabilistic model which in its simplest form consists of $M$ observables:
+A Hidden Markov Model (HMM) is a probabilistic model, which in its simplest form consists of $M$ observables:
 $$O = \{o_1\cdots o_M\}$$\
 
 $N$ hidden states which are non observables:
@@ -19,11 +19,11 @@ A $ N \times N $ transition matrix $\varphi$ where $\varphi_{i,j}$ is the probab
 
 \subsection{Evaluation problem}
 
-The evaluation problem of an HMM is: Given an HMM $\lambda$ and a sequence of observations $Y$, what is the probability of observing the sequence $Y$ with respect to $\lambda$?. This problem can be solved using the Forward and Backward algorithms.
+The evaluation problem of an HMM is: Given an HMM $\lambda$ and a sequence of observations $Y$, what is the probability of observing the sequence $Y$ with respect to $\lambda$?.\todo{slet punktum} This problem can be solved using the Forward and Backward algorithms.
 
 \subsubsection{Forward algorithm}\label{sec:forward}
 
-The Forward algorithm\cite{Bishop} given a sequence of observations $Y$ of length $K$ and an HMM $\lambda$ creates an $ N \times K$ matrix $\alpha$. Here $\alpha_{i,j}$ is the probability of $\lambda$ emitting the subsequence $Y_{1:i}$ of $Y$ starting from the first observation, to the $i$'th observation and being in the $j$'th hidden state. $\alpha$ is calculated recursively in a forward manner starting from the first observation of $Y$. 
+The Forward algorithm\cite{Bishop}, given a sequence of observations $Y$ of length $K$ and an HMM $\lambda$, creates an $ N \times K$ matrix $\alpha$. Here $\alpha_{i,j}$ is the probability of $\lambda$ emitting the subsequence $Y_{1:i}$ of $Y$ starting from the first observation, to the $i$'th observation and being in the $j$'th hidden state. $\alpha$ is calculated recursively in a forward manner starting from the first observation of $Y$. 
 The initial step of the Forward algorithm is given by:
 $$\alpha_{1,j} = \pi_j\cdot\theta_{Y_1,j}$$
 
@@ -36,17 +36,17 @@ The Forward algorithm does $ N $ operations for each index in $\alpha$ so the ov
 
 \subsubsection{Backward algorithm}
 
-The Backward algorithm\cite{Bishop} given a sequence of observations $Y$ of length $K$ and an HMM $\lambda$, creates an $ N \times K$ matrix $\beta$. Here $\beta_{i,j}$ is the probability of $\lambda$ emitting the sub-sequence $Y_{i+1:K}$ starting in the $j$'th hidden state: $P(Y_{i+1:K}|X_i = x_j)$. 
+The Backward algorithm\cite{Bishop}, given a sequence of observations $Y$ of length $K$ and an HMM $\lambda$, creates an $ N \times K$ matrix $\beta$. Here $\beta_{i,j}$ is the probability of $\lambda$ emitting the sub-sequence $Y_{i+1:K}$ starting in the $j$'th hidden state: $P(Y_{i+1:K}|X_i = x_j)$. 
 $\beta$ is calculated recursively in a backward manner starting with the last observation of $Y$ where the first row of $\beta$ has the value $1$.
 \begin{align*}
     \beta_{i,j} &= \sum\limits_{l=1}^{N} \beta_{i+1,l}\cdot\varphi_{l,j}\cdot\theta_{Y_{i+1},j}
 \end{align*}
 
-Like the forward algorithm, The Backward algorithm does $ N $ operations for each index in $\beta$ so the overall running time is $\mathcal{O}( N ^2\cdot K)$. It uses $\mathcal{O}( N \cdot K)$ space as it fill up the $\beta$ matrix.
+Like the forward algorithm, The Backward algorithm does $ N $ operations for each index in $\beta$ so the overall running time is $\mathcal{O}( N ^2\cdot K)$. It uses $\mathcal{O}( N \cdot K)$ space as it fills up the $\beta$ matrix.
 
 \subsection{Decoding problem}
 
-The decoding problem of an HMM is: Given an HMM $\lambda$ and a sequence of observations $Y$, what is the most likely sequence of hidden states that produced $Y$ with respect to $\lambda$? 
+The decoding problem of an HMM is: Given an HMM $\lambda$ and a sequence of observations $Y$, what is the most likely sequence of hidden states that produced $Y$ with respect to $\lambda$? \todo{'with respect to' er unødvendig. lambda er allerede nævnt i sætningen.}
 
 \subsubsection{Viterbi algorithm}
 
@@ -62,7 +62,7 @@ Because the algorithm fills out a $ K \times  N $ table, where we for each cell 
 
 \subsubsection{Posterior decoding algorithm}
 
-The Posterior decoding algorithm\cite{Bishop} - given an HMM $\lambda$ and a sequence of observations $Y$ of length $K$ - calculates an array $Z$ of size $K$ which contains the highest a posterior probability for each observation in $Y$. 
+The Posterior decoding algorithm\cite{Bishop} - given an HMM $\lambda$ and a sequence of observations $Y$ of length $K$ - calculates an array $Z$ of size $K$, which contains the highest a posterior \todo{a posteriori or posterior} probability for each observation in $Y$. 
 $Z$ is calculated using the forward and backward probabilities. Here the $j$'th entrance in $Z$ is given by:
 
 $$Z_j = \max\limits_{i\in H} (\frac{\alpha_{i,j}\cdot\beta_{i,j}}{P(Y|\lambda)})$$
@@ -76,13 +76,14 @@ space.
 % Posterior decoding inherits the time and space consumption of the Forward and Backward algorithms.
 
 
-Posterior decoding and Viterbi is similar in that they both find a probable sequence of hidden states given a sequence of observables. The difference is that Viterbi finds the maximum likelihood sequence of hidden states over the full sequence $Y$, whereas Posterior decoding finds sequence of hidden states that gives the highest probability on the immediate observable $y_i$.
+Posterior decoding and Viterbi is similar in that they, given a sequence of observables, both find a likely sequence of hidden states. The difference is that Viterbi finds the maximum likelihood sequence of hidden states over the full sequence $Y$, whereas Posterior decoding finds sequence of hidden states that gives the highest probability on the immediate observable $y_i$.
 
 \subsection{Learning problem}
 
 The learning problem is: Given an HMM $\lambda$ and a sequence of observations $Y$, how should the $\varphi$, $\theta$ and $\pi$ variables be adjusted so we maximize $P(Y|\lambda)$? This problem can be solved using the Baum-Welch algorithm.
 
 \subsubsection{Baum-Welch algorithm}
+
 
 The Baum-Welch \cite{Bishop} algorithm is an expectation maximization algorithm. Given a sequence of observations $Y$ of length $K$ and an HMM $\lambda$ the Baum-Welch algorithm trains the $\varphi$, $\theta$ and $\pi$ of the HMM so that the likelihood of $P(Y|\lambda)$ is a local maximum. This is done in an iterative procedure for a fixed amount of iterations or until the likelihood converges. In each iteration the algorithm updates the variables of the HMM using the forward and backward probability.
 
