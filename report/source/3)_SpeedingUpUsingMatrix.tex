@@ -1,9 +1,10 @@
 \section{Speeding up using matrix multiplications}\label{sec:ForwardBackward}
 
-Our main observation during this project is to what extend Baum-Welch and Posterior Decoding depend on the Forward and Backward algorithms. Looking closely at their structures they both run the Forward and the Backward algorithms, otherwise only doing one loop over the total length of the input without any computationally heavy operations. Our hypothesis is that if the efficiency of the Forward and Backward algorithms is increased, there will be an equal increase in the efficiency of the Baum-Welch and Posterior Decoding algorithms.
+Our main observation during this project is that Baum-Welch and Posterior Decoding depend on the Forward and Backward algorithms. Looking closely at their structures they both run the Forward and the Backward algorithms, other than that, it only does one loop over the total length of the input without any computationally heavy operations. Our hypothesis is that if the efficiency of the Forward and Backward algorithms is increased, there will be an equal increase in the efficiency of the Baum-Welch and Posterior Decoding algorithms.
 
 \subsection{Linear algebra formulations of the Forward and Backward algorithms}
-The reason for formulating the Forward and the Backward algorithms using linear algebra is that it allows the implementation to take advantage of fast low level operations of the computer like SIMD.
+
+The reason for formulating the Forward and the Backward algorithms using linear algebra is that it allows the implementations to take advantage of fast low level operations of the computer like SIMD.
 
 Formulating the algorithms using linear algebra corresponds to generalizing the summations of the algorithms into matrix multiplications. While doing so we came up with a new matrix for replacing the emission and transition matrix in the context of the Forward and the Backward algorithms called the emission-transition matrix (ETM). In the following section we go through this generalization and show how the ETM is derived.
 
