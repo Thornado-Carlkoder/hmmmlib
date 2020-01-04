@@ -19,7 +19,7 @@ A $ N \times N $ transition matrix $\varphi$ where $\varphi_{i,j}$ is the probab
 
 \subsection{Evaluation problem}
 
-The evaluation problem of an HMM is: Given an HMM $\lambda$ and a sequence of observations $Y$, what is the probability of observing the sequence $Y$ with respect to $\lambda$?. This problem can be solved using the Forward and Backward algorithms.
+The evaluation problem of an HMM is: Given an HMM $\lambda$ and a sequence of observations $Y$, what is the probability of observing the sequence $Y$ with respect to $\lambda$? This problem can be solved using the Forward and the Backward algorithms.
 
 \subsubsection{Forward algorithm}\label{sec:forward}
 
@@ -56,13 +56,12 @@ The Viterbi algorithm fills out a $K \times N$ table $V$, where $V_{i,j}$ is the
 $$V_{i,j} = \max\limits_{x_{j-1}} P(Y_{1:i}, X_{j+1} = x_{j+1}|\lambda)$$
 
 The most likely sequence of hidden states can then be calculated by backtracking through $V$ starting in $\max(V_K)$.
-% Given all model parameters, The Viterbi algorithm infers the most likely (maximum likelihood) sequence of states $h_1,\ldots,h_N$\todo{Why N?!?!} that generates a given sequence of observables $y_1,\ldots,o_K$\todo{you mean yk?}. The Viterbi algorithm can be defined recursively, filling out a $ K  \times  N $ table $V$. For each observable $y_i$, it backtracks to find the most likely state transition that emits the current observable: $V_{i, n} = \text{max}_{h\in H}(P(y_i | n) \cdot a_{h, n} \cdot V_{i-1, h})$ where the base case for the first observable is $V_{1, n} = P(y_1 | n) \cdot \pi_n$
 
 Because the algorithm fills out a $ K \times  N $ table, where we for each cell have to iterate through all $ N $ states to find the transition with the highest probability, the running time is $\mathcal{O}(K \cdot  N ^2)$. The space consumption of the table $V$ is $\mathcal{O}(K \cdot  N )$.
 
 \subsubsection{Posterior decoding algorithm}
 
-The Posterior decoding algorithm\cite{Bishop} - given an HMM $\lambda$ and a sequence of observations $Y$ of length $K$ - calculates an array $Z$ of size $K$ which contains the highest a posterior probability for each observation in $Y$. 
+The Posterior decoding algorithm\cite{Bishop}, given an HMM $\lambda$ and a sequence of observations $Y$ of length $K$, calculates an array $Z$ of size $K$ which contains the highest a posteriori probability for each observation in $Y$. 
 $Z$ is calculated using the forward and backward probabilities. Here the $j$'th entrance in $Z$ is given by:
 
 $$Z_j = \max\limits_{i\in H} (\frac{\alpha_{i,j}\cdot\beta_{i,j}}{P(Y|\lambda)})$$
@@ -70,13 +69,7 @@ $$Z_j = \max\limits_{i\in H} (\frac{\alpha_{i,j}\cdot\beta_{i,j}}{P(Y|\lambda)})
 Because the Posterior decoding algorithm relies on the forward and backward probabilities, its time consumption for calculating these is $\mathcal{O}( N^2\cdot K)$ and the space consumption for the $\alpha$ and $\beta$ tables are $\mathcal{O}( N\cdot K)$. If we assume that both $\alpha$ and $\beta$ are given, then the algorithm will use $\mathcal{O}( N\cdot K)$ time and $\mathcal{O}(K)$
 space.
 
-
-% For a sequence of observables $y_i \in Y = \{y_1,\ldots,y_K\}$, Posterior decoding finds the most probable state $h_i^*$\todo{why the star?} for each observable $P(h_i|y_1,\ldots,y_K)$. It does so by multiplicating together the forward and backward probabilities.
-
-% Posterior decoding inherits the time and space consumption of the Forward and Backward algorithms.
-
-
-Posterior decoding and Viterbi is similar in that they both find a probable sequence of hidden states given a sequence of observables. The difference is that Viterbi finds the maximum likelihood sequence of hidden states over the full sequence $Y$, whereas Posterior decoding finds sequence of hidden states that gives the highest probability on the immediate observable $y_i$.
+Posterior decoding and Viterbi is similar in that they, given a sequence of observables, both find a likely sequence of hidden states. The difference is that Viterbi finds the maximum likelihood sequence of hidden states over the full sequence $Y$, whereas Posterior decoding finds sequence of hidden states that gives the highest probability on the immediate observable $y_i$.
 
 \subsection{Learning problem}
 

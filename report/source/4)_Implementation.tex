@@ -1,6 +1,6 @@
 \section{HMMM (Hidden Markov Model Matrix{\small\textit{-edition}})}\label{sec:hmmmlib}
 
-In the following we will go though our main software architectural considerations about our \texttt{C} implementation of the HMM and its algorithms as well for the associated \texttt{Python} library. Both the \texttt{C} library and the \texttt{Python} library can be found on the Hidden Markov Model Matrix-edition github at: \code{https://github.com/Thornado-Carlkoder/hmmmlib}
+In the following we will go through our main software architectural considerations about our \texttt{C} implementation of the HMM and its algorithms as well for the associated \texttt{Python}-library. Both the \texttt{C}-library and the \texttt{Python}-library can be found on the Hidden Markov Model Matrix-edition github at: \code{https://github.com/Thornado-Carlkoder/hmmmlib}
 
 \subsection{C implementation}
 
@@ -28,9 +28,9 @@ To allow an easy way of changing implementations of the Forward and the Backward
 F(hmm, Y, T, scaleFactor, alpha);\end{lstlisting}
 
 The Backward algorithm can be called in the same manner. 
-This made it very easy to construct a new version of the Forward and the Backward algorithms since they just need to follow the interface. To simplify this even more we made HMM constructors for the different versions of the Forward and Backward algorithms so the different constructors set the function pointers to the wanted implementations of the Forward and the Backward algorithms.
+This design made it very easy to construct a new version of the Forward and the Backward algorithms since they just need to follow the interface. To simplify this even more we made HMM constructors for the different versions of the Forward and Backward algorithms so the different constructors set the function pointers to the wanted implementations of the Forward and the Backward algorithms.
 
-The following code snippet is an usage example of the \texttt{C} library:
+The following code snippet is a usage example of the \texttt{C}-library:
 
 \begin{figure}[H]
     \centering
@@ -52,7 +52,7 @@ The following code snippet is an usage example of the \texttt{C} library:
     double * scaleFactor = malloc(1000*sizeof(double));
     F(hmm, input, 1000, &scaleFactor, &alpha);
     HMMDeallocate(hmm);\end{lstlisting}
-    \caption{In the \texttt{C} library example we initialize the BLAS version of the HMM with 7 hidden states and a alphabet of size 4. We set its transition, emission and initial probabilities. When these a set the HMM instance is ready to be used. From line 13 to 16 we make a alpha pointer and a scale factor pointer and then call the Forward function of the HMM where the result is saved to the alpha pointer. At line 17 we end our example by  deallocating the HMM struct and its pointers.}
+    \caption{In the \texttt{C}-library example we initialize the BLAS version of the HMM with 7 hidden states and a alphabet of size 4. We set its transition, emission and initial probabilities. When these a set the HMM instance is ready to be used. From line 13 to 16 we make a alpha pointer and a scale factor pointer and then call the Forward function of the HMM where the result is saved to the alpha pointer. At line 17 we end our example by  deallocating the HMM struct and its pointers.}
     \label{fig:c_example}
 \end{figure}
 
@@ -60,7 +60,6 @@ The following code snippet is an usage example of the \texttt{C} library:
 \subsubsection{Implementation of Baum-Welch, Posterior decoding and Viterbi}
 
 To get a complete library with the HMM and it's associated algorithms and being able to test our hypothesis we implemented the Baum-Welch, Posterior decoding and Viterbi algorithms in a conventional manner without doing any optimization.
-% \todo{forslag: In order to have a benchmark for our hypothesized optimizations, we created an HMM-library, containing a conventional implementation of all the algorithms.}
 
 The Baum-Welch and Posterior Decoding algorithms both take advantage of the Forward and Backward algorithms. Thus they were implemented using the interface described in the previous section for calling the Forward and the Backward algorithms.
 
@@ -68,18 +67,18 @@ The Viterbi algorithm is scaled using logarithm in order to avoid numerical prob
 
 We also tested all the algorithms scale accordingly with respect to the state space, which they do. The results of theses experiments are shown on \textbf{figure \ref{app:hiddenstates}} in the Appendix.
 
-\subsection{Python library}\label{sec:pb}
-To make the HMM-library easily accessible, in order to quickly write tests, we decided to write a Python library which makes it possible to call all core methods and algorithms in the \texttt{C}-library.
+\subsection{Python-library}\label{sec:pb}
+To make the HMM-library easily accessible, in order to quickly write tests, we decided to write a \texttt{Python}-library which makes it possible to call all core methods and algorithms in the \texttt{C}-library.
 
-The Python library is constructed by compiling the \texttt{C} library into a shared object which is then loaded into Python using the ctypes\cite{ctypesman} foreign function library for Python.
-This is done in the Python file \code{HMMM.py}.
-In the main file of the Python library, the HMM-struct and all of it's functions and algorithms are defined. By importing this library, all the functions and algorithms in the C-library will be accessible in Python.
-% To ensure that the library works as expected we made a test, that imports this library, and verifies that all algorithms produce correct outputs for defined inputs. 
-Each time a new function or algorithm is added to the C-library, a corresponding definition must be made in HMM.py.
+The \texttt{Python}-library is constructed by compiling the \texttt{C}-library into a shared object which is then loaded into \texttt{Python} using the ctypes foreign function library\cite{ctypesman} for \texttt{Python}.
+This is done in the \texttt{Python} file \code{HMMM.py}.
+In the main file of the \texttt{Python}-library, the HMM-struct and all of it's functions and algorithms are defined. By importing this library, all the functions and algorithms in the \texttt{C}-library will be accessible in \texttt{Python}.
+Each time a new function or algorithm is added to the \texttt{C}-library, a corresponding definition must be made in \code{HMMM.py}.
 
-In the Python library, we implemented the \texttt{\_\_del\_\_(self)} data model method\cite{pythonman}, so when the reference count of the Python HMMM-class object reaches zero, the C-library actively deallocates all dynamically allocated memory. When using the python binding no manual data management is needed.
 
-The following is an example of how to use the python library:
+In the \texttt{Python}-library, we implemented the \texttt{\_\_del\_\_(self)} data model method\cite{pythonman}, so when the reference count of the \texttt{Python} HMMM-class object reaches zero, all dynamically allocated memory in the \texttt{C}-library is deallocated. When using the \code{python}-library no manual memory management is needed.
+
+The following is an example of how to use the \texttt{Python}-library:
 
 \begin{figure}[H]
     \centering
@@ -89,41 +88,12 @@ hmmm = HMMM(3, 2, hmmType = "BLAS")
 hmmm.set_random()  
 hmmm.setInitProbs([1,0,0])
 hmmm.baumWelch(observations = [1,0,1,0,1,0,1,...,1,0,1,1,0,1,0,1], n_iterations = 5)\end{lstlisting}
-\caption{\small{Example of the python library. Setting up an HMM with 3 hidden states and an alphabet of size 2 using the BLAS-implementation. At line 3 the initialization, emission and transition matrices are set to random values. At line 4 the initialization probabilities is set to a specific list of values.
+\caption{\small{Example of the \texttt{Python}-library. Setting up an HMM with 3 hidden states and an alphabet of size 2 using the BLAS-implementation. At line 3 the initialization, emission and transition matrices are set to random values. At line 4 the initialization probabilities is set to a specific list of values.
 At line 5 the Baum-Welch algorithm is used to train the transition and emission matrices using given data over 5 iterations.}}
 \label{fig:pybind}
 \end{figure}
 
 \subsubsection{Running time tests}\label{sec:runningtimetests}
-We performed running time tests on all algorithms using the Python library. All the tests where made using uniform randomly generated strings made over the alphabet as input. We used the same input for every version of the different algorithms.
+We performed running time tests on all algorithms using the \texttt{Python}-library. All the tests were made using uniform randomly generated strings made, over the alphabet, as input. We used the same input for every version of the different algorithms.
 
-The advantage of using the Python library is that it was very easy to modify the tests and automate them. The disadvantage is that it introduces a level of abstraction, thereby possibly adding noise to the time measurements.
-
-% \subsection{Python binding}\label{sec:pb}
-% In order to make the HMM-library easily accessible from an abstract programming environment - such that we could easily write tests - we decided to write a Python binding that makes it possible to call all core methods and algorithms in the C-library.
-
-% The hmm-library written in \code{C} compiled to a shared object. In binding.py, this shared object is loaded into python using the ctypes-library. Here, the structure of the HMM-struct and all of its functions and algorithms are defined. By importing this binding, alle the functions and algorithms in the C-library will be accessible in Python. We have made a test, that imports this binding, and verifies that all algorithms are indeed callable and that they produce correct outputs for defined inputs. Each time a new function or algorithm is added to the HMM-library written in C, a corresponding definition must be made in binding.py.
-% The usage of the python binding is exemplified in \textbf{figure \ref{fig:pybind}}.
-
-% In the Python binding, we implemented the \texttt{\_\_del\_\_(self)} data model method, such that when the reference count of the Python HMMM-class reaches zero, the the C-library deallocates all dynamically allocated memory.
-
-% \todo{Jeg tror at beskrivelsen af koden er i passiv stemme?! C: Kigger lige på det.}
-% \begin{figure}[H]
-%     \centering
-% \begin{lstlisting}[style=PYstyle]
-% from binding import *
-
-% hmmm = HMMM(3, 2, hmmType = "BLAS")
-% hmmm.set_random()
-% hmmm.setInitProbs([1,0,0])
-
-% hmmm.baumWelch(observations = [1,0,1,0,1,0,1,...,1,0,1,1,0,1,0,1],
-%       n_iterations = 5)\end{lstlisting}
-% \caption{\small{Python binding practical example. Setting up an HMM with 3 hidden states and an alphabet size of 2 using the BLAS-implementation. Setting up the initialization, emission and transition matrices to random values as well as changing the initialization probabilities to a specific list of values. Then applying the Baum-Welch algorithm to train the transition and emission matrices to given data with 5 iterations.}}
-% \label{fig:pybind}
-% \end{figure}
-
-
-
-% \subsubsection{Running time tests}\label{sec:runningtimetests}
-% We performed running time tests on all algorithms through the Python binding. All tests have a precisely defined number of hidden states, alphabet size, length of input, number of replicates etc. The input of observables to the algorithms is in all cases a uniform random generated string under the alphabet size. The benefit of using the Python binding to perform the running time tests is that it is easy to define and edit these tests, the disadvantage is that noise might be introduced in the time measurement.
+The advantage of using the \texttt{Python}-library is that it is very easy to modify the tests and automate them. The disadvantage is that it introduces a level of abstraction, thereby possibly adding noise to the time measurements.

@@ -1,9 +1,9 @@
 \section{Experiments}\label{sec:expriments}
-To test or hypotheses we have conducted several experiments on the different implementations of the Forward and the Backward algorithms. All the experiments have been conducted on a ThinkPad W540 with 32GB RAM and an Intel I7-4700MQ running 64bit Debian 10. All the experiments have 3 replicates in order to minimize random fluctuations due to other processes of the computer.
-All experiments were conducted through the Python library as described in \textbf{section \ref{sec:pb}}.
+To test or hypotheses we have conducted several experiments on the different implementations of the Forward and the Backward algorithms. All the experiments have been conducted on a ThinkPad W540 with 32GB RAM and an Intel I7-4700MQ running 64bit Debian 10. The \texttt{C}-library was written in \code{C} version 11 and compiled using \texttt{gcc} version 8.3.0-6. We used \texttt{Python} version 3.7.3. All the experiments have 3 replicates in order to minimize random fluctuations due to other processes of the computer.
+All experiments were conducted through the \texttt{Python}-library as described in \textbf{section \ref{sec:pb}}.
 
 \subsection{BLAS vs Conventional}\label{sec:A1}
-To test or initial hypothesis, that a linear algebra implementation utilizing BLAS of the Forward and Backward algorithm is faster than the conventional version, we conducted the following experiment.
+To test our initial hypothesis, that a linear algebra implementation utilizing BLAS of the Forward and the Backward algorithms is faster than the conventional version, we conducted the following experiment.
 
 The experiment was conducted with an varying input size starting with $100'000$ going up to $1'000'000$, increasing $100'000$ each time. The state space was varied as well: from $10$ to $400$. Varying the state space allows us to test the consistency of the performance over all the influencing variables. The experiment is show in \textbf{figure \ref{fig:A1}}. 
 
@@ -12,13 +12,13 @@ The experiment was conducted with an varying input size starting with $100'000$ 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.85]{figures/figure_A1.pdf}
-  \caption{\small{Forward and Backward running time experiment for the linear algebra and the conventional implementations. The vertical axis shows time divided by number of observations. Error bars denote standard deviation of 3 replicates. Alphabet size: 4}}
+  \caption{\small{Forward and Backward running time experiment for the linear algebra and the conventional implementations. The vertical axis shows time divided by number of observations. Error bars denote standard deviation of 3 replicates. Alphabet size: 4.}}
   \label{fig:A1}
 \end{figure}
 
 To verify that the algorithms scale with their theoretical running times the measured time is divided with the input size on \textbf{figure \ref{fig:A1}}. It is clear that the algorithms follow their theoretical running times for both implementations.
 
-\textbf{Figure \ref{fig:A1}} implies that the BLAS version is faster than the conventional implementation supporting our hypothesis.
+\textbf{Figure \ref{fig:A1}} implies that the BLAS implementation is faster than the conventional implementation supporting our hypothesis. This is especially clear when the state space increases.
 
 \subsubsection{Baum-Welch and Posterior decoding}\label{sec:A2}
 
@@ -27,7 +27,7 @@ In the following experiment we want to test our hypothesis, that if we increase 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.85]{figures/figure_A2.pdf}
-  \caption{\small{Posterior decoding and Baum-Welch running time experiment with the BLAS version and the conventional implementation. The vertical axis shows time divided by number of observations. Error bars denote standard deviation of 3 replicates. Alphabet size: 4}}
+  \caption{\small{Posterior decoding and Baum-Welch running time experiment with the BLAS version and the conventional implementation. The vertical axis shows time divided by number of observations. Error bars denote standard deviation of 3 replicates. Alphabet size: 4.}}
   \label{fig:A2}
 \end{figure}
 
@@ -39,13 +39,14 @@ To verify that the algorithms scale with their theoretical running times, we hav
 
 To test our hypothesis for the sparse instance of an HMM, we implemented versions of the Forward and the Backward algorithm utilizing the CSR format and the RSB format as described in \textbf{section \ref{sec:impel}}. In the following two experiments we tested the two implementations against each other, and in the last experiment we tested the fastest of these (RSB) against the BLAS implementation.
 
-We define density as a value between 0 and 1, where a density of 0 signifies the most sparse valid transition matrix where only one value per row is non-zero. When the density goes towards 1, the density of the matrix is equivalent to the filling percentage of the matrix.
+We define density as a value between 0 and 1, where a density of 0 signifies the most sparse valid transition matrix where only one value per row is non-zero. 
+When the density goes towards 1, the number of edges in the matrix goes from $N$ to $N^2$.
 
 All the experiments are conducted with an input size of $100'000$ observables, whilst varying the density of the transition matrix and the state space. For all the experiments we use a dense emission matrix with $4$ observables. 
 
-\subsubsection{RSB vs. CSR}
+\subsubsection{RSB vs CSR}
 
-In the following experiment we want to compare the RSB and CSR implementations of the Forward and the Backward algorithms. The results of this experiment are shown on \textbf{figure \ref{fig:B3}}. 
+In the following experiment compare the RSB and CSR implementations of the Forward and the Backward algorithms. The results of this experiment are shown on \textbf{figure \ref{fig:B3}}. 
 
 \begin{figure}[H]
   \centering
@@ -54,7 +55,7 @@ In the following experiment we want to compare the RSB and CSR implementations o
   \label{fig:B3}
 \end{figure}
 
-From \textbf{figure \ref{fig:B3}} it is clear that the RSB implementation is faster than the CSR implementation for all combinations of state-space size and density.
+From \textbf{figure \ref{fig:B3}} it is clear that the RSB implementation is faster than the CSR implementation for all combinations of state space size and density.
 
 \subsubsection{BLAS vs RSB}\label{sec:B1}
 
