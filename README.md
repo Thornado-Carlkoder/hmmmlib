@@ -5,6 +5,13 @@
 
 # HMMMLIB <img src='ressourcer/hmm_smaller.png' align="right" height="138.5" />
 
+
+## Overview of folders:
+
+- The hmmmlib folder contains a src folder which has all the C implementations
+- The testframework contains all the python bindings
+
+
 #### *Hidden Markov-Model Matrix Library*
 
 * HMM library written in C 
